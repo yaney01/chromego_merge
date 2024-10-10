@@ -383,6 +383,6 @@ try:
     with open("./sub/shadowrocket_base64.txt", "w") as encoded_file:
         encoded_file.write(encoded_content)
 
-    print("Content successfully encoded and written to shadowrocket_base64.tx.")
+    print("Content successfully encoded and written to shadowrocket_base64.txt.")
 except Exception as e:
     print(f"Error encoding and writing to file: {e}")
