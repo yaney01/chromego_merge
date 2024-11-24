@@ -1420,7 +1420,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: c2.6016725.xyz
-- name: None_None_vmess_094
+- name: United States_None_vmess_094
   type: vmess
   server: icook.tw
   port: 2095
@@ -1465,7 +1465,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: c2.6016725.xyz
-- name: United States_None_vmess_097
+- name: None_None_vmess_097
   type: vmess
   server: malaysia.com
   port: 2095
@@ -1480,7 +1480,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: c2.6016725.xyz
-- name: United States_None_vmess_098
+- name: None_None_vmess_098
   type: vmess
   server: russia.com
   port: 2095
@@ -1510,7 +1510,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: c2.6016725.xyz
-- name: None_None_vmess_0100
+- name: United States_None_vmess_0100
   type: vmess
   server: skk.moe
   port: 2095
@@ -1525,7 +1525,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: c2.6016725.xyz
-- name: None_None_vmess_0101
+- name: United States_San Francisco_vmess_0101
   type: vmess
   server: www.visa.com
   port: 2095
@@ -3052,7 +3052,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip30.6929198.xyz
-- name: United States_None_vmess_297
+- name: None_None_vmess_297
   type: vmess
   server: malaysia.com
   port: 2082
@@ -3067,7 +3067,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip30.6929198.xyz
-- name: United States_None_vmess_298
+- name: None_None_vmess_298
   type: vmess
   server: russia.com
   port: 2082
@@ -3112,7 +3112,7 @@ proxies:
     path: github.com/Alvin9999
     headers:
       Host: ip30.6929198.xyz
-- name: None_None_vmess_2101
+- name: United States_San Francisco_vmess_2101
   type: vmess
   server: www.visa.com
   port: 2082
@@ -3399,58 +3399,50 @@ proxies:
     public-key: bBX2IBet-d-kWJ7sb_49zVaem3iTAw5jIwQL4JGDuEg
     short-id: ''
   client-fingerprint: chrome
-- cipher: aes-256-gcm
-  name: United States_New York_ss_111
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 142.202.48.105
+- cipher: chacha20-ietf-poly1305
+  name: Lithuania_None_ss_111
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: United States_Hanover_ss_112
+  password: 5cp9Z3iWnJZ2
+  port: 443
+  server: 205.134.180.150
   type: ss
 - cipher: aes-256-cfb
-  name: United States_Boardman_ssr_112
+  name: United States_Boardman_ssr_113
   obfs: tls1.2_ticket_auth
   password: fou8MBGij
   port: 8081
   protocol: origin
   server: us-am3.eqnode.net
   type: ssr
+- cipher: aes-256-cfb
+  name: Panama_None_ssr_114
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 138.186.142.4
+  type: ssr
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: United States_New York_vmess_113
+  name: Canada_Ottawa_vmess_115
   network: ws
-  port: 443
-  server: 45.149.12.84
-  tls: true
+  port: 2095
+  server: 23.227.38.3
+  servername: c2.6016725.xyz
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  udp: true
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
   ws-opts:
     headers:
-      Host: obdii.cfd
-    path: /linkws#@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1/?ed=2560
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: United States_None_vmess_114
-  network: ws
-  port: 443
-  server: 172.67.175.56
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- name: Sweden_Spanga_trojan_115
-  password: wkmY1R4EcP
-  port: 443
-  server: 65.20.115.19
-  skip-cert-verify: true
-  sni: myket.io
-  type: trojan
+      Host: c2.6016725.xyz
+    path: /github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: None_None_vmess_116
@@ -3972,14 +3964,14 @@ proxy-groups:
   - United States_San Francisco_vmess_091
   - None_None_vmess_092
   - Canada_Ottawa_vmess_093
-  - None_None_vmess_094
+  - United States_None_vmess_094
   - United States_None_vmess_095
   - None_None_vmess_096
-  - United States_None_vmess_097
-  - United States_None_vmess_098
+  - None_None_vmess_097
+  - None_None_vmess_098
   - None_None_vmess_099
-  - None_None_vmess_0100
-  - None_None_vmess_0101
+  - United States_None_vmess_0100
+  - United States_San Francisco_vmess_0101
   - None_None_vmess_11
   - None_None_vmess_12
   - None_None_vmess_13
@@ -4080,11 +4072,11 @@ proxy-groups:
   - None_None_vmess_294
   - None_None_vmess_295
   - None_None_vmess_296
-  - United States_None_vmess_297
-  - United States_None_vmess_298
+  - None_None_vmess_297
+  - None_None_vmess_298
   - United States_None_vmess_299
   - None_None_vmess_2100
-  - None_None_vmess_2101
+  - United States_San Francisco_vmess_2101
   - None_None_vmess_31
   - None_None_vmess_32
   - None_None_vmess_33
@@ -4101,11 +4093,11 @@ proxy-groups:
   - Russia_Moscow_vless_71
   - Russia_Moscow_vless_81
   - Russia_Moscow_vless_91
-  - United States_New York_ss_111
-  - United States_Boardman_ssr_112
-  - United States_New York_vmess_113
-  - United States_None_vmess_114
-  - Sweden_Spanga_trojan_115
+  - Lithuania_None_ss_111
+  - United States_Hanover_ss_112
+  - United States_Boardman_ssr_113
+  - Panama_None_ssr_114
+  - Canada_Ottawa_vmess_115
   - None_None_vmess_116
   - None_None_vmess_117
   - None_None_vmess_118
@@ -4248,14 +4240,14 @@ proxy-groups:
   - United States_San Francisco_vmess_091
   - None_None_vmess_092
   - Canada_Ottawa_vmess_093
-  - None_None_vmess_094
+  - United States_None_vmess_094
   - United States_None_vmess_095
   - None_None_vmess_096
-  - United States_None_vmess_097
-  - United States_None_vmess_098
+  - None_None_vmess_097
+  - None_None_vmess_098
   - None_None_vmess_099
-  - None_None_vmess_0100
-  - None_None_vmess_0101
+  - United States_None_vmess_0100
+  - United States_San Francisco_vmess_0101
   - None_None_vmess_11
   - None_None_vmess_12
   - None_None_vmess_13
@@ -4356,11 +4348,11 @@ proxy-groups:
   - None_None_vmess_294
   - None_None_vmess_295
   - None_None_vmess_296
-  - United States_None_vmess_297
-  - United States_None_vmess_298
+  - None_None_vmess_297
+  - None_None_vmess_298
   - United States_None_vmess_299
   - None_None_vmess_2100
-  - None_None_vmess_2101
+  - United States_San Francisco_vmess_2101
   - None_None_vmess_31
   - None_None_vmess_32
   - None_None_vmess_33
@@ -4377,11 +4369,11 @@ proxy-groups:
   - Russia_Moscow_vless_71
   - Russia_Moscow_vless_81
   - Russia_Moscow_vless_91
-  - United States_New York_ss_111
-  - United States_Boardman_ssr_112
-  - United States_New York_vmess_113
-  - United States_None_vmess_114
-  - Sweden_Spanga_trojan_115
+  - Lithuania_None_ss_111
+  - United States_Hanover_ss_112
+  - United States_Boardman_ssr_113
+  - Panama_None_ssr_114
+  - Canada_Ottawa_vmess_115
   - None_None_vmess_116
   - None_None_vmess_117
   - None_None_vmess_118
