@@ -6,258 +6,248 @@ import geoip2.database
 import socket
 import re
 
-# 安全获取物理位置（国家_城市）
-def get_physical_location(address):
+logging.basicConfig(level=logging.ERROR)
+
+# ============ 安全工具函数 ============
+
+def safe_yaml_load(text):
     try:
-        address = re.sub(":.*", "", address)
-        ip_address = socket.gethostbyname(address)
+        data = yaml.safe_load(text)
+        return data
+    except Exception:
+        return None
+
+
+def safe_json_load(text):
+    try:
+        return json.loads(text)
+    except Exception:
+        return None
+
+
+def get_physical_location(address: str) -> str:
+    if not address:
+        return "Unknown"
+    try:
+        address = re.sub(r":.*", "", address)
+        ip = socket.gethostbyname(address)
     except Exception:
         return "Unknown"
 
     try:
         reader = geoip2.database.Reader("GeoLite2-City.mmdb")
-        response = reader.city(ip_address)
-        country = response.country.name or "Unknown"
-        city = response.city.name or ""
+        resp = reader.city(ip)
+        country = resp.country.name or "Unknown"
+        city = resp.city.name or ""
         return f"{country}_{city}"
     except Exception:
         return "Unknown"
 
-# 通用处理 URL 列表
-def process_urls(url_file, processor):
+
+def process_urls(file_path, handler):
     try:
-        with open(url_file, "r") as f:
-            urls = f.read().splitlines()
+        with open(file_path, "r", encoding="utf-8") as f:
+            urls = [i.strip() for i in f if i.strip()]
     except Exception as e:
-        logging.error(f"Error reading URL file {url_file}: {e}")
+        logging.error(f"Read url file failed: {file_path} {e}")
         return
 
-    for index, url in enumerate(urls):
-        if not url:
-            continue
+    for idx, url in enumerate(urls):
         try:
-            resp = urllib.request.urlopen(url)
-            data = resp.read().decode("utf-8")
-            processor(data, index)
+            resp = urllib.request.urlopen(url, timeout=15)
+            raw = resp.read().decode("utf-8", errors="ignore")
+            handler(raw, idx)
         except Exception as e:
             logging.error(f"Error processing URL {url}: {e}")
 
-# 处理 Clash 订阅
-def process_clash(data, index):
-    try:
-        content = yaml.safe_load(data)
-        if not isinstance(content, dict):
-            return
 
-        proxies = content.get("proxies", [])
-        if not isinstance(proxies, list):
-            return
-
-        for i, proxy in enumerate(proxies):
-            server = proxy.get("server", "")
-            ptype = proxy.get("type", "")
-            loc = get_physical_location(server)
-            proxy["name"] = f"{loc}_{ptype}_{index}{i+1}"
-            merged_proxies.append(proxy)
-    except Exception as e:
-        logging.error(f"Error in process_clash: {e}")
-
-# 处理 shadowtls
-def process_sb(data, index):
-    try:
-        js = json.loads(data)
-        # 多层安全取值
-        out0 = js.get("outbounds", [{}])[0]
-        out1 = js.get("outbounds", [{}])[1]
-        method = out0.get("method", "")
-        password = out0.get("password", "")
-        server = out1.get("server", "")
-        server_port = out1.get("server_port", "")
-        tls = out1.get("tls", {})
-        server_name = tls.get("server_name", "")
-        shadowtls_password = out1.get("password", "")
-        version = out1.get("version", 0)
-
-        loc = get_physical_location(server)
-        name = f"{loc}_shadowtls_{index}"
-
-        proxy = {
-            "name": name,
-            "type": "ss",
-            "server": server,
-            "port": server_port,
-            "cipher": method,
-            "password": password,
-            "plugin": "shadow-tls",
-            "plugin-opts": {
-                "host": server_name,
-                "password": shadowtls_password,
-                "version": int(version),
-            },
-        }
-        merged_proxies.append(proxy)
-    except Exception as e:
-        logging.error(f"Error in process_sb: {e}")
-
-# 处理 hysteria
-def process_hysteria(data, index):
-    try:
-        js = json.loads(data)
-        auth = js.get("auth_str", "")
-        server_ports = js.get("server", "")
-        parts = server_ports.split(":")
-        if len(parts) < 2:
-            return
-        server, port_str = parts[0], parts[1]
-        port_int = int(port_str.split(",")[0])
-
-        insecure = js.get("insecure", 0)
-        server_name = js.get("server_name", "")
-        alpn = js.get("alpn", "")
-        protocol = js.get("protocol", "")
-
-        loc = get_physical_location(server)
-        name = f"{loc}_hysteria_{index}"
-
-        proxy = {
-            "name": name,
-            "type": "hysteria",
-            "server": server,
-            "port": port_int,
-            "auth_str": auth,
-            "protocol": protocol,
-            "sni": server_name,
-            "skip-cert-verify": insecure,
-            "alpn": [alpn] if alpn else [],
-        }
-        merged_proxies.append(proxy)
-    except Exception as e:
-        logging.error(f"Error in process_hysteria: {e}")
-
-# 处理 hysteria2
-def process_hysteria2(data, index):
-    try:
-        js = json.loads(data)
-        auth = js.get("auth", "")
-        server_ports = js.get("server", "")
-        parts = server_ports.split(":")
-        if len(parts) < 2:
-            return
-        server, port_str = parts[0], parts[1]
-        port_int = int(port_str.split(",")[0])
-
-        tls = js.get("tls", {})
-        insecure = tls.get("insecure", 0)
-        sni = tls.get("sni", "")
-
-        loc = get_physical_location(server)
-        name = f"{loc}_hysteria2_{index}"
-
-        proxy = {
-            "name": name,
-            "type": "hysteria2",
-            "server": server,
-            "port": port_int,
-            "password": auth,
-            "sni": sni,
-            "skip-cert-verify": insecure,
-        }
-        merged_proxies.append(proxy)
-    except Exception as e:
-        logging.error(f"Error in process_hysteria2: {e}")
-
-# 处理 XRay/VLESS/VMess
-def process_xray(data, index):
-    try:
-        js = json.loads(data)
-        out0 = js.get("outbounds", [{}])[0]
-        protocol = out0.get("protocol", "")
-
-        if protocol == "vless":
-            settings = out0.get("settings", {})
-            vnext = settings.get("vnext", [])
-            if not vnext:
-                return
-            node = vnext[0]
-            server = node.get("address", "")
-            port = node.get("port", 0)
-            users = node.get("users", [])
-            user = users[0] if users else {}
-            uuid = user.get("id", "")
-            flow = user.get("flow", "")
-
-            stream = out0.get("streamSettings", {})
-            reality = stream.get("realitySettings", {})
-
-            publicKey = reality.get("publicKey", "")
-            shortId = reality.get("shortId", "")
-            serverName = reality.get("serverName", "")
-            fingerprint = reality.get("fingerprint", "")
-
-            loc = get_physical_location(server)
-            name = f"{loc}_vless_{index}"
-
-            proxy = {
-                "name": name,
-                "type": "vless",
-                "server": server,
-                "port": port,
-                "uuid": uuid,
-                "network": stream.get("network", ""),
-                "tls": 1,
-                "udp": 1,
-                "flow": flow,
-                "client-fingerprint": fingerprint,
-                "servername": serverName,
-                "reality-opts": {
-                    "public-key": publicKey,
-                    "short-id": shortId,
-                },
-            }
-            merged_proxies.append(proxy)
-
-        # you can add more protocols here like shadowsocks if needed
-    except Exception as e:
-        logging.error(f"Error in process_xray: {e}")
-
-# 更新 proxy-groups
-def update_proxy_groups(cfg, merged):
-    for group in cfg.get("proxy-groups", []):
-        if not isinstance(group, dict):
-            continue
-        proxies = group.get("proxies")
-        if proxies is None:
-            group["proxies"] = [p["name"] for p in merged]
-        else:
-            existing = set(proxies)
-            for p in merged:
-                pname = p.get("name")
-                if pname and pname not in existing:
-                    group["proxies"].append(pname)
-
-# ========= 主流程 =========
+# ============ 全局结果 ============
 
 merged_proxies = []
 
+# ============ 处理 Clash 订阅 ============
+
+def process_clash(data, index):
+    cfg = safe_yaml_load(data)
+    if not isinstance(cfg, dict):
+        return
+
+    proxies = cfg.get("proxies")
+    if not isinstance(proxies, list):
+        return
+
+    for i, p in enumerate(proxies):
+        if not isinstance(p, dict):
+            continue
+        server = p.get("server", "")
+        ptype = p.get("type", "unknown")
+        loc = get_physical_location(server)
+        p["name"] = f"{loc}_{ptype}_{index}_{i}"
+        merged_proxies.append(p)
+
+# ============ 处理 quick_urls.txt（anytls）===========
+
+def process_quick(data, index):
+    cfg = safe_yaml_load(data)
+    if not isinstance(cfg, dict):
+        return
+
+    proxies = cfg.get("proxies")
+    if not isinstance(proxies, list):
+        return
+
+    for i, p in enumerate(proxies):
+        if not isinstance(p, dict):
+            continue
+        if p.get("type") != "anytls":
+            continue
+
+        server = p.get("server", "")
+        loc = get_physical_location(server)
+        p["name"] = f"{loc}_anytls_{index}_{i}"
+        merged_proxies.append(p)
+
+# ============ hysteria ============
+
+def process_hysteria(data, index):
+    js = safe_json_load(data)
+    if not isinstance(js, dict):
+        return
+
+    auth = js.get("auth_str")
+    server_port = js.get("server", "")
+    if not auth or ":" not in server_port:
+        return
+
+    server, port = server_port.split(":", 1)
+    try:
+        port = int(port.split(",")[0])
+    except Exception:
+        return
+
+    proxy = {
+        "name": f"{get_physical_location(server)}_hysteria_{index}",
+        "type": "hysteria",
+        "server": server,
+        "port": port,
+        "auth_str": auth,
+        "sni": js.get("server_name", ""),
+        "protocol": js.get("protocol", ""),
+        "alpn": [js["alpn"]] if js.get("alpn") else [],
+        "skip-cert-verify": js.get("insecure", 0),
+    }
+    merged_proxies.append(proxy)
+
+# ============ hysteria2 ============
+
+def process_hysteria2(data, index):
+    js = safe_json_load(data)
+    if not isinstance(js, dict):
+        return
+
+    auth = js.get("auth")
+    server_port = js.get("server", "")
+    if not auth or ":" not in server_port:
+        return
+
+    server, port = server_port.split(":", 1)
+    try:
+        port = int(port.split(",")[0])
+    except Exception:
+        return
+
+    tls = js.get("tls", {})
+
+    proxy = {
+        "name": f"{get_physical_location(server)}_hysteria2_{index}",
+        "type": "hysteria2",
+        "server": server,
+        "port": port,
+        "password": auth,
+        "sni": tls.get("sni", ""),
+        "skip-cert-verify": tls.get("insecure", 0),
+    }
+    merged_proxies.append(proxy)
+
+# ============ xray / vless reality ============
+
+def process_xray(data, index):
+    js = safe_json_load(data)
+    if not isinstance(js, dict):
+        return
+
+    outbounds = js.get("outbounds", [])
+    if not outbounds:
+        return
+
+    ob = outbounds[0]
+    if ob.get("protocol") != "vless":
+        return
+
+    settings = ob.get("settings", {})
+    vnext = settings.get("vnext", [])
+    if not vnext:
+        return
+
+    node = vnext[0]
+    users = node.get("users", [])
+    if not users:
+        return
+
+    user = users[0]
+    stream = ob.get("streamSettings", {})
+    reality = stream.get("realitySettings", {})
+
+    proxy = {
+        "name": f"{get_physical_location(node.get('address',''))}_vless_{index}",
+        "type": "vless",
+        "server": node.get("address", ""),
+        "port": node.get("port", 0),
+        "uuid": user.get("id", ""),
+        "flow": user.get("flow", ""),
+        "tls": 1,
+        "udp": 1,
+        "client-fingerprint": reality.get("fingerprint", ""),
+        "servername": reality.get("serverName", ""),
+        "network": stream.get("network", ""),
+        "reality-opts": {
+            "public-key": reality.get("publicKey", ""),
+            "short-id": reality.get("shortId", ""),
+        },
+    }
+    merged_proxies.append(proxy)
+
+# ============ proxy-groups ============
+
+def update_proxy_groups(cfg, proxies):
+    for g in cfg.get("proxy-groups", []):
+        if not isinstance(g, dict):
+            continue
+        if g.get("proxies") is None:
+            g["proxies"] = [p["name"] for p in proxies if "name" in p]
+        else:
+            exist = set(g["proxies"])
+            for p in proxies:
+                n = p.get("name")
+                if n and n not in exist:
+                    g["proxies"].append(n)
+
+# ============ 主流程 ============
+
 process_urls("./urls/clash_urls.txt", process_clash)
+process_urls("./urls/quick_urls.txt", process_quick)
 process_urls("./urls/hysteria_urls.txt", process_hysteria)
 process_urls("./urls/hysteria2_urls.txt", process_hysteria2)
 process_urls("./urls/xray_urls.txt", process_xray)
 
-# 读取模板配置
 with open("./templates/clash_template.yaml", "r", encoding="utf-8") as f:
-    config_data = yaml.safe_load(f) or {}
+    config = yaml.safe_load(f) or {}
 
-# 合并 proxies
-config_data.setdefault("proxies", [])
-for p in merged_proxies:
-    config_data["proxies"].append(p)
+config.setdefault("proxies", [])
+config["proxies"].extend(merged_proxies)
+update_proxy_groups(config, merged_proxies)
 
-# 更新 proxy-groups
-update_proxy_groups(config_data, merged_proxies)
-
-# 写出
 with open("./sub/merged_proxies_new.yaml", "w", encoding="utf-8") as f:
-    yaml.dump(config_data, f, sort_keys=False, allow_unicode=True)
+    yaml.dump(config, f, allow_unicode=True, sort_keys=False)
 
-print("Merged meta file written.")
+print(f"Merged meta done, total proxies: {len(merged_proxies)}")
