@@ -377,6 +377,11 @@ process_urls("./urls/xray_urls.txt", process_xray)
 # 将结果写入文件
 merged_content = "\n".join(merged_proxies)
 
+# 处理 quick URLs（anytls）
+process_urls("./urls/quick_urls.txt", process_quick)
+
+merged_content = "\n".join(merged_proxies)
+
 try:
     encoded_content = base64.b64encode(merged_content.encode("utf-8")).decode("utf-8")
 
