@@ -286,6 +286,50 @@ def process_hysteria2(data, index):
     except Exception as e:
         logging.error(f"Error processing hysteria2 data for index {index}: {e}")
 
+def process_quick(data, index):
+    try:
+        content = yaml.safe_load(data)
+        # 如果不是 dict，直接跳过
+        if not isinstance(content, dict):
+            return
+
+        proxies = content.get("proxies", [])
+        if not isinstance(proxies, list):
+            return
+
+        for proxy in proxies:
+            # 只处理 anytls 类型
+            if proxy.get("type") != "anytls":
+                continue
+
+            server = proxy.get("server", "")
+            port = int(proxy.get("port", 443))
+            password = proxy.get("password", "")
+            fp = proxy.get("client-fingerprint", "")
+            udp = int(proxy.get("udp", False))
+            insecure = int(proxy.get("skip-cert-verify", False))
+            alpn = ",".join(proxy.get("alpn", []))
+
+            # 安全获取位置信息
+            try:
+                location = get_physical_location(server) if server else "Unknown"
+            except Exception:
+                location = "Unknown"
+
+            name = f"{location}_anytls_{index}"
+
+            url = (
+                f"anytls://{password}@{server}:{port}"
+                f"?fp={fp}&udp={udp}&alpn={alpn}&allowInsecure={insecure}"
+                f"#{name}"
+            )
+
+            merged_proxies.append(url)
+
+    except Exception as e:
+        logging.error(f"Error processing quick(anytls): {e}")
+
+
 
 # 处理xray
 def process_xray(data, index):
