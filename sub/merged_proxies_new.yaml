@@ -198,7 +198,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_62
+  name: Hong Kong_Central_vmess_62
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -318,7 +318,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_617
+  name: Hong Kong_Central_vmess_617
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -336,19 +336,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Singapore_Singapore_trojan_619
-  network: ws
-  password: 97e79a62-f686-4b91-87a7-be39c9e57658
-  port: 443
-  server: 34.143.159.175
-  skip-cert-verify: false
-  sni: page.anjue39.qzz.io
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: page.anjue39.qzz.io
-    path: /
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_71
@@ -447,7 +434,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_712
+  name: Hong Kong_Central_vmess_712
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -567,7 +554,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_727
+  name: Hong Kong_Central_vmess_727
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -585,19 +572,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Singapore_Singapore_trojan_729
-  network: ws
-  password: 97e79a62-f686-4b91-87a7-be39c9e57658
-  port: 443
-  server: 34.143.159.175
-  skip-cert-verify: false
-  sni: page.anjue39.qzz.io
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: page.anjue39.qzz.io
-    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -615,7 +589,7 @@ proxy-groups:
   - Unknown_vless_23
   - United States_None_mieru_31
   - United States_None_ss_61
-  - Hong Kong_Man Kok_vmess_62
+  - Hong Kong_Central_vmess_62
   - Hong Kong_Central_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -630,9 +604,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_Man Kok_vmess_617
+  - Hong Kong_Central_vmess_617
   - Hong Kong_Central_vmess_618
-  - Singapore_Singapore_trojan_619
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -644,7 +617,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_Man Kok_vmess_712
+  - Hong Kong_Central_vmess_712
   - Hong Kong_Central_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -659,9 +632,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_724
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
-  - Hong Kong_Man Kok_vmess_727
+  - Hong Kong_Central_vmess_727
   - Hong Kong_Central_vmess_728
-  - Singapore_Singapore_trojan_729
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -679,7 +651,7 @@ proxy-groups:
   - Unknown_vless_23
   - United States_None_mieru_31
   - United States_None_ss_61
-  - Hong Kong_Man Kok_vmess_62
+  - Hong Kong_Central_vmess_62
   - Hong Kong_Central_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -694,9 +666,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_Man Kok_vmess_617
+  - Hong Kong_Central_vmess_617
   - Hong Kong_Central_vmess_618
-  - Singapore_Singapore_trojan_619
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -708,7 +679,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_Man Kok_vmess_712
+  - Hong Kong_Central_vmess_712
   - Hong Kong_Central_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -723,9 +694,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_724
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
-  - Hong Kong_Man Kok_vmess_727
+  - Hong Kong_Central_vmess_727
   - Hong Kong_Central_vmess_728
-  - Singapore_Singapore_trojan_729
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
