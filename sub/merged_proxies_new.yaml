@@ -190,18 +190,6 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: Unknown_hysteria_51
-  type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - cipher: aes-256-cfb
   name: United States_None_ss_61
   password: amazonskr05
@@ -210,7 +198,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_62
+  name: Hong Kong_Man Kok_vmess_62
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -330,7 +318,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_617
+  name: Hong Kong_Man Kok_vmess_617
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -446,7 +434,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_712
+  name: Hong Kong_Man Kok_vmess_712
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -566,7 +554,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_727
+  name: Hong Kong_Man Kok_vmess_727
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -600,9 +588,8 @@ proxy-groups:
   - Unknown_vless_22
   - Unknown_vless_23
   - United States_None_mieru_31
-  - Unknown_hysteria_51
   - United States_None_ss_61
-  - Hong Kong_Central_vmess_62
+  - Hong Kong_Man Kok_vmess_62
   - Hong Kong_Central_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -617,7 +604,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_Central_vmess_617
+  - Hong Kong_Man Kok_vmess_617
   - Hong Kong_Central_vmess_618
   - Unknown_vmess_71
   - Unknown_vmess_72
@@ -630,7 +617,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_Central_vmess_712
+  - Hong Kong_Man Kok_vmess_712
   - Hong Kong_Central_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -645,7 +632,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_724
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
-  - Hong Kong_Central_vmess_727
+  - Hong Kong_Man Kok_vmess_727
   - Hong Kong_Central_vmess_728
 - name: 自动选择
   type: url-test
@@ -663,9 +650,8 @@ proxy-groups:
   - Unknown_vless_22
   - Unknown_vless_23
   - United States_None_mieru_31
-  - Unknown_hysteria_51
   - United States_None_ss_61
-  - Hong Kong_Central_vmess_62
+  - Hong Kong_Man Kok_vmess_62
   - Hong Kong_Central_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -680,7 +666,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_Central_vmess_617
+  - Hong Kong_Man Kok_vmess_617
   - Hong Kong_Central_vmess_618
   - Unknown_vmess_71
   - Unknown_vmess_72
@@ -693,7 +679,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_Central_vmess_712
+  - Hong Kong_Man Kok_vmess_712
   - Hong Kong_Central_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -708,7 +694,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_724
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
-  - Hong Kong_Central_vmess_727
+  - Hong Kong_Man Kok_vmess_727
   - Hong Kong_Central_vmess_728
 rules:
 - DOMAIN,clash.razord.top,DIRECT
