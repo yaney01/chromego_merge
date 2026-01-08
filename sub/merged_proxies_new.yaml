@@ -342,19 +342,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
-- name: United States_San Francisco_trojan_620
-  network: ws
-  password: f52d0a04-94ad-4f9e-9945-4c3d43374e36
-  port: 2096
-  server: www.shopify.com
+- name: Germany_Frankfurt am Main_trojan_620
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.94.128
   skip-cert-verify: true
-  sni: ts888.yumige.dpdns.org
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ts888.yumige.dpdns.org
-    path: /http://45.32.19.198:30005
+- name: Germany_Frankfurt am Main_trojan_621
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.66.94.128
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: Unknown_vmess_71
@@ -597,19 +600,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
-- name: United States_San Francisco_trojan_730
-  network: ws
-  password: f52d0a04-94ad-4f9e-9945-4c3d43374e36
-  port: 2096
-  server: www.shopify.com
+- name: Germany_Frankfurt am Main_trojan_730
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.66.94.128
   skip-cert-verify: true
-  sni: ts888.yumige.dpdns.org
+  sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ts888.yumige.dpdns.org
-    path: /http://45.32.19.198:30005
+- name: Germany_Frankfurt am Main_trojan_731
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.66.94.128
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -645,7 +651,8 @@ proxy-groups:
   - Malaysia_Kuala Lumpur_ss_617
   - Hong Kong_Kowloon_vmess_618
   - China_None_vmess_619
-  - United States_San Francisco_trojan_620
+  - Germany_Frankfurt am Main_trojan_620
+  - Germany_Frankfurt am Main_trojan_621
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -675,7 +682,8 @@ proxy-groups:
   - Malaysia_Kuala Lumpur_ss_727
   - Hong Kong_Kowloon_vmess_728
   - China_None_vmess_729
-  - United States_San Francisco_trojan_730
+  - Germany_Frankfurt am Main_trojan_730
+  - Germany_Frankfurt am Main_trojan_731
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -711,7 +719,8 @@ proxy-groups:
   - Malaysia_Kuala Lumpur_ss_617
   - Hong Kong_Kowloon_vmess_618
   - China_None_vmess_619
-  - United States_San Francisco_trojan_620
+  - Germany_Frankfurt am Main_trojan_620
+  - Germany_Frankfurt am Main_trojan_621
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -741,7 +750,8 @@ proxy-groups:
   - Malaysia_Kuala Lumpur_ss_727
   - Hong Kong_Kowloon_vmess_728
   - China_None_vmess_729
-  - United States_San Francisco_trojan_730
+  - Germany_Frankfurt am Main_trojan_730
+  - Germany_Frankfurt am Main_trojan_731
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
