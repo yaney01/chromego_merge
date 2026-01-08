@@ -198,7 +198,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_62
+  name: Hong Kong_Kowloon_vmess_62
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -324,7 +324,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_618
+  name: Hong Kong_Kowloon_vmess_618
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -342,7 +342,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 48d361a8-e9a1-3c28-9b51-47775d62077e
-- name: None_None_trojan_620
+- name: United States_San Francisco_trojan_620
   network: ws
   password: f52d0a04-94ad-4f9e-9945-4c3d43374e36
   port: 2096
@@ -453,7 +453,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_712
+  name: Hong Kong_Kowloon_vmess_712
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -579,7 +579,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_728
+  name: Hong Kong_Kowloon_vmess_728
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -627,7 +627,7 @@ proxy-groups:
   - Unknown_vless_23
   - United States_None_mieru_31
   - United States_None_ss_61
-  - Hong Kong_North Point_vmess_62
+  - Hong Kong_Kowloon_vmess_62
   - China_None_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -643,9 +643,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
   - Malaysia_Kuala Lumpur_ss_617
-  - Hong Kong_North Point_vmess_618
+  - Hong Kong_Kowloon_vmess_618
   - China_None_vmess_619
-  - None_None_trojan_620
+  - United States_San Francisco_trojan_620
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -657,7 +657,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_North Point_vmess_712
+  - Hong Kong_Kowloon_vmess_712
   - China_None_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -673,7 +673,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
   - Malaysia_Kuala Lumpur_ss_727
-  - Hong Kong_North Point_vmess_728
+  - Hong Kong_Kowloon_vmess_728
   - China_None_vmess_729
   - United States_San Francisco_trojan_730
 - name: 自动选择
@@ -693,7 +693,7 @@ proxy-groups:
   - Unknown_vless_23
   - United States_None_mieru_31
   - United States_None_ss_61
-  - Hong Kong_North Point_vmess_62
+  - Hong Kong_Kowloon_vmess_62
   - China_None_vmess_63
   - Hong Kong_Sheung Shui_trojan_64
   - Hong Kong_Sai Wan_trojan_65
@@ -709,9 +709,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_615
   - Hong Kong_None_trojan_616
   - Malaysia_Kuala Lumpur_ss_617
-  - Hong Kong_North Point_vmess_618
+  - Hong Kong_Kowloon_vmess_618
   - China_None_vmess_619
-  - None_None_trojan_620
+  - United States_San Francisco_trojan_620
   - Unknown_vmess_71
   - Unknown_vmess_72
   - Unknown_vmess_73
@@ -723,7 +723,7 @@ proxy-groups:
   - Unknown_vmess_79
   - Unknown_vmess_710
   - United States_None_ss_711
-  - Hong Kong_North Point_vmess_712
+  - Hong Kong_Kowloon_vmess_712
   - China_None_vmess_713
   - Hong Kong_Sheung Shui_trojan_714
   - Hong Kong_Sai Wan_trojan_715
@@ -739,7 +739,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_725
   - Hong Kong_None_trojan_726
   - Malaysia_Kuala Lumpur_ss_727
-  - Hong Kong_North Point_vmess_728
+  - Hong Kong_Kowloon_vmess_728
   - China_None_vmess_729
   - United States_San Francisco_trojan_730
 rules:
