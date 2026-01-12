@@ -207,7 +207,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_63
+  name: Hong Kong_Central_vmess_63
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
@@ -545,7 +545,7 @@ proxies:
     headers:
       Host: 17680398398310.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_None_trojan_725
+- name: None_None_trojan_725
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 2087
@@ -557,7 +557,7 @@ proxies:
     headers:
       Host: 17680398397177.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_None_trojan_726
+- name: None_None_trojan_726
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 2096
@@ -581,7 +581,7 @@ proxies:
     headers:
       Host: 17680398394331.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_728
+- name: United States_None_trojan_728
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 8443
@@ -725,7 +725,7 @@ proxies:
     headers:
       Host: 17680398397304.206352.xyz
     path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_740
+- name: United States_None_trojan_740
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 8443
@@ -737,7 +737,7 @@ proxies:
     headers:
       Host: 17680398395947.206353.xyz
     path: '%2Fagrbniuh'
-- name: None_None_trojan_741
+- name: United States_None_trojan_741
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 2083
@@ -749,7 +749,7 @@ proxies:
     headers:
       Host: 17680398395997.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_None_trojan_742
+- name: None_None_trojan_742
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 2053
@@ -761,7 +761,7 @@ proxies:
     headers:
       Host: 17680398393930.206353.xyz
     path: '%2Fagrbniuh'
-- name: United States_None_trojan_743
+- name: None_None_trojan_743
   network: ws
   password: f49525e7-3a15-427a-aa7e-d66948dc6bfd
   port: 8443
@@ -815,7 +815,7 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: None_None_trojan_750
+- name: United States_None_trojan_750
   network: ws
   password: 23c52ecb-69c8-4782-95b0-4b5a8d4a35ec
   port: 2087
@@ -827,7 +827,7 @@ proxies:
     headers:
       Host: 17681367205486.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_751
+- name: United States_None_trojan_751
   network: ws
   password: 23c52ecb-69c8-4782-95b0-4b5a8d4a35ec
   port: 2087
@@ -875,7 +875,7 @@ proxies:
     headers:
       Host: 17681367208022.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_None_trojan_755
+- name: None_None_trojan_755
   network: ws
   password: 23c52ecb-69c8-4782-95b0-4b5a8d4a35ec
   port: 8443
@@ -1043,7 +1043,7 @@ proxies:
     headers:
       Host: 17681367202402.206353.xyz
     path: '%2Fagrbniuh'
-- name: None_None_trojan_769
+- name: United States_None_trojan_769
   network: ws
   password: 23c52ecb-69c8-4782-95b0-4b5a8d4a35ec
   port: 2083
@@ -1709,21 +1709,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Kowloon_vmess_7160
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+- cipher: aes-256-gcm
+  name: Hong Kong_Hong Kong_ss_7160
+  password: 7e1dd4c55bf85da5
+  port: 50521
+  server: 212.192.15.59
+  type: ss
 - name: Hong Kong_Sai Wan_trojan_7161
   network: tcp
   password: BxceQaOe
@@ -1735,52 +1726,70 @@ proxies:
 - name: Japan_Tokyo_trojan_7162
   network: tcp
   password: BxceQaOe
-  port: 2053
-  server: 43.207.232.58
+  port: 11945
+  server: 57.181.26.116
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: Japan_Tokyo_trojan_7163
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 153.121.38.213
+  port: 4006
+  server: 153.121.39.240
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: Japan_Tokyo_trojan_7164
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 1933
-  server: 160.16.130.66
+  port: 4006
+  server: 160.16.57.238
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_7165
+- cipher: aes-256-gcm
+  name: Canada_None_ss_7165
+  password: 0690659746980c46
+  port: 10201
+  server: 167.17.179.197
+  type: ss
+- cipher: aes-256-cfb
+  name: South Korea_Uijeongbu-si_ss_7166
+  password: qwerREWQ@@
+  port: 11815
+  server: 121.170.203.148
+  type: ss
+- cipher: aes-256-cfb
+  name: South Korea_Suwon_ss_7167
+  password: qwerREWQ@@
+  port: 13979
+  server: 221.139.79.57
+  type: ss
+- name: Japan_Tokyo_trojan_7168
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3901
-  server: 153.121.38.213
+  server: 153.121.45.139
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_7166
+- name: Japan_Tokyo_trojan_7169
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 3076
-  server: 153.121.38.213
+  server: 153.121.45.139
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Poland_None_trojan_7167
+- name: Japan_Tokyo_trojan_7170
   network: tcp
   password: BxceQaOe
-  port: 2673
-  server: 95.40.111.8
+  port: 3579
+  server: 54.95.61.147
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_7168
+- name: Japan_Tokyo_trojan_7171
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
   port: 5076
@@ -1788,37 +1797,25 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_7169
+- name: Japan_Tokyo_trojan_7172
   network: tcp
   password: 61d8077bfb174e171b8283f155a555ad
-  port: 1281
-  server: 153.121.38.213
+  port: 5076
+  server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_7170
+- name: Poland_None_trojan_7173
   network: tcp
   password: BxceQaOe
-  port: 2173
-  server: 43.198.151.117
+  port: 1221
+  server: 95.40.125.94
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: South Korea_Seongbuk-gu_ss_7171
-  password: qwerREWQ@@
-  port: 51978
-  server: 168.126.234.247
-  type: ss
-- cipher: aes-256-cfb
-  name: Vietnam_None_ss_7172
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.119
-  type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_7173
+  name: Hong Kong_Central_vmess_7174
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1844,7 +1841,7 @@ proxy-groups:
   - United States_None_mieru_31
   - United States_None_ss_61
   - Hong Kong_Central_vmess_62
-  - Hong Kong_Kowloon_vmess_63
+  - Hong Kong_Central_vmess_63
   - Hong Kong_Kowloon_trojan_64
   - Hong Kong_Sai Wan_trojan_65
   - Japan_Tokyo_trojan_66
@@ -1883,10 +1880,10 @@ proxy-groups:
   - United States_None_trojan_722
   - United States_None_trojan_723
   - None_None_trojan_724
-  - United States_None_trojan_725
-  - United States_None_trojan_726
+  - None_None_trojan_725
+  - None_None_trojan_726
   - None_None_trojan_727
-  - None_None_trojan_728
+  - United States_None_trojan_728
   - United States_None_trojan_729
   - None_None_trojan_730
   - None_None_trojan_731
@@ -1898,22 +1895,22 @@ proxy-groups:
   - None_None_trojan_737
   - None_None_trojan_738
   - None_None_trojan_739
-  - None_None_trojan_740
-  - None_None_trojan_741
-  - United States_None_trojan_742
-  - United States_None_trojan_743
+  - United States_None_trojan_740
+  - United States_None_trojan_741
+  - None_None_trojan_742
+  - None_None_trojan_743
   - Taiwan_Chiayi City_trojan_744
   - Taiwan_Chiayi City_trojan_745
   - Taiwan_Chiayi City_trojan_746
   - Taiwan_Chiayi City_trojan_747
   - Taiwan_Chiayi City_trojan_748
   - Taiwan_Chiayi City_trojan_749
-  - None_None_trojan_750
-  - None_None_trojan_751
+  - United States_None_trojan_750
+  - United States_None_trojan_751
   - None_None_trojan_752
   - None_None_trojan_753
   - United States_None_trojan_754
-  - United States_None_trojan_755
+  - None_None_trojan_755
   - United States_None_trojan_756
   - None_None_trojan_757
   - None_None_trojan_758
@@ -1927,7 +1924,7 @@ proxy-groups:
   - None_None_trojan_766
   - United States_None_trojan_767
   - United States_None_trojan_768
-  - None_None_trojan_769
+  - United States_None_trojan_769
   - United States_None_trojan_770
   - Hong Kong_Central_trojan_771
   - Hong Kong_Central_trojan_772
@@ -2018,20 +2015,21 @@ proxy-groups:
   - United States_Phoenix_trojan_7157
   - United States_None_ss_7158
   - Hong Kong_Central_vmess_7159
-  - Hong Kong_Kowloon_vmess_7160
+  - Hong Kong_Hong Kong_ss_7160
   - Hong Kong_Sai Wan_trojan_7161
   - Japan_Tokyo_trojan_7162
   - Japan_Tokyo_trojan_7163
   - Japan_Tokyo_trojan_7164
-  - Japan_Tokyo_trojan_7165
-  - Japan_Tokyo_trojan_7166
-  - Poland_None_trojan_7167
+  - Canada_None_ss_7165
+  - South Korea_Uijeongbu-si_ss_7166
+  - South Korea_Suwon_ss_7167
   - Japan_Tokyo_trojan_7168
   - Japan_Tokyo_trojan_7169
-  - Hong Kong_None_trojan_7170
-  - South Korea_Seongbuk-gu_ss_7171
-  - Vietnam_None_ss_7172
-  - Hong Kong_Central_vmess_7173
+  - Japan_Tokyo_trojan_7170
+  - Japan_Tokyo_trojan_7171
+  - Japan_Tokyo_trojan_7172
+  - Poland_None_trojan_7173
+  - Hong Kong_Central_vmess_7174
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2050,7 +2048,7 @@ proxy-groups:
   - United States_None_mieru_31
   - United States_None_ss_61
   - Hong Kong_Central_vmess_62
-  - Hong Kong_Kowloon_vmess_63
+  - Hong Kong_Central_vmess_63
   - Hong Kong_Kowloon_trojan_64
   - Hong Kong_Sai Wan_trojan_65
   - Japan_Tokyo_trojan_66
@@ -2089,10 +2087,10 @@ proxy-groups:
   - United States_None_trojan_722
   - United States_None_trojan_723
   - None_None_trojan_724
-  - United States_None_trojan_725
-  - United States_None_trojan_726
+  - None_None_trojan_725
+  - None_None_trojan_726
   - None_None_trojan_727
-  - None_None_trojan_728
+  - United States_None_trojan_728
   - United States_None_trojan_729
   - None_None_trojan_730
   - None_None_trojan_731
@@ -2104,22 +2102,22 @@ proxy-groups:
   - None_None_trojan_737
   - None_None_trojan_738
   - None_None_trojan_739
-  - None_None_trojan_740
-  - None_None_trojan_741
-  - United States_None_trojan_742
-  - United States_None_trojan_743
+  - United States_None_trojan_740
+  - United States_None_trojan_741
+  - None_None_trojan_742
+  - None_None_trojan_743
   - Taiwan_Chiayi City_trojan_744
   - Taiwan_Chiayi City_trojan_745
   - Taiwan_Chiayi City_trojan_746
   - Taiwan_Chiayi City_trojan_747
   - Taiwan_Chiayi City_trojan_748
   - Taiwan_Chiayi City_trojan_749
-  - None_None_trojan_750
-  - None_None_trojan_751
+  - United States_None_trojan_750
+  - United States_None_trojan_751
   - None_None_trojan_752
   - None_None_trojan_753
   - United States_None_trojan_754
-  - United States_None_trojan_755
+  - None_None_trojan_755
   - United States_None_trojan_756
   - None_None_trojan_757
   - None_None_trojan_758
@@ -2133,7 +2131,7 @@ proxy-groups:
   - None_None_trojan_766
   - United States_None_trojan_767
   - United States_None_trojan_768
-  - None_None_trojan_769
+  - United States_None_trojan_769
   - United States_None_trojan_770
   - Hong Kong_Central_trojan_771
   - Hong Kong_Central_trojan_772
@@ -2224,20 +2222,21 @@ proxy-groups:
   - United States_Phoenix_trojan_7157
   - United States_None_ss_7158
   - Hong Kong_Central_vmess_7159
-  - Hong Kong_Kowloon_vmess_7160
+  - Hong Kong_Hong Kong_ss_7160
   - Hong Kong_Sai Wan_trojan_7161
   - Japan_Tokyo_trojan_7162
   - Japan_Tokyo_trojan_7163
   - Japan_Tokyo_trojan_7164
-  - Japan_Tokyo_trojan_7165
-  - Japan_Tokyo_trojan_7166
-  - Poland_None_trojan_7167
+  - Canada_None_ss_7165
+  - South Korea_Uijeongbu-si_ss_7166
+  - South Korea_Suwon_ss_7167
   - Japan_Tokyo_trojan_7168
   - Japan_Tokyo_trojan_7169
-  - Hong Kong_None_trojan_7170
-  - South Korea_Seongbuk-gu_ss_7171
-  - Vietnam_None_ss_7172
-  - Hong Kong_Central_vmess_7173
+  - Japan_Tokyo_trojan_7170
+  - Japan_Tokyo_trojan_7171
+  - Japan_Tokyo_trojan_7172
+  - Poland_None_trojan_7173
+  - Hong Kong_Central_vmess_7174
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
