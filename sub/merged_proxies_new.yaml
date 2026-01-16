@@ -1576,7 +1576,7 @@ proxies:
     headers:
       Host: 17683099003961.206352.xyz
     path: '%2Fagraeabtegrrh'
-- name: United States_None_trojan_6187
+- name: None_None_trojan_6187
   network: ws
   password: af37ba63-6b2e-4e24-b17d-bd75a3160680
   port: 8443
@@ -1588,7 +1588,7 @@ proxies:
     headers:
       Host: 17683099009483.206353.xyz
     path: '%2Fagrbniuh'
-- name: United States_None_trojan_6188
+- name: None_None_trojan_6188
   network: ws
   password: af37ba63-6b2e-4e24-b17d-bd75a3160680
   port: 2083
@@ -1612,7 +1612,7 @@ proxies:
     headers:
       Host: 17683099008682.206352.xyz
     path: '%2Fagraeabtegrrh'
-- name: United States_None_trojan_6190
+- name: None_None_trojan_6190
   network: ws
   password: af37ba63-6b2e-4e24-b17d-bd75a3160680
   port: 2053
@@ -1877,7 +1877,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_6226
+  name: Hong Kong_Yuen Long San Hui_vmess_6226
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -2009,7 +2009,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_6243
+  name: Hong Kong_Yuen Long San Hui_vmess_6243
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -2232,10 +2232,10 @@ proxy-groups:
   - None_None_trojan_6184
   - None_None_trojan_6185
   - None_None_trojan_6186
-  - United States_None_trojan_6187
-  - United States_None_trojan_6188
+  - None_None_trojan_6187
+  - None_None_trojan_6188
   - None_None_trojan_6189
-  - United States_None_trojan_6190
+  - None_None_trojan_6190
   - United States_None_trojan_6191
   - Taiwan_Chiayi City_trojan_6192
   - Hong Kong_Kowloon_trojan_6193
@@ -2271,7 +2271,7 @@ proxy-groups:
   - Hong Kong_Central_trojan_6223
   - Hong Kong_Hong Kong_vmess_6224
   - United States_None_ss_6225
-  - Hong Kong_Central_vmess_6226
+  - Hong Kong_Yuen Long San Hui_vmess_6226
   - Hong Kong_None_ss_6227
   - Hong Kong_Sheung Shui_trojan_6228
   - Japan_Tokyo_trojan_6229
@@ -2288,7 +2288,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_6240
   - Japan_Tokyo_trojan_6241
   - United States_None_trojan_6242
-  - Hong Kong_Central_vmess_6243
+  - Hong Kong_Yuen Long San Hui_vmess_6243
   - United States_San Francisco_trojan_6244
 - name: 自动选择
   type: url-test
@@ -2492,10 +2492,10 @@ proxy-groups:
   - None_None_trojan_6184
   - None_None_trojan_6185
   - None_None_trojan_6186
-  - United States_None_trojan_6187
-  - United States_None_trojan_6188
+  - None_None_trojan_6187
+  - None_None_trojan_6188
   - None_None_trojan_6189
-  - United States_None_trojan_6190
+  - None_None_trojan_6190
   - United States_None_trojan_6191
   - Taiwan_Chiayi City_trojan_6192
   - Hong Kong_Kowloon_trojan_6193
@@ -2531,7 +2531,7 @@ proxy-groups:
   - Hong Kong_Central_trojan_6223
   - Hong Kong_Hong Kong_vmess_6224
   - United States_None_ss_6225
-  - Hong Kong_Central_vmess_6226
+  - Hong Kong_Yuen Long San Hui_vmess_6226
   - Hong Kong_None_ss_6227
   - Hong Kong_Sheung Shui_trojan_6228
   - Japan_Tokyo_trojan_6229
@@ -2548,7 +2548,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_6240
   - Japan_Tokyo_trojan_6241
   - United States_None_trojan_6242
-  - Hong Kong_Central_vmess_6243
+  - Hong Kong_Yuen Long San Hui_vmess_6243
   - United States_San Francisco_trojan_6244
 rules:
 - DOMAIN,clash.razord.top,DIRECT
