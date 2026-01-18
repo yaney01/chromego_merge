@@ -748,7 +748,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_671
+  name: Hong Kong_Man Kok_vmess_671
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -833,7 +833,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_682
+  name: Hong Kong_Man Kok_vmess_682
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -841,7 +841,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Canada_Toronto_trojan_683
+- name: United States_None_trojan_683
   password: 30077070-596e-48ea-9400-14c8ed07bd97
   port: 443
   server: tuntro006.instconn.com
@@ -935,7 +935,7 @@ proxy-groups:
   - France_None_trojan_668
   - United Kingdom_London_vmess_669
   - United States_None_ss_670
-  - Hong Kong_Central_vmess_671
+  - Hong Kong_Man Kok_vmess_671
   - Japan_Tokyo_trojan_672
   - Japan_Tokyo_trojan_673
   - Canada_None_ss_674
@@ -946,8 +946,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_679
   - Japan_Tokyo_trojan_680
   - Japan_Tokyo_trojan_681
-  - Hong Kong_Central_vmess_682
-  - Canada_Toronto_trojan_683
+  - Hong Kong_Man Kok_vmess_682
+  - United States_None_trojan_683
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1034,7 +1034,7 @@ proxy-groups:
   - France_None_trojan_668
   - United Kingdom_London_vmess_669
   - United States_None_ss_670
-  - Hong Kong_Central_vmess_671
+  - Hong Kong_Man Kok_vmess_671
   - Japan_Tokyo_trojan_672
   - Japan_Tokyo_trojan_673
   - Canada_None_ss_674
@@ -1045,8 +1045,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_679
   - Japan_Tokyo_trojan_680
   - Japan_Tokyo_trojan_681
-  - Hong Kong_Central_vmess_682
-  - Canada_Toronto_trojan_683
+  - Hong Kong_Man Kok_vmess_682
+  - United States_None_trojan_683
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
