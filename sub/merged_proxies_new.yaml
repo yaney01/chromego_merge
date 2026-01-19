@@ -472,7 +472,6 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-  udp: true
 - name: China_None_trojan_637
   password: 95b4c6dc-9367-45c9-9b09-a0e51b9b1fad
   port: 41275
@@ -487,6 +486,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Japan_Tokyo_trojan_639
   password: 4843e94d205f3893f588255a591abe94
   port: 3423
@@ -863,12 +863,19 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_686
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
+- name: Hong Kong_Central_trojan_686
+  password: 4843e94d205f3893f588255a591abe94
   port: 443
-  server: tuntro006.instconn.com
+  server: 58.152.18.124
   skip-cert-verify: true
-  sni: torontorm1.686911.xyz
+  type: trojan
+  udp: true
+- name: India_New Delhi_trojan_687
+  password: M7v%w11Se*
+  port: 443
+  server: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+  sni: hyfuuf6.wsone.icu
   type: trojan
   udp: true
 proxy-groups:
@@ -972,7 +979,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_683
   - Vietnam_None_ss_684
   - Hong Kong_Man Kok_vmess_685
-  - United States_None_trojan_686
+  - Hong Kong_Central_trojan_686
+  - India_New Delhi_trojan_687
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1074,7 +1082,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_683
   - Vietnam_None_ss_684
   - Hong Kong_Man Kok_vmess_685
-  - United States_None_trojan_686
+  - Hong Kong_Central_trojan_686
+  - India_New Delhi_trojan_687
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
