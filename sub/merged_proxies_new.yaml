@@ -27,9 +27,9 @@ dns:
 proxies:
 - name: Germany_None_hysteria_01
   type: hysteria
-  server: 89.144.35.30
+  server: ip1.758733.xyz
   port: 23008
-  auth-str: dongtaiwang.com
+  auth-str: alvin9999.com
   sni: apple.com
   skip-cert-verify: true
   alpn:
@@ -673,7 +673,7 @@ proxies:
   skip-cert-verify: true
   sni: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
   type: trojan
-- name: None_None_trojan_660
+- name: United States_San Francisco_trojan_660
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 2087
@@ -709,7 +709,7 @@ proxies:
     headers:
       Host: 17688811601069.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_San Francisco_trojan_663
+- name: None_None_trojan_663
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 2087
@@ -733,7 +733,7 @@ proxies:
     headers:
       Host: 17688811602308.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_San Francisco_trojan_665
+- name: None_None_trojan_665
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 8443
@@ -877,7 +877,7 @@ proxies:
     headers:
       Host: 17688811604426.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_677
+- name: United States_None_trojan_677
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 2096
@@ -889,7 +889,7 @@ proxies:
     headers:
       Host: 17688811609104.206352.xyz
     path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_678
+- name: United States_None_trojan_678
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 8443
@@ -901,7 +901,7 @@ proxies:
     headers:
       Host: 17688811608261.206353.xyz
     path: '%2Fagrbniuh'
-- name: None_None_trojan_679
+- name: United States_None_trojan_679
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 2083
@@ -925,7 +925,7 @@ proxies:
     headers:
       Host: 17688811605387.206352.xyz
     path: '%2Fagraeabtegrrh'
-- name: United States_None_trojan_681
+- name: None_None_trojan_681
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 2053
@@ -937,7 +937,7 @@ proxies:
     headers:
       Host: 17688811603672.206353.xyz
     path: '%2Fagrbniuh'
-- name: United States_None_trojan_682
+- name: None_None_trojan_682
   network: ws
   password: d27597f8-5f8a-4639-b499-126d348effc3
   port: 8443
@@ -1222,7 +1222,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_6118
+  name: Hong Kong_Sham Shui Po_vmess_6118
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -1325,7 +1325,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_6131
+  name: Hong Kong_Sham Shui Po_vmess_6131
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1408,12 +1408,12 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_657
   - Hong Kong_Hong Kong_trojan_658
   - Hong Kong_Hong Kong_trojan_659
-  - None_None_trojan_660
+  - United States_San Francisco_trojan_660
   - United States_San Francisco_trojan_661
   - United States_San Francisco_trojan_662
-  - United States_San Francisco_trojan_663
+  - None_None_trojan_663
   - None_None_trojan_664
-  - United States_San Francisco_trojan_665
+  - None_None_trojan_665
   - None_None_trojan_666
   - None_None_trojan_667
   - None_None_trojan_668
@@ -1425,12 +1425,12 @@ proxy-groups:
   - None_None_trojan_674
   - None_None_trojan_675
   - None_None_trojan_676
-  - None_None_trojan_677
-  - None_None_trojan_678
-  - None_None_trojan_679
+  - United States_None_trojan_677
+  - United States_None_trojan_678
+  - United States_None_trojan_679
   - United States_None_trojan_680
-  - United States_None_trojan_681
-  - United States_None_trojan_682
+  - None_None_trojan_681
+  - None_None_trojan_682
   - Spain_None_trojan_683
   - Hong Kong_Hong Kong_trojan_684
   - Hong Kong_Hong Kong_trojan_685
@@ -1466,7 +1466,7 @@ proxy-groups:
   - United States_Phoenix_trojan_6115
   - Hong Kong_Central_vmess_6116
   - United States_None_ss_6117
-  - Hong Kong_Central_vmess_6118
+  - Hong Kong_Sham Shui Po_vmess_6118
   - Hong Kong_Central_trojan_6119
   - Hong Kong_None_trojan_6120
   - Japan_Tokyo_trojan_6121
@@ -1479,7 +1479,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_6128
   - Hong Kong_None_trojan_6129
   - Vietnam_None_ss_6130
-  - Hong Kong_Central_vmess_6131
+  - Hong Kong_Sham Shui Po_vmess_6131
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1555,12 +1555,12 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_657
   - Hong Kong_Hong Kong_trojan_658
   - Hong Kong_Hong Kong_trojan_659
-  - None_None_trojan_660
+  - United States_San Francisco_trojan_660
   - United States_San Francisco_trojan_661
   - United States_San Francisco_trojan_662
-  - United States_San Francisco_trojan_663
+  - None_None_trojan_663
   - None_None_trojan_664
-  - United States_San Francisco_trojan_665
+  - None_None_trojan_665
   - None_None_trojan_666
   - None_None_trojan_667
   - None_None_trojan_668
@@ -1572,12 +1572,12 @@ proxy-groups:
   - None_None_trojan_674
   - None_None_trojan_675
   - None_None_trojan_676
-  - None_None_trojan_677
-  - None_None_trojan_678
-  - None_None_trojan_679
+  - United States_None_trojan_677
+  - United States_None_trojan_678
+  - United States_None_trojan_679
   - United States_None_trojan_680
-  - United States_None_trojan_681
-  - United States_None_trojan_682
+  - None_None_trojan_681
+  - None_None_trojan_682
   - Spain_None_trojan_683
   - Hong Kong_Hong Kong_trojan_684
   - Hong Kong_Hong Kong_trojan_685
@@ -1613,7 +1613,7 @@ proxy-groups:
   - United States_Phoenix_trojan_6115
   - Hong Kong_Central_vmess_6116
   - United States_None_ss_6117
-  - Hong Kong_Central_vmess_6118
+  - Hong Kong_Sham Shui Po_vmess_6118
   - Hong Kong_Central_trojan_6119
   - Hong Kong_None_trojan_6120
   - Japan_Tokyo_trojan_6121
@@ -1626,7 +1626,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_6128
   - Hong Kong_None_trojan_6129
   - Vietnam_None_ss_6130
-  - Hong Kong_Central_vmess_6131
+  - Hong Kong_Sham Shui Po_vmess_6131
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
