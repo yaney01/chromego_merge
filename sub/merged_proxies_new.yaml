@@ -643,7 +643,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - http/1.1
-  name: United States_None_trojan_658
+  name: None_None_trojan_658
   network: ws
   password: '123456'
   port: 443
@@ -691,7 +691,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiQ3U4MmVDZ3JnUzRLTjdnIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiYnBiLnlvdXNlZi5pc2VnYXJvLmNvbSJdfQ%3D%3D%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: None_None_trojan_662
+  name: United States_None_trojan_662
   network: ws
   password: '123456'
   port: 8443
@@ -703,7 +703,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: None_None_trojan_663
+  name: United States_None_trojan_663
   network: ws
   password: '123456'
   port: 8443
@@ -715,7 +715,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiNDhOYUJ4WFhzc0EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19%3Fed%3D2560'
 - alpn:
   - http/1.1
-  name: None_None_trojan_664
+  name: United States_None_trojan_664
   network: ws
   password: '123456'
   port: 443
@@ -739,7 +739,7 @@ proxies:
     path: '%2FeyJqdW5rIjoidmNzMWVlWHpNTVh4M2siLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19'
 - alpn:
   - http/1.1
-  name: United States_None_trojan_666
+  name: None_None_trojan_666
   network: ws
   password: '123456'
   port: 8443
@@ -751,7 +751,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiU3hiSEZzcm93Z2VaMSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D'
 - alpn:
   - http/1.1
-  name: United States_None_trojan_667
+  name: None_None_trojan_667
   network: ws
   password: '123456'
   port: 2053
@@ -763,7 +763,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiYWJZUDZ0Z2RMTSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D'
 - alpn:
   - http/1.1
-  name: None_None_trojan_668
+  name: United States_None_trojan_668
   network: ws
   password: '123456'
   port: 443
@@ -787,7 +787,7 @@ proxies:
     path: '%2FeyJqdW5rIjoiTUp4VFNoMTRLbSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0%3D'
 - alpn:
   - http/1.1
-  name: United States_None_trojan_670
+  name: None_None_trojan_670
   network: ws
   password: '123456'
   port: 8443
@@ -820,7 +820,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - http/1.1
-  name: None_None_trojan_673
+  name: United States_None_trojan_673
   network: ws
   password: '123456'
   port: 2053
@@ -838,7 +838,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_675
+  name: Hong Kong_Man Kok_vmess_675
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -899,15 +899,19 @@ proxies:
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 1933
   server: 160.16.89.176
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Japan_Tokyo_trojan_683
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 3076
   server: 160.16.89.176
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: Japan_Tokyo_trojan_684
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
@@ -952,6 +956,54 @@ proxies:
   port: 38388
   server: 103.186.155.51
   type: ss
+- name: Germany_Frankfurt am Main_trojan_690
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: Germany_Frankfurt am Main_trojan_691
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: France_Paris_trojan_692
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.44.124.96
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_693
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed=2560
+- name: United States_None_trojan_694
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1025,24 +1077,24 @@ proxy-groups:
   - United States_None_trojan_655
   - United States_None_trojan_656
   - Hong Kong_Central_vmess_657
-  - United States_None_trojan_658
+  - None_None_trojan_658
   - United States_None_trojan_659
   - United States_None_trojan_660
   - None_None_trojan_661
-  - None_None_trojan_662
-  - None_None_trojan_663
-  - None_None_trojan_664
+  - United States_None_trojan_662
+  - United States_None_trojan_663
+  - United States_None_trojan_664
   - None_None_trojan_665
-  - United States_None_trojan_666
-  - United States_None_trojan_667
-  - None_None_trojan_668
+  - None_None_trojan_666
+  - None_None_trojan_667
+  - United States_None_trojan_668
   - None_None_trojan_669
-  - United States_None_trojan_670
+  - None_None_trojan_670
   - None_None_trojan_671
   - Hong Kong_Central_vmess_672
-  - None_None_trojan_673
+  - United States_None_trojan_673
   - United States_None_ss_674
-  - Hong Kong_Kowloon_vmess_675
+  - Hong Kong_Man Kok_vmess_675
   - Hong Kong_Hong Kong_vmess_676
   - Hong Kong_Central_trojan_677
   - United States_None_trojan_678
@@ -1057,6 +1109,11 @@ proxy-groups:
   - Japan_Tokyo_trojan_687
   - Hong Kong_None_trojan_688
   - Vietnam_None_ss_689
+  - Germany_Frankfurt am Main_trojan_690
+  - Germany_Frankfurt am Main_trojan_691
+  - France_Paris_trojan_692
+  - United States_None_trojan_693
+  - United States_None_trojan_694
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1130,24 +1187,24 @@ proxy-groups:
   - United States_None_trojan_655
   - United States_None_trojan_656
   - Hong Kong_Central_vmess_657
-  - United States_None_trojan_658
+  - None_None_trojan_658
   - United States_None_trojan_659
   - United States_None_trojan_660
   - None_None_trojan_661
-  - None_None_trojan_662
-  - None_None_trojan_663
-  - None_None_trojan_664
+  - United States_None_trojan_662
+  - United States_None_trojan_663
+  - United States_None_trojan_664
   - None_None_trojan_665
-  - United States_None_trojan_666
-  - United States_None_trojan_667
-  - None_None_trojan_668
+  - None_None_trojan_666
+  - None_None_trojan_667
+  - United States_None_trojan_668
   - None_None_trojan_669
-  - United States_None_trojan_670
+  - None_None_trojan_670
   - None_None_trojan_671
   - Hong Kong_Central_vmess_672
-  - None_None_trojan_673
+  - United States_None_trojan_673
   - United States_None_ss_674
-  - Hong Kong_Kowloon_vmess_675
+  - Hong Kong_Man Kok_vmess_675
   - Hong Kong_Hong Kong_vmess_676
   - Hong Kong_Central_trojan_677
   - United States_None_trojan_678
@@ -1162,6 +1219,11 @@ proxy-groups:
   - Japan_Tokyo_trojan_687
   - Hong Kong_None_trojan_688
   - Vietnam_None_ss_689
+  - Germany_Frankfurt am Main_trojan_690
+  - Germany_Frankfurt am Main_trojan_691
+  - France_Paris_trojan_692
+  - United States_None_trojan_693
+  - United States_None_trojan_694
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
