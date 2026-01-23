@@ -280,7 +280,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
-- name: None_None_trojan_611
+- name: United States_San Francisco_trojan_611
   network: ws
   password: 50e90b26-760a-4d7c-90f4-751bc92206d7
   port: 2087
@@ -340,7 +340,7 @@ proxies:
     headers:
       Host: 17690660236350.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_616
+- name: United States_San Francisco_trojan_616
   network: ws
   password: 50e90b26-760a-4d7c-90f4-751bc92206d7
   port: 8443
@@ -364,7 +364,7 @@ proxies:
     headers:
       Host: 17690660239777.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_San Francisco_trojan_618
+- name: None_None_trojan_618
   network: ws
   password: 50e90b26-760a-4d7c-90f4-751bc92206d7
   port: 2053
@@ -484,7 +484,7 @@ proxies:
     headers:
       Host: 17690660238874.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_628
+- name: United States_None_trojan_628
   network: ws
   password: 50e90b26-760a-4d7c-90f4-751bc92206d7
   port: 2096
@@ -508,7 +508,7 @@ proxies:
     headers:
       Host: 17690660232579.206353.xyz
     path: '%2Fagrbniuh'
-- name: United States_None_trojan_630
+- name: None_None_trojan_630
   network: ws
   password: 50e90b26-760a-4d7c-90f4-751bc92206d7
   port: 2083
@@ -890,7 +890,7 @@ proxies:
     headers:
       Host: blackshadow.dpdns.org
     path: '%2F195.123.218.174-443'
-- name: United States_None_trojan_679
+- name: None_None_trojan_679
   network: ws
   password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   port: 443
@@ -1029,17 +1029,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_Hong Kong_vmess_696
-  network: tcp
-  port: '34659'
-  server: 47.242.192.233
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8482671e-846f-45c7-aec4-531c79f775ec
-- name: Germany_Frankfurt am Main_trojan_697
+- name: Germany_Frankfurt am Main_trojan_696
   password: telegram-id-privatevpns
   port: 22222
   server: 18.196.155.223
@@ -1047,21 +1037,21 @@ proxies:
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- name: Germany_Frankfurt am Main_trojan_698
+- name: Germany_Frankfurt am Main_trojan_697
   password: telegram-id-privatevpns
   port: 22222
   server: 18.196.155.223
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: France_Paris_trojan_699
+- name: France_Paris_trojan_698
   password: telegram-id-directvpn
   port: 22223
   server: 51.44.124.96
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: United States_None_trojan_6100
+- name: United States_None_trojan_699
   network: ws
   password: Aimer
   port: 2053
@@ -1074,7 +1064,7 @@ proxies:
     headers:
       Host: epge.muarua.filegear-sg.me
     path: /?ed=2560
-- name: United States_None_trojan_6101
+- name: United States_None_trojan_6100
   network: ws
   password: Aimer
   port: 2053
@@ -1113,14 +1103,14 @@ proxy-groups:
   - Unknown_vmess_68
   - Unknown_vmess_69
   - Unknown_vmess_610
-  - None_None_trojan_611
+  - United States_San Francisco_trojan_611
   - None_None_trojan_612
   - None_None_trojan_613
   - United States_San Francisco_trojan_614
   - None_None_trojan_615
-  - None_None_trojan_616
+  - United States_San Francisco_trojan_616
   - None_None_trojan_617
-  - United States_San Francisco_trojan_618
+  - None_None_trojan_618
   - None_None_trojan_619
   - None_None_trojan_620
   - None_None_trojan_621
@@ -1130,9 +1120,9 @@ proxy-groups:
   - None_None_trojan_625
   - None_None_trojan_626
   - None_None_trojan_627
-  - None_None_trojan_628
+  - United States_None_trojan_628
   - None_None_trojan_629
-  - United States_None_trojan_630
+  - None_None_trojan_630
   - None_None_trojan_631
   - United States_None_trojan_632
   - None_None_trojan_633
@@ -1181,7 +1171,7 @@ proxy-groups:
   - South Korea_Seoul_vmess_676
   - Hong Kong_Central_vmess_677
   - United States_None_trojan_678
-  - United States_None_trojan_679
+  - None_None_trojan_679
   - United States_None_ss_680
   - Hong Kong_Yuen Long San Hui_vmess_681
   - Hong Kong_Hong Kong_vmess_682
@@ -1198,12 +1188,11 @@ proxy-groups:
   - Hong Kong_None_trojan_693
   - Vietnam_None_ss_694
   - Hong Kong_Yuen Long San Hui_vmess_695
-  - Hong Kong_Hong Kong_vmess_696
+  - Germany_Frankfurt am Main_trojan_696
   - Germany_Frankfurt am Main_trojan_697
-  - Germany_Frankfurt am Main_trojan_698
-  - France_Paris_trojan_699
+  - France_Paris_trojan_698
+  - United States_None_trojan_699
   - United States_None_trojan_6100
-  - United States_None_trojan_6101
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1230,14 +1219,14 @@ proxy-groups:
   - Unknown_vmess_68
   - Unknown_vmess_69
   - Unknown_vmess_610
-  - None_None_trojan_611
+  - United States_San Francisco_trojan_611
   - None_None_trojan_612
   - None_None_trojan_613
   - United States_San Francisco_trojan_614
   - None_None_trojan_615
-  - None_None_trojan_616
+  - United States_San Francisco_trojan_616
   - None_None_trojan_617
-  - United States_San Francisco_trojan_618
+  - None_None_trojan_618
   - None_None_trojan_619
   - None_None_trojan_620
   - None_None_trojan_621
@@ -1247,9 +1236,9 @@ proxy-groups:
   - None_None_trojan_625
   - None_None_trojan_626
   - None_None_trojan_627
-  - None_None_trojan_628
+  - United States_None_trojan_628
   - None_None_trojan_629
-  - United States_None_trojan_630
+  - None_None_trojan_630
   - None_None_trojan_631
   - United States_None_trojan_632
   - None_None_trojan_633
@@ -1298,7 +1287,7 @@ proxy-groups:
   - South Korea_Seoul_vmess_676
   - Hong Kong_Central_vmess_677
   - United States_None_trojan_678
-  - United States_None_trojan_679
+  - None_None_trojan_679
   - United States_None_ss_680
   - Hong Kong_Yuen Long San Hui_vmess_681
   - Hong Kong_Hong Kong_vmess_682
@@ -1315,12 +1304,11 @@ proxy-groups:
   - Hong Kong_None_trojan_693
   - Vietnam_None_ss_694
   - Hong Kong_Yuen Long San Hui_vmess_695
-  - Hong Kong_Hong Kong_vmess_696
+  - Germany_Frankfurt am Main_trojan_696
   - Germany_Frankfurt am Main_trojan_697
-  - Germany_Frankfurt am Main_trojan_698
-  - France_Paris_trojan_699
+  - France_Paris_trojan_698
+  - United States_None_trojan_699
   - United States_None_trojan_6100
-  - United States_None_trojan_6101
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
