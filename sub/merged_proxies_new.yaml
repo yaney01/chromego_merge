@@ -349,7 +349,7 @@ proxies:
     headers:
       Host: 17693237224653.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_619
+- name: United States_San Francisco_trojan_619
   network: ws
   password: 80bdaa23-8f65-44c4-9932-070d8bc60b13
   port: 2087
@@ -373,7 +373,7 @@ proxies:
     headers:
       Host: 17693237222811.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_621
+- name: United States_San Francisco_trojan_621
   network: ws
   password: 80bdaa23-8f65-44c4-9932-070d8bc60b13
   port: 2087
@@ -409,7 +409,7 @@ proxies:
     headers:
       Host: 17693237227634.206355.xyz
     path: '%2Fvideomuaawe'
-- name: None_None_trojan_624
+- name: United States_San Francisco_trojan_624
   network: ws
   password: 80bdaa23-8f65-44c4-9932-070d8bc60b13
   port: 8443
@@ -421,7 +421,7 @@ proxies:
     headers:
       Host: 17693237224380.206355.xyz
     path: '%2Fvideomuaawe'
-- name: United States_San Francisco_trojan_625
+- name: None_None_trojan_625
   network: ws
   password: 80bdaa23-8f65-44c4-9932-070d8bc60b13
   port: 2053
@@ -585,7 +585,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_645
+  name: China_None_vmess_645
   network: tcp
   port: '30824'
   server: v24.hdacd.com
@@ -713,14 +713,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Tsim Sha Tsui_trojan_661
-  password: BxceQaOe
-  port: 443
-  server: 219.76.135.98
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -755,13 +747,13 @@ proxy-groups:
   - Hong Kong_Tsim Sha Tsui_trojan_616
   - Hong Kong_Central_vmess_617
   - United States_San Francisco_trojan_618
-  - None_None_trojan_619
+  - United States_San Francisco_trojan_619
   - None_None_trojan_620
-  - None_None_trojan_621
+  - United States_San Francisco_trojan_621
   - None_None_trojan_622
   - None_None_trojan_623
-  - None_None_trojan_624
-  - United States_San Francisco_trojan_625
+  - United States_San Francisco_trojan_624
+  - None_None_trojan_625
   - None_None_trojan_626
   - Japan_None_trojan_627
   - Taiwan_Taipei_trojan_628
@@ -781,7 +773,7 @@ proxy-groups:
   - Taiwan_Chiayi City_trojan_642
   - Taiwan_Chiayi City_trojan_643
   - Taiwan_Chiayi City_trojan_644
-  - Hong Kong_Central_vmess_645
+  - China_None_vmess_645
   - United States_None_ss_646
   - Hong Kong_Wong Tai Sin_vmess_647
   - Hong Kong_Sheung Shui_trojan_648
@@ -797,7 +789,6 @@ proxy-groups:
   - Japan_Tokyo_trojan_658
   - Hong Kong_None_trojan_659
   - Hong Kong_Wong Tai Sin_vmess_660
-  - Hong Kong_Tsim Sha Tsui_trojan_661
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -832,13 +823,13 @@ proxy-groups:
   - Hong Kong_Tsim Sha Tsui_trojan_616
   - Hong Kong_Central_vmess_617
   - United States_San Francisco_trojan_618
-  - None_None_trojan_619
+  - United States_San Francisco_trojan_619
   - None_None_trojan_620
-  - None_None_trojan_621
+  - United States_San Francisco_trojan_621
   - None_None_trojan_622
   - None_None_trojan_623
-  - None_None_trojan_624
-  - United States_San Francisco_trojan_625
+  - United States_San Francisco_trojan_624
+  - None_None_trojan_625
   - None_None_trojan_626
   - Japan_None_trojan_627
   - Taiwan_Taipei_trojan_628
@@ -858,7 +849,7 @@ proxy-groups:
   - Taiwan_Chiayi City_trojan_642
   - Taiwan_Chiayi City_trojan_643
   - Taiwan_Chiayi City_trojan_644
-  - Hong Kong_Central_vmess_645
+  - China_None_vmess_645
   - United States_None_ss_646
   - Hong Kong_Wong Tai Sin_vmess_647
   - Hong Kong_Sheung Shui_trojan_648
@@ -874,7 +865,6 @@ proxy-groups:
   - Japan_Tokyo_trojan_658
   - Hong Kong_None_trojan_659
   - Hong Kong_Wong Tai Sin_vmess_660
-  - Hong Kong_Tsim Sha Tsui_trojan_661
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
