@@ -523,7 +523,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 542f6e13-9542-470c-974a-d31c0a05a37d
-- name: None_None_trojan_642
+- name: United States_None_trojan_642
   network: ws
   password: f7cecc70-524e-4bea-af14-d7367fdb4080
   port: 8443
@@ -592,7 +592,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_649
+  name: Hong Kong_Sham Shui Po_vmess_649
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -712,7 +712,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_664
+  name: Hong Kong_Sham Shui Po_vmess_664
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -730,21 +730,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d
-- name: China_None_trojan_666
-  password: 685343f2-49e1-41f8-a7fc-5d0993afb6c6
-  port: 43533
-  server: faq1.lieerr222.cn
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: China_None_trojan_667
-  password: 685343f2-49e1-41f8-a7fc-5d0993afb6c6
-  port: 43533
-  server: faq1.lieerr222.cn
-  skip-cert-verify: true
-  sni: faq1.lieerr222.cn
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -802,14 +787,14 @@ proxy-groups:
   - United Kingdom_None_trojan_639
   - China_None_vmess_640
   - Singapore_None_vmess_641
-  - None_None_trojan_642
+  - United States_None_trojan_642
   - China_None_vmess_643
   - China_None_vmess_644
   - Hong Kong_Central_vmess_645
   - China_None_vmess_646
   - China_None_vmess_647
   - United States_None_ss_648
-  - Hong Kong_Yuen Long San Hui_vmess_649
+  - Hong Kong_Sham Shui Po_vmess_649
   - Hong Kong_San Po Kong_trojan_650
   - Hong Kong_None_trojan_651
   - Japan_Tokyo_trojan_652
@@ -824,10 +809,8 @@ proxy-groups:
   - Hong Kong_None_trojan_661
   - Unknown_vmess_662
   - South Korea_Songpa-gu_ss_663
-  - Hong Kong_Yuen Long San Hui_vmess_664
+  - Hong Kong_Sham Shui Po_vmess_664
   - Unknown_vmess_665
-  - China_None_trojan_666
-  - China_None_trojan_667
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -885,14 +868,14 @@ proxy-groups:
   - United Kingdom_None_trojan_639
   - China_None_vmess_640
   - Singapore_None_vmess_641
-  - None_None_trojan_642
+  - United States_None_trojan_642
   - China_None_vmess_643
   - China_None_vmess_644
   - Hong Kong_Central_vmess_645
   - China_None_vmess_646
   - China_None_vmess_647
   - United States_None_ss_648
-  - Hong Kong_Yuen Long San Hui_vmess_649
+  - Hong Kong_Sham Shui Po_vmess_649
   - Hong Kong_San Po Kong_trojan_650
   - Hong Kong_None_trojan_651
   - Japan_Tokyo_trojan_652
@@ -907,10 +890,8 @@ proxy-groups:
   - Hong Kong_None_trojan_661
   - Unknown_vmess_662
   - South Korea_Songpa-gu_ss_663
-  - Hong Kong_Yuen Long San Hui_vmess_664
+  - Hong Kong_Sham Shui Po_vmess_664
   - Unknown_vmess_665
-  - China_None_trojan_666
-  - China_None_trojan_667
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
