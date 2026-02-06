@@ -406,14 +406,14 @@ proxies:
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: None_None_trojan_627
+- name: United States_None_trojan_627
   password: 19fcde52-c498-4863-8fb1-5923c75dec39
   port: 31102
   server: green2.cdntencentmusic.com
   skip-cert-verify: true
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: United States_None_trojan_628
+- name: None_None_trojan_628
   password: 397b6abf-c044-4fa7-9b70-269d9ada828d
   port: 31102
   server: green2.cdntencentmusic.com
@@ -434,7 +434,7 @@ proxies:
   skip-cert-verify: true
   sni: xiaozhu1.kkieo555.cn
   type: trojan
-- name: United States_None_trojan_631
+- name: None_None_trojan_631
   password: 3692ef88-4d16-4848-a01b-b646f9448b11
   port: 35501
   server: green2.cdntencentmusic.com
@@ -470,7 +470,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: China_None_vmess_635
+  name: China_Shenzhen_vmess_635
   network: tcp
   port: '43528'
   server: faq1.lieerr222.cn
@@ -507,7 +507,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: China_None_vmess_640
+  name: China_Shenzhen_vmess_640
   network: tcp
   port: '43528'
   server: faq1.lieerr222.cn
@@ -555,7 +555,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_645
+  name: Hong Kong_Central_vmess_645
   network: ws
   port: '80'
   server: 3f637c17-t94cg0-tcuz7t-1ta58.hkt.gotochinatown.net
@@ -592,7 +592,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_649
+  name: Hong Kong_Tuen Mun_vmess_649
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -703,7 +703,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_663
+  name: Hong Kong_Tuen Mun_vmess_663
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -753,29 +753,29 @@ proxy-groups:
   - None_None_trojan_624
   - None_None_trojan_625
   - United States_None_trojan_626
-  - None_None_trojan_627
-  - United States_None_trojan_628
+  - United States_None_trojan_627
+  - None_None_trojan_628
   - United Kingdom_None_trojan_629
   - United Kingdom_None_trojan_630
-  - United States_None_trojan_631
+  - None_None_trojan_631
   - United Kingdom_None_trojan_632
   - United Kingdom_None_trojan_633
   - Seychelles_None_vmess_634
-  - China_None_vmess_635
+  - China_Shenzhen_vmess_635
   - Germany_Frankfurt am Main_trojan_636
   - Canada_Toronto_trojan_637
   - United Kingdom_None_trojan_638
   - United Kingdom_None_trojan_639
-  - China_None_vmess_640
+  - China_Shenzhen_vmess_640
   - Singapore_None_vmess_641
   - None_None_trojan_642
   - China_None_vmess_643
   - China_None_vmess_644
-  - Hong Kong_Sha Tin Wai_vmess_645
+  - Hong Kong_Central_vmess_645
   - China_None_vmess_646
   - China_None_vmess_647
   - United States_None_ss_648
-  - Hong Kong_Central_vmess_649
+  - Hong Kong_Tuen Mun_vmess_649
   - Japan_Tokyo_trojan_650
   - Japan_Tokyo_trojan_651
   - Hong Kong_Hung Hom_trojan_652
@@ -789,7 +789,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_660
   - Japan_Tokyo_trojan_661
   - South Korea_Seongbuk-gu_ss_662
-  - Hong Kong_Central_vmess_663
+  - Hong Kong_Tuen Mun_vmess_663
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -832,29 +832,29 @@ proxy-groups:
   - None_None_trojan_624
   - None_None_trojan_625
   - United States_None_trojan_626
-  - None_None_trojan_627
-  - United States_None_trojan_628
+  - United States_None_trojan_627
+  - None_None_trojan_628
   - United Kingdom_None_trojan_629
   - United Kingdom_None_trojan_630
-  - United States_None_trojan_631
+  - None_None_trojan_631
   - United Kingdom_None_trojan_632
   - United Kingdom_None_trojan_633
   - Seychelles_None_vmess_634
-  - China_None_vmess_635
+  - China_Shenzhen_vmess_635
   - Germany_Frankfurt am Main_trojan_636
   - Canada_Toronto_trojan_637
   - United Kingdom_None_trojan_638
   - United Kingdom_None_trojan_639
-  - China_None_vmess_640
+  - China_Shenzhen_vmess_640
   - Singapore_None_vmess_641
   - None_None_trojan_642
   - China_None_vmess_643
   - China_None_vmess_644
-  - Hong Kong_Sha Tin Wai_vmess_645
+  - Hong Kong_Central_vmess_645
   - China_None_vmess_646
   - China_None_vmess_647
   - United States_None_ss_648
-  - Hong Kong_Central_vmess_649
+  - Hong Kong_Tuen Mun_vmess_649
   - Japan_Tokyo_trojan_650
   - Japan_Tokyo_trojan_651
   - Hong Kong_Hung Hom_trojan_652
@@ -868,7 +868,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_660
   - Japan_Tokyo_trojan_661
   - South Korea_Seongbuk-gu_ss_662
-  - Hong Kong_Central_vmess_663
+  - Hong Kong_Tuen Mun_vmess_663
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
