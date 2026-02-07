@@ -711,6 +711,55 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: France_None_trojan_664
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 135.125.232.253
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: /?ed=2560
+- name: Hong Kong_Hung Hom_trojan_665
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- name: Hong Kong_Hung Hom_trojan_666
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: Hong Kong_Hung Hom_trojan_667
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- name: United States_None_trojan_668
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -790,6 +839,11 @@ proxy-groups:
   - Japan_Tokyo_trojan_661
   - United States_None_ss_662
   - Hong Kong_Tuen Mun_vmess_663
+  - France_None_trojan_664
+  - Hong Kong_Hung Hom_trojan_665
+  - Hong Kong_Hung Hom_trojan_666
+  - Hong Kong_Hung Hom_trojan_667
+  - United States_None_trojan_668
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -869,6 +923,11 @@ proxy-groups:
   - Japan_Tokyo_trojan_661
   - United States_None_ss_662
   - Hong Kong_Tuen Mun_vmess_663
+  - France_None_trojan_664
+  - Hong Kong_Hung Hom_trojan_665
+  - Hong Kong_Hung Hom_trojan_666
+  - Hong Kong_Hung Hom_trojan_667
+  - United States_None_trojan_668
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
