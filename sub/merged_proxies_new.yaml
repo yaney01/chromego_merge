@@ -280,9 +280,27 @@ proxies:
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_611
+  network: tcp
+  port: '30824'
+  server: v24.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: United Kingdom_None_vmess_611
+  name: India_None_vmess_612
+  network: tcp
+  port: '9000'
+  server: id2.wpairplane.com
+  tls: false
+  type: vmess
+  uuid: 77aad73d-03e7-441b-9bc5-98d13535ba3e
+- alterId: 0
+  cipher: auto
+  name: United Kingdom_None_vmess_613
   network: ws
   port: '12883'
   server: gtm1.ktmwan.net
@@ -295,24 +313,6 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_612
-  network: tcp
-  port: '30824'
-  server: v24.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: India_None_vmess_613
-  network: tcp
-  port: '9000'
-  server: id2.wpairplane.com
-  tls: false
-  type: vmess
-  uuid: 77aad73d-03e7-441b-9bc5-98d13535ba3e
-- alterId: 2
-  cipher: auto
   name: China_None_vmess_614
   network: tcp
   port: '30804'
@@ -320,407 +320,18 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: Hong Kong_None_vmess_615
-  network: ws
-  port: '47790'
-  server: 36.50.90.241
-  servername: sg.dalxy.eu.org
-  tls: true
-  type: vmess
-  uuid: a88a71fa-ed7c-48d3-89e0-74a00d605d88
-  ws-opts:
-    headers:
-      Host: sg.dalxy.eu.org
-    path: /a88a71fa-ed7c-48d3-89e0-74a00d605d88-vm
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_616
+  name: China_None_vmess_615
   network: tcp
   port: '30835'
   server: v35.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_617
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: United States_San Francisco_trojan_618
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849699.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527846715.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: None_None_trojan_619
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843448.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527849019.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: None_None_trojan_620
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527848611.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527843742.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: United States_San Francisco_trojan_621
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527844024.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527846229.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: United States_San Francisco_trojan_622
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527846017.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842395.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: None_None_trojan_623
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843409.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527843118.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: None_None_trojan_624
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527841311.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842972.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: United States_San Francisco_trojan_625
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849743.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527841610.682637.xyz
-    path: '%2Fahyrtuyjykl'
-- name: None_None_trojan_626
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527847400.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527849445.206352.xyz
-    path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_627
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843306.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527849494.206353.xyz
-    path: '%2Fagrbniuh'
-- name: None_None_trojan_628
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527847557.206355.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527845771.206355.xyz
-    path: '%2Fvideomuaawe'
-- name: None_None_trojan_629
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849735.206356.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527844378.206356.xyz
-    path: '%2Fdmusicmuaawe'
-- name: None_None_trojan_630
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2083
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527845118.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527848610.206352.xyz
-    path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_631
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843673.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527847383.206353.xyz
-    path: '%2Fagrbniuh'
-- name: None_None_trojan_632
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527842165.206355.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527844941.206355.xyz
-    path: '%2Fvideomuaawe'
-- name: None_None_trojan_633
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527841189.206356.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527844642.206356.xyz
-    path: '%2Fdmusicmuaawe'
-- name: None_None_trojan_634
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2087
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527848447.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527849484.206352.xyz
-    path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_635
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2083
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527846479.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527846832.206353.xyz
-    path: '%2Fagrbniuh'
-- name: None_None_trojan_636
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527844015.206355.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527844006.206355.xyz
-    path: '%2Fvideomuaawe'
-- name: None_None_trojan_637
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849729.206356.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842580.206356.xyz
-    path: '%2Fdmusicmuaawe'
-- name: United States_None_trojan_638
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2096
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527846176.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842145.206352.xyz
-    path: '%2Fagraeabtegrrh'
-- name: None_None_trojan_639
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849389.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527845673.206353.xyz
-    path: '%2Fagrbniuh'
-- name: United States_None_trojan_640
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2083
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843363.206355.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527846701.206355.xyz
-    path: '%2Fvideomuaawe'
-- name: None_None_trojan_641
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2083
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527841190.206356.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842333.206356.xyz
-    path: '%2Fdmusicmuaawe'
-- name: None_None_trojan_642
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843210.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527848585.206352.xyz
-    path: '%2Fagraeabtegrrh'
-- name: United States_None_trojan_643
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 2053
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527849779.206353.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527847573.206353.xyz
-    path: '%2Fagrbniuh'
-- name: United States_None_trojan_644
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527843786.206355.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527848393.206355.xyz
-    path: '%2Fvideomuaawe'
-- name: None_None_trojan_645
-  network: ws
-  password: f0defe70-4c27-4d66-bada-0240e4f49880
-  port: 8443
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17710527846339.206356.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17710527842135.206356.xyz
-    path: '%2Fdmusicmuaawe'
-- name: Hong Kong_Sai Wan_trojan_646
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.208
-  skip-cert-verify: true
-  sni: 58.152.25.208
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: None_None_vmess_647
-  network: ws
-  port: '8080'
-  server: 104.19.37.10
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: nasnet-571299667.rahavard365.co
-    path: /NASNET/cdn?ed=2560
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_648
-  network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: China_None_vmess_649
+  name: China_None_vmess_616
   network: tcp
   port: '30806'
   server: v6.hdacd.com
@@ -729,29 +340,93 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: China_None_vmess_650
+  name: China_None_vmess_617
   network: tcp
   port: '30809'
   server: v9.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_618
+  network: tcp
+  port: '30833'
+  server: v33.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_619
+  network: tcp
+  port: '30836'
+  server: v36.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: None_None_trojan_620
+  network: ws
+  password: humanity
+  port: 443
+  server: vip3.kaixincloud.top
+  skip-cert-verify: true
+  sni: www.multiplydose.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.multiplydose.com
+    path: '%2Fassignment'
+- name: None_None_trojan_621
+  network: ws
+  password: T9BpZIVMNv
+  port: 8443
+  server: vip3.kaixincloud.top
+  skip-cert-verify: true
+  sni: sweden.vmaxpanel.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: sweden.vmaxpanel.com
+    path: '%2Famd'
+- alterId: 0
+  cipher: auto
+  name: China_None_vmess_622
+  network: tcp
+  port: '30830'
+  server: v30.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: China_Shenzhen_vmess_623
+  network: ws
+  port: '80'
+  server: hn.xn--wlqw1swrj04ju56d.com
+  tls: false
+  type: vmess
+  uuid: f9ddefc5-d121-486f-9e2f-0c2cd1a3decc
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - cipher: aes-256-cfb
-  name: United States_None_ss_651
+  name: United States_None_ss_624
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_652
+  name: Hong Kong_Central_vmess_625
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Japan_Tokyo_trojan_653
+- name: Japan_Tokyo_trojan_626
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3373
@@ -759,7 +434,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_654
+- name: Japan_Tokyo_trojan_627
   network: tcp
   password: BxceQaOe
   port: 54548
@@ -767,7 +442,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_655
+- name: Japan_Tokyo_trojan_628
   network: tcp
   password: BxceQaOe
   port: 443
@@ -775,7 +450,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_656
+- name: Japan_Tokyo_trojan_629
   network: tcp
   password: BxceQaOe
   port: 2595
@@ -783,7 +458,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_657
+- name: Japan_Tokyo_trojan_630
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 193
@@ -791,7 +466,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_658
+- name: Japan_Tokyo_trojan_631
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 400
@@ -799,7 +474,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_659
+- name: Japan_Tokyo_trojan_632
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3901
@@ -807,7 +482,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_660
+- name: Japan_Tokyo_trojan_633
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 3901
@@ -815,7 +490,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_661
+- name: Hong Kong_None_trojan_634
   network: tcp
   password: BxceQaOe
   port: 2673
@@ -823,7 +498,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_662
+- name: Japan_Tokyo_trojan_635
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 1281
@@ -831,7 +506,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_663
+- name: Japan_Tokyo_trojan_636
   network: tcp
   password: 9372cb81c7b0ad903f91f2f8a4d3f02b
   port: 1281
@@ -839,7 +514,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: Japan_Tokyo_trojan_664
+- name: Japan_Tokyo_trojan_637
   network: tcp
   password: BxceQaOe
   port: 38780
@@ -849,7 +524,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_665
+  name: Hong Kong_Central_vmess_638
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -883,61 +558,34 @@ proxy-groups:
   - Unknown_vmess_68
   - Unknown_vmess_69
   - Unknown_vmess_610
-  - United Kingdom_None_vmess_611
-  - China_None_vmess_612
-  - India_None_vmess_613
+  - China_None_vmess_611
+  - India_None_vmess_612
+  - United Kingdom_None_vmess_613
   - China_None_vmess_614
-  - Hong Kong_None_vmess_615
+  - China_None_vmess_615
   - China_None_vmess_616
-  - United Kingdom_None_vmess_617
-  - United States_San Francisco_trojan_618
-  - None_None_trojan_619
+  - China_None_vmess_617
+  - China_None_vmess_618
+  - China_None_vmess_619
   - None_None_trojan_620
-  - United States_San Francisco_trojan_621
-  - United States_San Francisco_trojan_622
-  - None_None_trojan_623
-  - None_None_trojan_624
-  - United States_San Francisco_trojan_625
-  - None_None_trojan_626
-  - None_None_trojan_627
-  - None_None_trojan_628
-  - None_None_trojan_629
-  - None_None_trojan_630
-  - None_None_trojan_631
-  - None_None_trojan_632
-  - None_None_trojan_633
-  - None_None_trojan_634
-  - None_None_trojan_635
-  - None_None_trojan_636
-  - None_None_trojan_637
-  - United States_None_trojan_638
-  - None_None_trojan_639
-  - United States_None_trojan_640
-  - None_None_trojan_641
-  - None_None_trojan_642
-  - United States_None_trojan_643
-  - United States_None_trojan_644
-  - None_None_trojan_645
-  - Hong Kong_Sai Wan_trojan_646
-  - None_None_vmess_647
-  - China_None_vmess_648
-  - China_None_vmess_649
-  - China_None_vmess_650
-  - United States_None_ss_651
-  - Hong Kong_Central_vmess_652
-  - Japan_Tokyo_trojan_653
-  - Japan_Tokyo_trojan_654
-  - Japan_Tokyo_trojan_655
-  - Japan_Tokyo_trojan_656
-  - Japan_Tokyo_trojan_657
-  - Japan_Tokyo_trojan_658
-  - Japan_Tokyo_trojan_659
-  - Japan_Tokyo_trojan_660
-  - Hong Kong_None_trojan_661
-  - Japan_Tokyo_trojan_662
-  - Japan_Tokyo_trojan_663
-  - Japan_Tokyo_trojan_664
-  - Hong Kong_Central_vmess_665
+  - None_None_trojan_621
+  - China_None_vmess_622
+  - China_Shenzhen_vmess_623
+  - United States_None_ss_624
+  - Hong Kong_Central_vmess_625
+  - Japan_Tokyo_trojan_626
+  - Japan_Tokyo_trojan_627
+  - Japan_Tokyo_trojan_628
+  - Japan_Tokyo_trojan_629
+  - Japan_Tokyo_trojan_630
+  - Japan_Tokyo_trojan_631
+  - Japan_Tokyo_trojan_632
+  - Japan_Tokyo_trojan_633
+  - Hong Kong_None_trojan_634
+  - Japan_Tokyo_trojan_635
+  - Japan_Tokyo_trojan_636
+  - Japan_Tokyo_trojan_637
+  - Hong Kong_Central_vmess_638
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -964,61 +612,34 @@ proxy-groups:
   - Unknown_vmess_68
   - Unknown_vmess_69
   - Unknown_vmess_610
-  - United Kingdom_None_vmess_611
-  - China_None_vmess_612
-  - India_None_vmess_613
+  - China_None_vmess_611
+  - India_None_vmess_612
+  - United Kingdom_None_vmess_613
   - China_None_vmess_614
-  - Hong Kong_None_vmess_615
+  - China_None_vmess_615
   - China_None_vmess_616
-  - United Kingdom_None_vmess_617
-  - United States_San Francisco_trojan_618
-  - None_None_trojan_619
+  - China_None_vmess_617
+  - China_None_vmess_618
+  - China_None_vmess_619
   - None_None_trojan_620
-  - United States_San Francisco_trojan_621
-  - United States_San Francisco_trojan_622
-  - None_None_trojan_623
-  - None_None_trojan_624
-  - United States_San Francisco_trojan_625
-  - None_None_trojan_626
-  - None_None_trojan_627
-  - None_None_trojan_628
-  - None_None_trojan_629
-  - None_None_trojan_630
-  - None_None_trojan_631
-  - None_None_trojan_632
-  - None_None_trojan_633
-  - None_None_trojan_634
-  - None_None_trojan_635
-  - None_None_trojan_636
-  - None_None_trojan_637
-  - United States_None_trojan_638
-  - None_None_trojan_639
-  - United States_None_trojan_640
-  - None_None_trojan_641
-  - None_None_trojan_642
-  - United States_None_trojan_643
-  - United States_None_trojan_644
-  - None_None_trojan_645
-  - Hong Kong_Sai Wan_trojan_646
-  - None_None_vmess_647
-  - China_None_vmess_648
-  - China_None_vmess_649
-  - China_None_vmess_650
-  - United States_None_ss_651
-  - Hong Kong_Central_vmess_652
-  - Japan_Tokyo_trojan_653
-  - Japan_Tokyo_trojan_654
-  - Japan_Tokyo_trojan_655
-  - Japan_Tokyo_trojan_656
-  - Japan_Tokyo_trojan_657
-  - Japan_Tokyo_trojan_658
-  - Japan_Tokyo_trojan_659
-  - Japan_Tokyo_trojan_660
-  - Hong Kong_None_trojan_661
-  - Japan_Tokyo_trojan_662
-  - Japan_Tokyo_trojan_663
-  - Japan_Tokyo_trojan_664
-  - Hong Kong_Central_vmess_665
+  - None_None_trojan_621
+  - China_None_vmess_622
+  - China_Shenzhen_vmess_623
+  - United States_None_ss_624
+  - Hong Kong_Central_vmess_625
+  - Japan_Tokyo_trojan_626
+  - Japan_Tokyo_trojan_627
+  - Japan_Tokyo_trojan_628
+  - Japan_Tokyo_trojan_629
+  - Japan_Tokyo_trojan_630
+  - Japan_Tokyo_trojan_631
+  - Japan_Tokyo_trojan_632
+  - Japan_Tokyo_trojan_633
+  - Hong Kong_None_trojan_634
+  - Japan_Tokyo_trojan_635
+  - Japan_Tokyo_trojan_636
+  - Japan_Tokyo_trojan_637
+  - Hong Kong_Central_vmess_638
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
