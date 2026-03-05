@@ -416,7 +416,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_622
+  name: Hong Kong_Central_vmess_622
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -521,7 +521,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sham Shui Po_vmess_635
+  name: Hong Kong_Central_vmess_635
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -566,7 +566,7 @@ proxy-groups:
   - China_Shenzhen_vmess_619
   - China_Shenzhen_vmess_620
   - United States_None_ss_621
-  - Hong Kong_Sham Shui Po_vmess_622
+  - Hong Kong_Central_vmess_622
   - Japan_Tokyo_trojan_623
   - Japan_Tokyo_trojan_624
   - Hong Kong_None_trojan_625
@@ -579,7 +579,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_632
   - Japan_Tokyo_trojan_633
   - Japan_Tokyo_trojan_634
-  - Hong Kong_Sham Shui Po_vmess_635
+  - Hong Kong_Central_vmess_635
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -617,7 +617,7 @@ proxy-groups:
   - China_Shenzhen_vmess_619
   - China_Shenzhen_vmess_620
   - United States_None_ss_621
-  - Hong Kong_Sham Shui Po_vmess_622
+  - Hong Kong_Central_vmess_622
   - Japan_Tokyo_trojan_623
   - Japan_Tokyo_trojan_624
   - Hong Kong_None_trojan_625
@@ -630,7 +630,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_632
   - Japan_Tokyo_trojan_633
   - Japan_Tokyo_trojan_634
-  - Hong Kong_Sham Shui Po_vmess_635
+  - Hong Kong_Central_vmess_635
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
