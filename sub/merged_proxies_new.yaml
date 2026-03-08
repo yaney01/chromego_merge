@@ -385,7 +385,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: None_None_vmess_619
+  name: United States_None_vmess_619
   network: ws
   port: '443'
   server: gbnh.1oo.ccwu.cc
@@ -399,7 +399,7 @@ proxies:
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
 - alpn:
   - http/1.1
-  name: United States_None_trojan_620
+  name: None_None_trojan_620
   network: ws
   password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
   port: 443
@@ -449,7 +449,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_625
+  name: Hong Kong_Central_vmess_625
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -554,7 +554,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_638
+  name: Hong Kong_Central_vmess_638
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -596,13 +596,13 @@ proxy-groups:
   - Iran_None_vmess_616
   - China_None_vmess_617
   - Taiwan_Chiayi City_trojan_618
-  - None_None_vmess_619
-  - United States_None_trojan_620
+  - United States_None_vmess_619
+  - None_None_trojan_620
   - None_None_trojan_621
   - China_None_vmess_622
   - China_None_vmess_623
   - United States_None_ss_624
-  - Hong Kong_Kowloon_vmess_625
+  - Hong Kong_Central_vmess_625
   - Hong Kong_Central_trojan_626
   - Hong Kong_None_trojan_627
   - Hong Kong_Sai Wan_trojan_628
@@ -615,7 +615,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_635
   - Japan_Tokyo_trojan_636
   - Japan_Tokyo_trojan_637
-  - Hong Kong_Kowloon_vmess_638
+  - Hong Kong_Central_vmess_638
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -650,13 +650,13 @@ proxy-groups:
   - Iran_None_vmess_616
   - China_None_vmess_617
   - Taiwan_Chiayi City_trojan_618
-  - None_None_vmess_619
-  - United States_None_trojan_620
+  - United States_None_vmess_619
+  - None_None_trojan_620
   - None_None_trojan_621
   - China_None_vmess_622
   - China_None_vmess_623
   - United States_None_ss_624
-  - Hong Kong_Kowloon_vmess_625
+  - Hong Kong_Central_vmess_625
   - Hong Kong_Central_trojan_626
   - Hong Kong_None_trojan_627
   - Hong Kong_Sai Wan_trojan_628
@@ -669,7 +669,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_635
   - Japan_Tokyo_trojan_636
   - Japan_Tokyo_trojan_637
-  - Hong Kong_Kowloon_vmess_638
+  - Hong Kong_Central_vmess_638
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
