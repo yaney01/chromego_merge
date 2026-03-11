@@ -499,33 +499,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_Sai Wan_trojan_633
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
+- name: Hong Kong_Kai Yi Wan_trojan_633
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  port: 35902
+  server: sg03.stimaysmhy8.com
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- name: South Korea_Seongnam-si_trojan_634
-  network: ws
-  password: trojan
-  port: 11001
-  server: 121.131.136.208
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-- name: United Kingdom_None_trojan_635
-  password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
-  port: 443
-  server: 8443.golden-cards.me
-  skip-cert-verify: true
-  sni: 8443.golden-cards.me
+  sni: jsygouer.weixin-baidu-qq.com
   type: trojan
   udp: true
 proxy-groups:
@@ -576,9 +555,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_630
   - Hong Kong_None_trojan_631
   - Hong Kong_Central_vmess_632
-  - Hong Kong_Sai Wan_trojan_633
-  - South Korea_Seongnam-si_trojan_634
-  - United Kingdom_None_trojan_635
+  - Hong Kong_Kai Yi Wan_trojan_633
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -627,9 +604,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_630
   - Hong Kong_None_trojan_631
   - Hong Kong_Central_vmess_632
-  - Hong Kong_Sai Wan_trojan_633
-  - South Korea_Seongnam-si_trojan_634
-  - United Kingdom_None_trojan_635
+  - Hong Kong_Kai Yi Wan_trojan_633
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
