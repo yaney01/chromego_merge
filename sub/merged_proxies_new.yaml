@@ -565,7 +565,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_632
+  name: Hong Kong_Central_vmess_632
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -670,7 +670,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Man Kok_vmess_645
+  name: Hong Kong_Central_vmess_645
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -733,7 +733,7 @@ proxy-groups:
   - United States_New York_trojan_629
   - Singapore_Singapore_trojan_630
   - United States_None_ss_631
-  - Hong Kong_Man Kok_vmess_632
+  - Hong Kong_Central_vmess_632
   - Japan_Tokyo_trojan_633
   - Hong Kong_Central_trojan_634
   - Japan_Tokyo_trojan_635
@@ -746,7 +746,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_642
   - Japan_Tokyo_trojan_643
   - Hong Kong_None_trojan_644
-  - Hong Kong_Man Kok_vmess_645
+  - Hong Kong_Central_vmess_645
   - Hong Kong_Kai Yi Wan_trojan_646
 - name: 自动选择
   type: url-test
@@ -795,7 +795,7 @@ proxy-groups:
   - United States_New York_trojan_629
   - Singapore_Singapore_trojan_630
   - United States_None_ss_631
-  - Hong Kong_Man Kok_vmess_632
+  - Hong Kong_Central_vmess_632
   - Japan_Tokyo_trojan_633
   - Hong Kong_Central_trojan_634
   - Japan_Tokyo_trojan_635
@@ -808,7 +808,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_642
   - Japan_Tokyo_trojan_643
   - Hong Kong_None_trojan_644
-  - Hong Kong_Man Kok_vmess_645
+  - Hong Kong_Central_vmess_645
   - Hong Kong_Kai Yi Wan_trojan_646
 rules:
 - DOMAIN,clash.razord.top,DIRECT
