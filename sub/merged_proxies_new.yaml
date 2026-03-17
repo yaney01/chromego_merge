@@ -319,7 +319,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Wong Tai Sin_vmess_612
+  name: Hong Kong_Central_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -424,7 +424,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Wong Tai Sin_vmess_625
+  name: Hong Kong_Central_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -432,12 +432,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Austria_None_trojan_626
+- name: South Korea_Paju_trojan_626
   network: ws
   password: trojan
-  port: 8444
-  server: 152.53.200.167
-  skip-cert-verify: false
+  port: 11434
+  server: 114.207.99.233
+  skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
@@ -445,53 +445,19 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: Hong Kong_Sai Wan_trojan_627
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
+- name: United States_San Jose_trojan_627
+  network: ws
+  password: trojan
+  port: 7071
+  server: 154.17.234.78
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- name: United States_Phoenix_trojan_628
-  network: ws
-  password: iwangjie
-  port: 15805
-  server: 158.101.11.204
-  skip-cert-verify: false
-  sni: nodes.830901.xyz
+  sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: nodes.830901.xyz
+      Host: jflsjlaf.pages.dev
     path: /
-- name: United States_None_trojan_629
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /
-- name: United States_None_trojan_630
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epge.muarua.filegear-sg.me
-    path: /?ed=2560
 proxy-groups:
 - name: 节点选择
   type: select
@@ -519,7 +485,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Wong Tai Sin_vmess_612
+  - Hong Kong_Central_vmess_612
   - Japan_Tokyo_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -532,12 +498,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Wong Tai Sin_vmess_625
-  - Austria_None_trojan_626
-  - Hong Kong_Sai Wan_trojan_627
-  - United States_Phoenix_trojan_628
-  - United States_None_trojan_629
-  - United States_None_trojan_630
+  - Hong Kong_Central_vmess_625
+  - South Korea_Paju_trojan_626
+  - United States_San Jose_trojan_627
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -565,7 +528,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Wong Tai Sin_vmess_612
+  - Hong Kong_Central_vmess_612
   - Japan_Tokyo_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -578,12 +541,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Wong Tai Sin_vmess_625
-  - Austria_None_trojan_626
-  - Hong Kong_Sai Wan_trojan_627
-  - United States_Phoenix_trojan_628
-  - United States_None_trojan_629
-  - United States_None_trojan_630
+  - Hong Kong_Central_vmess_625
+  - South Korea_Paju_trojan_626
+  - United States_San Jose_trojan_627
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
