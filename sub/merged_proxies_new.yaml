@@ -451,32 +451,22 @@ proxies:
   tls: false
   type: vmess
   uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
-- name: South Korea_Paju_trojan_628
-  network: ws
-  password: trojan
-  port: 11434
-  server: 114.207.99.233
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
+- name: United Kingdom_Epping_trojan_628
+  password: IL37892054
+  port: 443
+  server: upright-rhino.rooster465.autos
+  skip-cert-verify: false
+  sni: upright-rhino.rooster465.autos
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-- name: United States_San Jose_trojan_629
-  network: ws
-  password: trojan
-  port: 7071
-  server: 154.17.234.78
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
+- name: Romania_None_trojan_629
+  password: IL37892054
+  port: 443
+  server: apt-magpie.rooster465.autos
+  skip-cert-verify: false
+  sni: apt-magpie.rooster465.autos
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -520,8 +510,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_625
   - Hong Kong_Tuen Mun_vmess_626
   - United States_Los Angeles_vmess_627
-  - South Korea_Paju_trojan_628
-  - United States_San Jose_trojan_629
+  - United Kingdom_Epping_trojan_628
+  - Romania_None_trojan_629
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -565,8 +555,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_625
   - Hong Kong_Tuen Mun_vmess_626
   - United States_Los Angeles_vmess_627
-  - South Korea_Paju_trojan_628
-  - United States_San Jose_trojan_629
+  - United Kingdom_Epping_trojan_628
+  - Romania_None_trojan_629
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
