@@ -466,15 +466,16 @@ proxies:
 - name: Australia_Sydney_trojan_630
   password: IL37892054
   port: 443
-  server: engaged-ram.rooster465.autos
+  server: enhanced-crayfish.rooster465.autos
   skip-cert-verify: false
+  sni: enhanced-crayfish.rooster465.autos
   type: trojan
   udp: true
-- name: South Korea_Jung-gu_trojan_631
+- name: South Korea_Goyang-si_trojan_631
   network: ws
   password: trojan
-  port: 11000
-  server: 220.92.22.170
+  port: 20000
+  server: 211.110.32.47
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -483,12 +484,95 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: Luxembourg_None_trojan_632
+- name: South Korea_Ulju-gun_trojan_632
+  network: ws
+  password: trojan
+  port: 11434
+  server: 118.35.208.37
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Israel_Tel Aviv_trojan_633
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 89.221.225.71
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: Luxembourg_None_trojan_634
   password: IL37892054
   port: 443
   server: outgoing-ladybird.rooster465.autos
   skip-cert-verify: false
   sni: outgoing-ladybird.rooster465.autos
+  type: trojan
+  udp: true
+- name: Luxembourg_None_trojan_635
+  password: IL37892054
+  port: 443
+  server: fluent-stingray.crayfish192.xyz
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: Luxembourg_None_trojan_636
+  password: IL37892054
+  port: 443
+  server: fluent-stingray.crayfish192.xyz
+  skip-cert-verify: true
+  sni: fluent-stingray.crayfish192.xyz
+  type: trojan
+  udp: true
+- name: Luxembourg_None_trojan_637
+  password: IL37892054
+  port: 443
+  server: outgoing-ladybird.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: Singapore_None_trojan_638
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 185.151.146.40
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: Taiwan_None_trojan_639
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 85.237.206.249
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_None_trojan_640
+  network: ws
+  password: trojan
+  port: 8025
+  server: 54.46.72.234
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: United States_Los Angeles_trojan_641
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 77.247.126.137
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United States_New York_trojan_642
+  password: 3ac6a6ca99f74941b1eaf892818e2ddb
+  port: 443
+  server: 194.33.45.157
+  skip-cert-verify: true
   type: trojan
   udp: true
 proxy-groups:
@@ -537,8 +621,18 @@ proxy-groups:
   - Hong Kong_Central_vmess_628
   - United States_Los Angeles_vmess_629
   - Australia_Sydney_trojan_630
-  - South Korea_Jung-gu_trojan_631
-  - Luxembourg_None_trojan_632
+  - South Korea_Goyang-si_trojan_631
+  - South Korea_Ulju-gun_trojan_632
+  - Israel_Tel Aviv_trojan_633
+  - Luxembourg_None_trojan_634
+  - Luxembourg_None_trojan_635
+  - Luxembourg_None_trojan_636
+  - Luxembourg_None_trojan_637
+  - Singapore_None_trojan_638
+  - Taiwan_None_trojan_639
+  - United States_None_trojan_640
+  - United States_Los Angeles_trojan_641
+  - United States_New York_trojan_642
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -585,8 +679,18 @@ proxy-groups:
   - Hong Kong_Central_vmess_628
   - United States_Los Angeles_vmess_629
   - Australia_Sydney_trojan_630
-  - South Korea_Jung-gu_trojan_631
-  - Luxembourg_None_trojan_632
+  - South Korea_Goyang-si_trojan_631
+  - South Korea_Ulju-gun_trojan_632
+  - Israel_Tel Aviv_trojan_633
+  - Luxembourg_None_trojan_634
+  - Luxembourg_None_trojan_635
+  - Luxembourg_None_trojan_636
+  - Luxembourg_None_trojan_637
+  - Singapore_None_trojan_638
+  - Taiwan_None_trojan_639
+  - United States_None_trojan_640
+  - United States_Los Angeles_trojan_641
+  - United States_New York_trojan_642
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
