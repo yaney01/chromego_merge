@@ -135,30 +135,18 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Unknown_vless_21
-  type: vless
-  server: 2001:bc8:32d7:181::3
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
+- name: France_Paris_hysteria_21
+  type: hysteria
+  server: 195.154.200.13
+  port: 45008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_vless_22
   type: vless
   server: 2001:bc8:32d7:181::2
@@ -318,7 +306,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_612
+  name: Hong Kong_Yuen Long San Hui_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -423,7 +411,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_625
+  name: Hong Kong_Yuen Long San Hui_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -555,7 +543,7 @@ proxy-groups:
   - Unknown_vless_04
   - Unknown_vless_05
   - United States_None_tuic_11
-  - Unknown_vless_21
+  - France_Paris_hysteria_21
   - Unknown_vless_22
   - Unknown_vless_23
   - United States_None_tuic_31
@@ -570,7 +558,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Yuen Long San Hui_vmess_612
   - Japan_Tokyo_trojan_613
   - United States_None_trojan_614
   - United States_None_trojan_615
@@ -583,7 +571,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
+  - Hong Kong_Yuen Long San Hui_vmess_625
   - Australia_Sydney_trojan_626
   - South Korea_Goyang-si_trojan_627
   - South Korea_Ulju-gun_trojan_628
@@ -609,7 +597,7 @@ proxy-groups:
   - Unknown_vless_04
   - Unknown_vless_05
   - United States_None_tuic_11
-  - Unknown_vless_21
+  - France_Paris_hysteria_21
   - Unknown_vless_22
   - Unknown_vless_23
   - United States_None_tuic_31
@@ -624,7 +612,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Yuen Long San Hui_vmess_612
   - Japan_Tokyo_trojan_613
   - United States_None_trojan_614
   - United States_None_trojan_615
@@ -637,7 +625,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
+  - Hong Kong_Yuen Long San Hui_vmess_625
   - Australia_Sydney_trojan_626
   - South Korea_Goyang-si_trojan_627
   - South Korea_Ulju-gun_trojan_628
