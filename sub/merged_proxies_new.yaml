@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_None_tuic_01
+- name: Germany_None_tuic_01
   server: ip1.758733.xyz
   port: 10088
   type: tuic
@@ -406,7 +406,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - France_None_tuic_01
+  - Germany_None_tuic_01
   - France_None_tuic_11
   - United States_None_tuic_21
   - United States_None_tuic_31
@@ -454,7 +454,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_None_tuic_01
+  - Germany_None_tuic_01
   - France_None_tuic_11
   - United States_None_tuic_21
   - United States_None_tuic_31
