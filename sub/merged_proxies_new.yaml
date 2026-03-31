@@ -288,12 +288,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_San Jose_trojan_626
+- name: Austria_None_trojan_626
   network: ws
   password: trojan
-  port: 7071
-  server: 154.17.234.78
-  skip-cert-verify: true
+  port: 8444
+  server: 152.53.60.198
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
@@ -301,6 +301,21 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
+- name: The Netherlands_Meppel_trojan_627
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: The Netherlands_Meppel_trojan_628
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
+  skip-cert-verify: true
+  sni: 94.131.105.125
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -336,7 +351,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_Central_vmess_625
-  - United States_San Jose_trojan_626
+  - Austria_None_trojan_626
+  - The Netherlands_Meppel_trojan_627
+  - The Netherlands_Meppel_trojan_628
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -372,7 +389,9 @@ proxy-groups:
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_Central_vmess_625
-  - United States_San Jose_trojan_626
+  - Austria_None_trojan_626
+  - The Netherlands_Meppel_trojan_627
+  - The Netherlands_Meppel_trojan_628
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
