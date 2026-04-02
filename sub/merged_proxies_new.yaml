@@ -64,12 +64,12 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: United States_None_tuic_31
-  server: 157.254.223.48
-  port: 11540
+- name: France_None_tuic_31
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -325,7 +325,7 @@ proxy-groups:
   - Germany_None_tuic_01
   - France_None_tuic_11
   - United States_None_tuic_21
-  - United States_None_tuic_31
+  - France_None_tuic_31
   - Unknown_vmess_61
   - Unknown_vmess_62
   - Unknown_vmess_63
@@ -363,7 +363,7 @@ proxy-groups:
   - Germany_None_tuic_01
   - France_None_tuic_11
   - United States_None_tuic_21
-  - United States_None_tuic_31
+  - France_None_tuic_31
   - Unknown_vmess_61
   - Unknown_vmess_62
   - Unknown_vmess_63
