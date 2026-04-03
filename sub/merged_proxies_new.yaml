@@ -291,8 +291,8 @@ proxies:
 - name: Austria_None_trojan_626
   network: ws
   password: trojan
-  port: 8444
-  server: 152.53.60.198
+  port: 8888
+  server: 152.53.45.251
   skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -301,14 +301,22 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
-- name: The Netherlands_Meppel_trojan_627
+- name: India_Mumbai_trojan_627
+  password: M7v%w11Se*
+  port: 443
+  server: tttyder.wsone.icu
+  skip-cert-verify: true
+  sni: tttyder.wsone.icu
+  type: trojan
+  udp: true
+- name: The Netherlands_Meppel_trojan_628
   password: strong-secret-pass-777
   port: 4443
   server: 94.131.105.125
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: The Netherlands_Meppel_trojan_628
+- name: The Netherlands_Meppel_trojan_629
   password: strong-secret-pass-777
   port: 4443
   server: 94.131.105.125
@@ -352,8 +360,9 @@ proxy-groups:
   - Hong Kong_None_trojan_624
   - Hong Kong_Tuen Mun_vmess_625
   - Austria_None_trojan_626
-  - The Netherlands_Meppel_trojan_627
+  - India_Mumbai_trojan_627
   - The Netherlands_Meppel_trojan_628
+  - The Netherlands_Meppel_trojan_629
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -390,8 +399,9 @@ proxy-groups:
   - Hong Kong_None_trojan_624
   - Hong Kong_Tuen Mun_vmess_625
   - Austria_None_trojan_626
-  - The Netherlands_Meppel_trojan_627
+  - India_Mumbai_trojan_627
   - The Netherlands_Meppel_trojan_628
+  - The Netherlands_Meppel_trojan_629
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
