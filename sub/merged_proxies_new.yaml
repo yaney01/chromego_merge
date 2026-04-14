@@ -188,7 +188,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_612
+  name: Hong Kong_Central_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -293,7 +293,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Yuen Long San Hui_vmess_625
+  name: Hong Kong_Central_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -336,7 +336,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Yuen Long San Hui_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -349,7 +349,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Yuen Long San Hui_vmess_625
+  - Hong Kong_Central_vmess_625
   - United States_None_trojan_626
 - name: 自动选择
   type: url-test
@@ -373,7 +373,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Yuen Long San Hui_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -386,7 +386,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Yuen Long San Hui_vmess_625
+  - Hong Kong_Central_vmess_625
   - United States_None_trojan_626
 rules:
 - DOMAIN,clash.razord.top,DIRECT
