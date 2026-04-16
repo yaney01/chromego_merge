@@ -301,11 +301,24 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Canada_Toronto_trojan_626
+- name: Austria_None_trojan_626
   network: ws
   password: trojan
-  port: 54321
-  server: 154.12.53.125
+  port: 8888
+  server: 152.53.45.251
+  skip-cert-verify: false
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+- name: Austria_None_trojan_627
+  network: ws
+  password: trojan
+  port: 8444
+  server: 152.53.200.167
   skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -350,7 +363,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_Sham Shui Po_vmess_625
-  - Canada_Toronto_trojan_626
+  - Austria_None_trojan_626
+  - Austria_None_trojan_627
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -387,7 +401,8 @@ proxy-groups:
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_Sham Shui Po_vmess_625
-  - Canada_Toronto_trojan_626
+  - Austria_None_trojan_626
+  - Austria_None_trojan_627
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
