@@ -188,7 +188,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_612
+  name: Hong Kong_Sham Shui Po_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -293,7 +293,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_625
+  name: Hong Kong_Sham Shui Po_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -301,19 +301,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Austria_None_trojan_626
-  network: ws
-  password: trojan
-  port: 8888
-  server: 152.53.45.251
-  skip-cert-verify: false
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -336,7 +323,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Sham Shui Po_vmess_612
   - Poland_None_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -349,8 +336,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Japan_Tokyo_trojan_624
-  - Hong Kong_Central_vmess_625
-  - Austria_None_trojan_626
+  - Hong Kong_Sham Shui Po_vmess_625
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -373,7 +359,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Sham Shui Po_vmess_612
   - Poland_None_trojan_613
   - Japan_Tokyo_trojan_614
   - Japan_Tokyo_trojan_615
@@ -386,8 +372,7 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Japan_Tokyo_trojan_624
-  - Hong Kong_Central_vmess_625
-  - Austria_None_trojan_626
+  - Hong Kong_Sham Shui Po_vmess_625
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
