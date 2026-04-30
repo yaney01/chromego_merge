@@ -189,7 +189,7 @@ proxies:
   uuid: 813fbbe3-4679-4a7f-afd3-c2e5319b5e3b
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_612
+  name: Hong Kong_Central_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -421,7 +421,7 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: United Kingdom_None_vmess_634
+  name: Indonesia_Jakarta_vmess_634
   port: 30808
   server: v8.hdacd.com
   type: vmess
@@ -454,7 +454,7 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 - alterId: 2
   cipher: auto
-  name: United Kingdom_None_vmess_637
+  name: Indonesia_Jakarta_vmess_637
   port: 30804
   server: v4.hdacd.com
   type: vmess
@@ -1088,7 +1088,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Kowloon_vmess_691
+  name: Hong Kong_Central_vmess_691
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -1140,7 +1140,7 @@ proxies:
   skip-cert-verify: true
   sni: ''
   type: trojan
-- name: United States_None_trojan_697
+- name: None_None_trojan_697
   network: ws
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: '443'
@@ -1154,7 +1154,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
         Chrome/65.0.3325.181 Safari/537.36
     path: /?ed=2560
-- name: None_None_trojan_698
+- name: United States_San Francisco_trojan_698
   network: ws
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: '443'
@@ -1168,7 +1168,7 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/58.0.3029.110 Safari/537.36
     path: /?ed=2560
-- name: None_None_trojan_699
+- name: United States_San Francisco_trojan_699
   network: ws
   password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   port: '443'
@@ -1204,7 +1204,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_vmess_611
-  - Hong Kong_Kowloon_vmess_612
+  - Hong Kong_Central_vmess_612
   - China_None_vmess_613
   - United Kingdom_None_vmess_614
   - Taiwan_None_vmess_615
@@ -1226,10 +1226,10 @@ proxy-groups:
   - Singapore_None_trojan_631
   - Gibraltar_None_trojan_632
   - United Kingdom_None_vmess_633
-  - United Kingdom_None_vmess_634
+  - Indonesia_Jakarta_vmess_634
   - Germany_None_trojan_635
   - Finland_Helsinki_trojan_636
-  - United Kingdom_None_vmess_637
+  - Indonesia_Jakarta_vmess_637
   - Unknown_trojan_638
   - Hong Kong_Hong Kong_trojan_639
   - United States_Los Angeles_trojan_640
@@ -1283,15 +1283,15 @@ proxy-groups:
   - Japan_Tokyo_trojan_688
   - Japan_Tokyo_trojan_689
   - Hong Kong_None_trojan_690
-  - Hong Kong_Kowloon_vmess_691
+  - Hong Kong_Central_vmess_691
   - United Kingdom_None_vmess_692
   - United Kingdom_None_vmess_693
   - United Kingdom_Enfield_ss_694
   - Singapore_None_trojan_695
   - Singapore_None_trojan_696
-  - United States_None_trojan_697
-  - None_None_trojan_698
-  - None_None_trojan_699
+  - None_None_trojan_697
+  - United States_San Francisco_trojan_698
+  - United States_San Francisco_trojan_699
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1314,7 +1314,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_vmess_611
-  - Hong Kong_Kowloon_vmess_612
+  - Hong Kong_Central_vmess_612
   - China_None_vmess_613
   - United Kingdom_None_vmess_614
   - Taiwan_None_vmess_615
@@ -1336,10 +1336,10 @@ proxy-groups:
   - Singapore_None_trojan_631
   - Gibraltar_None_trojan_632
   - United Kingdom_None_vmess_633
-  - United Kingdom_None_vmess_634
+  - Indonesia_Jakarta_vmess_634
   - Germany_None_trojan_635
   - Finland_Helsinki_trojan_636
-  - United Kingdom_None_vmess_637
+  - Indonesia_Jakarta_vmess_637
   - Unknown_trojan_638
   - Hong Kong_Hong Kong_trojan_639
   - United States_Los Angeles_trojan_640
@@ -1393,15 +1393,15 @@ proxy-groups:
   - Japan_Tokyo_trojan_688
   - Japan_Tokyo_trojan_689
   - Hong Kong_None_trojan_690
-  - Hong Kong_Kowloon_vmess_691
+  - Hong Kong_Central_vmess_691
   - United Kingdom_None_vmess_692
   - United Kingdom_None_vmess_693
   - United Kingdom_Enfield_ss_694
   - Singapore_None_trojan_695
   - Singapore_None_trojan_696
-  - United States_None_trojan_697
-  - None_None_trojan_698
-  - None_None_trojan_699
+  - None_None_trojan_697
+  - United States_San Francisco_trojan_698
+  - United States_San Francisco_trojan_699
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
