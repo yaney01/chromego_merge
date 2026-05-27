@@ -353,7 +353,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_632
+  name: Hong Kong_Mid Levels_vmess_632
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -476,7 +476,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_647
+  name: Hong Kong_Mid Levels_vmess_647
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -532,7 +532,7 @@ proxies:
   xudp: true
 - alterId: 2
   cipher: auto
-  name: United Kingdom_None_vmess_652
+  name: United States_None_vmess_652
   port: 30829
   server: v29.hdacd.com
   skip-cert-verify: false
@@ -591,7 +591,7 @@ proxy-groups:
   - Hong Kong_None_vmess_629
   - United Kingdom_None_vmess_630
   - United States_None_ss_631
-  - Hong Kong_Tuen Mun_vmess_632
+  - Hong Kong_Mid Levels_vmess_632
   - Japan_Tokyo_trojan_633
   - Japan_Tokyo_trojan_634
   - Hong Kong_None_trojan_635
@@ -606,12 +606,12 @@ proxy-groups:
   - Hong Kong_None_trojan_644
   - United Kingdom_None_vmess_645
   - United Kingdom_None_vmess_646
-  - Hong Kong_Tuen Mun_vmess_647
+  - Hong Kong_Mid Levels_vmess_647
   - United Kingdom_None_vmess_648
   - United Kingdom_None_vmess_649
   - None_None_ss_650
   - United Kingdom_None_vmess_651
-  - United Kingdom_None_vmess_652
+  - United States_None_vmess_652
   - South Korea_Seoul_trojan_653
 - name: 自动选择
   type: url-test
@@ -654,7 +654,7 @@ proxy-groups:
   - Hong Kong_None_vmess_629
   - United Kingdom_None_vmess_630
   - United States_None_ss_631
-  - Hong Kong_Tuen Mun_vmess_632
+  - Hong Kong_Mid Levels_vmess_632
   - Japan_Tokyo_trojan_633
   - Japan_Tokyo_trojan_634
   - Hong Kong_None_trojan_635
@@ -669,12 +669,12 @@ proxy-groups:
   - Hong Kong_None_trojan_644
   - United Kingdom_None_vmess_645
   - United Kingdom_None_vmess_646
-  - Hong Kong_Tuen Mun_vmess_647
+  - Hong Kong_Mid Levels_vmess_647
   - United Kingdom_None_vmess_648
   - United Kingdom_None_vmess_649
   - None_None_ss_650
   - United Kingdom_None_vmess_651
-  - United Kingdom_None_vmess_652
+  - United States_None_vmess_652
   - South Korea_Seoul_trojan_653
 rules:
 - DOMAIN,clash.razord.top,DIRECT
