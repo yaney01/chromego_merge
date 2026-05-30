@@ -181,7 +181,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_613
+  name: China_Kunming_vmess_613
   network: ws
   port: 33412
   server: ct3.ainivp.com
@@ -226,7 +226,7 @@ proxies:
   server: 82.198.246.37
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: None_None_trojan_618
+- name: United States_None_trojan_618
   network: ws
   password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
   port: 443
@@ -238,7 +238,7 @@ proxies:
     headers:
       Host: support.zoom.us.blackshadow.dpdns.org
     path: /195.123.218.174-443
-- name: United States_None_trojan_619
+- name: Hong Kong_None_trojan_619
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45553
   server: 90081bb25c.node.tro.cac.cab
@@ -272,12 +272,13 @@ proxies:
   type: trojan
 - name: United States_None_trojan_623
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
+  port: '47909'
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
   sni: is.01.naiun.bilibili.com
   tls: true
   type: trojan
+  udp: true
 - name: United States_None_trojan_624
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
@@ -296,23 +297,16 @@ proxies:
   type: trojan
   ws-opts:
     path: /trojan
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: 0
   cipher: auto
   name: France_Marseille_vmess_626
   network: ws
-  port: '52620'
+  port: 52620
   server: 38.60.176.80
-  skip-cert-verify: false
-  tls: false
   type: vmess
-  udp: true
   uuid: d60c7a89-40d9-4f09-e8f8-591932ce79ef
   ws-opts:
-    headers: {}
     path: /8704a4ad
-  xudp: true
 - cipher: aes-256-cfb
   name: United States_None_ss_627
   password: amazonskr05
@@ -321,7 +315,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_628
+  name: Hong Kong_Sham Shui Po_vmess_628
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -444,7 +438,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_643
+  name: Hong Kong_Sham Shui Po_vmess_643
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -472,69 +466,21 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- cipher: aes-256-cfb
-  name: Germany_Frankfurt am Main_ss_646
-  password: amazonskr05
-  port: 443
-  server: 18.195.213.130
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: Canada_Montreal_ss_647
-  password: amazonskr05
-  port: '443'
-  server: 15.157.68.13
-  type: ss
-  udp: true
-- name: South Korea_Cheongju-si_trojan_648
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: '30303'
-  server: 121.191.33.84
-  skip-cert-verify: false
-  sni: vpn.rnmcnm.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
-        (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
-    path: /trojan
-- alterId: 2
-  cipher: auto
-  name: United Kingdom_None_vmess_649
-  port: 30845
-  server: v45.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: Germany_Frankfurt am Main_ss_650
-  password: amazonskr05
-  port: 443
-  server: 35.159.110.250
-  type: ss
 - alterId: 0
   cipher: auto
-  client-fingerprint: ''
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: Türkiye_Izmir_vmess_651
-  network: http
-  port: 2087
-  server: 62.3.12.140
-  tls: false
-  type: vmess
-  uuid: 90a7a201-de71-4696-be44-f2c04aa36348
-- name: Japan_Tokyo_trojan_652
-  network: tcp
-  password: q6UYkw9nUn6MYZz8Sp
-  port: '443'
-  server: ty-2.tr202604.com
+  name: China_Kunming_vmess_646
+  network: ws
+  port: 33410
+  server: ct3.ainivp.com
   skip-cert-verify: false
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
+  ws-opts:
+    headers:
+      Host: ct3.ainivp.com
+    path: /ray
 proxy-groups:
 - name: 节点选择
   type: select
@@ -557,13 +503,13 @@ proxy-groups:
   - Unknown_vmess_610
   - Italy_Milan_vmess_611
   - China_None_vmess_612
-  - Unknown_vmess_613
+  - China_Kunming_vmess_613
   - Italy_Milan_vmess_614
   - Italy_Milan_vmess_615
   - United Kingdom_None_vmess_616
   - United Kingdom_None_vmess_617
-  - None_None_trojan_618
-  - United States_None_trojan_619
+  - United States_None_trojan_618
+  - Hong Kong_None_trojan_619
   - Hong Kong_None_trojan_620
   - United States_None_trojan_621
   - United States_None_trojan_622
@@ -572,7 +518,7 @@ proxy-groups:
   - South Korea_Jeonju_trojan_625
   - France_Marseille_vmess_626
   - United States_None_ss_627
-  - Hong Kong_Central_vmess_628
+  - Hong Kong_Sham Shui Po_vmess_628
   - Hong Kong_None_trojan_629
   - Japan_Tokyo_trojan_630
   - Hong Kong_None_trojan_631
@@ -587,16 +533,10 @@ proxy-groups:
   - Hong Kong_None_trojan_640
   - United Kingdom_None_vmess_641
   - United Kingdom_None_vmess_642
-  - Hong Kong_Central_vmess_643
+  - Hong Kong_Sham Shui Po_vmess_643
   - United Kingdom_None_vmess_644
   - United Kingdom_None_vmess_645
-  - Germany_Frankfurt am Main_ss_646
-  - Canada_Montreal_ss_647
-  - South Korea_Cheongju-si_trojan_648
-  - United Kingdom_None_vmess_649
-  - Germany_Frankfurt am Main_ss_650
-  - Türkiye_Izmir_vmess_651
-  - Japan_Tokyo_trojan_652
+  - China_Kunming_vmess_646
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -619,13 +559,13 @@ proxy-groups:
   - Unknown_vmess_610
   - Italy_Milan_vmess_611
   - China_None_vmess_612
-  - Unknown_vmess_613
+  - China_Kunming_vmess_613
   - Italy_Milan_vmess_614
   - Italy_Milan_vmess_615
   - United Kingdom_None_vmess_616
   - United Kingdom_None_vmess_617
-  - None_None_trojan_618
-  - United States_None_trojan_619
+  - United States_None_trojan_618
+  - Hong Kong_None_trojan_619
   - Hong Kong_None_trojan_620
   - United States_None_trojan_621
   - United States_None_trojan_622
@@ -634,7 +574,7 @@ proxy-groups:
   - South Korea_Jeonju_trojan_625
   - France_Marseille_vmess_626
   - United States_None_ss_627
-  - Hong Kong_Central_vmess_628
+  - Hong Kong_Sham Shui Po_vmess_628
   - Hong Kong_None_trojan_629
   - Japan_Tokyo_trojan_630
   - Hong Kong_None_trojan_631
@@ -649,16 +589,10 @@ proxy-groups:
   - Hong Kong_None_trojan_640
   - United Kingdom_None_vmess_641
   - United Kingdom_None_vmess_642
-  - Hong Kong_Central_vmess_643
+  - Hong Kong_Sham Shui Po_vmess_643
   - United Kingdom_None_vmess_644
   - United Kingdom_None_vmess_645
-  - Germany_Frankfurt am Main_ss_646
-  - Canada_Montreal_ss_647
-  - South Korea_Cheongju-si_trojan_648
-  - United Kingdom_None_vmess_649
-  - Germany_Frankfurt am Main_ss_650
-  - Türkiye_Izmir_vmess_651
-  - Japan_Tokyo_trojan_652
+  - China_Kunming_vmess_646
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
