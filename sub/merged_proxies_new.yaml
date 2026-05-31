@@ -381,6 +381,13 @@ proxies:
   type: vmess
   udp: true
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: Hong Kong_Wanchai_trojan_635
+  password: 65fQmPHHbPcBCfvSHt
+  port: 443
+  server: au-4.tr202605.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -425,6 +432,7 @@ proxy-groups:
   - United Kingdom_None_vmess_632
   - United Kingdom_None_vmess_633
   - United Kingdom_None_vmess_634
+  - Hong Kong_Wanchai_trojan_635
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -469,6 +477,7 @@ proxy-groups:
   - United Kingdom_None_vmess_632
   - United Kingdom_None_vmess_633
   - United Kingdom_None_vmess_634
+  - Hong Kong_Wanchai_trojan_635
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
