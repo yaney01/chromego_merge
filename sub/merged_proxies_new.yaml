@@ -276,7 +276,6 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
@@ -318,131 +317,72 @@ proxies:
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - cipher: chacha20-ietf-poly1305
-  name: Taiwan_New Taipei_ss_629
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: '50099'
-  server: r3mrcg00129437x.cybervena.com
+  name: Singapore_Singapore_ss_629
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c18ca9e:213221
+    mode: tls
+  port: 2377
+  server: 13.229.249.124
   type: ss
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: None_None_trojan_630
-  network: ws
-  password: 7p52vhn9vs4naimm
-  port: '443'
-  server: freealireza3.nscl.ir
-  skip-cert-verify: true
-  sni: freealireza3.nscl.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
-    path: /dashboard
-- cipher: aes-256-cfb
-  name: France_None_ss_631
-  password: f8f7aCzcPKbsF8p3
-  port: '989'
-  server: 51.15.23.63
-  type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: United Kingdom_None_vmess_632
+- name: United States_None_trojan_630
   network: tcp
-  port: '180'
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_633
-  network: raw
-  port: '180'
-  server: 82.198.246.37
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: United Kingdom_None_vmess_634
-  port: 180
-  server: 82.198.246.37
-  servername: <nil>
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: United States_None_trojan_635
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 41943
   server: 90081bb25c.node.tro.cac.cab
   skip-cert-verify: true
   sni: az.01.naiun.bilibili.com
-  tls: true
+  type: trojan
+- name: Germany_None_trojan_631
+  network: tcp
+  password: ASoZeIVwzX4w4wxwig
+  port: '443'
+  server: de-3.tr202605.com
+  skip-cert-verify: false
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: Singapore_None_ss_636
-  password: a9d727cd-330b-4edd-8911-7c224df6afd5
-  port: 22386
-  server: 43.164.128.196
-  type: ss
-  udp: true
-- alterId: 1
-  cipher: auto
-  name: Japan_Tokyo_vmess_637
-  port: 444
-  server: 7gqt4-g01.jp04-3771-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- alterId: 1
-  cipher: auto
-  name: Japan_Tokyo_vmess_638
-  port: 46482
-  server: vt50k-g01.jp05-6786-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- alterId: 1
-  cipher: auto
-  name: Japan_Tokyo_vmess_639
-  port: 21581
-  server: 01eb6-g01.jp03-7d22-vm0.entry.fr0307a.art
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8
-- alterId: 0
-  cipher: auto
-  flow: ''
-  name: United States_Los Angeles_vmess_640
+- name: United Kingdom_London_trojan_632
   network: tcp
-  port: 20001
-  server: vpnicp.xyc.hk.cn
-  tls: false
-  type: vmess
+  password: ASoZeIVwzX4w4wxwig
+  port: '443'
+  server: uk-1.tr202605.com
+  skip-cert-verify: false
+  type: trojan
   udp: true
-  uuid: 7f5f0705-3dfb-4f56-9657-c95cade2ba83
-- name: Hong Kong_Wanchai_trojan_641
+- name: The Netherlands_Amsterdam_trojan_633
+  network: tcp
+  password: LSS6HLnp7IeEEJUcox
+  port: '443'
+  server: nl-1.tr202607.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: United Kingdom_London_trojan_634
+  network: tcp
+  password: LSS6HLnp7IeEEJUcox
+  port: '443'
+  server: uk-1.tr202607.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: The Netherlands_Amsterdam_trojan_635
+  network: tcp
+  password: RJbtIstwtcU5buDY3r
+  port: '443'
+  server: nl-1.tr202604.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: Japan_Tokyo_trojan_636
+  password: q6UYkw9nUn6MYZz8Sp
+  port: '443'
+  server: ty-2.tr202604.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: Hong Kong_Wanchai_trojan_637
   password: 65fQmPHHbPcBCfvSHt
   port: 443
   server: au-4.tr202605.com
@@ -487,19 +427,15 @@ proxy-groups:
   - Hong Kong_Tuen Mun_vmess_626
   - United Kingdom_None_vmess_627
   - United Kingdom_None_vmess_628
-  - Taiwan_New Taipei_ss_629
-  - None_None_trojan_630
-  - France_None_ss_631
-  - United Kingdom_None_vmess_632
-  - United Kingdom_None_vmess_633
-  - United Kingdom_None_vmess_634
-  - United States_None_trojan_635
-  - Singapore_None_ss_636
-  - Japan_Tokyo_vmess_637
-  - Japan_Tokyo_vmess_638
-  - Japan_Tokyo_vmess_639
-  - United States_Los Angeles_vmess_640
-  - Hong Kong_Wanchai_trojan_641
+  - Singapore_Singapore_ss_629
+  - United States_None_trojan_630
+  - Germany_None_trojan_631
+  - United Kingdom_London_trojan_632
+  - The Netherlands_Amsterdam_trojan_633
+  - United Kingdom_London_trojan_634
+  - The Netherlands_Amsterdam_trojan_635
+  - Japan_Tokyo_trojan_636
+  - Hong Kong_Wanchai_trojan_637
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -538,19 +474,15 @@ proxy-groups:
   - Hong Kong_Tuen Mun_vmess_626
   - United Kingdom_None_vmess_627
   - United Kingdom_None_vmess_628
-  - Taiwan_New Taipei_ss_629
-  - None_None_trojan_630
-  - France_None_ss_631
-  - United Kingdom_None_vmess_632
-  - United Kingdom_None_vmess_633
-  - United Kingdom_None_vmess_634
-  - United States_None_trojan_635
-  - Singapore_None_ss_636
-  - Japan_Tokyo_vmess_637
-  - Japan_Tokyo_vmess_638
-  - Japan_Tokyo_vmess_639
-  - United States_Los Angeles_vmess_640
-  - Hong Kong_Wanchai_trojan_641
+  - Singapore_Singapore_ss_629
+  - United States_None_trojan_630
+  - Germany_None_trojan_631
+  - United Kingdom_London_trojan_632
+  - The Netherlands_Amsterdam_trojan_633
+  - United Kingdom_London_trojan_634
+  - The Netherlands_Amsterdam_trojan_635
+  - Japan_Tokyo_trojan_636
+  - Hong Kong_Wanchai_trojan_637
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
