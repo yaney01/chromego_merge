@@ -325,7 +325,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: Indonesia_Jakarta_vmess_631
+  name: Australia_Melbourne_vmess_631
   network: tcp
   port: 30808
   server: v8.hdacd.com
@@ -374,14 +374,6 @@ proxies:
   sni: fr.01.naiun.bilibili.com
   type: trojan
   udp: true
-- name: Germany_None_trojan_637
-  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
-  port: 9443
-  server: de-1.hysteria.ltd
-  skip-cert-verify: false
-  sni: de-1.hysteria.ltd
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -422,13 +414,12 @@ proxy-groups:
   - South Korea_Songpa-gu_ss_628
   - Canada_Montreal_ss_629
   - Taiwan_Zhongli District_ss_630
-  - Indonesia_Jakarta_vmess_631
+  - Australia_Melbourne_vmess_631
   - Canada_Montreal_ss_632
   - Russia_Moscow_ss_633
   - South Korea_Songpa-gu_ss_634
   - United States_None_ss_635
   - United States_None_trojan_636
-  - Germany_None_trojan_637
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -469,13 +460,12 @@ proxy-groups:
   - South Korea_Songpa-gu_ss_628
   - Canada_Montreal_ss_629
   - Taiwan_Zhongli District_ss_630
-  - Indonesia_Jakarta_vmess_631
+  - Australia_Melbourne_vmess_631
   - Canada_Montreal_ss_632
   - Russia_Moscow_ss_633
   - South Korea_Songpa-gu_ss_634
   - United States_None_ss_635
   - United States_None_trojan_636
-  - Germany_None_trojan_637
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
