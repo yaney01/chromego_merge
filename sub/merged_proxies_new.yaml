@@ -302,62 +302,8 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 2
-  cipher: auto
-  name: Australia_Melbourne_vmess_628
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: Australia_Melbourne_vmess_629
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United States_None_trojan_630
-  network: raw
-  password: 825929f4-c702-35ce-9124-00d3f95b8c32
-  port: '34436'
-  server: adak.sonofthewinds.com
-  skip-cert-verify: false
-  sni: hh4.sonofthewinds.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_631
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: '45553'
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_632
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: '46424'
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  type: trojan
-  udp: true
-- name: United States_None_trojan_633
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: '41943'
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  type: trojan
-  udp: true
 - cipher: aes-128-gcm
-  name: None_None_ss_634
+  name: None_None_ss_628
   password: eeb6823c-b926-4ea2-866a-5542edd26e59
   plugin: v2ray-plugin
   plugin-opts:
@@ -372,37 +318,104 @@ proxies:
   skip-cert-verify: false
   type: ss
   udp: false
+- cipher: aes-128-gcm
+  name: Japan_Tokyo_ss_629
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhll.qqs.me
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 54.65.58.58
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- name: United States_None_trojan_630
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 45619
+  server: 155.117.198.86
+  skip-cert-verify: true
+  sni: fr.01.naiun.bilibili.com
+  type: trojan
+  udp: true
+- name: United States_None_trojan_631
+  network: tcp
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  port: 48697
+  server: 155.117.198.89
+  skip-cert-verify: true
+  sni: gh.01.naiun.bilibili.com
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: United States_Miami_vmess_632
+  network: tcp
+  port: 18000
+  server: 38.110.1.246
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: aes-128-gcm
+  name: United States_None_ss_633
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhll.qqs.me
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 69.63.216.10
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: aes-128-gcm
+  name: United States_None_ss_634
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ss.hhll.qqs.me
+    mode: websocket
+    mux: false
+    path: /proxyip=104.168.132.123\,172.104.53.198\,85.121.50.16\,151.242.125.226?enc=aes-128-gcm
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 64.186.229.245
+  skip-cert-verify: false
+  type: ss
+  udp: false
 - cipher: chacha20-ietf-poly1305
-  name: Taiwan_Chang-hua_ss_635
+  name: Taiwan_Taichung_ss_635
   password: a5115845-cc23-4082-905e-869fe212dfef
-  port: 36321
+  port: 38777
   server: account-center.zzdy25.com
   skip-cert-verify: false
   type: ss
   udp: false
-- name: Switzerland_None_trojan_636
+- alpn:
+  - http/1.1
+  name: None_None_trojan_636
   network: ws
-  password: 43716b3b-df44-409e-beff-e571e39a889c
+  password: '%&cc'
   port: '443'
-  server: 193.163.85.39
+  server: customer.arabtimesonline.qzz.io
   skip-cert-verify: false
-  sni: platyscelis.duckdns.org
+  sni: CustOMEr.ARaBTiMEsONLinE.qZZ.iO
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.110 Safari/537.36
-    path: /vpn
-- name: United States_None_trojan_637
-  network: tcp
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: '47909'
-  server: 155.117.198.88
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  type: trojan
-  udp: true
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /eyJqdW5rIjoieWluc042Sm5kIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
 proxy-groups:
 - name: 节点选择
   type: select
@@ -440,16 +453,15 @@ proxy-groups:
   - United Kingdom_None_vmess_625
   - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
-  - Australia_Melbourne_vmess_628
-  - Australia_Melbourne_vmess_629
+  - None_None_ss_628
+  - Japan_Tokyo_ss_629
   - United States_None_trojan_630
   - United States_None_trojan_631
-  - United States_None_trojan_632
-  - United States_None_trojan_633
-  - None_None_ss_634
-  - Taiwan_Chang-hua_ss_635
-  - Switzerland_None_trojan_636
-  - United States_None_trojan_637
+  - United States_Miami_vmess_632
+  - United States_None_ss_633
+  - United States_None_ss_634
+  - Taiwan_Taichung_ss_635
+  - None_None_trojan_636
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -487,16 +499,15 @@ proxy-groups:
   - United Kingdom_None_vmess_625
   - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
-  - Australia_Melbourne_vmess_628
-  - Australia_Melbourne_vmess_629
+  - None_None_ss_628
+  - Japan_Tokyo_ss_629
   - United States_None_trojan_630
   - United States_None_trojan_631
-  - United States_None_trojan_632
-  - United States_None_trojan_633
-  - None_None_ss_634
-  - Taiwan_Chang-hua_ss_635
-  - Switzerland_None_trojan_636
-  - United States_None_trojan_637
+  - United States_Miami_vmess_632
+  - United States_None_ss_633
+  - United States_None_ss_634
+  - Taiwan_Taichung_ss_635
+  - None_None_trojan_636
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
