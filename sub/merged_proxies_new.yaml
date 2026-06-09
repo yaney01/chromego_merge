@@ -170,7 +170,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_612
+  name: Hong Kong_Central_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -284,7 +284,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Sha Tin Wai_vmess_626
+  name: Hong Kong_Central_vmess_626
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -373,7 +373,7 @@ proxies:
   type: ss
   udp: false
 - cipher: chacha20-ietf-poly1305
-  name: Taiwan_Taichung_ss_635
+  name: Taiwan_Chang-hua_ss_635
   password: a5115845-cc23-4082-905e-869fe212dfef
   port: 36321
   server: account-center.zzdy25.com
@@ -424,7 +424,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Sha Tin Wai_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_Central_trojan_614
   - Japan_Tokyo_trojan_615
@@ -438,7 +438,7 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
   - United Kingdom_None_vmess_625
-  - Hong Kong_Sha Tin Wai_vmess_626
+  - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
   - Australia_Melbourne_vmess_628
   - Australia_Melbourne_vmess_629
@@ -447,7 +447,7 @@ proxy-groups:
   - United States_None_trojan_632
   - United States_None_trojan_633
   - None_None_ss_634
-  - Taiwan_Taichung_ss_635
+  - Taiwan_Chang-hua_ss_635
   - Switzerland_None_trojan_636
   - United States_None_trojan_637
 - name: 自动选择
@@ -471,7 +471,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Sha Tin Wai_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_Central_trojan_614
   - Japan_Tokyo_trojan_615
@@ -485,7 +485,7 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
   - United Kingdom_None_vmess_625
-  - Hong Kong_Sha Tin Wai_vmess_626
+  - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
   - Australia_Melbourne_vmess_628
   - Australia_Melbourne_vmess_629
@@ -494,7 +494,7 @@ proxy-groups:
   - United States_None_trojan_632
   - United States_None_trojan_633
   - None_None_ss_634
-  - Taiwan_Taichung_ss_635
+  - Taiwan_Chang-hua_ss_635
   - Switzerland_None_trojan_636
   - United States_None_trojan_637
 rules:
