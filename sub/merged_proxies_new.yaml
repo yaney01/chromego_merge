@@ -170,7 +170,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_612
+  name: Hong Kong_Central_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -284,7 +284,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Tuen Mun_vmess_626
+  name: Hong Kong_Central_vmess_626
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -302,24 +302,14 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: France_None_vmess_628
-  network: ws
-  port: '80'
-  server: 51.254.133.152
+- name: Germany_None_trojan_628
+  password: LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu
+  port: 9443
+  server: de-1.hysteria.ltd
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: de-1.hysteria.ltd
+  type: trojan
   udp: true
-  uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
-  ws-opts:
-    headers:
-      Host: fr5.niekotin.de
-    path: /vmess
-  xudp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -341,7 +331,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Tuen Mun_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Poland_None_trojan_614
   - Poland_None_trojan_615
@@ -355,9 +345,9 @@ proxy-groups:
   - Poland_None_trojan_623
   - Hong Kong_None_trojan_624
   - United Kingdom_None_vmess_625
-  - Hong Kong_Tuen Mun_vmess_626
+  - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
-  - France_None_vmess_628
+  - Germany_None_trojan_628
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -379,7 +369,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Tuen Mun_vmess_612
+  - Hong Kong_Central_vmess_612
   - Hong Kong_None_trojan_613
   - Poland_None_trojan_614
   - Poland_None_trojan_615
@@ -393,9 +383,9 @@ proxy-groups:
   - Poland_None_trojan_623
   - Hong Kong_None_trojan_624
   - United Kingdom_None_vmess_625
-  - Hong Kong_Tuen Mun_vmess_626
+  - Hong Kong_Central_vmess_626
   - United Kingdom_None_vmess_627
-  - France_None_vmess_628
+  - Germany_None_trojan_628
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
