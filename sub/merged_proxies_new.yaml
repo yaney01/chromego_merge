@@ -201,6 +201,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+  udp: true
 - name: Hong Kong_None_trojan_616
   network: tcp
   password: e0195c73018d597b1c2f0ea89d8676ae
@@ -286,7 +287,7 @@ proxies:
 - name: Switzerland_Corseaux_trojan_626
   network: tcp
   password: SoftNetConnect
-  port: '42549'
+  port: 42549
   server: 83.228.224.161
   skip-cert-verify: true
   sni: www.speedtest.net
@@ -335,45 +336,14 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: South Korea_Chuncheon_trojan_631
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+- name: India_New Delhi_trojan_631
+  password: M7v%w11Se*
   port: 443
-  server: 129.154.50.159
-  skip-cert-verify: false
-  sni: tjsp.hhxaf.cc.cd
+  server: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+  sni: hyfuuf6.wsone.icu
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-    path: /
-- name: United States_Los Angeles_trojan_632
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 154.17.28.152
-  skip-cert-verify: false
-  sni: hhcm.hhxaf.cc.cd
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hhcm.hhxaf.cc.cd
-    path: /
-- name: United States_None_trojan_633
-  network: ws
-  password: eeb6823c-b926-4ea2-866a-5542edd26e59
-  port: 443
-  server: 69.63.223.42
-  skip-cert-verify: false
-  sni: tjsp.hhxaf.cc.cd
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tjsp.hhxaf.cc.cd
-    path: /
 proxy-groups:
 - name: 节点选择
   type: select
@@ -414,9 +384,7 @@ proxy-groups:
   - Japan_Osaka_trojan_628
   - The Netherlands_None_ss_629
   - Hong Kong_None_trojan_630
-  - South Korea_Chuncheon_trojan_631
-  - United States_Los Angeles_trojan_632
-  - United States_None_trojan_633
+  - India_New Delhi_trojan_631
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -457,9 +425,7 @@ proxy-groups:
   - Japan_Osaka_trojan_628
   - The Netherlands_None_ss_629
   - Hong Kong_None_trojan_630
-  - South Korea_Chuncheon_trojan_631
-  - United States_Los Angeles_trojan_632
-  - United States_None_trojan_633
+  - India_New Delhi_trojan_631
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
