@@ -294,7 +294,7 @@ proxies:
 - name: Switzerland_Corseaux_trojan_627
   network: tcp
   password: SoftNetConnect
-  port: 42549
+  port: '42549'
   server: 83.228.224.161
   skip-cert-verify: true
   sni: www.speedtest.net
@@ -343,22 +343,6 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   udp: true
-- name: India_New Delhi_trojan_632
-  password: M7v%w11Se*
-  port: 443
-  server: hyfuuf6.wsone.icu
-  skip-cert-verify: true
-  sni: hyfuuf6.wsone.icu
-  type: trojan
-  udp: true
-- name: Japan_Tokyo_trojan_633
-  password: BxceQaOe
-  port: 5408
-  server: 54.65.32.119
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-  udp: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -400,8 +384,6 @@ proxy-groups:
   - Japan_Osaka_trojan_629
   - The Netherlands_None_ss_630
   - Hong Kong_None_trojan_631
-  - India_New Delhi_trojan_632
-  - Japan_Tokyo_trojan_633
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -443,8 +425,6 @@ proxy-groups:
   - Japan_Osaka_trojan_629
   - The Netherlands_None_ss_630
   - Hong Kong_None_trojan_631
-  - India_New Delhi_trojan_632
-  - Japan_Tokyo_trojan_633
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
