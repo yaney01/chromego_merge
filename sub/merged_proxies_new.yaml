@@ -25,13 +25,13 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_None_hysteria2_01
+- name: France_Sarcelles_hysteria2_01
   type: hysteria2
-  server: 62.210.124.132
-  port: 64772
+  server: clash-ip1.934618.xyz
+  port: 18271
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
+  sni: clash-ip1.934618.xyz
+  skip-cert-verify: false
   up: 11 Mbps
   down: 55 Mbps
 - name: France_None_hysteria_11
@@ -330,7 +330,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - France_None_hysteria2_01
+  - France_Sarcelles_hysteria2_01
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
@@ -368,7 +368,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_None_hysteria2_01
+  - France_Sarcelles_hysteria2_01
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
