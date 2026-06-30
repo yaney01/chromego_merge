@@ -170,7 +170,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_612
+  name: Hong Kong_Tuen Mun_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -275,7 +275,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_625
+  name: Hong Kong_Tuen Mun_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -283,7 +283,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United Arab Emirates_None_trojan_626
+- alterId: 2
+  cipher: auto
+  name: China_None_vmess_626
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: United States_None_trojan_627
+  network: ws
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  port: 443
+  server: 64.186.248.160
+  skip-cert-verify: false
+  sni: tjsp.hhxaf.cc.cd
+  type: trojan
+  ws-opts:
+    path: /
+- name: United Arab Emirates_None_trojan_628
   network: ws
   password: MITIVPN
   port: 443
@@ -296,7 +318,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_627
+- name: United Kingdom_None_trojan_629
   network: ws
   password: MITIVPN
   port: 443
@@ -309,7 +331,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_628
+- name: The Netherlands_None_trojan_630
   network: ws
   password: MiTiVPN
   port: 443
@@ -322,7 +344,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_629
+- name: United States_None_trojan_631
   network: ws
   password: Mitivpn
   port: 443
@@ -356,7 +378,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Tuen Mun_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_None_trojan_614
   - United States_None_trojan_615
@@ -369,11 +391,13 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
-  - United Arab Emirates_None_trojan_626
-  - United Kingdom_None_trojan_627
-  - The Netherlands_None_trojan_628
-  - United States_None_trojan_629
+  - Hong Kong_Tuen Mun_vmess_625
+  - China_None_vmess_626
+  - United States_None_trojan_627
+  - United Arab Emirates_None_trojan_628
+  - United Kingdom_None_trojan_629
+  - The Netherlands_None_trojan_630
+  - United States_None_trojan_631
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -395,7 +419,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Hong Kong_Tuen Mun_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_None_trojan_614
   - United States_None_trojan_615
@@ -408,11 +432,13 @@ proxy-groups:
   - Japan_Tokyo_trojan_622
   - Japan_Tokyo_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
-  - United Arab Emirates_None_trojan_626
-  - United Kingdom_None_trojan_627
-  - The Netherlands_None_trojan_628
-  - United States_None_trojan_629
+  - Hong Kong_Tuen Mun_vmess_625
+  - China_None_vmess_626
+  - United States_None_trojan_627
+  - United Arab Emirates_None_trojan_628
+  - United Kingdom_None_trojan_629
+  - The Netherlands_None_trojan_630
+  - United States_None_trojan_631
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
