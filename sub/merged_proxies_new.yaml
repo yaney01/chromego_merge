@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_Sarcelles_hysteria2_01
+- name: France_None_hysteria2_01
   type: hysteria2
   server: clash-ip1.934618.xyz
   port: 18271
@@ -74,110 +74,30 @@ proxies:
   congestion-controller: bbr
 - alterId: 0
   cipher: auto
-  name: Unknown_vmess_61
+  name: United States_None_vmess_61
   network: tcp
-  port: '80'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_62
-  network: tcp
-  port: '81'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_63
-  network: tcp
-  port: '82'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_64
-  network: tcp
-  port: '83'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_65
-  network: tcp
-  port: '84'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_66
-  network: tcp
-  port: '85'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_67
-  network: tcp
-  port: '86'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_68
-  network: tcp
-  port: '87'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_69
-  network: tcp
-  port: '88'
-  server: 127.0.0.53
-  tls: false
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888888
-- alterId: 0
-  cipher: auto
-  name: Unknown_vmess_610
-  network: tcp
-  port: '89'
-  server: 127.0.0.53
-  tls: false
+  port: '443'
+  server: 160.79.104.10
+  servername: www.anthropic.com
+  tls: true
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - cipher: aes-256-cfb
-  name: United States_None_ss_611
+  name: United States_None_ss_62
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_612
+  name: Hong Kong_Central_vmess_63
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_None_trojan_613
+- name: Hong Kong_None_trojan_64
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 2008
@@ -185,7 +105,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_614
+- name: Hong Kong_None_trojan_65
   network: tcp
   password: BxceQaOe
   port: 29449
@@ -193,7 +113,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_615
+- name: Hong Kong_None_trojan_66
   network: tcp
   password: BxceQaOe
   port: 11035
@@ -201,7 +121,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: Japan_Tokyo_trojan_616
+- name: Japan_Tokyo_trojan_67
   network: tcp
   password: BxceQaOe
   port: 10624
@@ -209,7 +129,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_617
+- name: Hong Kong_None_trojan_68
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 5701
@@ -217,7 +137,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_618
+- name: Hong Kong_None_trojan_69
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 3743
@@ -225,7 +145,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_619
+- name: Hong Kong_None_trojan_610
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 29642
@@ -233,7 +153,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_620
+- name: Hong Kong_None_trojan_611
   network: tcp
   password: BxceQaOe
   port: 41421
@@ -241,7 +161,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_621
+- name: Hong Kong_None_trojan_612
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 17005
@@ -249,7 +169,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_622
+- name: Hong Kong_None_trojan_613
   network: tcp
   password: b8494776252056a1b62e77c4ff6a6d61
   port: 49277
@@ -257,7 +177,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_623
+- name: Hong Kong_None_trojan_614
   network: tcp
   password: BxceQaOe
   port: 44265
@@ -267,7 +187,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_North Point_vmess_624
+  name: Hong Kong_Central_vmess_615
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -275,38 +195,14 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - http/1.1
-  name: None_None_trojan_625
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: 104.16.72.41
-  skip-cert-verify: false
-  sni: sw.App-Cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /MiTiVPN=Se
-- name: Singapore_Singapore_trojan_626
+- name: Japan_Tokyo_trojan_616
   password: PI36027154
-  port: 443
-  server: rich-mule.rooster465.autos
-  skip-cert-verify: true
-  tls: true
+  port: '443'
+  server: large-baboon.rooster465.autos
+  skip-cert-verify: false
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: United States_Columbus_ss_627
-  password: amazonskr05
-  port: '443'
-  server: 18.222.166.251
-  type: ss
-  udp: true
-- name: United Arab Emirates_None_trojan_628
+- name: United Arab Emirates_None_trojan_617
   network: ws
   password: MITIVPN
   port: 443
@@ -319,7 +215,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_629
+- name: United Kingdom_None_trojan_618
   network: ws
   password: MITIVPN
   port: 443
@@ -332,7 +228,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_630
+- name: The Netherlands_None_trojan_619
   network: ws
   password: MiTiVPN
   port: 443
@@ -345,7 +241,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_631
+- name: United States_None_trojan_620
   network: ws
   password: Mitivpn
   port: 443
@@ -364,82 +260,60 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - France_Sarcelles_hysteria2_01
+  - France_None_hysteria2_01
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
-  - Unknown_vmess_61
-  - Unknown_vmess_62
-  - Unknown_vmess_63
-  - Unknown_vmess_64
-  - Unknown_vmess_65
-  - Unknown_vmess_66
-  - Unknown_vmess_67
-  - Unknown_vmess_68
-  - Unknown_vmess_69
-  - Unknown_vmess_610
-  - United States_None_ss_611
-  - Hong Kong_North Point_vmess_612
+  - United States_None_vmess_61
+  - United States_None_ss_62
+  - Hong Kong_Central_vmess_63
+  - Hong Kong_None_trojan_64
+  - Hong Kong_None_trojan_65
+  - Hong Kong_None_trojan_66
+  - Japan_Tokyo_trojan_67
+  - Hong Kong_None_trojan_68
+  - Hong Kong_None_trojan_69
+  - Hong Kong_None_trojan_610
+  - Hong Kong_None_trojan_611
+  - Hong Kong_None_trojan_612
   - Hong Kong_None_trojan_613
   - Hong Kong_None_trojan_614
-  - Hong Kong_None_trojan_615
+  - Hong Kong_Central_vmess_615
   - Japan_Tokyo_trojan_616
-  - Hong Kong_None_trojan_617
-  - Hong Kong_None_trojan_618
-  - Hong Kong_None_trojan_619
-  - Hong Kong_None_trojan_620
-  - Hong Kong_None_trojan_621
-  - Hong Kong_None_trojan_622
-  - Hong Kong_None_trojan_623
-  - Hong Kong_North Point_vmess_624
-  - None_None_trojan_625
-  - Singapore_Singapore_trojan_626
-  - United States_Columbus_ss_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Arab Emirates_None_trojan_617
+  - United Kingdom_None_trojan_618
+  - The Netherlands_None_trojan_619
+  - United States_None_trojan_620
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - France_Sarcelles_hysteria2_01
+  - France_None_hysteria2_01
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
-  - Unknown_vmess_61
-  - Unknown_vmess_62
-  - Unknown_vmess_63
-  - Unknown_vmess_64
-  - Unknown_vmess_65
-  - Unknown_vmess_66
-  - Unknown_vmess_67
-  - Unknown_vmess_68
-  - Unknown_vmess_69
-  - Unknown_vmess_610
-  - United States_None_ss_611
-  - Hong Kong_North Point_vmess_612
+  - United States_None_vmess_61
+  - United States_None_ss_62
+  - Hong Kong_Central_vmess_63
+  - Hong Kong_None_trojan_64
+  - Hong Kong_None_trojan_65
+  - Hong Kong_None_trojan_66
+  - Japan_Tokyo_trojan_67
+  - Hong Kong_None_trojan_68
+  - Hong Kong_None_trojan_69
+  - Hong Kong_None_trojan_610
+  - Hong Kong_None_trojan_611
+  - Hong Kong_None_trojan_612
   - Hong Kong_None_trojan_613
   - Hong Kong_None_trojan_614
-  - Hong Kong_None_trojan_615
+  - Hong Kong_Central_vmess_615
   - Japan_Tokyo_trojan_616
-  - Hong Kong_None_trojan_617
-  - Hong Kong_None_trojan_618
-  - Hong Kong_None_trojan_619
-  - Hong Kong_None_trojan_620
-  - Hong Kong_None_trojan_621
-  - Hong Kong_None_trojan_622
-  - Hong Kong_None_trojan_623
-  - Hong Kong_North Point_vmess_624
-  - None_None_trojan_625
-  - Singapore_Singapore_trojan_626
-  - United States_Columbus_ss_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Arab Emirates_None_trojan_617
+  - United Kingdom_None_trojan_618
+  - The Netherlands_None_trojan_619
+  - United States_None_trojan_620
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
