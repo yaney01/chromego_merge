@@ -75,6 +75,30 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
+- name: United States_None_hysteria_41
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: United States_None_hysteria_51
+  type: hysteria
+  server: 2a14:7584:d097::a
+  port: 54177
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - alterId: 0
   cipher: auto
   name: United States_None_vmess_61
@@ -386,6 +410,147 @@ proxies:
     headers:
       Host: www.gamingdll.ir
     path: /usa=mitivpn
+- name: France_Sarcelles_hy_0
+  type: hysteria
+  server: 62.210.27.216
+  port: 60111
+  ports: 60111
+  auth_str: github.com/Alvin9999-newpac/fanqiang
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: ''
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: France_None_hy_1
+  type: hysteria
+  server: 62.210.147.2
+  port: 43115
+  ports: 43115
+  auth_str: github.com/Alvin9999-newpac/fanqiang
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: ''
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: France_None_hy_2
+  type: hysteria
+  server: 2001:bc8:32d7:17b::3
+  port: 22000
+  ports: 22000
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: ''
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: France_None_hy_3
+  type: hysteria
+  server: 2001:bc8:32d7:17b::3
+  port: 22000
+  ports: 22000
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: ''
+  skip-cert-verify: false
+  alpn:
+  - h3
+- name: Germany_None_hy2_0
+  type: hysteria2
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  fast-open: true
+  sni: ''
+  skip-cert-verify: false
+- name: Germany_None_hy2_1
+  type: hysteria2
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  fast-open: true
+  sni: ''
+  skip-cert-verify: false
+- name: Germany_None_hy2_2
+  type: hysteria2
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  fast-open: true
+  sni: ''
+  skip-cert-verify: false
+- name: Germany_None_hy2_3
+  type: hysteria2
+  server: 5.83.129.90
+  port: 54177
+  password: dongtaiwang.com
+  fast-open: true
+  sni: ''
+  skip-cert-verify: false
+- name: France_None_reality_0
+  type: vless
+  server: 62.210.113.151
+  port: 45641
+  uuid: f2d9e117-231c-4946-87d8-2cde2222b85d
+  network: xhttp
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  servername: www.lovelive-anime.jp
+  reality-opts:
+    public-key: Nw-FuuCWzFZvQtQbJjDCYJpCKyO8cuvibbTGBeoZRyo
+    short-id: 1ea5bfb5
+- name: France_None_reality_1
+  type: vless
+  server: 62.210.113.151
+  port: 64489
+  uuid: 59f7ac8f-4a55-42ac-85b8-b3f96871761f
+  network: xhttp
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  servername: www.lovelive-anime.jp
+  reality-opts:
+    public-key: Nw-FuuCWzFZvQtQbJjDCYJpCKyO8cuvibbTGBeoZRyo
+    short-id: 1ea5bfb5
+- name: Germany_None_reality_2
+  type: vless
+  server: 89.144.35.230
+  port: 54582
+  uuid: 5cfc52bc-e701-4160-89df-930a0c040576
+  network: xhttp
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  servername: apple.com
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
+    short-id: 225e2cc8
+- name: United States_None_reality_3
+  type: vless
+  server: 2a14:7584:d097::a
+  port: 11330
+  uuid: 53d74aab-6471-4c1b-ace7-fac837d1bfbd
+  network: xhttp
+  tls: true
+  udp: true
+  client-fingerprint: chrome
+  servername: toarumajutsunoindex.fandom.com
+  reality-opts:
+    public-key: 3HaD5Ztk3X4gi3aJLVesV6KSJTW2YGG-hvGD3ZumJkE
+    short-id: fa789b2f5ff56959
 proxy-groups:
 - name: 节点选择
   type: select
@@ -396,6 +561,8 @@ proxy-groups:
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
+  - United States_None_hysteria_41
+  - United States_None_hysteria_51
   - United States_None_vmess_61
   - United States_None_vmess_62
   - United States_None_vmess_63
@@ -429,6 +596,18 @@ proxy-groups:
   - United Kingdom_None_trojan_631
   - The Netherlands_None_trojan_632
   - United States_None_trojan_633
+  - France_Sarcelles_hy_0
+  - France_None_hy_1
+  - France_None_hy_2
+  - France_None_hy_3
+  - Germany_None_hy2_0
+  - Germany_None_hy2_1
+  - Germany_None_hy2_2
+  - Germany_None_hy2_3
+  - France_None_reality_0
+  - France_None_reality_1
+  - Germany_None_reality_2
+  - United States_None_reality_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -439,6 +618,8 @@ proxy-groups:
   - France_None_hysteria_11
   - France_None_tuic_21
   - France_None_tuic_31
+  - United States_None_hysteria_41
+  - United States_None_hysteria_51
   - United States_None_vmess_61
   - United States_None_vmess_62
   - United States_None_vmess_63
@@ -472,6 +653,18 @@ proxy-groups:
   - United Kingdom_None_trojan_631
   - The Netherlands_None_trojan_632
   - United States_None_trojan_633
+  - France_Sarcelles_hy_0
+  - France_None_hy_1
+  - France_None_hy_2
+  - France_None_hy_3
+  - Germany_None_hy2_0
+  - Germany_None_hy2_1
+  - Germany_None_hy2_2
+  - Germany_None_hy2_3
+  - France_None_reality_0
+  - France_None_reality_1
+  - Germany_None_reality_2
+  - United States_None_reality_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
