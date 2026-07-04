@@ -17,7 +17,14 @@ def process_urls(url_file, processor):
 
         for index, url in enumerate(urls):
             try:
-                response = urllib.request.urlopen(url)
+                # 修复4：加 UA 头避免 403，并加超时
+                req = urllib.request.Request(
+                    url,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                    },
+                )
+                response = urllib.request.urlopen(req, timeout=15)
                 data = response.read().decode("utf-8")
                 processor(data, index)
             except Exception as e:
@@ -27,7 +34,16 @@ def process_urls(url_file, processor):
 
 
 def get_physical_location(address):
-    address = re.sub(":.*", "", address)  # 用正则表达式去除端口部分
+    # 修复1：正确剥离端口，兼容 [ipv6]:port、裸 ipv6、ipv4:port、domain:port
+    address = str(address).strip()
+    if address.startswith("["):
+        # [2001:xxx]:443 或 [2001:xxx]
+        address = address[1:].split("]")[0]
+    elif address.count(":") == 1:
+        # ipv4:port 或 domain:port
+        address = address.split(":")[0]
+    # 多冒号且不带方括号 = 裸 IPv6，原样保留
+
     try:
         ip_address = socket.gethostbyname(address)
     except socket.gaierror:
@@ -42,7 +58,8 @@ def get_physical_location(address):
         city = response.city.name
         # return f"{country}_{city}"
         return f"{country}"
-    except geoip2.errors.AddressNotFoundError as e:
+    except Exception as e:
+        # 修复1：原来只捕获 AddressNotFoundError，ValueError（非法IP字符串）会漏出导致整条处理失败
         print(f"Error: {e}")
         return "Unknown"
 
@@ -85,7 +102,8 @@ def process_clash(data, index):
                 security = "tls"
             location = get_physical_location(server)
             name = f"{location}_vless_{index}"
-            vless_meta = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
+            # 修复5：allowInsecure 原来缺 "="
+            vless_meta = f"vless://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&flow={flow}&type={network}&fp={fp}&pbk={publicKey}&sid={short_id}&sni={sni}&serviceName={grpc_serviceName}&path={ws_path}&host={ws_headers_host}#{name}"
 
             merged_proxies.append(vless_meta)
 
@@ -97,6 +115,9 @@ def process_clash(data, index):
             alterId = proxy.get("alterId", "")
             network = proxy.get("network", "")
             tls = int(proxy.get("tls", 0))
+            # 修复2：insecure、fp 原来在 vmess 分支未定义，导致 UnboundLocalError
+            insecure = int(proxy.get("skip-cert-verify", 0))
+            fp = proxy.get("client-fingerprint", "")
             if tls == 0:
                 security = "none"
             elif tls == 1:
@@ -108,7 +129,8 @@ def process_clash(data, index):
             )
             location = get_physical_location(server)
             name = f"{location}_vmess_{index}"
-            vmess_meta = f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure{insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#{name}"
+            # 修复5：allowInsecure 原来缺 "="
+            vmess_meta = f"vmess://{uuid}@{server}:{port}?security={security}&allowInsecure={insecure}&type={network}&fp={fp}&sni={sni}&path={ws_path}&host={ws_headers_host}#{name}"
 
             merged_proxies.append(vmess_meta)
 
@@ -272,10 +294,11 @@ def process_hysteria2(data, index):
     try:
         json_data = json.loads(data)
         # 处理 hysteria2 数据
-        # 提取字段值
+        # 修复3：tls 字段可能不存在，原来 json_data["tls"]["insecure"] 直接 KeyError
         server = json_data["server"]
-        insecure = int(json_data["tls"]["insecure"])
-        sni = json_data["tls"]["sni"]
+        tls_cfg = json_data.get("tls", {}) or {}
+        insecure = int(tls_cfg.get("insecure", 0))
+        sni = tls_cfg.get("sni", "")
         auth = json_data["auth"]
         # 生成URL
         location = get_physical_location(server)
