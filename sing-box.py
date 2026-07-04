@@ -5,23 +5,23 @@ url = "https://sing-box-subscribe-doraemon.vercel.app/config/https://raw.githubu
 output_folder = "sub"
 output_filename = "sing-box.json"
 
-# 发送HTTP请求
-response = requests.get(url)
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+}
 
-# 检查请求是否成功
+try:
+    response = requests.get(url, headers=headers, timeout=30)
+except requests.RequestException as e:
+    print(f"HTTP请求异常: {e}")
+    raise SystemExit(1)
+
 if response.status_code == 200:
-    # 创建输出
-    # 确保输出文件夹存在
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
-
-    # 构建输出文件路径
     output_path = os.path.join(output_folder, output_filename)
-
-    # 将响应内容写入文件，使用utf-8编码
     with open(output_path, "w", encoding="utf-8") as file:
         file.write(response.text)
-
     print(f"成功将内容写入 {output_path}")
 else:
     print(f"HTTP请求失败，状态码: {response.status_code}")
