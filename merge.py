@@ -299,7 +299,13 @@ def process_hysteria2(data, index):
         tls_cfg = json_data.get("tls", {}) or {}
         insecure = int(tls_cfg.get("insecure", 0))
         sni = tls_cfg.get("sni", "")
-        auth = json_data["auth"]
+        # 修复6：auth 字段名兼容 auth / auth_str / password，原来硬取 json_data["auth"] 直接 KeyError
+        auth = (
+            json_data.get("auth")
+            or json_data.get("auth_str")
+            or json_data.get("password")
+            or ""
+        )
         # 生成URL
         location = get_physical_location(server)
         name = f"{location}_hysteria2_{index}"
