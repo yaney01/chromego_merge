@@ -320,14 +320,61 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: United States_Columbus_ss_626
-  password: amazonskr05
-  port: '443'
-  server: 3.136.233.197
+- cipher: chacha20-ietf-poly1305
+  name: Hong Kong_None_ss_626
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
+  port: '44404'
+  server: us04.network-cdn-gw-yd.net
   type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_627
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Hong Kong_vmess_627
+  network: ws
+  port: 443
+  server: n1747624274.4u9ma.icu
+  servername: n1747624274.4u9ma.icu
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
+  ws-opts:
+    headers:
+      Host: n1747624274.4u9ma.icu
+    path: /
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_628
+  password: amazonskr05
+  port: '443'
+  server: 57.180.55.43
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: The Netherlands_Amsterdam_vmess_629
+  network: tcp
+  port: '18339'
+  server: c87s5.portablesubmarines.com
+  type: vmess
+  udp: true
+  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
+  xudp: true
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_630
+  password: amazonskr05
+  port: '443'
+  server: 43.207.4.4
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: Japan_Tokyo_ss_631
+  password: amazonskr05
+  port: '443'
+  server: 52.192.80.59
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_632
   network: ws
   password: MITIVPN
   port: 443
@@ -340,7 +387,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_628
+- name: United Kingdom_None_trojan_633
   network: ws
   password: MITIVPN
   port: 443
@@ -353,7 +400,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_629
+- name: The Netherlands_None_trojan_634
   network: ws
   password: MiTiVPN
   port: 443
@@ -366,7 +413,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_630
+- name: United States_None_trojan_635
   network: ws
   password: Mitivpn
   port: 443
@@ -2319,11 +2366,16 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_None_vmess_625
-  - United States_Columbus_ss_626
-  - United Arab Emirates_None_trojan_627
-  - United Kingdom_None_trojan_628
-  - The Netherlands_None_trojan_629
-  - United States_None_trojan_630
+  - Hong Kong_None_ss_626
+  - Hong Kong_Hong Kong_vmess_627
+  - Japan_Tokyo_ss_628
+  - The Netherlands_Amsterdam_vmess_629
+  - Japan_Tokyo_ss_630
+  - Japan_Tokyo_ss_631
+  - United Arab Emirates_None_trojan_632
+  - United Kingdom_None_trojan_633
+  - The Netherlands_None_trojan_634
+  - United States_None_trojan_635
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2533,11 +2585,16 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_None_vmess_625
-  - United States_Columbus_ss_626
-  - United Arab Emirates_None_trojan_627
-  - United Kingdom_None_trojan_628
-  - The Netherlands_None_trojan_629
-  - United States_None_trojan_630
+  - Hong Kong_None_ss_626
+  - Hong Kong_Hong Kong_vmess_627
+  - Japan_Tokyo_ss_628
+  - The Netherlands_Amsterdam_vmess_629
+  - Japan_Tokyo_ss_630
+  - Japan_Tokyo_ss_631
+  - United Arab Emirates_None_trojan_632
+  - United Kingdom_None_trojan_633
+  - The Netherlands_None_trojan_634
+  - United States_None_trojan_635
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
