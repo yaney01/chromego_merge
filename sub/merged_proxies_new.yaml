@@ -25,7 +25,7 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: France_None_hysteria_01
+- name: France_Paris_hysteria_01
   type: hysteria
   server: 62.210.70.191
   port: 23556
@@ -37,7 +37,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_None_hysteria_11
+- name: France_Paris_hysteria_11
   type: hysteria
   server: 163.172.117.163
   port: 36699
@@ -49,7 +49,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: France_None_tuic_21
+- name: Germany_None_tuic_21
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -62,7 +62,7 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: France_None_tuic_31
+- name: Germany_None_tuic_31
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -200,14 +200,14 @@ proxies:
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888889
 - cipher: aes-256-cfb
-  name: United States_None_ss_611
+  name: Germany_Frankfurt am Main_ss_611
   password: amazonskr05
   port: 443
   server: 63.180.254.10
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_612
+  name: Hong Kong_None_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -222,7 +222,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_614
+- name: Hong Kong_Hong Kong_trojan_614
   network: tcp
   password: BxceQaOe
   port: 11035
@@ -278,7 +278,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_621
+- name: Hong Kong_Hong Kong_trojan_621
   network: tcp
   password: BxceQaOe
   port: 45744
@@ -312,7 +312,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_Central_vmess_625
+  name: Hong Kong_None_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -329,7 +329,7 @@ proxies:
   udp: true
 - alpn:
   - http/1.1
-  name: Unknown_trojan_627
+  name: None_None_trojan_627
   network: ws
   password: dfdse334053vuohm
   port: '443'
@@ -357,7 +357,7 @@ proxies:
   server: 3.133.132.79
   type: ss
   udp: true
-- name: Denmark_None_trojan_630
+- name: Germany_Nuremberg_trojan_630
   network: tcp
   password: DkQbKDcxEcKj6CoK6erBrQPsgnB7n7nM
   port: '5222'
@@ -469,7 +469,7 @@ proxies:
   sni: www.microsoft.com
   skip-cert-verify: true
   udp: true
-- name: United States_None_vless_77
+- name: None_None_vless_77
   server: 172.66.132.196
   port: 8880
   type: vless
@@ -572,7 +572,7 @@ proxies:
   sni: vpn-fr-001.fastervpn.world
   skip-cert-verify: true
   udp: true
-- name: France_Sarcelles_tuic_716
+- name: France_Paris_tuic_716
   server: 62.210.24.143
   port: 33888
   type: tuic
@@ -586,7 +586,7 @@ proxies:
   reduce-rtt: true
   request-timeout: 0
   udp-relay-mode: native
-- name: France_None_hysteria2_717
+- name: France_Paris_hysteria2_717
   server: clash-ip1.934618.xyz
   port: 18271
   type: hysteria2
@@ -629,14 +629,14 @@ proxies:
   password: 7e70223b-f331-41d5-9313-02b8d2df2885
   skip-cert-verify: true
   udp: true
-- name: United Kingdom_Enfield_ss_722
+- name: United Kingdom_None_ss_722
   server: 82.38.31.35
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: United Kingdom_Plymouth_vless_723
+- name: United Kingdom_None_vless_723
   server: 51.194.215.122
   port: 666
   type: vless
@@ -649,7 +649,7 @@ proxies:
   ws-opts:
     path: /proxy
   udp: true
-- name: United Kingdom_Enfield_ss_724
+- name: United Kingdom_None_ss_724
   server: 82.38.31.184
   port: 8080
   type: ss
@@ -672,7 +672,7 @@ proxies:
   sni: https://t.me/WangCai2🇨🇳
   skip-cert-verify: true
   udp: true
-- name: United States_None_hysteria2_727
+- name: Hong Kong_Kwun Tong_hysteria2_727
   server: hk.shou.my
   port: 443
   type: hysteria2
@@ -681,28 +681,28 @@ proxies:
   sni: hk.shou.my
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_None_anytls_728
+- name: Hong Kong_Hong Kong_anytls_728
   server: xx-like.lsdlbqwlhkf.com
   port: 15004
   type: anytls
   password: 9ece503b-7090-4591-b3cb-94f751c98eee
   udp: true
   skip-cert-verify: true
-- name: Hong Kong_None_anytls_729
+- name: Hong Kong_Hong Kong_anytls_729
   server: as1.sddsafgfhyghf.com
   port: 15102
   type: anytls
   password: 9ece503b-7090-4591-b3cb-94f751c98eee
   udp: true
   skip-cert-verify: true
-- name: Poland_None_anytls_730
+- name: Hong Kong_Hong Kong_anytls_730
   server: ahk.jueduibupao.top
   port: 7000
   type: anytls
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: Hong Kong_None_anytls_731
+- name: Hong Kong_Hong Kong_anytls_731
   server: as1.sddsafgfhyghf.com
   port: 15103
   type: anytls
@@ -719,7 +719,7 @@ proxies:
   disable-sni: false
   reduce-rtt: false
   request-timeout: 0
-- name: Singapore_None_vmess_733
+- name: Hong Kong_Hong Kong_vmess_733
   server: n1747624274.4u9ma.icu
   port: 443
   type: vmess
@@ -735,21 +735,21 @@ proxies:
     headers:
       Host: n1747624274.4u9ma.icu
   udp: true
-- name: Hong Kong_None_anytls_734
+- name: Hong Kong_Hong Kong_anytls_734
   server: xx-like.lsdlbqwlhkf.com
   port: 18001
   type: anytls
   password: 9ece503b-7090-4591-b3cb-94f751c98eee
   udp: true
   skip-cert-verify: true
-- name: Switzerland_Renens_ss_735
+- name: Hong Kong_None_ss_735
   server: szhk.a3a3a.com
   port: 37399
   type: ss
   cipher: aes-256-gcm
   password: VZB52tNu0h
   udp: true
-- name: United States_None_hysteria2_736
+- name: Hong Kong_Hong Kong_hysteria2_736
   server: 45.202.248.138
   port: 55000
   type: hysteria2
@@ -758,7 +758,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: United States_None_hysteria2_737
+- name: Hong Kong_Hong Kong_hysteria2_737
   server: 45.202.248.138
   port: 55000
   type: hysteria2
@@ -767,14 +767,14 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_None_anytls_738
+- name: Hong Kong_Hong Kong_anytls_738
   server: xx-like.lsdlbqwlhkf.com
   port: 15002
   type: anytls
   password: 9ece503b-7090-4591-b3cb-94f751c98eee
   udp: true
   skip-cert-verify: true
-- name: Switzerland_Renens_ss_739
+- name: Hong Kong_None_ss_739
   server: szhk.a3a3a.com
   port: 35781
   type: ss
@@ -789,14 +789,14 @@ proxies:
   sni: is.01.naiun.bilibili.com
   skip-cert-verify: true
   udp: true
-- name: Switzerland_Renens_ss_741
+- name: Hong Kong_None_ss_741
   server: szhk.a3a3a.com
   port: 11987
   type: ss
   cipher: aes-256-gcm
   password: VZB52tNu0h
   udp: true
-- name: Switzerland_Renens_ss_742
+- name: Hong Kong_None_ss_742
   server: szhk.a3a3a.com
   port: 37390
   type: ss
@@ -819,7 +819,7 @@ proxies:
   sni: fr.01.naiun.bilibili.com
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_Central_trojan_745
+- name: Hong Kong_None_trojan_745
   server: jpbgp.netvigor.cc
   port: 19128
   type: trojan
@@ -835,7 +835,7 @@ proxies:
   sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
   udp: true
-- name: United Kingdom_Skelmersdale_hysteria2_747
+- name: India_Mumbai_hysteria2_747
   server: in.9966690.xyz
   port: 30000
   type: hysteria2
@@ -845,7 +845,7 @@ proxies:
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
   udp: true
-- name: United Kingdom_Skelmersdale_anytls_748
+- name: India_Mumbai_anytls_748
   server: in.9966690.xyz
   port: 5004
   type: anytls
@@ -885,7 +885,7 @@ proxies:
   password: 3ac6a6ca99f74941b1eaf892818e2ddb
   skip-cert-verify: true
   udp: true
-- name: Bosnia and Herzegovina_Gracanica_tuic_752
+- name: Japan_Tokyo_tuic_752
   server: 45.95.212.165
   port: 30002
   type: tuic
@@ -913,7 +913,7 @@ proxies:
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: China_None_vmess_755
+- name: Hong Kong_Hong Kong_vmess_755
   server: v45.hdacd.com
   port: 30845
   type: vmess
@@ -945,7 +945,7 @@ proxies:
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: United States_None_vless_758
+- name: None_None_vless_758
   server: 172.64.53.96
   port: 8443
   type: vless
@@ -977,7 +977,7 @@ proxies:
     headers:
       Host: seoul01.zgjok.com
   udp: true
-- name: United States_None_hysteria2_760
+- name: South Korea_Chuncheon_hysteria2_760
   server: 140.245.74.46
   port: 55020
   type: hysteria2
@@ -1001,7 +1001,7 @@ proxies:
     headers:
       Host: chuncheon01.zgjok.com
   udp: true
-- name: South Korea_None_hysteria2_762
+- name: South Korea_Incheon_hysteria2_762
   server: vpn-kr-002.fastervpn.world
   port: 443
   type: hysteria2
@@ -1010,7 +1010,7 @@ proxies:
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
   udp: true
-- name: South Korea_Gwangjin-gu_trojan_763
+- name: South Korea_Gunpo_trojan_763
   server: 211.49.57.175
   port: 443
   type: trojan
@@ -1042,7 +1042,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: Singapore_None_vless_766
+- name: South Korea_Seoul_vless_766
   server: 43.164.191.236
   port: 666
   type: vless
@@ -1064,7 +1064,7 @@ proxies:
   sni: vpn-kr-001.fastervpn.world
   skip-cert-verify: true
   udp: true
-- name: South Korea_None_hysteria2_768
+- name: South Korea_Guro-gu_hysteria2_768
   server: hg.yuanbaojc.site
   port: 20801
   type: hysteria2
@@ -1082,7 +1082,7 @@ proxies:
   sni: vpn-kr-001.fastervpn.world
   skip-cert-verify: true
   udp: true
-- name: Singapore_None_hysteria2_770
+- name: China_Hangzhou_hysteria2_770
   server: 8.148.4.25
   port: 55020
   type: hysteria2
@@ -1131,7 +1131,7 @@ proxies:
   sni: testing3.nimarko.org
   skip-cert-verify: true
   udp: true
-- name: Russia_Novosibirsk_hysteria2_775
+- name: Russia_Moscow_hysteria2_775
   server: ru.841130.xyz
   port: 30000
   type: hysteria2
@@ -1149,7 +1149,7 @@ proxies:
   sni: itit.nimarko.org
   skip-cert-verify: true
   udp: true
-- name: United States_Brooklyn_hysteria2_777
+- name: Singapore_Singapore_hysteria2_777
   server: 104.234.233.100
   port: 55000
   type: hysteria2
@@ -1158,7 +1158,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: United States_Brooklyn_hysteria2_778
+- name: Singapore_Singapore_hysteria2_778
   server: 104.234.233.100
   port: 55000
   type: hysteria2
@@ -1181,7 +1181,7 @@ proxies:
   ws-opts:
     path: /vmess
   udp: true
-- name: United States_Brooklyn_hysteria2_780
+- name: Singapore_Singapore_hysteria2_780
   server: 104.234.233.100
   port: 55000
   type: hysteria2
@@ -1190,7 +1190,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: China_None_vmess_781
+- name: Hong Kong_Hong Kong_vmess_781
   server: v9.hdacd.com
   port: 30809
   type: vmess
@@ -1200,7 +1200,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: China_None_vmess_782
+- name: Hong Kong_Hong Kong_vmess_782
   server: v4.hdacd.com
   port: 30804
   type: vmess
@@ -1217,7 +1217,7 @@ proxies:
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: Japan_None_hysteria2_784
+- name: Singapore_Loyang_hysteria2_784
   server: oracle1.chenlan.top
   port: 11573
   type: hysteria2
@@ -1235,7 +1235,7 @@ proxies:
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: United States_Brooklyn_hysteria2_786
+- name: Singapore_Singapore_hysteria2_786
   server: 104.234.233.100
   port: 55000
   type: hysteria2
@@ -1264,7 +1264,7 @@ proxies:
   password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
   udp: true
   skip-cert-verify: true
-- name: United States_San Francisco_vless_789
+- name: None_None_vless_789
   server: 172.64.146.59
   port: 2087
   type: vless
@@ -1426,7 +1426,7 @@ proxies:
   request-timeout: 0
   udp-relay-mode: native
   congestion-controller: bbr
-- name: United States_None_vmess_7102
+- name: None_None_vmess_7102
   server: hl112.cowjump.site
   port: 443
   type: vmess
@@ -1442,7 +1442,7 @@ proxies:
     headers:
       Host: hl112.cowjump.site
   udp: true
-- name: United States_None_vmess_7103
+- name: None_None_vmess_7103
   server: hl112.cowjump.site
   port: 443
   type: vmess
@@ -1467,7 +1467,7 @@ proxies:
   sni: cn.cremedelamer.com
   skip-cert-verify: true
   udp: true
-- name: United States_San Jose_ss_7105
+- name: United States_None_ss_7105
   server: 134.195.101.117
   port: 2377
   type: ss
@@ -1503,7 +1503,7 @@ proxies:
   sni: cn.cremedelamer.com
   skip-cert-verify: true
   udp: true
-- name: United States_None_hysteria2_7108
+- name: United States_The Dalles_hysteria2_7108
   server: mg.baiyi.cloudns.org
   port: 48273
   type: hysteria2
@@ -1514,7 +1514,7 @@ proxies:
   alpn:
   - h3
   udp: true
-- name: United States_San Francisco_vmess_7109
+- name: None_None_vmess_7109
   server: p.xiaolong.world
   port: 443
   type: vmess
@@ -1568,7 +1568,7 @@ proxies:
   ws-opts:
     path: /path/1744739459163
   udp: true
-- name: United States_None_trojan_7113
+- name: None_None_trojan_7113
   server: wasmer-earth.jzy88.top
   port: 443
   type: trojan
@@ -1626,7 +1626,7 @@ proxies:
     headers:
       Host: nbhhh.mrcool.kdns.fr
   udp: true
-- name: United States_San Francisco_vmess_7117
+- name: None_None_vmess_7117
   server: yx1.xn--11x.org
   port: 2082
   type: vmess
@@ -1642,7 +1642,7 @@ proxies:
     headers:
       Host: yx1.xn--11x.org
   udp: true
-- name: United States_None_vless_7118
+- name: None_None_vless_7118
   server: www.baipiao.eu.org
   port: 8880
   type: vless
@@ -1714,7 +1714,7 @@ proxies:
     headers:
       Host: soft-band-8da6.426.workers.dev
   udp: true
-- name: United States_None_vless_7123
+- name: None_None_vless_7123
   server: www.baipiao.eu.org
   port: 8880
   type: vless
@@ -1743,7 +1743,7 @@ proxies:
     headers:
       Host: sweet-disk-a026.253-54b.workers.dev
   udp: true
-- name: United States_None_vless_7125
+- name: United States_Santa Clara_vless_7125
   server: 170.106.84.131
   port: 443
   type: vless
@@ -1788,7 +1788,7 @@ proxies:
     headers:
       Host: bazaryabab.global.ssl.fastly.net
   udp: true
-- name: United States_San Francisco_trojan_7128
+- name: None_None_trojan_7128
   server: 172.64.148.248
   port: 8443
   type: trojan
@@ -1838,7 +1838,7 @@ proxies:
     headers:
       Host: steep-frost-8b18.350-c77.workers.dev
   udp: true
-- name: United States_None_vless_7132
+- name: None_None_vless_7132
   server: 172.67.158.125
   port: 443
   type: vless
@@ -1870,7 +1870,7 @@ proxies:
     headers:
       Host: bjbx8xu6iih7zht5.jptimecsgo.xyz
   udp: true
-- name: United States_None_hysteria2_7134
+- name: United States_New York_hysteria2_7134
   server: 147.90.235.195
   port: 51844
   type: hysteria2
@@ -1879,7 +1879,7 @@ proxies:
   sni: apps.apple.com
   skip-cert-verify: true
   udp: true
-- name: United States_San Francisco_vmess_7135
+- name: None_None_vmess_7135
   server: yx2.xn--11x.org
   port: 2082
   type: vmess
@@ -1895,7 +1895,7 @@ proxies:
     headers:
       Host: yx2.xn--11x.org
   udp: true
-- name: United States_San Francisco_trojan_7136
+- name: None_None_trojan_7136
   server: 172.64.147.52
   port: 443
   type: trojan
@@ -1965,7 +1965,7 @@ proxies:
     headers:
       Host: hhcm.hhxaf.cc.cd
   udp: true
-- name: United States_None_vless_7141
+- name: None_None_vless_7141
   server: wasmer-earth.jzy88.top
   port: 443
   type: vless
@@ -1981,7 +1981,7 @@ proxies:
     headers:
       Host: wasmer-earth.jzy88.top
   udp: true
-- name: United States_None_hysteria2_7142
+- name: United States_New York_hysteria2_7142
   server: 147.90.235.195
   port: 52625
   type: hysteria2
@@ -1990,7 +1990,7 @@ proxies:
   sni: apps.apple.com
   skip-cert-verify: true
   udp: true
-- name: United States_None_vless_7143
+- name: United States_Santa Clara_vless_7143
   server: 170.106.83.41
   port: 12345
   type: vless
@@ -2053,7 +2053,7 @@ proxies:
     headers:
       Host: quiet-feather-19f3.410-a69.workers.dev
   udp: true
-- name: United States_San Francisco_vmess_7148
+- name: None_None_vmess_7148
   server: yx1.xn--11x.org
   port: 2082
   type: vmess
@@ -2069,7 +2069,7 @@ proxies:
     headers:
       Host: yx1.xn--11x.org
   udp: true
-- name: Unknown_vmess_7149
+- name: Vietnam_None_vmess_7149
   server: 160.250.247.70
   port: 49178
   type: vmess
@@ -2088,7 +2088,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: France_Sarcelles_hy_0
+- name: France_Paris_hy_0
   type: hysteria
   server: 62.210.27.216
   port: 60111
@@ -2102,7 +2102,7 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
-- name: France_None_hy_1
+- name: France_Paris_hy_1
   type: hysteria
   server: 62.210.147.2
   port: 43115
@@ -2116,7 +2116,7 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
-- name: France_None_hy_2
+- name: France_Paris_hy_2
   type: hysteria
   server: 2001:bc8:32d7:17b::3
   port: 22000
@@ -2130,7 +2130,7 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h3
-- name: France_None_hy_3
+- name: France_Paris_hy_3
   type: hysteria
   server: 2001:bc8:32d7:17b::3
   port: 22000
@@ -2176,7 +2176,7 @@ proxies:
   fast-open: true
   sni: ''
   skip-cert-verify: false
-- name: France_None_reality_0
+- name: France_Paris_reality_0
   type: vless
   server: 62.210.113.151
   port: 45641
@@ -2189,7 +2189,7 @@ proxies:
   reality-opts:
     public-key: Nw-FuuCWzFZvQtQbJjDCYJpCKyO8cuvibbTGBeoZRyo
     short-id: 1ea5bfb5
-- name: France_None_reality_1
+- name: France_Paris_reality_1
   type: vless
   server: 62.210.113.151
   port: 64489
@@ -2235,10 +2235,10 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - France_None_hysteria_01
-  - France_None_hysteria_11
-  - France_None_tuic_21
-  - France_None_tuic_31
+  - France_Paris_hysteria_01
+  - France_Paris_hysteria_11
+  - Germany_None_tuic_21
+  - Germany_None_tuic_31
   - United States_None_hysteria_41
   - United States_None_hysteria_51
   - United States_None_vmess_61
@@ -2251,26 +2251,26 @@ proxy-groups:
   - United States_None_vmess_68
   - United States_None_vmess_69
   - United States_None_vmess_610
-  - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Germany_Frankfurt am Main_ss_611
+  - Hong Kong_None_vmess_612
   - Hong Kong_None_trojan_613
-  - Hong Kong_None_trojan_614
+  - Hong Kong_Hong Kong_trojan_614
   - Hong Kong_None_trojan_615
   - Japan_Tokyo_trojan_616
   - Hong Kong_None_trojan_617
   - Hong Kong_None_trojan_618
   - Hong Kong_None_trojan_619
   - Hong Kong_None_trojan_620
-  - Hong Kong_None_trojan_621
+  - Hong Kong_Hong Kong_trojan_621
   - Hong Kong_None_trojan_622
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
+  - Hong Kong_None_vmess_625
   - United States_Columbus_ss_626
-  - Unknown_trojan_627
+  - None_None_trojan_627
   - France_Paris_ss_628
   - United States_Columbus_ss_629
-  - Denmark_None_trojan_630
+  - Germany_Nuremberg_trojan_630
   - United Arab Emirates_None_trojan_631
   - United Kingdom_None_trojan_632
   - The Netherlands_None_trojan_633
@@ -2281,7 +2281,7 @@ proxy-groups:
   - United States_Piscataway_ss_74
   - Germany_Frankfurt am Main_trojan_75
   - Germany_Frankfurt am Main_hysteria2_76
-  - United States_None_vless_77
+  - None_None_vless_77
   - Germany_Frankfurt am Main_trojan_78
   - Germany_Frankfurt am Main_hysteria2_79
   - None_None_vless_710
@@ -2290,80 +2290,80 @@ proxy-groups:
   - United States_None_trojan_713
   - France_Paris_vless_714
   - France_Paris_hysteria2_715
-  - France_Sarcelles_tuic_716
-  - France_None_hysteria2_717
+  - France_Paris_tuic_716
+  - France_Paris_hysteria2_717
   - France_Strasbourg_vless_718
   - United States_Piscataway_ss_719
   - United States_None_trojan_720
   - United States_None_trojan_721
-  - United Kingdom_Enfield_ss_722
-  - United Kingdom_Plymouth_vless_723
-  - United Kingdom_Enfield_ss_724
+  - United Kingdom_None_ss_722
+  - United Kingdom_None_vless_723
+  - United Kingdom_None_ss_724
   - Iran_None_ss_725
   - Hong Kong_None_hysteria2_726
-  - United States_None_hysteria2_727
-  - Hong Kong_None_anytls_728
-  - Hong Kong_None_anytls_729
-  - Poland_None_anytls_730
-  - Hong Kong_None_anytls_731
+  - Hong Kong_Kwun Tong_hysteria2_727
+  - Hong Kong_Hong Kong_anytls_728
+  - Hong Kong_Hong Kong_anytls_729
+  - Hong Kong_Hong Kong_anytls_730
+  - Hong Kong_Hong Kong_anytls_731
   - Hong Kong_Hong Kong_tuic_732
-  - Singapore_None_vmess_733
-  - Hong Kong_None_anytls_734
-  - Switzerland_Renens_ss_735
-  - United States_None_hysteria2_736
-  - United States_None_hysteria2_737
-  - Hong Kong_None_anytls_738
-  - Switzerland_Renens_ss_739
+  - Hong Kong_Hong Kong_vmess_733
+  - Hong Kong_Hong Kong_anytls_734
+  - Hong Kong_None_ss_735
+  - Hong Kong_Hong Kong_hysteria2_736
+  - Hong Kong_Hong Kong_hysteria2_737
+  - Hong Kong_Hong Kong_anytls_738
+  - Hong Kong_None_ss_739
   - Hong Kong_None_trojan_740
-  - Switzerland_Renens_ss_741
-  - Switzerland_Renens_ss_742
+  - Hong Kong_None_ss_741
+  - Hong Kong_None_ss_742
   - Hong Kong_None_trojan_743
   - Hong Kong_None_trojan_744
-  - Hong Kong_Central_trojan_745
+  - Hong Kong_None_trojan_745
   - Hong Kong_None_trojan_746
-  - United Kingdom_Skelmersdale_hysteria2_747
-  - United Kingdom_Skelmersdale_anytls_748
+  - India_Mumbai_hysteria2_747
+  - India_Mumbai_anytls_748
   - Japan_Tokyo_vless_749
   - Japan_Tokyo_anytls_750
   - Japan_None_trojan_751
-  - Bosnia and Herzegovina_Gracanica_tuic_752
+  - Japan_Tokyo_tuic_752
   - Japan_Tokyo_anytls_753
   - Japan_Tokyo_anytls_754
-  - China_None_vmess_755
+  - Hong Kong_Hong Kong_vmess_755
   - Japan_Tokyo_vless_756
   - Japan_Tokyo_anytls_757
-  - United States_None_vless_758
+  - None_None_vless_758
   - South Korea_Seoul_vmess_759
-  - United States_None_hysteria2_760
+  - South Korea_Chuncheon_hysteria2_760
   - South Korea_Chuncheon_vmess_761
-  - South Korea_None_hysteria2_762
-  - South Korea_Gwangjin-gu_trojan_763
+  - South Korea_Incheon_hysteria2_762
+  - South Korea_Gunpo_trojan_763
   - South Korea_Seoul_tuic_764
   - South Korea_Seoul_hysteria2_765
-  - Singapore_None_vless_766
+  - South Korea_Seoul_vless_766
   - South Korea_Incheon_hysteria2_767
-  - South Korea_None_hysteria2_768
+  - South Korea_Guro-gu_hysteria2_768
   - South Korea_Incheon_hysteria2_769
-  - Singapore_None_hysteria2_770
+  - China_Hangzhou_hysteria2_770
   - South Korea_Incheon_vless_771
   - Russia_St Petersburg_ss_772
   - Russia_Moscow_ss_773
   - Russia_None_hysteria2_774
-  - Russia_Novosibirsk_hysteria2_775
+  - Russia_Moscow_hysteria2_775
   - Russia_None_hysteria2_776
-  - United States_Brooklyn_hysteria2_777
-  - United States_Brooklyn_hysteria2_778
+  - Singapore_Singapore_hysteria2_777
+  - Singapore_Singapore_hysteria2_778
   - None_None_vmess_779
-  - United States_Brooklyn_hysteria2_780
-  - China_None_vmess_781
-  - China_None_vmess_782
+  - Singapore_Singapore_hysteria2_780
+  - Hong Kong_Hong Kong_vmess_781
+  - Hong Kong_Hong Kong_vmess_782
   - Singapore_Singapore_anytls_783
-  - Japan_None_hysteria2_784
+  - Singapore_Loyang_hysteria2_784
   - Singapore_Singapore_anytls_785
-  - United States_Brooklyn_hysteria2_786
+  - Singapore_Singapore_hysteria2_786
   - Singapore_Singapore_vless_787
   - Singapore_Singapore_anytls_788
-  - United States_San Francisco_vless_789
+  - None_None_vless_789
   - Singapore_Singapore_anytls_790
   - None_None_vless_791
   - Singapore_Singapore_vless_792
@@ -2376,65 +2376,65 @@ proxy-groups:
   - United States_Phoenix_vmess_799
   - United States_None_vless_7100
   - United States_Buffalo_tuic_7101
-  - United States_None_vmess_7102
-  - United States_None_vmess_7103
+  - None_None_vmess_7102
+  - None_None_vmess_7103
   - United States_Phoenix_hysteria2_7104
-  - United States_San Jose_ss_7105
+  - United States_None_ss_7105
   - None_None_vmess_7106
   - United States_Phoenix_hysteria2_7107
-  - United States_None_hysteria2_7108
-  - United States_San Francisco_vmess_7109
+  - United States_The Dalles_hysteria2_7108
+  - None_None_vmess_7109
   - United States_Columbus_hysteria2_7110
   - United States_None_vless_7111
   - United States_Los Angeles_vmess_7112
-  - United States_None_trojan_7113
+  - None_None_trojan_7113
   - None_None_vless_7114
   - None_None_vless_7115
   - China_Shanghai_vless_7116
-  - United States_San Francisco_vmess_7117
-  - United States_None_vless_7118
+  - None_None_vmess_7117
+  - None_None_vless_7118
   - None_None_vless_7119
   - None_None_trojan_7120
   - None_None_vless_7121
   - None_None_vless_7122
-  - United States_None_vless_7123
+  - None_None_vless_7123
   - None_None_vless_7124
-  - United States_None_vless_7125
+  - United States_Santa Clara_vless_7125
   - None_None_vless_7126
   - United States_None_vless_7127
-  - United States_San Francisco_trojan_7128
+  - None_None_trojan_7128
   - United States_Los Angeles_hysteria2_7129
   - None_None_trojan_7130
   - None_None_vless_7131
-  - United States_None_vless_7132
+  - None_None_vless_7132
   - None_None_trojan_7133
-  - United States_None_hysteria2_7134
-  - United States_San Francisco_vmess_7135
-  - United States_San Francisco_trojan_7136
+  - United States_New York_hysteria2_7134
+  - None_None_vmess_7135
+  - None_None_trojan_7136
   - None_None_trojan_7137
   - None_None_vless_7138
   - None_None_vmess_7139
   - United States_Los Angeles_trojan_7140
-  - United States_None_vless_7141
-  - United States_None_hysteria2_7142
-  - United States_None_vless_7143
+  - None_None_vless_7141
+  - United States_New York_hysteria2_7142
+  - United States_Santa Clara_vless_7143
   - United States_Los Angeles_hysteria2_7144
   - None_None_trojan_7145
   - United States_Ashburn_hysteria2_7146
   - None_None_vless_7147
-  - United States_San Francisco_vmess_7148
-  - Unknown_vmess_7149
+  - None_None_vmess_7148
+  - Vietnam_None_vmess_7149
   - Vietnam_None_hysteria2_7150
-  - France_Sarcelles_hy_0
-  - France_None_hy_1
-  - France_None_hy_2
-  - France_None_hy_3
+  - France_Paris_hy_0
+  - France_Paris_hy_1
+  - France_Paris_hy_2
+  - France_Paris_hy_3
   - Germany_None_hy2_0
   - Germany_None_hy2_1
   - Germany_None_hy2_2
   - Germany_None_hy2_3
-  - France_None_reality_0
-  - France_None_reality_1
+  - France_Paris_reality_0
+  - France_Paris_reality_1
   - Germany_None_reality_2
   - United States_None_reality_3
 - name: 自动选择
@@ -2443,10 +2443,10 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - France_None_hysteria_01
-  - France_None_hysteria_11
-  - France_None_tuic_21
-  - France_None_tuic_31
+  - France_Paris_hysteria_01
+  - France_Paris_hysteria_11
+  - Germany_None_tuic_21
+  - Germany_None_tuic_31
   - United States_None_hysteria_41
   - United States_None_hysteria_51
   - United States_None_vmess_61
@@ -2459,26 +2459,26 @@ proxy-groups:
   - United States_None_vmess_68
   - United States_None_vmess_69
   - United States_None_vmess_610
-  - United States_None_ss_611
-  - Hong Kong_Central_vmess_612
+  - Germany_Frankfurt am Main_ss_611
+  - Hong Kong_None_vmess_612
   - Hong Kong_None_trojan_613
-  - Hong Kong_None_trojan_614
+  - Hong Kong_Hong Kong_trojan_614
   - Hong Kong_None_trojan_615
   - Japan_Tokyo_trojan_616
   - Hong Kong_None_trojan_617
   - Hong Kong_None_trojan_618
   - Hong Kong_None_trojan_619
   - Hong Kong_None_trojan_620
-  - Hong Kong_None_trojan_621
+  - Hong Kong_Hong Kong_trojan_621
   - Hong Kong_None_trojan_622
   - Hong Kong_None_trojan_623
   - Hong Kong_None_trojan_624
-  - Hong Kong_Central_vmess_625
+  - Hong Kong_None_vmess_625
   - United States_Columbus_ss_626
-  - Unknown_trojan_627
+  - None_None_trojan_627
   - France_Paris_ss_628
   - United States_Columbus_ss_629
-  - Denmark_None_trojan_630
+  - Germany_Nuremberg_trojan_630
   - United Arab Emirates_None_trojan_631
   - United Kingdom_None_trojan_632
   - The Netherlands_None_trojan_633
@@ -2489,7 +2489,7 @@ proxy-groups:
   - United States_Piscataway_ss_74
   - Germany_Frankfurt am Main_trojan_75
   - Germany_Frankfurt am Main_hysteria2_76
-  - United States_None_vless_77
+  - None_None_vless_77
   - Germany_Frankfurt am Main_trojan_78
   - Germany_Frankfurt am Main_hysteria2_79
   - None_None_vless_710
@@ -2498,80 +2498,80 @@ proxy-groups:
   - United States_None_trojan_713
   - France_Paris_vless_714
   - France_Paris_hysteria2_715
-  - France_Sarcelles_tuic_716
-  - France_None_hysteria2_717
+  - France_Paris_tuic_716
+  - France_Paris_hysteria2_717
   - France_Strasbourg_vless_718
   - United States_Piscataway_ss_719
   - United States_None_trojan_720
   - United States_None_trojan_721
-  - United Kingdom_Enfield_ss_722
-  - United Kingdom_Plymouth_vless_723
-  - United Kingdom_Enfield_ss_724
+  - United Kingdom_None_ss_722
+  - United Kingdom_None_vless_723
+  - United Kingdom_None_ss_724
   - Iran_None_ss_725
   - Hong Kong_None_hysteria2_726
-  - United States_None_hysteria2_727
-  - Hong Kong_None_anytls_728
-  - Hong Kong_None_anytls_729
-  - Poland_None_anytls_730
-  - Hong Kong_None_anytls_731
+  - Hong Kong_Kwun Tong_hysteria2_727
+  - Hong Kong_Hong Kong_anytls_728
+  - Hong Kong_Hong Kong_anytls_729
+  - Hong Kong_Hong Kong_anytls_730
+  - Hong Kong_Hong Kong_anytls_731
   - Hong Kong_Hong Kong_tuic_732
-  - Singapore_None_vmess_733
-  - Hong Kong_None_anytls_734
-  - Switzerland_Renens_ss_735
-  - United States_None_hysteria2_736
-  - United States_None_hysteria2_737
-  - Hong Kong_None_anytls_738
-  - Switzerland_Renens_ss_739
+  - Hong Kong_Hong Kong_vmess_733
+  - Hong Kong_Hong Kong_anytls_734
+  - Hong Kong_None_ss_735
+  - Hong Kong_Hong Kong_hysteria2_736
+  - Hong Kong_Hong Kong_hysteria2_737
+  - Hong Kong_Hong Kong_anytls_738
+  - Hong Kong_None_ss_739
   - Hong Kong_None_trojan_740
-  - Switzerland_Renens_ss_741
-  - Switzerland_Renens_ss_742
+  - Hong Kong_None_ss_741
+  - Hong Kong_None_ss_742
   - Hong Kong_None_trojan_743
   - Hong Kong_None_trojan_744
-  - Hong Kong_Central_trojan_745
+  - Hong Kong_None_trojan_745
   - Hong Kong_None_trojan_746
-  - United Kingdom_Skelmersdale_hysteria2_747
-  - United Kingdom_Skelmersdale_anytls_748
+  - India_Mumbai_hysteria2_747
+  - India_Mumbai_anytls_748
   - Japan_Tokyo_vless_749
   - Japan_Tokyo_anytls_750
   - Japan_None_trojan_751
-  - Bosnia and Herzegovina_Gracanica_tuic_752
+  - Japan_Tokyo_tuic_752
   - Japan_Tokyo_anytls_753
   - Japan_Tokyo_anytls_754
-  - China_None_vmess_755
+  - Hong Kong_Hong Kong_vmess_755
   - Japan_Tokyo_vless_756
   - Japan_Tokyo_anytls_757
-  - United States_None_vless_758
+  - None_None_vless_758
   - South Korea_Seoul_vmess_759
-  - United States_None_hysteria2_760
+  - South Korea_Chuncheon_hysteria2_760
   - South Korea_Chuncheon_vmess_761
-  - South Korea_None_hysteria2_762
-  - South Korea_Gwangjin-gu_trojan_763
+  - South Korea_Incheon_hysteria2_762
+  - South Korea_Gunpo_trojan_763
   - South Korea_Seoul_tuic_764
   - South Korea_Seoul_hysteria2_765
-  - Singapore_None_vless_766
+  - South Korea_Seoul_vless_766
   - South Korea_Incheon_hysteria2_767
-  - South Korea_None_hysteria2_768
+  - South Korea_Guro-gu_hysteria2_768
   - South Korea_Incheon_hysteria2_769
-  - Singapore_None_hysteria2_770
+  - China_Hangzhou_hysteria2_770
   - South Korea_Incheon_vless_771
   - Russia_St Petersburg_ss_772
   - Russia_Moscow_ss_773
   - Russia_None_hysteria2_774
-  - Russia_Novosibirsk_hysteria2_775
+  - Russia_Moscow_hysteria2_775
   - Russia_None_hysteria2_776
-  - United States_Brooklyn_hysteria2_777
-  - United States_Brooklyn_hysteria2_778
+  - Singapore_Singapore_hysteria2_777
+  - Singapore_Singapore_hysteria2_778
   - None_None_vmess_779
-  - United States_Brooklyn_hysteria2_780
-  - China_None_vmess_781
-  - China_None_vmess_782
+  - Singapore_Singapore_hysteria2_780
+  - Hong Kong_Hong Kong_vmess_781
+  - Hong Kong_Hong Kong_vmess_782
   - Singapore_Singapore_anytls_783
-  - Japan_None_hysteria2_784
+  - Singapore_Loyang_hysteria2_784
   - Singapore_Singapore_anytls_785
-  - United States_Brooklyn_hysteria2_786
+  - Singapore_Singapore_hysteria2_786
   - Singapore_Singapore_vless_787
   - Singapore_Singapore_anytls_788
-  - United States_San Francisco_vless_789
+  - None_None_vless_789
   - Singapore_Singapore_anytls_790
   - None_None_vless_791
   - Singapore_Singapore_vless_792
@@ -2584,65 +2584,65 @@ proxy-groups:
   - United States_Phoenix_vmess_799
   - United States_None_vless_7100
   - United States_Buffalo_tuic_7101
-  - United States_None_vmess_7102
-  - United States_None_vmess_7103
+  - None_None_vmess_7102
+  - None_None_vmess_7103
   - United States_Phoenix_hysteria2_7104
-  - United States_San Jose_ss_7105
+  - United States_None_ss_7105
   - None_None_vmess_7106
   - United States_Phoenix_hysteria2_7107
-  - United States_None_hysteria2_7108
-  - United States_San Francisco_vmess_7109
+  - United States_The Dalles_hysteria2_7108
+  - None_None_vmess_7109
   - United States_Columbus_hysteria2_7110
   - United States_None_vless_7111
   - United States_Los Angeles_vmess_7112
-  - United States_None_trojan_7113
+  - None_None_trojan_7113
   - None_None_vless_7114
   - None_None_vless_7115
   - China_Shanghai_vless_7116
-  - United States_San Francisco_vmess_7117
-  - United States_None_vless_7118
+  - None_None_vmess_7117
+  - None_None_vless_7118
   - None_None_vless_7119
   - None_None_trojan_7120
   - None_None_vless_7121
   - None_None_vless_7122
-  - United States_None_vless_7123
+  - None_None_vless_7123
   - None_None_vless_7124
-  - United States_None_vless_7125
+  - United States_Santa Clara_vless_7125
   - None_None_vless_7126
   - United States_None_vless_7127
-  - United States_San Francisco_trojan_7128
+  - None_None_trojan_7128
   - United States_Los Angeles_hysteria2_7129
   - None_None_trojan_7130
   - None_None_vless_7131
-  - United States_None_vless_7132
+  - None_None_vless_7132
   - None_None_trojan_7133
-  - United States_None_hysteria2_7134
-  - United States_San Francisco_vmess_7135
-  - United States_San Francisco_trojan_7136
+  - United States_New York_hysteria2_7134
+  - None_None_vmess_7135
+  - None_None_trojan_7136
   - None_None_trojan_7137
   - None_None_vless_7138
   - None_None_vmess_7139
   - United States_Los Angeles_trojan_7140
-  - United States_None_vless_7141
-  - United States_None_hysteria2_7142
-  - United States_None_vless_7143
+  - None_None_vless_7141
+  - United States_New York_hysteria2_7142
+  - United States_Santa Clara_vless_7143
   - United States_Los Angeles_hysteria2_7144
   - None_None_trojan_7145
   - United States_Ashburn_hysteria2_7146
   - None_None_vless_7147
-  - United States_San Francisco_vmess_7148
-  - Unknown_vmess_7149
+  - None_None_vmess_7148
+  - Vietnam_None_vmess_7149
   - Vietnam_None_hysteria2_7150
-  - France_Sarcelles_hy_0
-  - France_None_hy_1
-  - France_None_hy_2
-  - France_None_hy_3
+  - France_Paris_hy_0
+  - France_Paris_hy_1
+  - France_Paris_hy_2
+  - France_Paris_hy_3
   - Germany_None_hy2_0
   - Germany_None_hy2_1
   - Germany_None_hy2_2
   - Germany_None_hy2_3
-  - France_None_reality_0
-  - France_None_reality_1
+  - France_Paris_reality_0
+  - France_Paris_reality_1
   - Germany_None_reality_2
   - United States_None_reality_3
 rules:
