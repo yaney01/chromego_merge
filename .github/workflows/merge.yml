@@ -19,6 +19,10 @@ jobs:
           cache: pip
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Update GeoLite2 database
+        run: |
+          curl -sL -z GeoLite2-City.mmdb -o GeoLite2-City.mmdb \
+            "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-City.mmdb" || true
       - name: Run merge script
         run: python meta_merge.py 
       - name: Run shadowrocket merge script
