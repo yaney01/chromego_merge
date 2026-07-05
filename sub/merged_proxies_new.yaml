@@ -323,20 +323,151 @@ proxies:
 - alterId: 0
   cipher: auto
   name: The Netherlands_Amsterdam_vmess_626
+  network: tcp
   port: 18339
   server: c87s5.portablesubmarines.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
+  xudp: true
+- alpn:
+  - http/1.1
+  name: Canada_Ottawa_trojan_627
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: petrolicious.com
+  skip-cert-verify: false
+  sni: S-o-W.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
+- alpn:
+  - http/1.1
+  name: None_None_trojan_628
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.26.4.60
+  skip-cert-verify: false
+  sni: NL-L-ll.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl
+- alpn:
+  - http/1.1
+  name: Canada_Ottawa_trojan_629
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: petrolicious.com
+  skip-cert-verify: false
+  sni: NL-L-ll.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl
+- alpn:
+  - http/1.1
+  name: Canada_Ottawa_trojan_630
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: petrolicious.com
+  skip-cert-verify: false
+  sni: Fo-F-lL.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl
+- alpn:
+  - http/1.1
+  name: None_None_trojan_631
+  network: ws
+  password: MITIVPN
+  port: '443'
+  server: 104.25.193.8
+  skip-cert-verify: false
+  sni: G-Dee.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De
+- alpn:
+  - http/1.1
+  name: None_None_trojan_632
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.21.33.129
+  skip-cert-verify: false
+  sni: Fo-F-lL.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl
+- alpn:
+  - http/1.1
+  name: Canada_Ottawa_trojan_633
+  network: ws
+  password: MITIVPN
+  port: '443'
+  server: petrolicious.com
+  skip-cert-verify: false
+  sni: G-Dee.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De
+- alpn:
+  - http/1.1
+  name: None_None_trojan_634
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.18.37.237
+  skip-cert-verify: false
+  sni: S-o-W.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
 - cipher: aes-256-cfb
-  name: Japan_Tokyo_ss_627
+  name: United States_Columbus_ss_635
   password: amazonskr05
   port: '443'
-  server: 3.112.132.169
+  server: 3.142.135.161
   type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_628
+- name: United Arab Emirates_None_trojan_636
   network: ws
   password: MITIVPN
   port: 443
@@ -349,7 +480,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_629
+- name: United Kingdom_None_trojan_637
   network: ws
   password: MITIVPN
   port: 443
@@ -362,7 +493,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_630
+- name: The Netherlands_None_trojan_638
   network: ws
   password: MiTiVPN
   port: 443
@@ -375,7 +506,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_631
+- name: United States_None_trojan_639
   network: ws
   password: Mitivpn
   port: 443
@@ -1153,7 +1284,7 @@ proxies:
     headers:
       Host: seoul01.zgjok.com
   udp: true
-- name: South Korea_None_hysteria2_776
+- name: South Korea_Incheon_hysteria2_776
   server: vpn-kr-003.fastervpn.world
   port: 443
   type: hysteria2
@@ -1354,7 +1485,7 @@ proxies:
   sni: iosapps.itunes.apple.com
   skip-cert-verify: true
   udp: true
-- name: Singapore_Singapore_hysteria2_795
+- name: United States_Santa Clara_hysteria2_795
   server: 1sg001.459292.xyz
   port: 8443
   type: hysteria2
@@ -2329,11 +2460,19 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - The Netherlands_Amsterdam_vmess_626
-  - Japan_Tokyo_ss_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - Canada_Ottawa_trojan_627
+  - None_None_trojan_628
+  - Canada_Ottawa_trojan_629
+  - Canada_Ottawa_trojan_630
+  - None_None_trojan_631
+  - None_None_trojan_632
+  - Canada_Ottawa_trojan_633
+  - None_None_trojan_634
+  - United States_Columbus_ss_635
+  - United Arab Emirates_None_trojan_636
+  - United Kingdom_None_trojan_637
+  - The Netherlands_None_trojan_638
+  - United States_None_trojan_639
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2409,7 +2548,7 @@ proxy-groups:
   - South Korea_None_anytls_773
   - South Korea_Seoul_vmess_774
   - South Korea_Seoul_vmess_775
-  - South Korea_None_hysteria2_776
+  - South Korea_Incheon_hysteria2_776
   - South Korea_Wŏnju_vless_777
   - None_None_vless_778
   - Russia_Moscow_vless_779
@@ -2428,7 +2567,7 @@ proxy-groups:
   - Singapore_Singapore_vmess_792
   - Singapore_Singapore_vmess_793
   - Singapore_Singapore_hysteria2_794
-  - Singapore_Singapore_hysteria2_795
+  - United States_Santa Clara_hysteria2_795
   - Singapore_Singapore_vless_796
   - Singapore_Singapore_vless_797
   - None_None_vless_798
@@ -2544,11 +2683,19 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - The Netherlands_Amsterdam_vmess_626
-  - Japan_Tokyo_ss_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - Canada_Ottawa_trojan_627
+  - None_None_trojan_628
+  - Canada_Ottawa_trojan_629
+  - Canada_Ottawa_trojan_630
+  - None_None_trojan_631
+  - None_None_trojan_632
+  - Canada_Ottawa_trojan_633
+  - None_None_trojan_634
+  - United States_Columbus_ss_635
+  - United Arab Emirates_None_trojan_636
+  - United Kingdom_None_trojan_637
+  - The Netherlands_None_trojan_638
+  - United States_None_trojan_639
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2624,7 +2771,7 @@ proxy-groups:
   - South Korea_None_anytls_773
   - South Korea_Seoul_vmess_774
   - South Korea_Seoul_vmess_775
-  - South Korea_None_hysteria2_776
+  - South Korea_Incheon_hysteria2_776
   - South Korea_Wŏnju_vless_777
   - None_None_vless_778
   - Russia_Moscow_vless_779
@@ -2643,7 +2790,7 @@ proxy-groups:
   - Singapore_Singapore_vmess_792
   - Singapore_Singapore_vmess_793
   - Singapore_Singapore_hysteria2_794
-  - Singapore_Singapore_hysteria2_795
+  - United States_Santa Clara_hysteria2_795
   - Singapore_Singapore_vless_796
   - Singapore_Singapore_vless_797
   - None_None_vless_798
