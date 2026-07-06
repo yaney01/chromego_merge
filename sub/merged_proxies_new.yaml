@@ -362,41 +362,16 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - http/1.1
-  name: Canada_Ottawa_trojan_632
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: petrolicious.com
-  skip-cert-verify: false
-  sni: NL-L-ll.MaQror.ir
-  type: trojan
+- cipher: aes-256-gcm
+  name: Hong Kong_Hong Kong_ss_632
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: c722s2.portablesubmarines.com
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl
 - alpn:
   - http/1.1
-  name: Canada_Ottawa_trojan_633
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: petrolicious.com
-  skip-cert-verify: false
-  sni: S-o-W.MaQror.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
-- alpn:
-  - http/1.1
-  name: None_None_trojan_634
+  name: None_None_trojan_633
   network: ws
   password: MiTiVPN
   port: '443'
@@ -407,50 +382,54 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
-- alpn:
-  - http/1.1
-  name: None_None_trojan_635
-  network: ws
-  password: MITIVPN
-  port: '443'
-  server: 104.25.193.8
-  skip-cert-verify: false
-  sni: G-Dee.MaQror.ir
-  type: trojan
+- cipher: aes-256-gcm
+  name: Hong Kong_Hong Kong_ss_634
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: c722s1.portablesubmarines.com
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/47.0.2526.111 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De
-- alpn:
-  - http/1.1
-  name: Canada_Ottawa_trojan_636
-  network: ws
-  password: MITIVPN
-  port: '443'
-  server: petrolicious.com
-  skip-cert-verify: false
-  sni: G-Dee.MaQror.ir
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Hong Kong_vmess_635
+  network: tcp
+  port: '16025'
+  server: c722s3.portablesubmarines.com
+  type: vmess
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/51.0.2704.103 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De
-- name: Hong Kong_Hong Kong_trojan_637
-  password: BxceQaOe
-  port: '44265'
-  server: 18.163.116.155
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  type: trojan
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Hong Kong_vmess_636
+  network: tcp
+  port: '16025'
+  server: c722s4.portablesubmarines.com
+  type: vmess
   udp: true
-- name: United Arab Emirates_None_trojan_638
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: Hong Kong_Hong Kong_vmess_637
+  network: tcp
+  port: '16025'
+  server: c722s5.portablesubmarines.com
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
+- cipher: aes-256-gcm
+  name: Hong Kong_Hong Kong_ss_638
+  password: gXtfJmxrZ8Qkkd2k
+  port: '16025'
+  server: 45.78.26.146
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_639
   network: ws
   password: MITIVPN
   port: 443
@@ -463,7 +442,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_639
+- name: United Kingdom_None_trojan_640
   network: ws
   password: MITIVPN
   port: 443
@@ -476,7 +455,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_640
+- name: The Netherlands_None_trojan_641
   network: ws
   password: MiTiVPN
   port: 443
@@ -489,7 +468,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_641
+- name: United States_None_trojan_642
   network: ws
   password: Mitivpn
   port: 443
@@ -2448,16 +2427,17 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_629
   - Hong Kong_None_trojan_630
   - Hong Kong_Hong Kong_trojan_631
-  - Canada_Ottawa_trojan_632
-  - Canada_Ottawa_trojan_633
-  - None_None_trojan_634
-  - None_None_trojan_635
-  - Canada_Ottawa_trojan_636
-  - Hong Kong_Hong Kong_trojan_637
-  - United Arab Emirates_None_trojan_638
-  - United Kingdom_None_trojan_639
-  - The Netherlands_None_trojan_640
-  - United States_None_trojan_641
+  - Hong Kong_Hong Kong_ss_632
+  - None_None_trojan_633
+  - Hong Kong_Hong Kong_ss_634
+  - Hong Kong_Hong Kong_vmess_635
+  - Hong Kong_Hong Kong_vmess_636
+  - Hong Kong_Hong Kong_vmess_637
+  - Hong Kong_Hong Kong_ss_638
+  - United Arab Emirates_None_trojan_639
+  - United Kingdom_None_trojan_640
+  - The Netherlands_None_trojan_641
+  - United States_None_trojan_642
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2673,16 +2653,17 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_629
   - Hong Kong_None_trojan_630
   - Hong Kong_Hong Kong_trojan_631
-  - Canada_Ottawa_trojan_632
-  - Canada_Ottawa_trojan_633
-  - None_None_trojan_634
-  - None_None_trojan_635
-  - Canada_Ottawa_trojan_636
-  - Hong Kong_Hong Kong_trojan_637
-  - United Arab Emirates_None_trojan_638
-  - United Kingdom_None_trojan_639
-  - The Netherlands_None_trojan_640
-  - United States_None_trojan_641
+  - Hong Kong_Hong Kong_ss_632
+  - None_None_trojan_633
+  - Hong Kong_Hong Kong_ss_634
+  - Hong Kong_Hong Kong_vmess_635
+  - Hong Kong_Hong Kong_vmess_636
+  - Hong Kong_Hong Kong_vmess_637
+  - Hong Kong_Hong Kong_ss_638
+  - United Arab Emirates_None_trojan_639
+  - United Kingdom_None_trojan_640
+  - The Netherlands_None_trojan_641
+  - United States_None_trojan_642
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
