@@ -362,9 +362,32 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_632
+  password: amazonskr05
+  port: 443
+  server: 3.17.162.229
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
-  name: Canada_Ottawa_trojan_632
+  name: None_None_trojan_633
+  network: ws
+  password: MITIVPN
+  port: '443'
+  server: 104.31.16.65
+  skip-cert-verify: false
+  sni: U-S-A.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Us
+- alpn:
+  - http/1.1
+  name: Canada_Ottawa_trojan_634
   network: ws
   password: MiTiVPN
   port: '443'
@@ -375,50 +398,110 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/32.0.1700.107 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl
 - alpn:
   - http/1.1
-  name: Canada_Ottawa_trojan_633
+  name: Canada_Ottawa_trojan_635
   network: ws
   password: MiTiVPN
   port: '443'
   server: petrolicious.com
+  skip-cert-verify: false
+  sni: NL-L-ll.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl
+- client-fingerprint: firefox
+  name: Seychelles_None_trojan_636
+  network: ws
+  password: zBfIAxaXtz
+  port: '443'
+  server: 45.130.125.2
+  skip-cert-verify: false
+  sni: sn.farxmode.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /db
+- alpn:
+  - http/1.1
+  name: None_None_trojan_637
+  network: ws
+  password: MITIVPN
+  port: '443'
+  server: 104.25.193.8
+  skip-cert-verify: false
+  sni: G-Dee.MaQror.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De
+- alpn:
+  - http/1.1
+  name: None_None_trojan_638
+  network: ws
+  password: MiTiVPN
+  port: '443'
+  server: 104.18.37.237
   skip-cert-verify: false
   sni: S-o-W.MaQror.ir
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
-- alterId: 0
-  cipher: auto
-  name: United States_Fremont_vmess_634
-  network: tcp
-  port: '16025'
-  server: c722s801.portablesubmarines.com
-  type: vmess
-  udp: true
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-  xudp: true
 - cipher: aes-256-cfb
-  name: United States_Columbus_ss_635
+  name: France_Paris_ss_639
+  password: amazonskr05
+  port: 443
+  server: 15.236.37.125
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_None_ss_640
+  password: amazonskr05
+  port: 443
+  server: 13.59.27.93
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_641
   password: amazonskr05
   port: '443'
   server: 18.188.176.234
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: United States_Columbus_ss_636
-  password: amazonskr05
-  port: '443'
-  server: 3.147.85.161
+- cipher: aes-256-gcm
+  name: Russia_St Petersburg_ss_642
+  password: 1a87017d0bf57f34
+  port: '32432'
+  server: 176.32.39.106
   type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_637
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_643
+  password: amazonskr05
+  port: '443'
+  server: 18.118.140.96
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_644
   network: ws
   password: MITIVPN
   port: 443
@@ -431,7 +514,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_638
+- name: United Kingdom_None_trojan_645
   network: ws
   password: MITIVPN
   port: 443
@@ -444,7 +527,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_639
+- name: The Netherlands_None_trojan_646
   network: ws
   password: MiTiVPN
   port: 443
@@ -457,7 +540,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_640
+- name: United States_None_trojan_647
   network: ws
   password: Mitivpn
   port: 443
@@ -779,7 +862,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: b3813e01-e131-4ed2-98fd-c3a805fc515f
   udp: true
-- name: Unknown_ss_729
+- name: Hong Kong_None_ss_729
   server: hkp2.network-cdn-gw-yd.net
   port: 49911
   type: ss
@@ -871,7 +954,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_Tsuen Wan_ss_740
+- name: Hong Kong_None_ss_740
   server: mas.network-cdn-gw-yd.net
   port: 43305
   type: ss
@@ -953,7 +1036,7 @@ proxies:
   password: 51b37db3-8b14-4401-812c-4510a10abc36
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_Tsuen Wan_ss_750
+- name: Hong Kong_None_ss_750
   server: kr03.network-cdn-gw-yd.net
   port: 36220
   type: ss
@@ -1436,7 +1519,7 @@ proxies:
   sni: iosapps.itunes.apple.com
   skip-cert-verify: true
   udp: true
-- name: United States_Santa Clara_hysteria2_795
+- name: Singapore_Singapore_hysteria2_795
   server: 1sg001.459292.xyz
   port: 8443
   type: hysteria2
@@ -2416,15 +2499,22 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_629
   - Hong Kong_None_trojan_630
   - Hong Kong_Hong Kong_trojan_631
-  - Canada_Ottawa_trojan_632
-  - Canada_Ottawa_trojan_633
-  - United States_Fremont_vmess_634
-  - United States_Columbus_ss_635
-  - United States_Columbus_ss_636
-  - United Arab Emirates_None_trojan_637
-  - United Kingdom_None_trojan_638
-  - The Netherlands_None_trojan_639
-  - United States_None_trojan_640
+  - United States_Columbus_ss_632
+  - None_None_trojan_633
+  - Canada_Ottawa_trojan_634
+  - Canada_Ottawa_trojan_635
+  - Seychelles_None_trojan_636
+  - None_None_trojan_637
+  - None_None_trojan_638
+  - France_Paris_ss_639
+  - United States_None_ss_640
+  - United States_Columbus_ss_641
+  - Russia_St Petersburg_ss_642
+  - United States_Columbus_ss_643
+  - United Arab Emirates_None_trojan_644
+  - United Kingdom_None_trojan_645
+  - The Netherlands_None_trojan_646
+  - United States_None_trojan_647
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2453,7 +2543,7 @@ proxy-groups:
   - Hong Kong_Hong Kong_vmess_726
   - Unknown_ss_727
   - Hong Kong_None_ss_728
-  - Unknown_ss_729
+  - Hong Kong_None_ss_729
   - France_None_vmess_730
   - Hong Kong_None_ss_731
   - Hong Kong_None_trojan_732
@@ -2464,7 +2554,7 @@ proxy-groups:
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
   - Hong Kong_Hong Kong_vmess_739
-  - Hong Kong_Tsuen Wan_ss_740
+  - Hong Kong_None_ss_740
   - Hong Kong_None_vless_741
   - Hong Kong_None_trojan_742
   - Hong Kong_Hong Kong_ss_743
@@ -2474,7 +2564,7 @@ proxy-groups:
   - Hong Kong_None_ss_747
   - Hong Kong_None_ss_748
   - Hong Kong_None_trojan_749
-  - Hong Kong_Tsuen Wan_ss_750
+  - Hong Kong_None_ss_750
   - France_None_vmess_751
   - Hong Kong_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
@@ -2519,7 +2609,7 @@ proxy-groups:
   - Singapore_Singapore_vmess_792
   - Singapore_Singapore_vmess_793
   - Singapore_Singapore_hysteria2_794
-  - United States_Santa Clara_hysteria2_795
+  - Singapore_Singapore_hysteria2_795
   - Singapore_Singapore_vless_796
   - Singapore_Singapore_vless_797
   - None_None_vless_798
@@ -2640,15 +2730,22 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_629
   - Hong Kong_None_trojan_630
   - Hong Kong_Hong Kong_trojan_631
-  - Canada_Ottawa_trojan_632
-  - Canada_Ottawa_trojan_633
-  - United States_Fremont_vmess_634
-  - United States_Columbus_ss_635
-  - United States_Columbus_ss_636
-  - United Arab Emirates_None_trojan_637
-  - United Kingdom_None_trojan_638
-  - The Netherlands_None_trojan_639
-  - United States_None_trojan_640
+  - United States_Columbus_ss_632
+  - None_None_trojan_633
+  - Canada_Ottawa_trojan_634
+  - Canada_Ottawa_trojan_635
+  - Seychelles_None_trojan_636
+  - None_None_trojan_637
+  - None_None_trojan_638
+  - France_Paris_ss_639
+  - United States_None_ss_640
+  - United States_Columbus_ss_641
+  - Russia_St Petersburg_ss_642
+  - United States_Columbus_ss_643
+  - United Arab Emirates_None_trojan_644
+  - United Kingdom_None_trojan_645
+  - The Netherlands_None_trojan_646
+  - United States_None_trojan_647
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2677,7 +2774,7 @@ proxy-groups:
   - Hong Kong_Hong Kong_vmess_726
   - Unknown_ss_727
   - Hong Kong_None_ss_728
-  - Unknown_ss_729
+  - Hong Kong_None_ss_729
   - France_None_vmess_730
   - Hong Kong_None_ss_731
   - Hong Kong_None_trojan_732
@@ -2688,7 +2785,7 @@ proxy-groups:
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
   - Hong Kong_Hong Kong_vmess_739
-  - Hong Kong_Tsuen Wan_ss_740
+  - Hong Kong_None_ss_740
   - Hong Kong_None_vless_741
   - Hong Kong_None_trojan_742
   - Hong Kong_Hong Kong_ss_743
@@ -2698,7 +2795,7 @@ proxy-groups:
   - Hong Kong_None_ss_747
   - Hong Kong_None_ss_748
   - Hong Kong_None_trojan_749
-  - Hong Kong_Tsuen Wan_ss_750
+  - Hong Kong_None_ss_750
   - France_None_vmess_751
   - Hong Kong_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
@@ -2743,7 +2840,7 @@ proxy-groups:
   - Singapore_Singapore_vmess_792
   - Singapore_Singapore_vmess_793
   - Singapore_Singapore_hysteria2_794
-  - United States_Santa Clara_hysteria2_795
+  - Singapore_Singapore_hysteria2_795
   - Singapore_Singapore_vless_796
   - Singapore_Singapore_vless_797
   - None_None_vless_798
