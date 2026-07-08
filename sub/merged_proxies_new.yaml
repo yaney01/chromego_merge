@@ -212,59 +212,59 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_None_trojan_613
+- name: Hong Kong_Hong Kong_trojan_613
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
-  port: 2008
-  server: 16.163.138.198
+  port: 32583
+  server: 95.40.1.25
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_None_trojan_614
   network: tcp
   password: BxceQaOe
-  port: 4374
-  server: 16.162.33.88
+  port: 50115
+  server: 16.163.145.82
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: Hong Kong_None_trojan_615
   network: tcp
   password: BxceQaOe
-  port: 29449
-  server: 16.162.119.181
+  port: 27161
+  server: 16.162.220.240
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: Hong Kong_None_trojan_616
   network: tcp
   password: BxceQaOe
-  port: 47656
-  server: 18.162.113.168
+  port: 4099
+  server: 16.162.24.7
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_617
-  network: tcp
-  password: d6788cf74e6844c45538204efd24b00f
-  port: 55973
-  server: 16.163.50.86
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: Hong Kong_None_trojan_618
+- name: Hong Kong_Hong Kong_trojan_617
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
   port: 3743
-  server: 16.163.50.86
+  server: 95.40.44.165
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_619
+- name: Hong Kong_Hong Kong_trojan_618
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
-  port: 6357
-  server: 18.162.58.236
+  port: 55973
+  server: 95.40.44.165
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: Hong Kong_Hong Kong_trojan_619
+  network: tcp
+  password: d6788cf74e6844c45538204efd24b00f
+  port: 29642
+  server: 95.40.1.25
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -279,32 +279,32 @@ proxies:
 - name: Hong Kong_None_trojan_621
   network: tcp
   password: BxceQaOe
-  port: 9149
-  server: 18.166.66.1
+  port: 22459
+  server: 16.163.145.82
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: Hong Kong_None_trojan_622
+- name: Hong Kong_Hong Kong_trojan_622
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
   port: 17005
-  server: 16.163.50.86
+  server: 95.40.44.165
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: Hong Kong_None_trojan_623
+- name: Hong Kong_Hong Kong_trojan_623
   network: tcp
   password: d6788cf74e6844c45538204efd24b00f
   port: 49277
-  server: 16.163.138.198
+  server: 95.40.1.25
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: Hong Kong_None_trojan_624
   network: tcp
   password: BxceQaOe
-  port: 22657
-  server: 18.162.111.216
+  port: 11353
+  server: 16.162.220.240
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -320,51 +320,58 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alpn:
   - http/1.1
-  name: United States_None_trojan_626
-  network: ws
-  password: MiTiVPN
-  port: '443'
-  server: 141.193.213.21
-  skip-cert-verify: true
-  sni: fffffl-lls.MaQror.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX3 Build/HUAWEITRT-LX3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl
-- alpn:
-  - http/1.1
-  name: None_None_trojan_627
+  name: None_None_trojan_626
   network: ws
   password: MITIVPN
   port: '443'
   server: www.speedtest.net
   skip-cert-verify: true
-  sni: De-Ge-N.MaQror.ir
+  sni: u---as.MaQror.ir
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=de
-- name: None_None_trojan_628
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+- cipher: chacha20-ietf-poly1305
+  name: Estonia_Tallinn_ss_627
+  password: j1HaUANVRdB5ltSqhLYPWm
+  port: '14475'
+  server: 45.83.181.155
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: Taiwan_Taichung_vmess_628
+  network: tcp
+  port: '11886'
+  server: tttttt.ly123.edu.kg
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 77ac8771-e16a-4b4f-becd-81750057c8ad
+  xudp: true
+- alpn:
+  - http/1.1
+  name: None_None_trojan_629
   network: ws
-  password: humanity
+  password: MITIVPN
   port: '443'
-  server: 172.64.146.211
-  skip-cert-verify: true
-  sni: www.gossipglove.com
+  server: 104.17.148.22
+  skip-cert-verify: false
+  sni: u---as.MaQror.ir
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /assignment
-- name: United Arab Emirates_None_trojan_629
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=usa
+- name: United Arab Emirates_None_trojan_630
   network: ws
   password: MITIVPN
   port: 443
@@ -377,7 +384,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_630
+- name: United Kingdom_None_trojan_631
   network: ws
   password: MITIVPN
   port: 443
@@ -390,7 +397,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_631
+- name: The Netherlands_None_trojan_632
   network: ws
   password: MiTiVPN
   port: 443
@@ -403,7 +410,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_632
+- name: United States_None_trojan_633
   network: ws
   password: Mitivpn
   port: 443
@@ -807,7 +814,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: China_Shanghai_vmess_739
+- name: China_Nanjing_vmess_739
   server: v29.hdacd.com
   port: 30829
   type: vmess
@@ -1654,7 +1661,7 @@ proxies:
     headers:
       Host: hk-007.pg13900.com
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7116
+- name: Japan_Minari_trojan_7116
   server: pokemonjp-01.yunjnet.com
   port: 54032
   type: trojan
@@ -1895,14 +1902,14 @@ proxies:
     headers:
       Host: flat-sun-b8d3.225-154.workers.dev
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7136
+- name: Japan_Minari_trojan_7136
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
   password: 202a5fe3-05ae-4130-8439-ed0df1d1969e
   skip-cert-verify: true
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7137
+- name: Japan_Minari_trojan_7137
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
@@ -1939,7 +1946,7 @@ proxies:
     headers:
       Host: odd-cloud-f2a1.73-12e.workers.dev
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7140
+- name: Japan_Minari_trojan_7140
   server: pokemon-01.yunjnet.com
   port: 59099
   type: trojan
@@ -2028,14 +2035,14 @@ proxies:
     headers:
       Host: cg1c16.waimaojd.com
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7148
+- name: Japan_Minari_trojan_7148
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
   password: 33ebe1e4-cd73-4cbd-a799-650478471d35
   skip-cert-verify: true
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7149
+- name: Japan_Minari_trojan_7149
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
@@ -2103,7 +2110,7 @@ proxies:
     headers:
       Host: shrill-mouse-dacd.391.workers.dev
   udp: true
-- name: Malaysia_Kuala Lumpur_trojan_7154
+- name: Japan_Minari_trojan_7154
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
@@ -2343,26 +2350,27 @@ proxy-groups:
   - United States_None_vmess_610
   - Germany_Frankfurt am Main_ss_611
   - Hong Kong_None_vmess_612
-  - Hong Kong_None_trojan_613
+  - Hong Kong_Hong Kong_trojan_613
   - Hong Kong_None_trojan_614
   - Hong Kong_None_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_None_trojan_617
-  - Hong Kong_None_trojan_618
-  - Hong Kong_None_trojan_619
+  - Hong Kong_Hong Kong_trojan_617
+  - Hong Kong_Hong Kong_trojan_618
+  - Hong Kong_Hong Kong_trojan_619
   - Hong Kong_None_trojan_620
   - Hong Kong_None_trojan_621
-  - Hong Kong_None_trojan_622
-  - Hong Kong_None_trojan_623
+  - Hong Kong_Hong Kong_trojan_622
+  - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_None_vmess_625
-  - United States_None_trojan_626
-  - None_None_trojan_627
-  - None_None_trojan_628
-  - United Arab Emirates_None_trojan_629
-  - United Kingdom_None_trojan_630
-  - The Netherlands_None_trojan_631
-  - United States_None_trojan_632
+  - None_None_trojan_626
+  - Estonia_Tallinn_ss_627
+  - Taiwan_Taichung_vmess_628
+  - None_None_trojan_629
+  - United Arab Emirates_None_trojan_630
+  - United Kingdom_None_trojan_631
+  - The Netherlands_None_trojan_632
+  - United States_None_trojan_633
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2401,7 +2409,7 @@ proxy-groups:
   - Unknown_ss_736
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
-  - China_Shanghai_vmess_739
+  - China_Nanjing_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
   - Hong Kong_None_trojan_742
@@ -2478,7 +2486,7 @@ proxy-groups:
   - United States_Buffalo_vmess_7113
   - United States_San Jose_hysteria2_7114
   - None_None_trojan_7115
-  - Malaysia_Kuala Lumpur_trojan_7116
+  - Japan_Minari_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
   - Japan_Minari_trojan_7119
@@ -2498,11 +2506,11 @@ proxy-groups:
   - None_None_vless_7133
   - None_None_vless_7134
   - None_None_vless_7135
-  - Malaysia_Kuala Lumpur_trojan_7136
-  - Malaysia_Kuala Lumpur_trojan_7137
+  - Japan_Minari_trojan_7136
+  - Japan_Minari_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
-  - Malaysia_Kuala Lumpur_trojan_7140
+  - Japan_Minari_trojan_7140
   - None_None_vless_7141
   - None_None_vless_7142
   - United States_Los Angeles_anytls_7143
@@ -2510,13 +2518,13 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - Malaysia_Kuala Lumpur_trojan_7148
-  - Malaysia_Kuala Lumpur_trojan_7149
+  - Japan_Minari_trojan_7148
+  - Japan_Minari_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
   - None_None_vless_7153
-  - Malaysia_Kuala Lumpur_trojan_7154
+  - Japan_Minari_trojan_7154
   - United States_Los Angeles_hysteria2_7155
   - None_None_vless_7156
   - None_None_vless_7157
@@ -2559,26 +2567,27 @@ proxy-groups:
   - United States_None_vmess_610
   - Germany_Frankfurt am Main_ss_611
   - Hong Kong_None_vmess_612
-  - Hong Kong_None_trojan_613
+  - Hong Kong_Hong Kong_trojan_613
   - Hong Kong_None_trojan_614
   - Hong Kong_None_trojan_615
   - Hong Kong_None_trojan_616
-  - Hong Kong_None_trojan_617
-  - Hong Kong_None_trojan_618
-  - Hong Kong_None_trojan_619
+  - Hong Kong_Hong Kong_trojan_617
+  - Hong Kong_Hong Kong_trojan_618
+  - Hong Kong_Hong Kong_trojan_619
   - Hong Kong_None_trojan_620
   - Hong Kong_None_trojan_621
-  - Hong Kong_None_trojan_622
-  - Hong Kong_None_trojan_623
+  - Hong Kong_Hong Kong_trojan_622
+  - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_None_trojan_624
   - Hong Kong_None_vmess_625
-  - United States_None_trojan_626
-  - None_None_trojan_627
-  - None_None_trojan_628
-  - United Arab Emirates_None_trojan_629
-  - United Kingdom_None_trojan_630
-  - The Netherlands_None_trojan_631
-  - United States_None_trojan_632
+  - None_None_trojan_626
+  - Estonia_Tallinn_ss_627
+  - Taiwan_Taichung_vmess_628
+  - None_None_trojan_629
+  - United Arab Emirates_None_trojan_630
+  - United Kingdom_None_trojan_631
+  - The Netherlands_None_trojan_632
+  - United States_None_trojan_633
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2617,7 +2626,7 @@ proxy-groups:
   - Unknown_ss_736
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
-  - China_Shanghai_vmess_739
+  - China_Nanjing_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
   - Hong Kong_None_trojan_742
@@ -2694,7 +2703,7 @@ proxy-groups:
   - United States_Buffalo_vmess_7113
   - United States_San Jose_hysteria2_7114
   - None_None_trojan_7115
-  - Malaysia_Kuala Lumpur_trojan_7116
+  - Japan_Minari_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
   - Japan_Minari_trojan_7119
@@ -2714,11 +2723,11 @@ proxy-groups:
   - None_None_vless_7133
   - None_None_vless_7134
   - None_None_vless_7135
-  - Malaysia_Kuala Lumpur_trojan_7136
-  - Malaysia_Kuala Lumpur_trojan_7137
+  - Japan_Minari_trojan_7136
+  - Japan_Minari_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
-  - Malaysia_Kuala Lumpur_trojan_7140
+  - Japan_Minari_trojan_7140
   - None_None_vless_7141
   - None_None_vless_7142
   - United States_Los Angeles_anytls_7143
@@ -2726,13 +2735,13 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - Malaysia_Kuala Lumpur_trojan_7148
-  - Malaysia_Kuala Lumpur_trojan_7149
+  - Japan_Minari_trojan_7148
+  - Japan_Minari_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
   - None_None_vless_7153
-  - Malaysia_Kuala Lumpur_trojan_7154
+  - Japan_Minari_trojan_7154
   - United States_Los Angeles_hysteria2_7155
   - None_None_vless_7156
   - None_None_vless_7157
