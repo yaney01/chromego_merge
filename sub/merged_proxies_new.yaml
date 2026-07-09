@@ -318,7 +318,16 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: United Arab Emirates_None_trojan_626
+- name: China_None_trojan_626
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: 39001
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  tls: true
+  type: trojan
+  udp: true
+- name: United Arab Emirates_None_trojan_627
   network: ws
   password: MITIVPN
   port: 443
@@ -331,7 +340,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_627
+- name: United Kingdom_None_trojan_628
   network: ws
   password: MITIVPN
   port: 443
@@ -344,7 +353,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_628
+- name: The Netherlands_None_trojan_629
   network: ws
   password: MiTiVPN
   port: 443
@@ -357,7 +366,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_629
+- name: United States_None_trojan_630
   network: ws
   password: Mitivpn
   port: 443
@@ -655,7 +664,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: b3813e01-e131-4ed2-98fd-c3a805fc515f
   udp: true
-- name: China_Shanghai_vmess_726
+- name: China_Nanjing_vmess_726
   server: v9.hdacd.com
   port: 30809
   type: vmess
@@ -794,7 +803,7 @@ proxies:
     headers:
       Host: 8.p.4.x.p.3.k.l.1.x.3.0.d.d.us.art-us.kdns.fr
   udp: true
-- name: Hong Kong_None_trojan_742
+- name: France_None_trojan_742
   server: pokemon-02.yunjnet.com
   port: 59111
   type: trojan
@@ -875,7 +884,7 @@ proxies:
     headers:
       Host: 445eb7ce2d66c34309d2e1dacbeaf3b9.mobgslb.tbcache.com
   udp: true
-- name: Hong Kong_None_trojan_752
+- name: France_None_trojan_752
   server: pokemon-02.yunjnet.com
   port: 59111
   type: trojan
@@ -1135,7 +1144,7 @@ proxies:
     headers:
       Host: seoul01.zgjok.com
   udp: true
-- name: South Korea_Incheon_hysteria2_776
+- name: South Korea_None_hysteria2_776
   server: vpn-kr-003.fastervpn.world
   port: 443
   type: hysteria2
@@ -1646,7 +1655,7 @@ proxies:
     headers:
       Host: usa.oncloudvpn.com
   udp: true
-- name: France_None_trojan_7119
+- name: United States_None_trojan_7119
   server: pokemonsg-01.yunjnet.com
   port: 55016
   type: trojan
@@ -1849,14 +1858,14 @@ proxies:
     headers:
       Host: flat-sun-b8d3.225-154.workers.dev
   udp: true
-- name: France_None_trojan_7136
+- name: United States_None_trojan_7136
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
   password: 202a5fe3-05ae-4130-8439-ed0df1d1969e
   skip-cert-verify: true
   udp: true
-- name: United States_None_trojan_7137
+- name: France_None_trojan_7137
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
@@ -1893,7 +1902,7 @@ proxies:
     headers:
       Host: odd-cloud-f2a1.73-12e.workers.dev
   udp: true
-- name: France_None_trojan_7140
+- name: United States_None_trojan_7140
   server: pokemon-01.yunjnet.com
   port: 59099
   type: trojan
@@ -1982,14 +1991,14 @@ proxies:
     headers:
       Host: cg1c16.waimaojd.com
   udp: true
-- name: United States_None_trojan_7148
+- name: France_None_trojan_7148
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
   password: 33ebe1e4-cd73-4cbd-a799-650478471d35
   skip-cert-verify: true
   udp: true
-- name: France_None_trojan_7149
+- name: United States_None_trojan_7149
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
@@ -2309,10 +2318,11 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - United Arab Emirates_None_trojan_626
-  - United Kingdom_None_trojan_627
-  - The Netherlands_None_trojan_628
-  - United States_None_trojan_629
+  - China_None_trojan_626
+  - United Arab Emirates_None_trojan_627
+  - United Kingdom_None_trojan_628
+  - The Netherlands_None_trojan_629
+  - United States_None_trojan_630
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2338,7 +2348,7 @@ proxy-groups:
   - Hong Kong_Hong Kong_ss_723
   - Hong Kong_Hong Kong_ss_724
   - Hong Kong_None_ss_725
-  - China_Shanghai_vmess_726
+  - China_Nanjing_vmess_726
   - Unknown_ss_727
   - Unknown_ss_728
   - Unknown_ss_729
@@ -2354,7 +2364,7 @@ proxy-groups:
   - China_Shanghai_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
-  - Hong Kong_None_trojan_742
+  - France_None_trojan_742
   - Hong Kong_None_ss_743
   - Hong Kong_None_ss_744
   - Unknown_ss_745
@@ -2364,7 +2374,7 @@ proxy-groups:
   - France_None_trojan_749
   - Unknown_ss_750
   - France_None_vmess_751
-  - Hong Kong_None_trojan_752
+  - France_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
   - Hong Kong_Hong Kong_ss_754
   - Hong Kong_Hong Kong_hysteria2_755
@@ -2388,7 +2398,7 @@ proxy-groups:
   - South Korea_None_anytls_773
   - South Korea_Seoul_vmess_774
   - South Korea_Seoul_vmess_775
-  - South Korea_Incheon_hysteria2_776
+  - South Korea_None_hysteria2_776
   - South Korea_Wŏnju_vless_777
   - None_None_vless_778
   - Russia_Moscow_vless_779
@@ -2431,7 +2441,7 @@ proxy-groups:
   - United States_None_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
-  - France_None_trojan_7119
+  - United States_None_trojan_7119
   - United States_Columbus_ss_7120
   - None_None_vless_7121
   - None_None_vmess_7122
@@ -2448,11 +2458,11 @@ proxy-groups:
   - None_None_vless_7133
   - None_None_vless_7134
   - None_None_vless_7135
-  - France_None_trojan_7136
-  - United States_None_trojan_7137
+  - United States_None_trojan_7136
+  - France_None_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
-  - France_None_trojan_7140
+  - United States_None_trojan_7140
   - None_None_vless_7141
   - None_None_vless_7142
   - United States_Los Angeles_anytls_7143
@@ -2460,8 +2470,8 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - United States_None_trojan_7148
-  - France_None_trojan_7149
+  - France_None_trojan_7148
+  - United States_None_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
@@ -2522,10 +2532,11 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - United Arab Emirates_None_trojan_626
-  - United Kingdom_None_trojan_627
-  - The Netherlands_None_trojan_628
-  - United States_None_trojan_629
+  - China_None_trojan_626
+  - United Arab Emirates_None_trojan_627
+  - United Kingdom_None_trojan_628
+  - The Netherlands_None_trojan_629
+  - United States_None_trojan_630
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2551,7 +2562,7 @@ proxy-groups:
   - Hong Kong_Hong Kong_ss_723
   - Hong Kong_Hong Kong_ss_724
   - Hong Kong_None_ss_725
-  - China_Shanghai_vmess_726
+  - China_Nanjing_vmess_726
   - Unknown_ss_727
   - Unknown_ss_728
   - Unknown_ss_729
@@ -2567,7 +2578,7 @@ proxy-groups:
   - China_Shanghai_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
-  - Hong Kong_None_trojan_742
+  - France_None_trojan_742
   - Hong Kong_None_ss_743
   - Hong Kong_None_ss_744
   - Unknown_ss_745
@@ -2577,7 +2588,7 @@ proxy-groups:
   - France_None_trojan_749
   - Unknown_ss_750
   - France_None_vmess_751
-  - Hong Kong_None_trojan_752
+  - France_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
   - Hong Kong_Hong Kong_ss_754
   - Hong Kong_Hong Kong_hysteria2_755
@@ -2601,7 +2612,7 @@ proxy-groups:
   - South Korea_None_anytls_773
   - South Korea_Seoul_vmess_774
   - South Korea_Seoul_vmess_775
-  - South Korea_Incheon_hysteria2_776
+  - South Korea_None_hysteria2_776
   - South Korea_Wŏnju_vless_777
   - None_None_vless_778
   - Russia_Moscow_vless_779
@@ -2644,7 +2655,7 @@ proxy-groups:
   - United States_None_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
-  - France_None_trojan_7119
+  - United States_None_trojan_7119
   - United States_Columbus_ss_7120
   - None_None_vless_7121
   - None_None_vmess_7122
@@ -2661,11 +2672,11 @@ proxy-groups:
   - None_None_vless_7133
   - None_None_vless_7134
   - None_None_vless_7135
-  - France_None_trojan_7136
-  - United States_None_trojan_7137
+  - United States_None_trojan_7136
+  - France_None_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
-  - France_None_trojan_7140
+  - United States_None_trojan_7140
   - None_None_vless_7141
   - None_None_vless_7142
   - United States_Los Angeles_anytls_7143
@@ -2673,8 +2684,8 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - United States_None_trojan_7148
-  - France_None_trojan_7149
+  - France_None_trojan_7148
+  - United States_None_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
