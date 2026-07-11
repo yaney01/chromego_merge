@@ -99,104 +99,94 @@ proxies:
   down: 55 Mbps
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_61
+  name: Unknown_vmess_61
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888880
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_62
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888881
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_63
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888882
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_64
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888883
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_65
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888884
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_66
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888885
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_67
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888886
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_68
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
-  type: vmess
-  uuid: 88888888-8888-8888-8888-888888888887
-- alterId: 0
-  cipher: auto
-  name: United States_None_vmess_69
-  network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '80'
+  server: 127.0.0.53
+  tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: United States_None_vmess_610
+  name: Unknown_vmess_62
   network: tcp
-  port: '443'
-  server: 160.79.104.10
-  servername: www.anthropic.com
-  tls: true
+  port: '81'
+  server: 127.0.0.53
+  tls: false
   type: vmess
-  uuid: 88888888-8888-8888-8888-888888888889
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_63
+  network: tcp
+  port: '82'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_64
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_65
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_66
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_67
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_68
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_69
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: Unknown_vmess_610
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
 - cipher: aes-256-cfb
   name: Germany_Frankfurt am Main_ss_611
   password: amazonskr05
@@ -321,11 +311,72 @@ proxies:
 - cipher: aes-256-cfb
   name: France_Paris_ss_626
   password: amazonskr05
-  port: '443'
-  server: 15.188.74.101
+  port: 443
+  server: 15.237.218.22
   type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_627
+- cipher: chacha20-ietf-poly1305
+  name: United Kingdom_None_ss_627
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.57
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: China_Guangzhou_vmess_628
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- cipher: aes-256-cfb
+  name: France_Paris_ss_629
+  password: amazonskr05
+  port: 443
+  server: 13.38.46.189
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_630
+  password: amazonskr05
+  port: 443
+  server: 3.16.130.237
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- name: China_None_trojan_631
+  network: tcp
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: '39001'
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  tls: true
+  type: trojan
+  udp: true
+- name: China_None_trojan_632
+  password: 1df3ece1218bedba28c6c6ac726a07bb
+  port: 39001
+  server: 114.80.8.128
+  skip-cert-verify: true
+  sni: 114.80.8.128
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_633
+  password: amazonskr05
+  port: '443'
+  server: 3.145.46.201
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_634
   network: ws
   password: MITIVPN
   port: 443
@@ -338,7 +389,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_628
+- name: United Kingdom_None_trojan_635
   network: ws
   password: MITIVPN
   port: 443
@@ -351,7 +402,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_629
+- name: The Netherlands_None_trojan_636
   network: ws
   password: MiTiVPN
   port: 443
@@ -364,7 +415,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_630
+- name: United States_None_trojan_637
   network: ws
   password: Mitivpn
   port: 443
@@ -715,7 +766,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1348a838-9105-4f3e-bd04-699a9be10480
   udp: true
-- name: Hong Kong_None_trojan_732
+- name: France_None_trojan_732
   server: pokemon-02.yunjnet.com
   port: 56019
   type: trojan
@@ -768,7 +819,7 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
   udp: true
-- name: China_Nanjing_vmess_739
+- name: China_Chengdu_vmess_739
   server: v29.hdacd.com
   port: 30829
   type: vmess
@@ -853,7 +904,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: b3813e01-e131-4ed2-98fd-c3a805fc515f
   udp: true
-- name: Hong Kong_None_trojan_749
+- name: France_None_trojan_749
   server: pokemon-02.yunjnet.com
   port: 59111
   type: trojan
@@ -882,7 +933,7 @@ proxies:
     headers:
       Host: 445eb7ce2d66c34309d2e1dacbeaf3b9.mobgslb.tbcache.com
   udp: true
-- name: Hong Kong_None_trojan_752
+- name: France_None_trojan_752
   server: pokemon-02.yunjnet.com
   port: 59111
   type: trojan
@@ -1653,7 +1704,7 @@ proxies:
     headers:
       Host: usa.oncloudvpn.com
   udp: true
-- name: United States_None_trojan_7119
+- name: France_None_trojan_7119
   server: pokemonsg-01.yunjnet.com
   port: 55016
   type: trojan
@@ -1863,7 +1914,7 @@ proxies:
   password: 202a5fe3-05ae-4130-8439-ed0df1d1969e
   skip-cert-verify: true
   udp: true
-- name: United States_None_trojan_7137
+- name: France_None_trojan_7137
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
@@ -1989,14 +2040,14 @@ proxies:
     headers:
       Host: cg1c16.waimaojd.com
   udp: true
-- name: United States_None_trojan_7148
+- name: France_None_trojan_7148
   server: pokemonus-02.yunjnet.com
   port: 56017
   type: trojan
   password: 33ebe1e4-cd73-4cbd-a799-650478471d35
   skip-cert-verify: true
   udp: true
-- name: France_None_trojan_7149
+- name: United States_None_trojan_7149
   server: pokemon-01.yunjnet.com
   port: 59110
   type: trojan
@@ -2291,16 +2342,16 @@ proxy-groups:
   - France_Paris_hysteria_31
   - United States_None_hysteria_41
   - United States_None_hysteria_51
-  - United States_None_vmess_61
-  - United States_None_vmess_62
-  - United States_None_vmess_63
-  - United States_None_vmess_64
-  - United States_None_vmess_65
-  - United States_None_vmess_66
-  - United States_None_vmess_67
-  - United States_None_vmess_68
-  - United States_None_vmess_69
-  - United States_None_vmess_610
+  - Unknown_vmess_61
+  - Unknown_vmess_62
+  - Unknown_vmess_63
+  - Unknown_vmess_64
+  - Unknown_vmess_65
+  - Unknown_vmess_66
+  - Unknown_vmess_67
+  - Unknown_vmess_68
+  - Unknown_vmess_69
+  - Unknown_vmess_610
   - Germany_Frankfurt am Main_ss_611
   - Hong Kong_None_vmess_612
   - Hong Kong_Hong Kong_trojan_613
@@ -2317,10 +2368,17 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - France_Paris_ss_626
-  - United Arab Emirates_None_trojan_627
-  - United Kingdom_None_trojan_628
-  - The Netherlands_None_trojan_629
-  - United States_None_trojan_630
+  - United Kingdom_None_ss_627
+  - China_Guangzhou_vmess_628
+  - France_Paris_ss_629
+  - United States_Columbus_ss_630
+  - China_None_trojan_631
+  - China_None_trojan_632
+  - United States_Columbus_ss_633
+  - United Arab Emirates_None_trojan_634
+  - United Kingdom_None_trojan_635
+  - The Netherlands_None_trojan_636
+  - United States_None_trojan_637
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2352,14 +2410,14 @@ proxy-groups:
   - Unknown_ss_729
   - France_None_vmess_730
   - Unknown_ss_731
-  - Hong Kong_None_trojan_732
+  - France_None_trojan_732
   - Unknown_ss_733
   - Unknown_ss_734
   - Hong Kong_Hong Kong_hysteria2_735
   - Unknown_ss_736
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
-  - China_Nanjing_vmess_739
+  - China_Chengdu_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
   - France_None_trojan_742
@@ -2369,10 +2427,10 @@ proxy-groups:
   - Hong Kong_None_vmess_746
   - Unknown_ss_747
   - Unknown_ss_748
-  - Hong Kong_None_trojan_749
+  - France_None_trojan_749
   - Unknown_ss_750
   - France_None_vmess_751
-  - Hong Kong_None_trojan_752
+  - France_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
   - Hong Kong_Hong Kong_ss_754
   - Hong Kong_Hong Kong_hysteria2_755
@@ -2439,7 +2497,7 @@ proxy-groups:
   - France_None_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
-  - United States_None_trojan_7119
+  - France_None_trojan_7119
   - United States_Columbus_ss_7120
   - None_None_vless_7121
   - None_None_vmess_7122
@@ -2457,7 +2515,7 @@ proxy-groups:
   - None_None_vless_7134
   - None_None_vless_7135
   - France_None_trojan_7136
-  - United States_None_trojan_7137
+  - France_None_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
   - France_None_trojan_7140
@@ -2468,8 +2526,8 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - United States_None_trojan_7148
-  - France_None_trojan_7149
+  - France_None_trojan_7148
+  - United States_None_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
@@ -2505,16 +2563,16 @@ proxy-groups:
   - France_Paris_hysteria_31
   - United States_None_hysteria_41
   - United States_None_hysteria_51
-  - United States_None_vmess_61
-  - United States_None_vmess_62
-  - United States_None_vmess_63
-  - United States_None_vmess_64
-  - United States_None_vmess_65
-  - United States_None_vmess_66
-  - United States_None_vmess_67
-  - United States_None_vmess_68
-  - United States_None_vmess_69
-  - United States_None_vmess_610
+  - Unknown_vmess_61
+  - Unknown_vmess_62
+  - Unknown_vmess_63
+  - Unknown_vmess_64
+  - Unknown_vmess_65
+  - Unknown_vmess_66
+  - Unknown_vmess_67
+  - Unknown_vmess_68
+  - Unknown_vmess_69
+  - Unknown_vmess_610
   - Germany_Frankfurt am Main_ss_611
   - Hong Kong_None_vmess_612
   - Hong Kong_Hong Kong_trojan_613
@@ -2531,10 +2589,17 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - France_Paris_ss_626
-  - United Arab Emirates_None_trojan_627
-  - United Kingdom_None_trojan_628
-  - The Netherlands_None_trojan_629
-  - United States_None_trojan_630
+  - United Kingdom_None_ss_627
+  - China_Guangzhou_vmess_628
+  - France_Paris_ss_629
+  - United States_Columbus_ss_630
+  - China_None_trojan_631
+  - China_None_trojan_632
+  - United States_Columbus_ss_633
+  - United Arab Emirates_None_trojan_634
+  - United Kingdom_None_trojan_635
+  - The Netherlands_None_trojan_636
+  - United States_None_trojan_637
   - Australia_Melbourne_vless_71
   - Australia_Sydney_hysteria2_72
   - Canada_Montreal_hysteria2_73
@@ -2566,14 +2631,14 @@ proxy-groups:
   - Unknown_ss_729
   - France_None_vmess_730
   - Unknown_ss_731
-  - Hong Kong_None_trojan_732
+  - France_None_trojan_732
   - Unknown_ss_733
   - Unknown_ss_734
   - Hong Kong_Hong Kong_hysteria2_735
   - Unknown_ss_736
   - Unknown_ss_737
   - Hong Kong_Hong Kong_hysteria2_738
-  - China_Nanjing_vmess_739
+  - China_Chengdu_vmess_739
   - Unknown_ss_740
   - Hong Kong_None_vless_741
   - France_None_trojan_742
@@ -2583,10 +2648,10 @@ proxy-groups:
   - Hong Kong_None_vmess_746
   - Unknown_ss_747
   - Unknown_ss_748
-  - Hong Kong_None_trojan_749
+  - France_None_trojan_749
   - Unknown_ss_750
   - France_None_vmess_751
-  - Hong Kong_None_trojan_752
+  - France_None_trojan_752
   - Hong Kong_Hong Kong_hysteria2_753
   - Hong Kong_Hong Kong_ss_754
   - Hong Kong_Hong Kong_hysteria2_755
@@ -2653,7 +2718,7 @@ proxy-groups:
   - France_None_trojan_7116
   - None_None_vmess_7117
   - United States_Atlanta_vless_7118
-  - United States_None_trojan_7119
+  - France_None_trojan_7119
   - United States_Columbus_ss_7120
   - None_None_vless_7121
   - None_None_vmess_7122
@@ -2671,7 +2736,7 @@ proxy-groups:
   - None_None_vless_7134
   - None_None_vless_7135
   - France_None_trojan_7136
-  - United States_None_trojan_7137
+  - France_None_trojan_7137
   - None_None_vless_7138
   - None_None_vless_7139
   - France_None_trojan_7140
@@ -2682,8 +2747,8 @@ proxy-groups:
   - United States_Columbus_hysteria2_7145
   - United States_Phoenix_hysteria2_7146
   - United States_Los Angeles_vmess_7147
-  - United States_None_trojan_7148
-  - France_None_trojan_7149
+  - France_None_trojan_7148
+  - United States_None_trojan_7149
   - None_None_trojan_7150
   - None_None_vless_7151
   - United States_None_vless_7152
