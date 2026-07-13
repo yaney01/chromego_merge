@@ -308,26 +308,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- grpc-opts:
-    grpc-service-name: zhs
-  name: China_Shanghai_trojan_626
-  network: grpc
-  password: c68526b9-f9e1-49a3-9711-e57d5c717563
-  port: 16335
-  server: dev.aoliuqu.press
-  skip-cert-verify: true
-  sni: dev.aoliuqu.press
-  type: trojan
-  udp: true
-- name: China_None_trojan_627
+- name: China_None_trojan_626
   network: tcp
   password: 1df3ece1218bedba28c6c6ac726a07bb
-  port: '39001'
+  port: 39001
   server: 114.80.8.128
   skip-cert-verify: true
-  sni: www.yrtok.com
+  sni: 114.80.8.128
   tls: true
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: Russia_Moscow_ss_627
+  password: cfe685726eea2c4b
+  port: '10921'
+  server: 185.22.154.103
+  type: ss
   udp: true
 - name: United Arab Emirates_None_trojan_628
   network: ws
@@ -559,7 +555,7 @@ proxies:
   password: 43addc7a-84c4-4258-8164-d5d7c379043f
   skip-cert-verify: true
   udp: true
-- name: Hong Kong_None_trojan_722
+- name: France_None_trojan_722
   server: pokemon-02.yunjnet.com
   port: 56019
   type: trojan
@@ -1018,7 +1014,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: South Korea_None_hysteria2_776
+- name: South Korea_Incheon_hysteria2_776
   server: vpn-kr-002.fastervpn.world
   port: 443
   type: hysteria2
@@ -1411,7 +1407,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: Japan_None_vmess_7116
+- name: Singapore_Singapore_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -1462,7 +1458,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   udp: true
-- name: United States_None_trojan_7122
+- name: France_None_trojan_7122
   server: pokemonus-01.yunjnet.com
   port: 56115
   type: trojan
@@ -1683,7 +1679,7 @@ proxies:
   sni: 8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
   skip-cert-verify: true
   udp: true
-- name: France_None_trojan_7145
+- name: Japan_Minari_trojan_7145
   server: pokemon-01.yunjnet.com
   port: 59099
   type: trojan
@@ -2039,8 +2035,8 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - China_Shanghai_trojan_626
-  - China_None_trojan_627
+  - China_None_trojan_626
+  - Russia_Moscow_ss_627
   - United Arab Emirates_None_trojan_628
   - United Kingdom_None_trojan_629
   - The Netherlands_None_trojan_630
@@ -2066,7 +2062,7 @@ proxy-groups:
   - Germany_Falkenstein_http_719
   - Germany_Frankfurt am Main_http_720
   - Hong Kong_None_trojan_721
-  - Hong Kong_None_trojan_722
+  - France_None_trojan_722
   - France_None_http_723
   - France_Paris_http_724
   - France_Paris_http_725
@@ -2120,7 +2116,7 @@ proxy-groups:
   - South Korea_Seoul_hysteria2_773
   - South Korea_Chuncheon_http_774
   - South Korea_Seoul_http_775
-  - South Korea_None_hysteria2_776
+  - South Korea_Incheon_hysteria2_776
   - South Korea_Chuncheon_socks5_777
   - The Netherlands_Dronten_http_778
   - Czechia_Prague_http_779
@@ -2160,13 +2156,13 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - Japan_None_vmess_7116
+  - Singapore_Singapore_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
   - None_None_trojan_7120
   - United States_Council Bluffs_http_7121
-  - United States_None_trojan_7122
+  - France_None_trojan_7122
   - France_None_trojan_7123
   - United States_Los Angeles_http_7124
   - France_None_trojan_7125
@@ -2189,7 +2185,7 @@ proxy-groups:
   - United States_Newark_vless_7142
   - None_None_trojan_7143
   - United States_Santa Clara_trojan_7144
-  - France_None_trojan_7145
+  - Japan_Minari_trojan_7145
   - None_None_vless_7146
   - United States_Chicago_vless_7147
   - United States_Ashburn_hysteria2_7148
@@ -2252,8 +2248,8 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - China_Shanghai_trojan_626
-  - China_None_trojan_627
+  - China_None_trojan_626
+  - Russia_Moscow_ss_627
   - United Arab Emirates_None_trojan_628
   - United Kingdom_None_trojan_629
   - The Netherlands_None_trojan_630
@@ -2279,7 +2275,7 @@ proxy-groups:
   - Germany_Falkenstein_http_719
   - Germany_Frankfurt am Main_http_720
   - Hong Kong_None_trojan_721
-  - Hong Kong_None_trojan_722
+  - France_None_trojan_722
   - France_None_http_723
   - France_Paris_http_724
   - France_Paris_http_725
@@ -2333,7 +2329,7 @@ proxy-groups:
   - South Korea_Seoul_hysteria2_773
   - South Korea_Chuncheon_http_774
   - South Korea_Seoul_http_775
-  - South Korea_None_hysteria2_776
+  - South Korea_Incheon_hysteria2_776
   - South Korea_Chuncheon_socks5_777
   - The Netherlands_Dronten_http_778
   - Czechia_Prague_http_779
@@ -2373,13 +2369,13 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - Japan_None_vmess_7116
+  - Singapore_Singapore_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
   - None_None_trojan_7120
   - United States_Council Bluffs_http_7121
-  - United States_None_trojan_7122
+  - France_None_trojan_7122
   - France_None_trojan_7123
   - United States_Los Angeles_http_7124
   - France_None_trojan_7125
@@ -2402,7 +2398,7 @@ proxy-groups:
   - United States_Newark_vless_7142
   - None_None_trojan_7143
   - United States_Santa Clara_trojan_7144
-  - France_None_trojan_7145
+  - Japan_Minari_trojan_7145
   - None_None_vless_7146
   - United States_Chicago_vless_7147
   - United States_Ashburn_hysteria2_7148
