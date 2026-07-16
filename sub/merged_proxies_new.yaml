@@ -308,43 +308,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- grpc-opts:
-    grpc-service-name: zhs
-  name: Japan_Tokyo_trojan_626
-  network: grpc
-  password: f0283949-16ba-3060-89f4-4dacb9451ce7
-  port: 2087
-  server: jpdhn3.susun.co
-  skip-cert-verify: true
-  sni: jpdhn3.susun.co
-  type: trojan
-- name: United States_Boardman_trojan_627
-  password: OD90375861
+- name: The Netherlands_None_trojan_626
+  network: ws
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
   port: 443
-  server: nearby-muskrat.rooster465.autos
+  server: 188.164.248.122
   skip-cert-verify: true
-  sni: nearby-muskrat.rooster465.autos
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
-- name: United States_Boardman_trojan_628
-  password: CF68213490
-  port: 443
-  server: balanced-puma.rooster465.autos
-  skip-cert-verify: true
-  sni: balanced-puma.rooster465.autos
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: United States_Los Angeles_ss_629
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (Telegram🇨🇳 @VPNine1)6db9d46:44797
-    mode: tls
-  port: 2377
-  server: 88.210.36.109
-  type: ss
+  ws-opts:
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+    path: /in-pdr
 - alterId: '0'
   cipher: auto
-  name: The Netherlands_Amsterdam_vmess_630
+  name: The Netherlands_Amsterdam_vmess_627
   network: tcp
   port: '18339'
   server: c87s5.portablesubmarines.com
@@ -354,7 +332,79 @@ proxies:
   udp: true
   uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
   xudp: true
-- name: United Arab Emirates_None_trojan_631
+- name: Singapore_Singapore_trojan_628
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: driving-antelope.rooster465.autos
+  skip-cert-verify: false
+  sni: driving-antelope.rooster465.autos
+  type: trojan
+  udp: true
+- name: Singapore_Singapore_trojan_629
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: topical-shark.rooster465.autos
+  skip-cert-verify: false
+  sni: topical-shark.rooster465.autos
+  type: trojan
+  udp: true
+- name: South Korea_Incheon_trojan_630
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: thorough-foxhound.rooster465.autos
+  skip-cert-verify: false
+  sni: thorough-foxhound.rooster465.autos
+  type: trojan
+  udp: true
+- name: Japan_Tokyo_trojan_631
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: ace-liger.rooster465.autos
+  skip-cert-verify: false
+  sni: ace-liger.rooster465.autos
+  type: trojan
+  udp: true
+- name: Singapore_Singapore_trojan_632
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: bold-eagle.rooster465.autos
+  skip-cert-verify: false
+  sni: bold-eagle.rooster465.autos
+  type: trojan
+  udp: true
+- name: Singapore_Singapore_trojan_633
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: allowed-moose.rooster465.autos
+  skip-cert-verify: false
+  sni: allowed-moose.rooster465.autos
+  type: trojan
+  udp: true
+- name: South Korea_Incheon_trojan_634
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: gentle-platypus.rooster465.autos
+  skip-cert-verify: false
+  sni: gentle-platypus.rooster465.autos
+  type: trojan
+  udp: true
+- name: Singapore_Singapore_trojan_635
+  network: tcp
+  password: NQ26071394
+  port: '443'
+  server: amazing-troll.rooster465.autos
+  skip-cert-verify: false
+  sni: amazing-troll.rooster465.autos
+  type: trojan
+  udp: true
+- name: United Arab Emirates_None_trojan_636
   network: ws
   password: MITIVPN
   port: 443
@@ -367,7 +417,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_632
+- name: United Kingdom_None_trojan_637
   network: ws
   password: MITIVPN
   port: 443
@@ -380,7 +430,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_633
+- name: The Netherlands_None_trojan_638
   network: ws
   password: MiTiVPN
   port: 443
@@ -393,7 +443,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_634
+- name: United States_None_trojan_639
   network: ws
   password: Mitivpn
   port: 443
@@ -1436,7 +1486,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Nanjing_vmess_7116
+- name: China_Shanghai_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2090,15 +2140,20 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - Japan_Tokyo_trojan_626
-  - United States_Boardman_trojan_627
-  - United States_Boardman_trojan_628
-  - United States_Los Angeles_ss_629
-  - The Netherlands_Amsterdam_vmess_630
-  - United Arab Emirates_None_trojan_631
-  - United Kingdom_None_trojan_632
-  - The Netherlands_None_trojan_633
-  - United States_None_trojan_634
+  - The Netherlands_None_trojan_626
+  - The Netherlands_Amsterdam_vmess_627
+  - Singapore_Singapore_trojan_628
+  - Singapore_Singapore_trojan_629
+  - South Korea_Incheon_trojan_630
+  - Japan_Tokyo_trojan_631
+  - Singapore_Singapore_trojan_632
+  - Singapore_Singapore_trojan_633
+  - South Korea_Incheon_trojan_634
+  - Singapore_Singapore_trojan_635
+  - United Arab Emirates_None_trojan_636
+  - United Kingdom_None_trojan_637
+  - The Netherlands_None_trojan_638
+  - United States_None_trojan_639
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2214,7 +2269,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2308,15 +2363,20 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
-  - Japan_Tokyo_trojan_626
-  - United States_Boardman_trojan_627
-  - United States_Boardman_trojan_628
-  - United States_Los Angeles_ss_629
-  - The Netherlands_Amsterdam_vmess_630
-  - United Arab Emirates_None_trojan_631
-  - United Kingdom_None_trojan_632
-  - The Netherlands_None_trojan_633
-  - United States_None_trojan_634
+  - The Netherlands_None_trojan_626
+  - The Netherlands_Amsterdam_vmess_627
+  - Singapore_Singapore_trojan_628
+  - Singapore_Singapore_trojan_629
+  - South Korea_Incheon_trojan_630
+  - Japan_Tokyo_trojan_631
+  - Singapore_Singapore_trojan_632
+  - Singapore_Singapore_trojan_633
+  - South Korea_Incheon_trojan_634
+  - Singapore_Singapore_trojan_635
+  - United Arab Emirates_None_trojan_636
+  - United Kingdom_None_trojan_637
+  - The Netherlands_None_trojan_638
+  - United States_None_trojan_639
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2432,7 +2492,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
