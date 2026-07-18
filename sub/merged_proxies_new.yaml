@@ -311,27 +311,83 @@ proxies:
 - cipher: aes-256-cfb
   name: Germany_Frankfurt am Main_ss_626
   password: amazonskr05
-  port: '443'
-  server: 3.122.115.111
+  port: 443
+  server: 3.71.12.190
   type: ss
-  udp: true
-- name: None_None_trojan_627
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.147.104
-  skip-cert-verify: false
-  sni: www.creationlong.org
+- name: Spain_Barcelona_trojan_627
+  password: 2eutknankxtbgkwcajzt
+  port: 52794
+  server: 193.148.19.213
+  skip-cert-verify: true
+  sni: 193.148.19.213
   type: trojan
-  udp: true
+- cipher: aes-256-gcm
+  name: Hong Kong_Hong Kong_ss_628
+  password: gXtfJmxrZ8Qkkd2k
+  port: 16025
+  server: c722s1.portablesubmarines.com
+  type: ss
+- name: The Netherlands_None_trojan_629
+  network: ws
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: 443
+  server: 188.164.248.122
+  skip-cert-verify: true
+  sni: space.byu.id.yxls.eu.cc
+  type: trojan
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /assignment
+      Host: space.byu.id.yxls.eu.cc
+    path: /in-pdr
+- cipher: aes-256-cfb
+  name: United States_Columbus_ss_630
+  password: amazonskr05
+  port: 443
+  server: 18.221.194.108
+  type: ss
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: United States_Fremont_vmess_631
+  network: tcp
+  port: '16025'
+  server: c722s801.portablesubmarines.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  xudp: true
 - alterId: 0
   cipher: auto
-  name: United States_Fremont_vmess_628
+  name: Japan_Tokyo_vmess_632
+  network: raw
+  port: '10049'
+  server: family.bucket.x9.kfc-520.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1dc73529-f030-3ac5-ad64-f7666b9a51bc
+  xudp: true
+- cipher: aes-256-cfb
+  name: Germany_Frankfurt am Main_ss_633
+  password: amazonskr05
+  port: '443'
+  server: 63.183.207.82
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United States_None_ss_634
+  password: amazonskr05
+  port: '443'
+  server: 13.59.56.221
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: United States_Fremont_vmess_635
   network: raw
   port: '16025'
   server: c722s801.portablesubmarines.com
@@ -341,7 +397,44 @@ proxies:
   udp: true
   uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
   xudp: true
-- name: United Arab Emirates_None_trojan_629
+- name: Australia_Sydney_trojan_636
+  network: tcp
+  password: XG59623478
+  port: '443'
+  server: 82.117.225.216
+  skip-cert-verify: false
+  sni: concise-buck.rooster465.autos
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: Finland_Helsinki_vmess_637
+  network: tcp
+  port: '52525'
+  server: 65.109.219.124
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 358f44f0-2686-46c8-9cc6-ec52abd66df4
+  xudp: true
+- cipher: aes-256-cfb
+  name: United Kingdom_City of London_ss_638
+  password: amazonskr05
+  port: '443'
+  server: 3.8.78.225
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: United Kingdom_City of London_ss_639
+  password: amazonskr05
+  port: '443'
+  server: 18.171.62.49
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_640
   network: ws
   password: MITIVPN
   port: 443
@@ -354,7 +447,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_630
+- name: United Kingdom_None_trojan_641
   network: ws
   password: MITIVPN
   port: 443
@@ -367,7 +460,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_631
+- name: The Netherlands_None_trojan_642
   network: ws
   password: MiTiVPN
   port: 443
@@ -380,7 +473,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_632
+- name: United States_None_trojan_643
   network: ws
   password: Mitivpn
   port: 443
@@ -1423,7 +1516,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Shanghai_vmess_7116
+- name: China_Beijing_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2078,12 +2171,23 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - Germany_Frankfurt am Main_ss_626
-  - None_None_trojan_627
-  - United States_Fremont_vmess_628
-  - United Arab Emirates_None_trojan_629
-  - United Kingdom_None_trojan_630
-  - The Netherlands_None_trojan_631
-  - United States_None_trojan_632
+  - Spain_Barcelona_trojan_627
+  - Hong Kong_Hong Kong_ss_628
+  - The Netherlands_None_trojan_629
+  - United States_Columbus_ss_630
+  - United States_Fremont_vmess_631
+  - Japan_Tokyo_vmess_632
+  - Germany_Frankfurt am Main_ss_633
+  - United States_None_ss_634
+  - United States_Fremont_vmess_635
+  - Australia_Sydney_trojan_636
+  - Finland_Helsinki_vmess_637
+  - United Kingdom_City of London_ss_638
+  - United Kingdom_City of London_ss_639
+  - United Arab Emirates_None_trojan_640
+  - United Kingdom_None_trojan_641
+  - The Netherlands_None_trojan_642
+  - United States_None_trojan_643
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2199,7 +2303,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Shanghai_vmess_7116
+  - China_Beijing_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2294,12 +2398,23 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - Germany_Frankfurt am Main_ss_626
-  - None_None_trojan_627
-  - United States_Fremont_vmess_628
-  - United Arab Emirates_None_trojan_629
-  - United Kingdom_None_trojan_630
-  - The Netherlands_None_trojan_631
-  - United States_None_trojan_632
+  - Spain_Barcelona_trojan_627
+  - Hong Kong_Hong Kong_ss_628
+  - The Netherlands_None_trojan_629
+  - United States_Columbus_ss_630
+  - United States_Fremont_vmess_631
+  - Japan_Tokyo_vmess_632
+  - Germany_Frankfurt am Main_ss_633
+  - United States_None_ss_634
+  - United States_Fremont_vmess_635
+  - Australia_Sydney_trojan_636
+  - Finland_Helsinki_vmess_637
+  - United Kingdom_City of London_ss_638
+  - United Kingdom_City of London_ss_639
+  - United Arab Emirates_None_trojan_640
+  - United Kingdom_None_trojan_641
+  - The Netherlands_None_trojan_642
+  - United States_None_trojan_643
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2415,7 +2530,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Shanghai_vmess_7116
+  - China_Beijing_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
