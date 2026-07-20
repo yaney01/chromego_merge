@@ -195,7 +195,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: Hong Kong_None_vmess_612
+  name: Hong Kong_Tai Wai_vmess_612
   port: 30807
   server: v10.hdacd.com
   skip-cert-verify: false
@@ -300,7 +300,7 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: Hong Kong_None_vmess_625
+  name: Hong Kong_Tai Wai_vmess_625
   network: tcp
   port: '30807'
   server: v10.hdacd.com
@@ -308,73 +308,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: Hong Kong_None_trojan_626
-  password: OccIqeORGQwiNkwS
-  port: '19128'
-  server: jpbgp.netvigor.cc
+- name: The Netherlands_None_trojan_626
+  network: ws
+  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+  port: '443'
+  server: 188.164.248.122
   skip-cert-verify: false
-  sni: yazhou10.dynu.net
+  sni: space.byu.id.yxls.eu.cc
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: China_Chengdu_vmess_627
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: Japan_Tokyo_vmess_628
-  network: ws
-  port: '12890'
-  server: cs.ktmcn.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: Japan_Tokyo_vmess_629
-  network: ws
-  port: '12897'
-  server: gtm1.ktmwan.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
+    path: /in-pdr
+- name: Hong Kong_Hong Kong_trojan_627
+  password: BxceQaOe
+  port: '41421'
+  server: 43.198.13.164
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
   udp: true
-  uuid: 4941aa8d-07d2-408c-be2c-117debecba30
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
-  xudp: true
-- cipher: aes-256-gcm
-  name: Unknown_ss_630
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: '1416'
-  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: China_Hangzhou_ss_631
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: '20028'
-  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
-  type: ss
-  udp: true
-- name: United Arab Emirates_None_trojan_632
+- name: United Arab Emirates_None_trojan_628
   network: ws
   password: MITIVPN
   port: 443
@@ -387,7 +343,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_633
+- name: United Kingdom_None_trojan_629
   network: ws
   password: MITIVPN
   port: 443
@@ -400,7 +356,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_634
+- name: The Netherlands_None_trojan_630
   network: ws
   password: MiTiVPN
   port: 443
@@ -413,7 +369,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_635
+- name: United States_None_trojan_631
   network: ws
   password: Mitivpn
   port: 443
@@ -1456,7 +1412,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Nanjing_vmess_7116
+- name: Singapore_Singapore_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2096,7 +2052,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - Germany_Frankfurt am Main_ss_611
-  - Hong Kong_None_vmess_612
+  - Hong Kong_Tai Wai_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_Hong Kong_trojan_614
   - Hong Kong_Hong Kong_trojan_615
@@ -2109,17 +2065,13 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_622
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
-  - Hong Kong_None_vmess_625
-  - Hong Kong_None_trojan_626
-  - China_Chengdu_vmess_627
-  - Japan_Tokyo_vmess_628
-  - Japan_Tokyo_vmess_629
-  - Unknown_ss_630
-  - China_Hangzhou_ss_631
-  - United Arab Emirates_None_trojan_632
-  - United Kingdom_None_trojan_633
-  - The Netherlands_None_trojan_634
-  - United States_None_trojan_635
+  - Hong Kong_Tai Wai_vmess_625
+  - The Netherlands_None_trojan_626
+  - Hong Kong_Hong Kong_trojan_627
+  - United Arab Emirates_None_trojan_628
+  - United Kingdom_None_trojan_629
+  - The Netherlands_None_trojan_630
+  - United States_None_trojan_631
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2235,7 +2187,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - Singapore_Singapore_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2315,7 +2267,7 @@ proxy-groups:
   - Unknown_vmess_69
   - Unknown_vmess_610
   - Germany_Frankfurt am Main_ss_611
-  - Hong Kong_None_vmess_612
+  - Hong Kong_Tai Wai_vmess_612
   - Hong Kong_None_trojan_613
   - Hong Kong_Hong Kong_trojan_614
   - Hong Kong_Hong Kong_trojan_615
@@ -2328,17 +2280,13 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_622
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
-  - Hong Kong_None_vmess_625
-  - Hong Kong_None_trojan_626
-  - China_Chengdu_vmess_627
-  - Japan_Tokyo_vmess_628
-  - Japan_Tokyo_vmess_629
-  - Unknown_ss_630
-  - China_Hangzhou_ss_631
-  - United Arab Emirates_None_trojan_632
-  - United Kingdom_None_trojan_633
-  - The Netherlands_None_trojan_634
-  - United States_None_trojan_635
+  - Hong Kong_Tai Wai_vmess_625
+  - The Netherlands_None_trojan_626
+  - Hong Kong_Hong Kong_trojan_627
+  - United Arab Emirates_None_trojan_628
+  - United Kingdom_None_trojan_629
+  - The Netherlands_None_trojan_630
+  - United States_None_trojan_631
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2454,7 +2402,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - Singapore_Singapore_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
