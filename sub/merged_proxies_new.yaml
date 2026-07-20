@@ -319,18 +319,31 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /in-pdr
-- name: Hong Kong_Hong Kong_trojan_627
-  password: BxceQaOe
-  port: '41421'
-  server: 43.198.13.164
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: United Kingdom_None_ss_627
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: '8080'
+  server: 82.38.31.174
+  type: ss
   udp: true
-- name: United Arab Emirates_None_trojan_628
+- cipher: aes-256-gcm
+  name: Unknown_ss_628
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '1416'
+  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: China_Hangzhou_ss_629
+  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
+  port: '20028'
+  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
+  type: ss
+  udp: true
+- name: United Arab Emirates_None_trojan_630
   network: ws
   password: MITIVPN
   port: 443
@@ -343,7 +356,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_629
+- name: United Kingdom_None_trojan_631
   network: ws
   password: MITIVPN
   port: 443
@@ -356,7 +369,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_630
+- name: The Netherlands_None_trojan_632
   network: ws
   password: MiTiVPN
   port: 443
@@ -369,7 +382,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_631
+- name: United States_None_trojan_633
   network: ws
   password: Mitivpn
   port: 443
@@ -1412,7 +1425,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: Singapore_Singapore_vmess_7116
+- name: China_Nanjing_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2067,11 +2080,13 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_Tai Wai_vmess_625
   - The Netherlands_None_trojan_626
-  - Hong Kong_Hong Kong_trojan_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Kingdom_None_ss_627
+  - Unknown_ss_628
+  - China_Hangzhou_ss_629
+  - United Arab Emirates_None_trojan_630
+  - United Kingdom_None_trojan_631
+  - The Netherlands_None_trojan_632
+  - United States_None_trojan_633
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2187,7 +2202,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - Singapore_Singapore_vmess_7116
+  - China_Nanjing_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2282,11 +2297,13 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_Tai Wai_vmess_625
   - The Netherlands_None_trojan_626
-  - Hong Kong_Hong Kong_trojan_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Kingdom_None_ss_627
+  - Unknown_ss_628
+  - China_Hangzhou_ss_629
+  - United Arab Emirates_None_trojan_630
+  - United Kingdom_None_trojan_631
+  - The Netherlands_None_trojan_632
+  - United States_None_trojan_633
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2402,7 +2419,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - Singapore_Singapore_vmess_7116
+  - China_Nanjing_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
