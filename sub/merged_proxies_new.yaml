@@ -308,40 +308,37 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: The Netherlands_None_trojan_626
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: '443'
-  server: 188.164.248.122
-  skip-cert-verify: false
-  sni: space.byu.id.yxls.eu.cc
+- name: Ireland_Dublin_trojan_626
+  password: IQ68037294
+  port: 443
+  server: moving-wren.rooster465.autos
+  skip-cert-verify: true
+  sni: moving-wren.rooster465.autos
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /in-pdr
-- cipher: chacha20-ietf-poly1305
-  name: United Kingdom_None_ss_627
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: '8080'
-  server: 82.38.31.174
-  type: ss
+- name: Japan_Tokyo_trojan_627
+  password: IQ68037294
+  port: 443
+  server: amazed-burro.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: Unknown_ss_628
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: '1416'
-  server: n.j.y.y.h.z.g.e.d.hk06-ae5.entry.v51124-5.qpon
-  type: ss
+- name: South Korea_Incheon_trojan_628
+  password: IQ68037294
+  port: 443
+  server: whole-perch.rooster465.autos
+  skip-cert-verify: true
+  sni: whole-perch.rooster465.autos
+  type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: China_Hangzhou_ss_629
-  password: 95c3d114-5370-3e54-832a-5a5acc492b9b
-  port: '20028'
-  server: s.n.y.5.8.z.4.e.d.ar01-ae5.entry.v51124-5.qpon
-  type: ss
+- name: Japan_Tokyo_trojan_629
+  network: tcp
+  password: IQ68037294
+  port: '443'
+  server: enhanced-dassie.rooster465.autos
+  skip-cert-verify: false
+  sni: enhanced-dassie.rooster465.autos
+  type: trojan
   udp: true
 - name: United Arab Emirates_None_trojan_630
   network: ws
@@ -1425,7 +1422,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Nanjing_vmess_7116
+- name: China_Shanghai_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2079,10 +2076,10 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_Tai Wai_vmess_625
-  - The Netherlands_None_trojan_626
-  - United Kingdom_None_ss_627
-  - Unknown_ss_628
-  - China_Hangzhou_ss_629
+  - Ireland_Dublin_trojan_626
+  - Japan_Tokyo_trojan_627
+  - South Korea_Incheon_trojan_628
+  - Japan_Tokyo_trojan_629
   - United Arab Emirates_None_trojan_630
   - United Kingdom_None_trojan_631
   - The Netherlands_None_trojan_632
@@ -2202,7 +2199,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2296,10 +2293,10 @@ proxy-groups:
   - Hong Kong_None_trojan_623
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_Tai Wai_vmess_625
-  - The Netherlands_None_trojan_626
-  - United Kingdom_None_ss_627
-  - Unknown_ss_628
-  - China_Hangzhou_ss_629
+  - Ireland_Dublin_trojan_626
+  - Japan_Tokyo_trojan_627
+  - South Korea_Incheon_trojan_628
+  - Japan_Tokyo_trojan_629
   - United Arab Emirates_None_trojan_630
   - United Kingdom_None_trojan_631
   - The Netherlands_None_trojan_632
@@ -2419,7 +2416,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
