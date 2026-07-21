@@ -323,75 +323,20 @@ proxies:
 - name: Singapore_Singapore_trojan_627
   password: IQ68037294
   port: 443
-  server: apt-midge.rooster465.autos
+  server: pet-albacore.rooster465.autos
   skip-cert-verify: true
-  sni: apt-midge.rooster465.autos
+  sni: pet-albacore.rooster465.autos
   type: trojan
-  udp: true
-- name: United States_Boardman_trojan_628
-  password: IQ68037294
-  port: '443'
-  server: optimal-dane.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: Finland_Helsinki_ss_629
-  password: r2v53aul8lsaweki
-  port: '25026'
-  server: 0721-syah.kovira2.ir
-  type: ss
-  udp: true
-- name: Japan_Tokyo_trojan_630
-  password: IQ68037294
-  port: '443'
-  server: major-duckling.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: Singapore_Singapore_trojan_631
+- name: Japan_Tokyo_trojan_628
   network: tcp
   password: IQ68037294
   port: '443'
-  server: giving-bird.rooster465.autos
+  server: square-anchovy.rooster465.autos
   skip-cert-verify: false
-  sni: giving-bird.rooster465.autos
+  sni: square-anchovy.rooster465.autos
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: Germany_Frankfurt am Main_ss_632
-  password: amazonskr05
-  port: '443'
-  server: 18.159.53.205
-  type: ss
-  udp: true
-- name: Japan_Tokyo_trojan_633
-  network: tcp
-  password: IQ68037294
-  port: '443'
-  server: new-antelope.rooster465.autos
-  skip-cert-verify: false
-  sni: new-antelope.rooster465.autos
-  type: trojan
-  udp: true
-- name: United States_Boardman_trojan_634
-  network: tcp
-  password: IQ68037294
-  port: '443'
-  server: integral-elf.rooster465.autos
-  skip-cert-verify: false
-  sni: integral-elf.rooster465.autos
-  type: trojan
-  udp: true
-- name: Singapore_Singapore_trojan_635
-  network: tcp
-  password: IQ68037294
-  port: '443'
-  server: apt-midge.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- name: United Arab Emirates_None_trojan_636
+- name: United Arab Emirates_None_trojan_629
   network: ws
   password: MITIVPN
   port: 443
@@ -404,7 +349,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_637
+- name: United Kingdom_None_trojan_630
   network: ws
   password: MITIVPN
   port: 443
@@ -417,7 +362,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_638
+- name: The Netherlands_None_trojan_631
   network: ws
   password: MiTiVPN
   port: 443
@@ -430,7 +375,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_639
+- name: United States_None_trojan_632
   network: ws
   password: Mitivpn
   port: 443
@@ -1473,7 +1418,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Nanjing_vmess_7116
+- name: China_Guangzhou_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2129,18 +2074,11 @@ proxy-groups:
   - Hong Kong_Tai Wai_vmess_625
   - The Netherlands_None_trojan_626
   - Singapore_Singapore_trojan_627
-  - United States_Boardman_trojan_628
-  - Finland_Helsinki_ss_629
-  - Japan_Tokyo_trojan_630
-  - Singapore_Singapore_trojan_631
-  - Germany_Frankfurt am Main_ss_632
-  - Japan_Tokyo_trojan_633
-  - United States_Boardman_trojan_634
-  - Singapore_Singapore_trojan_635
-  - United Arab Emirates_None_trojan_636
-  - United Kingdom_None_trojan_637
-  - The Netherlands_None_trojan_638
-  - United States_None_trojan_639
+  - Japan_Tokyo_trojan_628
+  - United Arab Emirates_None_trojan_629
+  - United Kingdom_None_trojan_630
+  - The Netherlands_None_trojan_631
+  - United States_None_trojan_632
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2256,7 +2194,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Guangzhou_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2352,18 +2290,11 @@ proxy-groups:
   - Hong Kong_Tai Wai_vmess_625
   - The Netherlands_None_trojan_626
   - Singapore_Singapore_trojan_627
-  - United States_Boardman_trojan_628
-  - Finland_Helsinki_ss_629
-  - Japan_Tokyo_trojan_630
-  - Singapore_Singapore_trojan_631
-  - Germany_Frankfurt am Main_ss_632
-  - Japan_Tokyo_trojan_633
-  - United States_Boardman_trojan_634
-  - Singapore_Singapore_trojan_635
-  - United Arab Emirates_None_trojan_636
-  - United Kingdom_None_trojan_637
-  - The Netherlands_None_trojan_638
-  - United States_None_trojan_639
+  - Japan_Tokyo_trojan_628
+  - United Arab Emirates_None_trojan_629
+  - United Kingdom_None_trojan_630
+  - The Netherlands_None_trojan_631
+  - United States_None_trojan_632
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2479,7 +2410,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Nanjing_vmess_7116
+  - China_Guangzhou_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
