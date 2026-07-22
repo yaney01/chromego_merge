@@ -311,32 +311,16 @@ proxies:
 - name: The Netherlands_None_trojan_626
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: '443'
+  port: 443
   server: 188.164.248.122
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: space.byu.id.yxls.eu.cc
   type: trojan
-  udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+      Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- name: Germany_Frankfurt am Main_trojan_627
-  network: ws
-  password: p2QFnWdKPZt0evve7n-C52fTqRndJa5W
-  port: '443'
-  server: 103.27.157.97
-  skip-cert-verify: false
-  sni: rem.dtr.kotokopolb.ru
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /trojan-ws
-- name: United Arab Emirates_None_trojan_628
+- name: United Arab Emirates_None_trojan_627
   network: ws
   password: MITIVPN
   port: 443
@@ -349,7 +333,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Usa
-- name: United Kingdom_None_trojan_629
+- name: United Kingdom_None_trojan_628
   network: ws
   password: MITIVPN
   port: 443
@@ -362,7 +346,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=De
-- name: The Netherlands_None_trojan_630
+- name: The Netherlands_None_trojan_629
   network: ws
   password: MiTiVPN
   port: 443
@@ -375,7 +359,7 @@ proxies:
     headers:
       Host: 95r.ir
     path: /MiTiVPN=Se
-- name: United States_None_trojan_631
+- name: United States_None_trojan_630
   network: ws
   password: Mitivpn
   port: 443
@@ -1418,7 +1402,7 @@ proxies:
   password: 2f3a2a4d-ca46-4012-a472-b559d379ad0a
   udp: true
   skip-cert-verify: true
-- name: China_Guangzhou_vmess_7116
+- name: China_Shanghai_vmess_7116
   server: v33.hdacd.com
   port: 30833
   type: vmess
@@ -2073,11 +2057,10 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - The Netherlands_None_trojan_626
-  - Germany_Frankfurt am Main_trojan_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Arab Emirates_None_trojan_627
+  - United Kingdom_None_trojan_628
+  - The Netherlands_None_trojan_629
+  - United States_None_trojan_630
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2193,7 +2176,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Guangzhou_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
@@ -2288,11 +2271,10 @@ proxy-groups:
   - Hong Kong_Hong Kong_trojan_624
   - Hong Kong_None_vmess_625
   - The Netherlands_None_trojan_626
-  - Germany_Frankfurt am Main_trojan_627
-  - United Arab Emirates_None_trojan_628
-  - United Kingdom_None_trojan_629
-  - The Netherlands_None_trojan_630
-  - United States_None_trojan_631
+  - United Arab Emirates_None_trojan_627
+  - United Kingdom_None_trojan_628
+  - The Netherlands_None_trojan_629
+  - United States_None_trojan_630
   - Japan_Tokyo_anytls_71
   - Australia_None_http_72
   - Canada_Vancouver_vless_73
@@ -2408,7 +2390,7 @@ proxy-groups:
   - Taiwan_Taipei_anytls_7113
   - Taiwan_New Taipei City_ss_7114
   - Taiwan_Taipei_anytls_7115
-  - China_Guangzhou_vmess_7116
+  - China_Shanghai_vmess_7116
   - United States_None_http_7117
   - United States_New York_http_7118
   - United States_Sanford_http_7119
