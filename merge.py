@@ -23,7 +23,9 @@ from pipeline_common import (
 )
 
 CLASH_INPUT = "sub/merged_proxies_new.yaml"
+COMPLETE_CLASH_INPUT = "sub/merged_proxies_new_2.yaml"
 OUTPUT = "sub/base64.txt"
+COMPLETE_OUTPUT = "sub/base64_2.txt"
 FULL_OUTPUT = "sub/base64_full.txt"
 SUPPORTED_SCHEMES = {
     "anytls",
@@ -61,25 +63,41 @@ def fragment(name: Any) -> str:
     return f"#{quote(name)}"
 
 
-def convert_vless(proxy: dict[str, Any]) -> str:
+def convert_vless(proxy: dict[str, Any], complete: bool = False) -> str:
     reality = proxy.get("reality-opts") or {}
     ws = proxy.get("ws-opts") or {}
     grpc = proxy.get("grpc-opts") or {}
+    xhttp = proxy.get("xhttp-opts") or {}
     tls = bool(proxy.get("tls"))
     security = "reality" if reality else ("tls" if tls else "none")
     query = query_string(
         [
             ("security", security),
-            ("encryption", "none"),
+            (
+                "encryption",
+                proxy.get("encryption", "none") if complete else "none",
+            ),
             ("flow", proxy.get("flow")),
             ("type", proxy.get("network", "tcp")),
+            (
+                "packetEncoding",
+                proxy.get("packet-encoding") if complete else None,
+            ),
             ("fp", proxy.get("client-fingerprint")),
             ("pbk", reality.get("public-key")),
             ("sid", reality.get("short-id")),
             ("sni", proxy.get("servername") or proxy.get("sni")),
             ("serviceName", grpc.get("grpc-service-name")),
-            ("path", ws.get("path")),
-            ("host", (ws.get("headers") or {}).get("Host")),
+            (
+                "path",
+                (xhttp.get("path") if complete else None) or ws.get("path"),
+            ),
+            (
+                "host",
+                (xhttp.get("host") if complete else None)
+                or (ws.get("headers") or {}).get("Host"),
+            ),
+            ("mode", xhttp.get("mode") if complete else None),
             ("allowInsecure", int(bool(proxy.get("skip-cert-verify", False)))),
         ]
     )
@@ -226,8 +244,10 @@ def convert_anytls(proxy: dict[str, Any]) -> str:
     )
 
 
-def convert_proxy(proxy: dict[str, Any]) -> str | None:
+def convert_proxy(proxy: dict[str, Any], complete: bool = False) -> str | None:
     proxy_type = str(proxy.get("type") or "").lower()
+    if proxy_type == "vless":
+        return convert_vless(proxy, complete=complete)
     converters = {
         "anytls": convert_anytls,
         "http": convert_http_or_socks,
@@ -238,7 +258,6 @@ def convert_proxy(proxy: dict[str, Any]) -> str | None:
         "ss": convert_ss,
         "trojan": convert_trojan,
         "tuic": convert_tuic,
-        "vless": convert_vless,
         "vmess": convert_vmess,
     }
     converter = converters.get(proxy_type)
@@ -321,21 +340,66 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="check_nodes.py 生成的健康节点名称 JSON；未提供时不更新 base64.txt",
     )
+    parser.add_argument(
+        "--complete-healthy-names",
+        type=Path,
+        help="完整参数 YAML 的健康节点名称 JSON；未提供时不更新 base64_2.txt",
+    )
     return parser.parse_args()
+
+
+def load_proxy_links(
+    input_path: str, complete: bool = False
+) -> list[tuple[str, str]]:
+    config = load_yaml(input_path)
+    proxies = config.get("proxies")
+    if not isinstance(proxies, list):
+        raise PipelineError(f"{input_path} 缺少 proxies")
+    return [
+        (str(proxy["name"]), link)
+        for proxy in proxies
+        if isinstance(proxy, dict)
+        if (link := convert_proxy(proxy, complete=complete))
+    ]
+
+
+def load_healthy_names(path: Path) -> set[str]:
+    try:
+        healthy_value = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise PipelineError(f"无法读取健康节点名单: {exc}") from exc
+    if not isinstance(healthy_value, list) or not all(
+        isinstance(name, str) for name in healthy_value
+    ):
+        raise PipelineError("健康节点名单必须是字符串数组")
+    return set(healthy_value)
+
+
+def write_healthy_subscription(
+    output: str,
+    proxy_links: list[tuple[str, str]],
+    healthy_path: Path,
+    label: str,
+) -> None:
+    healthy_names = load_healthy_names(healthy_path)
+    healthy_links = validate_links(
+        [link for name, link in proxy_links if name in healthy_names]
+    )
+    if len(healthy_links) < 20:
+        raise PipelineError(
+            f"{label}测活节点仅 {len(healthy_links)} 个，低于安全阈值 20；{output} 保持不变"
+        )
+    old_healthy_count = existing_link_count(output)
+    write_subscription(output, healthy_links)
+    print(
+        f"{label}测活订阅生成完成: {len(healthy_links)} 个节点"
+        f"（旧 {old_healthy_count}）"
+    )
 
 
 def main() -> None:
     args = parse_args()
-    config = load_yaml(CLASH_INPUT)
-    proxies = config.get("proxies")
-    if not isinstance(proxies, list):
-        raise PipelineError("Clash 输出缺少 proxies")
-    proxy_links = [
-        (str(proxy["name"]), link)
-        for proxy in proxies
-        if isinstance(proxy, dict)
-        if (link := convert_proxy(proxy))
-    ]
+    proxy_links = load_proxy_links(CLASH_INPUT)
     full_links = validate_links([link for _, link in proxy_links] + collect_naive())
     old_full_count = existing_link_count(FULL_OUTPUT)
     validate_node_count(len(full_links), old_full_count, "base64_full")
@@ -344,29 +408,23 @@ def main() -> None:
 
     if not args.healthy_names:
         print("未提供健康节点名单，base64.txt 保持不变")
-        return
-    try:
-        healthy_value = json.loads(args.healthy_names.read_text(encoding="utf-8"))
-    except Exception as exc:
-        raise PipelineError(f"无法读取健康节点名单: {exc}") from exc
-    if not isinstance(healthy_value, list) or not all(
-        isinstance(name, str) for name in healthy_value
-    ):
-        raise PipelineError("健康节点名单必须是字符串数组")
-    healthy_names = set(healthy_value)
-    healthy_links = validate_links(
-        [link for name, link in proxy_links if name in healthy_names]
-    )
-    if len(healthy_links) < 20:
-        raise PipelineError(
-            f"测活节点仅 {len(healthy_links)} 个，低于安全阈值 20；base64.txt 保持不变"
+    else:
+        write_healthy_subscription(
+            OUTPUT, proxy_links, args.healthy_names, ""
         )
-    old_healthy_count = existing_link_count(OUTPUT)
-    write_subscription(OUTPUT, healthy_links)
-    print(
-        f"测活订阅生成完成: {len(healthy_links)} 个节点"
-        f"（全量 {len(full_links)}，旧 {old_healthy_count}）"
-    )
+
+    if not args.complete_healthy_names:
+        print("未提供完整参数健康节点名单，base64_2.txt 保持不变")
+    else:
+        complete_proxy_links = load_proxy_links(
+            COMPLETE_CLASH_INPUT, complete=True
+        )
+        write_healthy_subscription(
+            COMPLETE_OUTPUT,
+            complete_proxy_links,
+            args.complete_healthy_names,
+            "完整参数版",
+        )
 
 
 if __name__ == "__main__":
