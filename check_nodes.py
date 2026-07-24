@@ -1,8 +1,4 @@
-"""Validate Mihomo configuration and optionally perform real proxy handshakes.
-
-Scheduled GitHub-hosted runs use validation only. Run with ``--filter`` on a
-China-side host to remove nodes that fail both HTTPS targets for every round.
-"""
+"""Validate Mihomo config and export the names of proxies that pass real handshakes."""
 
 from __future__ import annotations
 
@@ -22,7 +18,7 @@ from typing import Any
 
 import yaml
 
-from pipeline_common import MIN_NODES, PipelineError, ROOT, atomic_write_text
+from pipeline_common import MIN_NODES, PipelineError, ROOT
 
 DEFAULT_CONFIG = ROOT / "sub" / "merged_proxies_new.yaml"
 TARGETS = ("https://cp.cloudflare.com", "https://www.gstatic.com/generate_204")
@@ -126,36 +122,30 @@ def probe_nodes(
     return successes
 
 
-def filter_config(config: dict[str, Any], healthy: set[str]) -> dict[str, Any]:
-    proxies = config.get("proxies")
-    if not isinstance(proxies, list):
-        raise PipelineError("配置缺少 proxies")
-    kept = [
-        proxy
-        for proxy in proxies
-        if isinstance(proxy, dict) and str(proxy.get("name")) in healthy
-    ]
-    required = max(MIN_NODES, int(len(proxies) * 0.1))
-    if len(kept) < required:
-        raise PipelineError(
-            f"健康检查结果异常: 保留 {len(kept)}/{len(proxies)}，最低要求 {required}"
-        )
-    config["proxies"] = kept
-    valid_names = {str(proxy["name"]) for proxy in kept}
-    for group in config.get("proxy-groups", []):
-        if not isinstance(group, dict) or not isinstance(group.get("proxies"), list):
-            continue
-        group["proxies"] = [
-            name
-            for name in group["proxies"]
-            if name in valid_names or name in {"自动选择", "DIRECT", "REJECT"}
-        ]
-    return config
+def atomic_write_json(path: Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary = tempfile.mkstemp(
+        prefix=f".{path.name}.", suffix=".tmp", dir=path.parent
+    )
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8", newline="\n") as handle:
+            json.dump(value, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary, path)
+    except Exception:
+        try:
+            os.unlink(temporary)
+        except FileNotFoundError:
+            pass
+        raise
 
 
-def run_filter(
+def export_healthy_names(
     mihomo: str,
     config_path: Path,
+    output_path: Path,
     rounds: int,
     timeout_ms: int,
     workers: int,
@@ -183,17 +173,25 @@ def run_filter(
             except subprocess.TimeoutExpired:
                 process.kill()
                 process.wait(timeout=5)
-    filtered = filter_config(config, healthy)
-    rendered = yaml.safe_dump(filtered, sort_keys=False, allow_unicode=True)
-    atomic_write_text(config_path.relative_to(ROOT), rendered)
-    print(f"健康检查完成: 保留 {len(filtered['proxies'])}/{original_count} 个节点")
+    required = max(MIN_NODES, int(original_count * 0.1))
+    if len(healthy) < required:
+        raise PipelineError(
+            f"健康检查结果异常: 通过 {len(healthy)}/{original_count}，最低要求 {required}"
+        )
+    ordered = [
+        str(proxy["name"])
+        for proxy in config["proxies"]
+        if isinstance(proxy, dict) and str(proxy.get("name")) in healthy
+    ]
+    atomic_write_json(output_path, ordered)
+    print(f"健康检查完成: 通过 {len(ordered)}/{original_count} 个节点")
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--mihomo", default=os.environ.get("MIHOMO_BIN", "mihomo"))
-    parser.add_argument("--filter", action="store_true")
+    parser.add_argument("--healthy-output", type=Path)
     parser.add_argument("--rounds", type=int, default=2)
     parser.add_argument("--timeout-ms", type=int, default=8000)
     parser.add_argument("--workers", type=int, default=24)
@@ -208,9 +206,15 @@ def main() -> None:
     if args.rounds < 2:
         raise PipelineError("至少需要 2 轮，避免单次抖动误删")
     validate_config(args.mihomo, config)
-    if args.filter:
-        run_filter(args.mihomo, config, args.rounds, args.timeout_ms, args.workers)
-        validate_config(args.mihomo, config)
+    if args.healthy_output:
+        export_healthy_names(
+            args.mihomo,
+            config,
+            args.healthy_output.resolve(),
+            args.rounds,
+            args.timeout_ms,
+            args.workers,
+        )
 
 
 if __name__ == "__main__":
