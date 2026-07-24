@@ -13,7 +13,7 @@ from typing import Any
 
 from pipeline_common import MIN_NODES, PipelineError, ROOT
 
-BASE64_FILE = ROOT / "sub" / "base64.txt"
+BASE64_FILE = ROOT / "sub" / "base64_full.txt"
 OUTPUT_FILE = ROOT / "sub" / "sing-box.json"
 CONVERTER_REPO = "https://github.com/Toperlock/sing-box-subscribe.git"
 CONVERTER_COMMIT = "9b94f3e61d1a14e6eca228df189ada8719ca9174"
