@@ -1,46 +1,66 @@
 name: Merge Script
+
 on:
-  # push:
-  #   branches:
-  #     - main  # 替换为你的默认分支
   schedule:
-    - cron: '0 0/6 * * *'  # 每 6h 一次
-  workflow_dispatch:  # 触发手动事件
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chromego-merge-main
+  cancel-in-progress: false
+
 jobs:
   merge:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUNBUFFERED: "1"
+      MIHOMO_VERSION: "1.19.29"
+      MIHOMO_SHA256: "60de76a35a6cbf7b4fa4a20f5c257c24345d1d635ab1aa3877022a1997ef413c"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
         with:
           python-version: "3.11"
           cache: pip
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-      - name: Update GeoLite2 database
+
+      - name: Install pinned Python dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Install pinned Mihomo
         run: |
-          curl -sL -z GeoLite2-City.mmdb -o GeoLite2-City.mmdb \
-            "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-City.mmdb" || true
-      - name: Run merge script
+          curl --fail --location --retry 3 --output mihomo.gz \
+            "https://github.com/MetaCubeX/mihomo/releases/download/v${MIHOMO_VERSION}/mihomo-linux-amd64-v${MIHOMO_VERSION}.gz"
+          echo "${MIHOMO_SHA256}  mihomo.gz" | sha256sum --check -
+          gzip --decompress mihomo.gz
+          chmod +x mihomo
+
+      - name: Build Mihomo subscription
         run: python meta_merge.py
-      - name: Run shadowrocket merge script
+
+      - name: Validate Mihomo subscription
+        run: python check_nodes.py --mihomo ./mihomo
+
+      - name: Build universal base64 subscription
         run: python merge.py
-      - name: Check nodes (TCP)
-        run: python check_nodes.py
-      - name: Run sing-box script
+
+      - name: Build sing-box subscription
         run: python sing-box.py
-      - name: Commit Changes
+
+      - name: Commit generated subscriptions
         run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "Changes detected in the repository."
-            git config core.ignorecase false
-            git config --local user.email "actions@github.com"
-            git config --local user.name "GitHub Action"
-            git add .
-            git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-            git push
-          else
-            echo "No changes detected in the repository."
+          git add sub/merged_proxies_new.yaml sub/base64.txt sub/sing-box.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
           fi
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update subscriptions at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push origin HEAD:main
