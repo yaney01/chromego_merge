@@ -10,9 +10,12 @@ dns:
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  default-nameserver: 
+  default-nameserver:
     - 223.5.5.5
-    - 8.8.8.8
+    - 119.29.29.29
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
@@ -35,11 +38,10 @@ proxy-groups:
 
   - name: 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: https://cp.cloudflare.com
     interval: 300
     tolerance: 50
     proxies:
-
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
