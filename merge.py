@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import base64
 import hashlib
 import json
@@ -15,6 +16,7 @@ from pipeline_common import (
     PipelineError,
     atomic_write_text,
     fetch_text,
+    is_public_server,
     load_yaml,
     read_url_list,
     validate_node_count,
@@ -22,6 +24,7 @@ from pipeline_common import (
 
 CLASH_INPUT = "sub/merged_proxies_new.yaml"
 OUTPUT = "sub/base64.txt"
+FULL_OUTPUT = "sub/base64_full.txt"
 SUPPORTED_SCHEMES = {
     "anytls",
     "http",
@@ -258,6 +261,8 @@ def parse_naive(data: str, source: str) -> str:
     parts = urllib.parse.urlsplit(link)
     if not parts.hostname or not parts.port:
         raise PipelineError(f"{source} 缺少主机或端口")
+    if not is_public_server(parts.hostname):
+        raise PipelineError(f"{source} 使用非公网地址: {parts.hostname}")
     return f"{link}{fragment(f'NAIVE-{digest}')}"
 
 
@@ -275,8 +280,8 @@ def collect_naive() -> list[str]:
     return links
 
 
-def existing_link_count() -> int:
-    path = ROOT / OUTPUT
+def existing_link_count(output: str) -> int:
+    path = ROOT / output
     if not path.exists():
         return 0
     try:
@@ -301,23 +306,67 @@ def validate_links(links: list[str]) -> list[str]:
     return result
 
 
+def write_subscription(output: str, links: list[str]) -> None:
+    plain = "\n".join(links)
+    encoded = base64.b64encode(plain.encode("utf-8")).decode("ascii")
+    if base64.b64decode(encoded).decode("utf-8") != plain:
+        raise PipelineError(f"{output} base64 编解码自检失败")
+    atomic_write_text(output, encoded)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--healthy-names",
+        type=Path,
+        help="check_nodes.py 生成的健康节点名称 JSON；未提供时不更新 base64.txt",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     config = load_yaml(CLASH_INPUT)
     proxies = config.get("proxies")
     if not isinstance(proxies, list):
         raise PipelineError("Clash 输出缺少 proxies")
-    links = [link for proxy in proxies if isinstance(proxy, dict) if (link := convert_proxy(proxy))]
-    links.extend(collect_naive())
-    links = validate_links(links)
+    proxy_links = [
+        (str(proxy["name"]), link)
+        for proxy in proxies
+        if isinstance(proxy, dict)
+        if (link := convert_proxy(proxy))
+    ]
+    full_links = validate_links([link for _, link in proxy_links] + collect_naive())
+    old_full_count = existing_link_count(FULL_OUTPUT)
+    validate_node_count(len(full_links), old_full_count, "base64_full")
+    write_subscription(FULL_OUTPUT, full_links)
+    print(f"全量通用订阅生成完成: {len(full_links)} 个节点（旧 {old_full_count}）")
 
-    old_count = existing_link_count()
-    validate_node_count(len(links), old_count, "base64")
-    plain = "\n".join(links)
-    encoded = base64.b64encode(plain.encode("utf-8")).decode("ascii")
-    if base64.b64decode(encoded).decode("utf-8") != plain:
-        raise PipelineError("base64 编解码自检失败")
-    atomic_write_text(OUTPUT, encoded)
-    print(f"通用订阅生成完成: {len(links)} 个节点（旧 {old_count}）")
+    if not args.healthy_names:
+        print("未提供健康节点名单，base64.txt 保持不变")
+        return
+    try:
+        healthy_value = json.loads(args.healthy_names.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise PipelineError(f"无法读取健康节点名单: {exc}") from exc
+    if not isinstance(healthy_value, list) or not all(
+        isinstance(name, str) for name in healthy_value
+    ):
+        raise PipelineError("健康节点名单必须是字符串数组")
+    healthy_names = set(healthy_value)
+    healthy_links = validate_links(
+        [link for name, link in proxy_links if name in healthy_names]
+    )
+    if len(healthy_links) < 20:
+        raise PipelineError(
+            f"测活节点仅 {len(healthy_links)} 个，低于安全阈值 20；base64.txt 保持不变"
+        )
+    old_healthy_count = existing_link_count(OUTPUT)
+    write_subscription(OUTPUT, healthy_links)
+    print(
+        f"测活订阅生成完成: {len(healthy_links)} 个节点"
+        f"（全量 {len(full_links)}，旧 {old_healthy_count}）"
+    )
 
 
 if __name__ == "__main__":
