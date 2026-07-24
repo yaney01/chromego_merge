@@ -1,352 +1,341 @@
-import yaml
+"""Build the Mihomo subscription from all configured upstream sources."""
+
+from __future__ import annotations
+
 import json
-import urllib.request
-import logging
-import geoip2.database
-import socket
 import re
+import sys
+from typing import Any
+
+import yaml
+
+from pipeline_common import (
+    PipelineError,
+    atomic_write_text,
+    collect_sources,
+    existing_yaml_node_count,
+    load_yaml,
+    normalize_proxies,
+    split_server_port,
+    validate_node_count,
+)
+
+OUTPUT = "sub/merged_proxies_new.yaml"
 
 
-# 提取节点
-def process_urls(url_file, processor):
-    try:
-        with open(url_file, "r") as file:
-            urls = file.read().splitlines()
-
-        for index, url in enumerate(urls):
-            try:
-                # 修复：加 UA 头避免 403，并加超时
-                req = urllib.request.Request(
-                    url,
-                    headers={
-                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                    },
-                )
-                response = urllib.request.urlopen(req, timeout=15)
-                data = response.read().decode("utf-8")
-                processor(data, index)
-            except Exception as e:
-                logging.error(f"Error processing URL {url}: {e}")
-    except Exception as e:
-        logging.error(f"Error reading file {url_file}: {e}")
-
-
-# 修复：拆分 server:port，兼容 [ipv6]:port、裸 ipv6、ipv4:port、domain、无端口
-def split_server_port(server_ports, default_port=443):
-    server_ports = str(server_ports).strip()
-    if server_ports.startswith("["):
-        # [2001:db8::1]:443,444
-        host, _, rest = server_ports[1:].partition("]")
-        rest = rest.lstrip(":")
-        ports = rest if rest else str(default_port)
-    elif server_ports.count(":") == 1:
-        # ipv4:port 或 domain:port
-        host, ports = server_ports.split(":")
-    elif ":" not in server_ports:
-        # 无端口
-        host, ports = server_ports, str(default_port)
-    else:
-        # 裸 IPv6，无端口
-        host, ports = server_ports, str(default_port)
-
-    ports_slt = ports.split(",")
-    port = int(ports_slt[0])
-    mport = ports_slt[1] if len(ports_slt) > 1 else port
-    return host, port, mport
-
-
-# 提取clash节点
-def process_clash(data, index):
+def parse_clash(data: str, source: str) -> list[dict[str, Any]]:
     content = yaml.safe_load(data)
-    proxies = content.get("proxies", [])
-    for i, proxy in enumerate(proxies):
-        location = get_physical_location(proxy["server"])
-        proxy["name"] = f"{location}_{proxy['type']}_{index}{i+1}"
-    merged_proxies.extend(proxies)
+    if not isinstance(content, dict) or not isinstance(content.get("proxies"), list):
+        raise PipelineError("不是有效的 Clash/Mihomo 配置")
+    result: list[dict[str, Any]] = []
+    for index, proxy in enumerate(content["proxies"], start=1):
+        if not isinstance(proxy, dict):
+            continue
+        node = dict(proxy)
+        node["name"] = node.get("name") or f"{source}-{index}"
+        result.append(node)
+    return result
 
 
-def get_physical_location(address):
-    # 修复：正确剥离端口，兼容 IPv6（原正则会把裸 IPv6 截成 '2a14'）
-    address = str(address).strip()
-    if address.startswith("["):
-        address = address[1:].split("]")[0]
-    elif address.count(":") == 1:
-        address = address.split(":")[0]
-    # 多冒号且无方括号 = 裸 IPv6，原样保留
-
-    try:
-        ip_address = socket.gethostbyname(address)
-    except socket.gaierror:
-        ip_address = address
-
-    try:
-        reader = geoip2.database.Reader(
-            "GeoLite2-City.mmdb"
-        )  # 这里的路径需要指向你自己的数据库文件
-        response = reader.city(ip_address)
-        country = response.country.name
-        city = response.city.name
-        return f"{country}_{city}"
-    except Exception as e:
-        # 修复：原来只捕获 AddressNotFoundError，非法IP字符串抛出的 ValueError 会漏出，
-        # 导致整条 URL 的所有节点处理中断
-        print(f"Error: {e}")
-        return "Unknown"
+def _seconds(value: Any, default: int = 30) -> int:
+    match = re.search(r"\d+", str(value or ""))
+    return int(match.group()) if match else default
 
 
-# 处理sb，待办
-def process_sb(data, index):
-    try:
-        json_data = json.loads(data)
-        # 处理 shadowtls 数据
+def _parse_hysteria1(config: dict[str, Any], source: str) -> dict[str, Any]:
+    server, port, ports = split_server_port(config.get("server"))
+    auth = config.get("auth_str") or config.get("auth-str") or config.get("auth")
+    if not auth:
+        raise PipelineError("Hysteria 1 缺少 auth_str")
+    node: dict[str, Any] = {
+        "name": source,
+        "type": "hysteria",
+        "server": server,
+        "port": port,
+        "auth-str": str(auth),
+        "protocol": config.get("protocol", "udp"),
+        "up": config.get("up_mbps", config.get("up", 100)),
+        "down": config.get("down_mbps", config.get("down", 100)),
+        "sni": config.get("server_name") or config.get("sni", ""),
+        "skip-cert-verify": bool(config.get("insecure", False)),
+        "fast-open": bool(config.get("fast_open", False)),
+    }
+    if ports:
+        node["ports"] = ports
+    if config.get("obfs"):
+        node["obfs"] = config["obfs"]
+    alpn = config.get("alpn")
+    if alpn:
+        node["alpn"] = [alpn] if isinstance(alpn, str) else alpn
+    for source_key, target_key in (
+        ("recv_window_conn", "recv-window-conn"),
+        ("recv_window", "recv-window"),
+        ("disable_mtu_discovery", "disable_mtu_discovery"),
+    ):
+        if source_key in config:
+            node[target_key] = config[source_key]
+    return node
 
-        # 提取所需字段
-        method = json_data["outbounds"][0]["method"]
-        password = json_data["outbounds"][0]["password"]
-        server = json_data["outbounds"][1]["server"]
-        server_port = json_data["outbounds"][1]["server_port"]
-        server_name = json_data["outbounds"][1]["tls"]["server_name"]
-        shadowtls_password = json_data["outbounds"][1]["password"]
-        version = json_data["outbounds"][1]["version"]
-        location = get_physical_location(server)
-        name = f"{location}_shadowtls_{index}"
-        # 创建当前网址的proxy字典
-        proxy = {
-            "name": name,
-            "type": "ss",
-            "server": server,
-            "port": server_port,
-            "cipher": method,
-            "password": password,
-            "plugin": "shadow-tls",
-            "client-fingerprint": "chrome",
-            "plugin-opts": {
-                "host": server_name,
-                "password": shadowtls_password,
-                "version": int(version),
-            },
+
+def _parse_hysteria2(config: dict[str, Any], source: str) -> dict[str, Any]:
+    server, port, ports = split_server_port(config.get("server"))
+    auth = config.get("auth") or config.get("password")
+    if not auth:
+        raise PipelineError("Hysteria 2 缺少 auth")
+    tls = config.get("tls") if isinstance(config.get("tls"), dict) else {}
+    bandwidth = config.get("bandwidth") if isinstance(config.get("bandwidth"), dict) else {}
+    node: dict[str, Any] = {
+        "name": source,
+        "type": "hysteria2",
+        "server": server,
+        "port": port,
+        "password": str(auth),
+        "sni": tls.get("sni") or config.get("sni", ""),
+        "skip-cert-verify": bool(tls.get("insecure", config.get("insecure", False))),
+    }
+    if ports:
+        node["ports"] = ports
+    if bandwidth.get("up"):
+        node["up"] = bandwidth["up"]
+    if bandwidth.get("down"):
+        node["down"] = bandwidth["down"]
+    transport = config.get("transport") if isinstance(config.get("transport"), dict) else {}
+    udp = transport.get("udp") if isinstance(transport.get("udp"), dict) else {}
+    if udp.get("hopInterval"):
+        node["hop-interval"] = _seconds(udp["hopInterval"])
+    obfs = config.get("obfs")
+    if isinstance(obfs, dict):
+        obfs_type = obfs.get("type")
+        if obfs_type:
+            node["obfs"] = obfs_type
+            settings = obfs.get(obfs_type)
+            if isinstance(settings, dict) and settings.get("password"):
+                node["obfs-password"] = settings["password"]
+    elif obfs:
+        node["obfs"] = obfs
+        if config.get("obfs-password"):
+            node["obfs-password"] = config["obfs-password"]
+    return node
+
+
+def parse_hysteria_auto(data: str, source: str) -> list[dict[str, Any]]:
+    config = json.loads(data)
+    if not isinstance(config, dict):
+        raise PipelineError("Hysteria 配置顶层不是对象")
+    h1_markers = {"auth_str", "auth-str", "up_mbps", "down_mbps", "server_name"}
+    h2_markers = {"bandwidth", "transport", "tls"}
+    if h1_markers.intersection(config):
+        return [_parse_hysteria1(config, source)]
+    if h2_markers.intersection(config) and ("auth" in config or "password" in config):
+        return [_parse_hysteria2(config, source)]
+    raise PipelineError("无法按内容识别 Hysteria 版本")
+
+
+def _singbox_tls(outbound: dict[str, Any], node: dict[str, Any]) -> None:
+    tls = outbound.get("tls") if isinstance(outbound.get("tls"), dict) else {}
+    if not tls.get("enabled"):
+        return
+    node["tls"] = True
+    if tls.get("server_name"):
+        node["servername"] = tls["server_name"]
+        node["sni"] = tls["server_name"]
+    if tls.get("insecure") is not None:
+        node["skip-cert-verify"] = bool(tls["insecure"])
+    utls = tls.get("utls") if isinstance(tls.get("utls"), dict) else {}
+    if utls.get("fingerprint"):
+        node["client-fingerprint"] = utls["fingerprint"]
+    reality = tls.get("reality") if isinstance(tls.get("reality"), dict) else {}
+    if reality.get("enabled"):
+        node["reality-opts"] = {
+            "public-key": reality.get("public_key", ""),
+            "short-id": reality.get("short_id", ""),
         }
 
-        # 将当前proxy字典添加到所有proxies列表中
-        merged_proxies.append(proxy)
 
-    except Exception as e:
-        logging.error(f"Error processing shadowtls data for index {index}: {e}")
-
-
-def process_hysteria(data, index):
-    try:
-        json_data = json.loads(data)
-        # 修复：auth 字段名在不同配置中为 auth_str / auth-str / auth，全部兼容
-        auth = (
-            json_data.get("auth_str")
-            or json_data.get("auth-str")
-            or json_data.get("auth")
-            or ""
-        )
-        # 修复：server 拆分兼容 IPv6 和无端口
-        server, server_port, mport = split_server_port(json_data.get("server", ""))
-        # fast_open = json_data["fast_open"]
-        fast_open = True
-        insecure = json_data.get("insecure", False)
-        server_name = json_data.get("server_name") or json_data.get("sni", "")
-        alpn = json_data.get("alpn", "h3")
-        protocol = json_data.get("protocol", "udp")
-        location = get_physical_location(server)
-        name = f"{location}_hy_{index}"
-
-        # 创建当前网址的proxy字典
-        proxy = {
-            "name": name,
-            "type": "hysteria",
-            "server": server,
-            "port": server_port,
-            "ports": mport,
-            "auth_str": auth,
-            "up": 1000,
-            "down": 1000,
-            "fast-open": fast_open,
-            "protocol": protocol,
-            "sni": server_name,
-            "skip-cert-verify": insecure,
-            "alpn": [alpn] if isinstance(alpn, str) else alpn,
+def _singbox_transport(outbound: dict[str, Any], node: dict[str, Any]) -> None:
+    transport = outbound.get("transport")
+    if not isinstance(transport, dict) or not transport.get("type"):
+        return
+    network = transport["type"]
+    node["network"] = network
+    if network == "grpc":
+        node["grpc-opts"] = {"grpc-service-name": transport.get("service_name", "")}
+    elif network == "ws":
+        node["ws-opts"] = {
+            "path": transport.get("path", "/"),
+            "headers": transport.get("headers", {}),
         }
 
-        # 将当前proxy字典添加到所有proxies列表中
-        merged_proxies.append(proxy)
 
-    except Exception as e:
-        logging.error(f"Error processing hysteria data for index {index}: {e}")
-
-
-# 处理hysteria2
-def process_hysteria2(data, index):
-    try:
-        json_data = json.loads(data)
-        # 修复：auth 字段名兼容 auth / auth_str / password
-        auth = (
-            json_data.get("auth")
-            or json_data.get("auth_str")
-            or json_data.get("password")
-            or ""
-        )
-        # 修复：server 拆分兼容 IPv6 和无端口
-        server, server_port, _ = split_server_port(json_data.get("server", ""))
-        # fast_open = json_data["fastOpen"]
-        fast_open = True
-        # 修复：tls 字段可能不存在
-        tls_cfg = json_data.get("tls", {}) or {}
-        insecure = tls_cfg.get("insecure", False)
-        sni = tls_cfg.get("sni", "")
-        location = get_physical_location(server)
-        name = f"{location}_hy2_{index}"
-
-        # 创建当前网址的proxy字典
-        proxy = {
-            "name": name,
-            "type": "hysteria2",
+def _convert_singbox_outbound(outbound: dict[str, Any], source: str) -> dict[str, Any] | None:
+    proxy_type = str(outbound.get("type") or "").lower()
+    if proxy_type in {"direct", "block", "dns", "selector", "urltest"}:
+        return None
+    server = outbound.get("server")
+    port = outbound.get("server_port")
+    if proxy_type == "tuic":
+        node: dict[str, Any] = {
+            "name": outbound.get("tag") or source,
+            "type": "tuic",
             "server": server,
-            "port": server_port,
-            "password": auth,
-            "fast-open": fast_open,
-            "sni": sni,
-            "skip-cert-verify": insecure,
+            "port": port,
+            "uuid": outbound.get("uuid", ""),
+            "password": outbound.get("password", ""),
+            "congestion-controller": outbound.get("congestion_control", "bbr"),
+            "udp-relay-mode": "native",
         }
+        tls = outbound.get("tls") if isinstance(outbound.get("tls"), dict) else {}
+        node["sni"] = tls.get("server_name", "")
+        node["skip-cert-verify"] = bool(tls.get("insecure", False))
+        if tls.get("alpn"):
+            node["alpn"] = tls["alpn"]
+        return node
+    if proxy_type == "vless":
+        node = {
+            "name": outbound.get("tag") or source,
+            "type": "vless",
+            "server": server,
+            "port": port,
+            "uuid": outbound.get("uuid", ""),
+            "flow": outbound.get("flow", ""),
+            "network": "tcp",
+            "udp": True,
+        }
+        _singbox_tls(outbound, node)
+        _singbox_transport(outbound, node)
+        return node
+    raise PipelineError(f"暂不支持的 sing-box outbound: {proxy_type}")
 
-        # 将当前proxy字典添加到所有proxies列表中
-        merged_proxies.append(proxy)
 
-    except Exception as e:
-        logging.error(f"Error processing hysteria2 data for index {index}: {e}")
+def parse_singbox(data: str, source: str) -> list[dict[str, Any]]:
+    config = json.loads(data)
+    outbounds = config.get("outbounds") if isinstance(config, dict) else None
+    if not isinstance(outbounds, list):
+        raise PipelineError("sing-box 配置缺少 outbounds")
+    result = []
+    for outbound in outbounds:
+        if isinstance(outbound, dict):
+            node = _convert_singbox_outbound(outbound, source)
+            if node:
+                result.append(node)
+    return result
 
 
-# 处理xray
-def process_xray(data, index):
-    try:
-        json_data = json.loads(data)
-        # 处理 xray 数据
-        outbound = json_data["outbounds"][0]
-        protocol = outbound.get("protocol")
-        # vless操作
-        if protocol == "vless":
-            vnext = outbound["settings"]["vnext"][0]
-            server = vnext["address"]
-            port = vnext["port"]
-            user = vnext["users"][0]
-            uuid = user.get("id", "")
-            # 修复：flow 字段非 XTLS 节点没有，原来 user["flow"] 直接 KeyError
-            flow = user.get("flow", "")
-
-            stream = outbound.get("streamSettings", {})
-            network = stream.get("network", "tcp")
-            security = stream.get("security", "")
-
-            # 修复：realitySettings 可能不存在（普通 tls 节点），
-            # 原来直接取导致 KeyError，且 proxy 未赋值时仍执行 append 报 UnboundLocalError
-            reality = stream.get("realitySettings", {}) or {}
-            tls_settings = stream.get("tlsSettings", {}) or {}
-
-            publicKey = reality.get("publicKey", "")
-            shortId = reality.get("shortId", "")
-            serverName = reality.get("serverName") or tls_settings.get(
-                "serverName", ""
-            )
-            fingerprint = reality.get("fingerprint") or tls_settings.get(
-                "fingerprint", "chrome"
-            )
-            istls = security in ("tls", "reality")
-            isudp = True
-            location = get_physical_location(server)
-            tag = "reality" if security == "reality" else "vless"
-            name = f"{location}_{tag}_{index}"
-
-            proxy = {
-                "name": name,
-                "type": protocol,
-                "server": server,
-                "port": port,
-                "uuid": uuid,
-                "network": network,
-                "tls": istls,
-                "udp": isudp,
-                "client-fingerprint": fingerprint,
-                "servername": serverName,
+def parse_xray(data: str, source: str) -> list[dict[str, Any]]:
+    config = json.loads(data)
+    outbounds = config.get("outbounds") if isinstance(config, dict) else None
+    if not isinstance(outbounds, list):
+        raise PipelineError("Xray 配置缺少 outbounds")
+    result: list[dict[str, Any]] = []
+    for outbound in outbounds:
+        if not isinstance(outbound, dict) or outbound.get("protocol") != "vless":
+            continue
+        vnext = (outbound.get("settings") or {}).get("vnext") or []
+        if not vnext or not vnext[0].get("users"):
+            continue
+        endpoint = vnext[0]
+        user = endpoint["users"][0]
+        stream = outbound.get("streamSettings") or {}
+        network = stream.get("network", "tcp")
+        security = stream.get("security", "none")
+        reality = stream.get("realitySettings") or {}
+        tls = stream.get("tlsSettings") or {}
+        node: dict[str, Any] = {
+            "name": outbound.get("tag") or source,
+            "type": "vless",
+            "server": endpoint.get("address"),
+            "port": endpoint.get("port"),
+            "uuid": user.get("id", ""),
+            "network": network,
+            "udp": True,
+            "tls": security in {"tls", "reality"},
+            "servername": reality.get("serverName") or tls.get("serverName", ""),
+            "client-fingerprint": reality.get("fingerprint")
+            or tls.get("fingerprint", "chrome"),
+            "skip-cert-verify": bool(tls.get("allowInsecure", False)),
+        }
+        if user.get("flow"):
+            node["flow"] = user["flow"]
+        if security == "reality":
+            node["reality-opts"] = {
+                "public-key": reality.get("publicKey", ""),
+                "short-id": reality.get("shortId", ""),
             }
-            if flow:
-                proxy["flow"] = flow
-            if security == "reality":
-                proxy["reality-opts"] = {
-                    "public-key": publicKey,
-                    "short-id": shortId,
-                }
-            if network == "grpc":
-                serviceName = stream.get("grpcSettings", {}).get("serviceName", "")
-                proxy["grpc-opts"] = {"grpc-service-name": serviceName}
-            elif network == "ws":
-                ws_settings = stream.get("wsSettings", {}) or {}
-                proxy["ws-opts"] = {
-                    "path": ws_settings.get("path", "/"),
-                    "headers": ws_settings.get("headers", {}),
-                }
-
-            # 修复：append 移入 if 内，protocol 非 vless 时不再触发 UnboundLocalError
-            merged_proxies.append(proxy)
-    except Exception as e:
-        logging.error(f"Error processing xray data for index {index}: {e}")
+        if network == "grpc":
+            node["grpc-opts"] = {
+                "grpc-service-name": (stream.get("grpcSettings") or {}).get("serviceName", "")
+            }
+        elif network == "ws":
+            ws = stream.get("wsSettings") or {}
+            node["ws-opts"] = {"path": ws.get("path", "/"), "headers": ws.get("headers", {})}
+        result.append(node)
+    return result
 
 
-def update_proxy_groups(config_data, merged_proxies):
-    for group in config_data["proxy-groups"]:
-        if group["name"] in ["自动选择", "节点选择"]:
-            if "proxies" not in group or not group["proxies"]:
-                group["proxies"] = [proxy["name"] for proxy in merged_proxies]
-            else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies)
+def parse_shadowquic(data: str, source: str) -> list[dict[str, Any]]:
+    config = yaml.safe_load(data)
+    outbound = config.get("outbound") if isinstance(config, dict) else None
+    if not isinstance(outbound, dict) or outbound.get("type") != "shadowquic":
+        raise PipelineError("不是 ShadowQUIC 客户端配置")
+    server, port, _ = split_server_port(outbound.get("addr"))
+    node: dict[str, Any] = {
+        "name": source,
+        "type": "shadowquic",
+        "server": server,
+        "port": port,
+        "username": outbound.get("username", ""),
+        "password": outbound.get("password", ""),
+        "sni": outbound.get("server-name", ""),
+        "alpn": outbound.get("alpn", ["h3"]),
+        "zero-rtt": bool(outbound.get("zero-rtt", False)),
+        "congestion-controller": outbound.get("congestion-control", "bbr"),
+        "udp-over-stream": bool(outbound.get("over-stream", False)),
+    }
+    return [node]
 
 
-def update_warp_proxy_groups(config_warp_data, merged_proxies):
-    for group in config_warp_data["proxy-groups"]:
-        if group["name"] in ["自动选择", "手动选择", "负载均衡"]:
-            if "proxies" not in group or not group["proxies"]:
-                group["proxies"] = [proxy["name"] for proxy in merged_proxies]
-            else:
-                group["proxies"].extend(proxy["name"] for proxy in merged_proxies)
+def update_groups(config: dict[str, Any], proxies: list[dict[str, Any]]) -> None:
+    groups = config.get("proxy-groups")
+    if not isinstance(groups, list):
+        raise PipelineError("模板缺少 proxy-groups")
+    names = [proxy["name"] for proxy in proxies]
+    for group in groups:
+        if not isinstance(group, dict):
+            continue
+        if group.get("name") == "自动选择":
+            group["proxies"] = names
+        elif group.get("name") == "节点选择":
+            group["proxies"] = ["自动选择", "DIRECT", *names]
 
 
-# 包含hysteria2
-merged_proxies = []
+def main() -> None:
+    proxies: list[dict[str, Any]] = []
+    proxies += collect_sources("urls/clash_urls.txt", parse_clash)
+    proxies += collect_sources("urls/quick_urls.txt", parse_clash)
+    proxies += collect_sources("urls/hysteria_urls.txt", parse_hysteria_auto)
+    proxies += collect_sources("urls/hysteria2_urls.txt", parse_hysteria_auto)
+    proxies += collect_sources("urls/sb_urls.txt", parse_singbox)
+    proxies += collect_sources("urls/ss_urls.txt", parse_shadowquic)
+    proxies += collect_sources("urls/xray_urls.txt", parse_xray)
 
-# 处理 clash URLs
-process_urls("./urls/clash_urls.txt", process_clash)
+    proxies = normalize_proxies(proxies)
+    old_count = existing_yaml_node_count(OUTPUT)
+    validate_node_count(len(proxies), old_count, "Clash")
 
-# 处理 shadowtls URLs
-# process_urls('./urls/sb_urls.txt', process_sb)
-
-# 处理 hysteria URLs
-process_urls("./urls/hysteria_urls.txt", process_hysteria)
-
-# 处理 hysteria2 URLs
-process_urls("./urls/hysteria2_urls.txt", process_hysteria2)
-
-# 处理 xray URLs
-process_urls("./urls/xray_urls.txt", process_xray)
-
-# 读取普通的配置文件内容
-with open("./templates/clash_template.yaml", "r", encoding="utf-8") as file:
-    config_data = yaml.safe_load(file)
-
-# 添加合并后的代理到proxies部分
-if "proxies" not in config_data or not config_data["proxies"]:
-    config_data["proxies"] = merged_proxies
-else:
-    config_data["proxies"].extend(merged_proxies)
+    config = load_yaml("templates/clash_template.yaml")
+    config["proxies"] = proxies
+    update_groups(config, proxies)
+    rendered = yaml.safe_dump(config, sort_keys=False, allow_unicode=True)
+    parsed = yaml.safe_load(rendered)
+    if not isinstance(parsed, dict) or len(parsed.get("proxies", [])) != len(proxies):
+        raise PipelineError("生成后的 Clash YAML 自检失败")
+    atomic_write_text(OUTPUT, rendered)
+    print(f"Clash 聚合完成: {len(proxies)} 个节点（旧 {old_count}）")
 
 
-# 更新自动选择和节点选择的proxies的name部分
-update_proxy_groups(config_data, merged_proxies)
-
-# 将更新后的数据写入到一个YAML文件中，并指定编码格式为UTF-8
-with open("./sub/merged_proxies_new.yaml", "w", encoding="utf-8") as file:
-    yaml.dump(config_data, file, sort_keys=False, allow_unicode=True)
-
-print("聚合完成")
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as exc:
+        print(f"Clash 聚合失败: {exc}", file=sys.stderr)
+        sys.exit(1)
