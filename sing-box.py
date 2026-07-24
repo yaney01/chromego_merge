@@ -1,9 +1,6 @@
-"""
-本地生成 sing-box 配置，不再依赖任何在线转换服务。
-原理：克隆 Toperlock/sing-box-subscribe 到临时目录，读取本仓库刚生成的
-./sub/base64.txt（同一次运行中 merge.py 的产物，比旧方案从 raw.githubusercontent
-拉取"上一次运行的结果"更新鲜），解码为明文分享链接后本地转换。
-"""
+"""Generate sing-box output with a pinned local converter and atomic replacement."""
+
+from __future__ import annotations
 
 import base64
 import json
@@ -11,116 +8,188 @@ import os
 import subprocess
 import sys
 import tempfile
+from pathlib import Path
+from typing import Any
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE64_FILE = os.path.join(REPO_DIR, "sub", "base64.txt")
-OUTPUT_FILE = os.path.join(REPO_DIR, "sub", "sing-box.json")
+from pipeline_common import MIN_NODES, PipelineError, ROOT
+
+BASE64_FILE = ROOT / "sub" / "base64.txt"
+OUTPUT_FILE = ROOT / "sub" / "sing-box.json"
 CONVERTER_REPO = "https://github.com/Toperlock/sing-box-subscribe.git"
-TEMPLATE_INDEX = "0"  # 0 = config_template_groups_rule_set_tun.json，与原在线服务默认模板一致
+CONVERTER_COMMIT = "9b94f3e61d1a14e6eca228df189ada8719ca9174"
+CONSTRAINTS_FILE = ROOT / "converter-constraints.txt"
+TEMPLATE_INDEX = "0"
+NODE_TYPES = {
+    "anytls",
+    "hysteria",
+    "hysteria2",
+    "http",
+    "shadowsocks",
+    "shadowsocksr",
+    "socks",
+    "trojan",
+    "tuic",
+    "vless",
+    "vmess",
+    "wireguard",
+}
 
 
-def fail(msg):
-    # 保持与旧脚本一致的软失败：打印错误但退出码为0，
-    # 避免 bash -e 中断后续 Commit 步骤导致 base64.txt 的更新一并丢失
-    print(f"sing-box 配置生成失败: {msg}")
-    sys.exit(0)
+def run(command: list[str], **kwargs: Any) -> subprocess.CompletedProcess[str]:
+    result = subprocess.run(command, capture_output=True, text=True, **kwargs)
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        raise PipelineError(f"命令失败 ({' '.join(command[:3])}): {detail[-1000:]}")
+    return result
 
 
-def main():
-    # 1. 读取并解码本次运行刚生成的订阅
-    if not os.path.exists(BASE64_FILE):
-        fail(f"{BASE64_FILE} 不存在，请确认 merge.py 已先运行")
-    with open(BASE64_FILE, "r", encoding="utf-8") as f:
-        b64 = f.read().strip()
+def existing_node_count() -> int:
+    if not OUTPUT_FILE.exists():
+        return 0
     try:
-        plain = base64.b64decode(b64).decode("utf-8")
-    except Exception as e:
-        fail(f"base64.txt 解码失败: {e}")
-    if not plain.strip():
-        fail("订阅内容为空")
-
-    workdir = tempfile.mkdtemp(prefix="sbsub_")
-    converter_dir = os.path.join(workdir, "sing-box-subscribe")
-
-    # 2. 克隆转换器
-    r = subprocess.run(
-        ["git", "clone", "-q", "--depth=1", CONVERTER_REPO, converter_dir],
-        capture_output=True, text=True,
-    )
-    if r.returncode != 0:
-        fail(f"克隆转换器失败: {r.stderr[:300]}")
-
-    # 3. 安装转换器依赖（仓库主依赖 requirements.txt 已装过的会被 pip 跳过）
-    req = os.path.join(converter_dir, "requirements.txt")
-    r = subprocess.run(
-        [sys.executable, "-m", "pip", "install", "-q", "-r", req],
-        capture_output=True, text=True,
-    )
-    if r.returncode != 0 and "externally-managed" in (r.stderr or ""):
-        # 部分环境（PEP 668）需要该参数；GitHub Actions 的 setup-python 环境不需要
-        r = subprocess.run(
-            [sys.executable, "-m", "pip", "install", "-q", "-r", req,
-             "--break-system-packages"],
-            capture_output=True, text=True,
+        config = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+        return len(
+            [
+                outbound
+                for outbound in config.get("outbounds", [])
+                if isinstance(outbound, dict) and outbound.get("type") in NODE_TYPES
+            ]
         )
-    if r.returncode != 0:
-        fail(f"安装转换器依赖失败: {r.stderr[:300]}")
+    except Exception:
+        return 0
 
-    # 4. 写明文分享链接文件 + providers.json（本地文件分支要求明文，不能给base64）
-    plain_file = os.path.join(workdir, "plain_links.txt")
-    with open(plain_file, "w", encoding="utf-8") as f:
-        f.write(plain)
 
-    providers = {
-        "subscribes": [
-            {
-                "url": plain_file,
-                "tag": "chromego",
-                "enabled": True,
-                "emoji": 0,
-                "subgroup": "",
-                "prefix": "",
-                "User-Agent": "v2rayng",
-            }
-        ],
-        "auto_set_outbounds_dns": {"proxy": "", "direct": ""},
-        "save_config_path": OUTPUT_FILE,
-        "auto_backup": False,
-        "exclude_protocol": "ssr",
-        "config_template": "",
-        "Only-nodes": False,
-    }
-    with open(os.path.join(converter_dir, "providers.json"), "w", encoding="utf-8") as f:
-        json.dump(providers, f, ensure_ascii=False, indent=2)
-
-    # 5. 运行转换
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-    if os.path.exists(OUTPUT_FILE):
-        os.remove(OUTPUT_FILE)  # 转换器对已存在文件会交互询问，先删除保证非交互
-    r = subprocess.run(
-        [sys.executable, "main.py", "--template_index", TEMPLATE_INDEX],
-        cwd=converter_dir, capture_output=True, text=True, timeout=300,
-    )
-    if r.returncode != 0:
-        fail(f"转换器运行失败: {(r.stderr or r.stdout)[:300]}")
-
-    # 6. 校验输出
-    if not os.path.exists(OUTPUT_FILE):
-        fail(f"转换器未生成输出文件，日志: {r.stdout[-300:]}")
+def validate_output(path: Path, old_count: int) -> int:
     try:
-        with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-            config = json.load(f)
-        node_types = {"vless", "vmess", "hysteria", "hysteria2", "tuic",
-                      "shadowsocks", "trojan", "shadowsocksr", "wireguard"}
-        nodes = [o for o in config.get("outbounds", [])
-                 if o.get("type") in node_types]
-    except Exception as e:
-        fail(f"输出文件不是有效JSON: {e}")
-    if not nodes:
-        fail("输出配置中节点数为0，未写入")
+        config = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        raise PipelineError(f"转换结果不是有效 JSON: {exc}") from exc
+    outbounds = config.get("outbounds") if isinstance(config, dict) else None
+    if not isinstance(outbounds, list):
+        raise PipelineError("转换结果缺少 outbounds")
+    nodes = [
+        outbound
+        for outbound in outbounds
+        if isinstance(outbound, dict) and outbound.get("type") in NODE_TYPES
+    ]
+    required = MIN_NODES if old_count == 0 else max(MIN_NODES, int(old_count * 0.5))
+    if len(nodes) < required:
+        raise PipelineError(
+            f"sing-box 节点数异常: 新 {len(nodes)}，旧 {old_count}，最低要求 {required}"
+        )
+    return len(nodes)
 
-    print(f"成功将内容写入 {OUTPUT_FILE}，节点数: {len(nodes)}")
+
+def prepare_converter(directory: Path) -> Path:
+    converter = directory / "sing-box-subscribe"
+    run(["git", "init", "-q", str(converter)])
+    run(["git", "-C", str(converter), "remote", "add", "origin", CONVERTER_REPO])
+    run(
+        [
+            "git",
+            "-C",
+            str(converter),
+            "fetch",
+            "-q",
+            "--depth=1",
+            "origin",
+            CONVERTER_COMMIT,
+        ],
+        timeout=120,
+    )
+    run(["git", "-C", str(converter), "checkout", "-q", "--detach", "FETCH_HEAD"])
+    requirements = converter / "requirements.txt"
+    run(
+        [
+            sys.executable,
+            "-m",
+            "pip",
+            "install",
+            "--disable-pip-version-check",
+            "-q",
+            "-r",
+            str(requirements),
+            "-c",
+            str(CONSTRAINTS_FILE),
+        ],
+        timeout=300,
+    )
+    return converter
+
+
+def main() -> None:
+    if sys.version_info[:2] != (3, 11):
+        raise PipelineError(f"需要 Python 3.11，当前为 {sys.version.split()[0]}")
+    if not BASE64_FILE.exists():
+        raise PipelineError(f"{BASE64_FILE} 不存在")
+    if not CONSTRAINTS_FILE.exists():
+        raise PipelineError(f"{CONSTRAINTS_FILE} 不存在")
+    try:
+        plain = base64.b64decode(
+            BASE64_FILE.read_text(encoding="utf-8").strip(), validate=True
+        ).decode("utf-8")
+    except Exception as exc:
+        raise PipelineError(f"base64.txt 解码失败: {exc}") from exc
+    if not plain.strip():
+        raise PipelineError("base64 订阅为空")
+
+    old_count = existing_node_count()
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=".sing-box.", suffix=".json", dir=OUTPUT_FILE.parent
+    )
+    os.close(descriptor)
+    os.unlink(temporary_name)
+    temporary_output = Path(temporary_name)
+
+    try:
+        with tempfile.TemporaryDirectory(prefix="sing-box-converter-") as work:
+            workdir = Path(work)
+            converter = prepare_converter(workdir)
+            plain_file = workdir / "plain_links.txt"
+            plain_file.write_text(plain, encoding="utf-8")
+            providers = {
+                "subscribes": [
+                    {
+                        "url": str(plain_file),
+                        "tag": "chromego",
+                        "enabled": True,
+                        "emoji": 0,
+                        "subgroup": "",
+                        "prefix": "",
+                        "User-Agent": "v2rayng",
+                    }
+                ],
+                "auto_set_outbounds_dns": {"proxy": "", "direct": ""},
+                "save_config_path": str(temporary_output),
+                "auto_backup": False,
+                "exclude_protocol": "ssr",
+                "config_template": "",
+                "Only-nodes": False,
+            }
+            (converter / "providers.json").write_text(
+                json.dumps(providers, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            run(
+                [sys.executable, "main.py", "--template_index", TEMPLATE_INDEX],
+                cwd=converter,
+                timeout=300,
+            )
+        if not temporary_output.exists():
+            raise PipelineError("转换器没有生成输出文件")
+        node_count = validate_output(temporary_output, old_count)
+        os.replace(temporary_output, OUTPUT_FILE)
+        print(f"sing-box 生成完成: {node_count} 个节点（旧 {old_count}）")
+    finally:
+        try:
+            temporary_output.unlink()
+        except FileNotFoundError:
+            pass
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        print(f"sing-box 配置生成失败: {exc}", file=sys.stderr)
+        sys.exit(1)
