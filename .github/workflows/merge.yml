@@ -44,18 +44,20 @@ jobs:
       - name: Build Mihomo subscription
         run: python meta_merge.py
 
-      - name: Validate Mihomo subscription
-        run: python check_nodes.py --mihomo ./mihomo
+      - name: Health-check nodes for base64 subscription
+        run: |
+          python check_nodes.py --mihomo ./mihomo \
+            --healthy-output "$RUNNER_TEMP/healthy_nodes.json"
 
-      - name: Build universal base64 subscription
-        run: python merge.py
+      - name: Build full and health-checked base64 subscriptions
+        run: python merge.py --healthy-names "$RUNNER_TEMP/healthy_nodes.json"
 
       - name: Build sing-box subscription
         run: python sing-box.py
 
       - name: Commit generated subscriptions
         run: |
-          git add sub/merged_proxies_new.yaml sub/base64.txt sub/sing-box.json
+          git add sub/merged_proxies_new.yaml sub/base64.txt sub/base64_full.txt sub/sing-box.json
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
