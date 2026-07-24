@@ -1,148 +1,221 @@
-"""
-TCP 连通性粗筛：仅对 base64 订阅做 TCP 握手，删除 IP 失效/端口关闭的死节点。
-不经代理，结果与运行地区无关。hysteria/hysteria2/tuic 等 UDP 协议放行不测。
-clash yaml 不处理，保持全量作为完整版。
+"""Validate Mihomo configuration and optionally perform real proxy handshakes.
+
+Scheduled GitHub-hosted runs use validation only. Run with ``--filter`` on a
+China-side host to remove nodes that fail both HTTPS targets for every round.
 """
 
-import base64
+from __future__ import annotations
+
+import argparse
 import concurrent.futures
 import json
 import os
-import socket
+import subprocess
 import sys
+import tempfile
+import time
+import urllib.error
 import urllib.parse
+import urllib.request
+from pathlib import Path
+from typing import Any
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE64_FILE = os.path.join(REPO_DIR, "sub", "base64.txt")
-BASE64_BACKUP = os.path.join(REPO_DIR, "sub", "base64_full.txt")
+import yaml
 
-TCP_TIMEOUT = 5
-RETRIES = 2
-CONCURRENCY = 32
+from pipeline_common import MIN_NODES, PipelineError, ROOT, atomic_write_text
 
-UDP_SCHEMES = ("hysteria", "hysteria2", "hy2", "tuic", "wireguard", "wg")
-
-
-def log(msg):
-    print(msg, flush=True)
+DEFAULT_CONFIG = ROOT / "sub" / "merged_proxies_new.yaml"
+TARGETS = ("https://cp.cloudflare.com", "https://www.gstatic.com/generate_204")
+CONTROLLER = "127.0.0.1:19090"
+API_BASE = f"http://{CONTROLLER}"
 
 
-def tcp_alive(host, port):
-    for _ in range(RETRIES):
+def request_json(url: str, timeout: float) -> dict[str, Any]:
+    request = urllib.request.Request(url, headers={"Accept": "application/json"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        data = json.loads(response.read().decode("utf-8"))
+    return data if isinstance(data, dict) else {}
+
+
+def validate_config(mihomo: str, config: Path) -> None:
+    result = subprocess.run(
+        [mihomo, "-t", "-f", str(config)],
+        capture_output=True,
+        text=True,
+        timeout=60,
+    )
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        raise PipelineError(f"Mihomo 配置校验失败: {detail[-1000:]}")
+    print("Mihomo 配置校验通过")
+
+
+def make_probe_config(config: dict[str, Any], directory: Path) -> Path:
+    probe = dict(config)
+    probe["mixed-port"] = 17890
+    probe["allow-lan"] = False
+    probe["external-controller"] = CONTROLLER
+    probe["secret"] = ""
+    probe["mode"] = "global"
+    dns = dict(probe.get("dns") or {})
+    dns["enable"] = False
+    dns.pop("listen", None)
+    probe["dns"] = dns
+    tun = dict(probe.get("tun") or {})
+    tun["enable"] = False
+    probe["tun"] = tun
+    path = directory / "probe.yaml"
+    path.write_text(
+        yaml.safe_dump(probe, sort_keys=False, allow_unicode=True), encoding="utf-8"
+    )
+    return path
+
+
+def wait_for_api(process: subprocess.Popen[str], timeout: float = 20) -> None:
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        if process.poll() is not None:
+            output = process.stdout.read() if process.stdout else ""
+            raise PipelineError(f"Mihomo 启动失败: {output[-1000:]}")
         try:
-            infos = socket.getaddrinfo(host, port, 0, socket.SOCK_STREAM)
-            for family, socktype, proto, _, addr in infos:
-                s = socket.socket(family, socktype, proto)
-                s.settimeout(TCP_TIMEOUT)
-                try:
-                    s.connect(addr)
-                    s.close()
-                    return True
-                except Exception:
-                    s.close()
-                    continue
+            request_json(f"{API_BASE}/version", 1)
+            return
         except Exception:
+            time.sleep(0.25)
+    raise PipelineError("等待 Mihomo API 超时")
+
+
+def delay_test(name: str, target: str, timeout_ms: int) -> bool:
+    encoded_name = urllib.parse.quote(name, safe="")
+    query = urllib.parse.urlencode({"url": target, "timeout": timeout_ms})
+    url = f"{API_BASE}/proxies/{encoded_name}/delay?{query}"
+    try:
+        data = request_json(url, timeout_ms / 1000 + 2)
+        return int(data.get("delay", 0)) > 0
+    except (OSError, ValueError, urllib.error.HTTPError):
+        return False
+
+
+def ensure_probe_network(timeout_ms: int) -> None:
+    if not any(delay_test("DIRECT", target, timeout_ms) for target in TARGETS):
+        raise PipelineError("探针本身无法访问两个 HTTPS 目标，拒绝删除任何节点")
+
+
+def probe_nodes(
+    proxies: list[dict[str, Any]],
+    rounds: int,
+    timeout_ms: int,
+    workers: int,
+) -> set[str]:
+    names = [str(proxy["name"]) for proxy in proxies]
+    successes: set[str] = set()
+    ensure_probe_network(timeout_ms)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+        for round_number in range(1, rounds + 1):
+            futures = {
+                executor.submit(delay_test, name, target, timeout_ms): (name, target)
+                for name in names
+                for target in TARGETS
+                if name not in successes
+            }
+            for future in concurrent.futures.as_completed(futures):
+                name, _ = futures[future]
+                if future.result():
+                    successes.add(name)
+            print(f"真实握手第 {round_number}/{rounds} 轮: 已成功 {len(successes)}/{len(names)}")
+    return successes
+
+
+def filter_config(config: dict[str, Any], healthy: set[str]) -> dict[str, Any]:
+    proxies = config.get("proxies")
+    if not isinstance(proxies, list):
+        raise PipelineError("配置缺少 proxies")
+    kept = [
+        proxy
+        for proxy in proxies
+        if isinstance(proxy, dict) and str(proxy.get("name")) in healthy
+    ]
+    required = max(MIN_NODES, int(len(proxies) * 0.1))
+    if len(kept) < required:
+        raise PipelineError(
+            f"健康检查结果异常: 保留 {len(kept)}/{len(proxies)}，最低要求 {required}"
+        )
+    config["proxies"] = kept
+    valid_names = {str(proxy["name"]) for proxy in kept}
+    for group in config.get("proxy-groups", []):
+        if not isinstance(group, dict) or not isinstance(group.get("proxies"), list):
             continue
-    return False
+        group["proxies"] = [
+            name
+            for name in group["proxies"]
+            if name in valid_names or name in {"自动选择", "DIRECT", "REJECT"}
+        ]
+    return config
 
 
-def extract_host_port(link):
-    try:
-        scheme = link.split("://", 1)[0].lower()
-
-        if scheme == "vmess":
-            raw = link[8:].split("#")[0]
+def run_filter(
+    mihomo: str,
+    config_path: Path,
+    rounds: int,
+    timeout_ms: int,
+    workers: int,
+) -> None:
+    config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
+    if not isinstance(config, dict) or not isinstance(config.get("proxies"), list):
+        raise PipelineError("配置不是有效的 Mihomo YAML")
+    original_count = len(config["proxies"])
+    with tempfile.TemporaryDirectory(prefix="mihomo-probe-") as temporary:
+        directory = Path(temporary)
+        probe_config = make_probe_config(config, directory)
+        process = subprocess.Popen(
+            [mihomo, "-d", str(directory), "-f", str(probe_config)],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+        try:
+            wait_for_api(process)
+            healthy = probe_nodes(config["proxies"], rounds, timeout_ms, workers)
+        finally:
+            process.terminate()
             try:
-                decoded = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8")
-                v = json.loads(decoded)
-                return (v["add"], int(v["port"]))
-            except Exception:
-                pass
-
-        if scheme == "ss":
-            body = link[5:].split("#")[0]
-            if "@" not in body:
-                try:
-                    dec = base64.b64decode(body + "=" * (-len(body) % 4)).decode("utf-8")
-                    hostport = dec.rsplit("@", 1)[1]
-                    host, port = hostport.rsplit(":", 1)
-                    return (host, int(port))
-                except Exception:
-                    return None
-
-        if scheme == "ssr":
-            try:
-                raw = link[6:].split("#")[0].split("/")[0]
-                dec = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8")
-                parts = dec.split(":")
-                return (parts[0], int(parts[1]))
-            except Exception:
-                return None
-
-        u = urllib.parse.urlparse(link)
-        if u.hostname and u.port:
-            return (u.hostname, int(u.port))
-        if u.hostname:
-            return (u.hostname, 443)
-    except Exception:
-        return None
-    return None
+                process.wait(timeout=10)
+            except subprocess.TimeoutExpired:
+                process.kill()
+                process.wait(timeout=5)
+    filtered = filter_config(config, healthy)
+    rendered = yaml.safe_dump(filtered, sort_keys=False, allow_unicode=True)
+    atomic_write_text(config_path.relative_to(ROOT), rendered)
+    print(f"健康检查完成: 保留 {len(filtered['proxies'])}/{original_count} 个节点")
 
 
-def test_link(link):
-    scheme = link.split("://", 1)[0].lower()
-    if scheme in UDP_SCHEMES:
-        return (link, True)
-    hp = extract_host_port(link)
-    if hp is None:
-        return (link, True)
-    host, port = hp
-    return (link, tcp_alive(host, port))
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--mihomo", default=os.environ.get("MIHOMO_BIN", "mihomo"))
+    parser.add_argument("--filter", action="store_true")
+    parser.add_argument("--rounds", type=int, default=2)
+    parser.add_argument("--timeout-ms", type=int, default=8000)
+    parser.add_argument("--workers", type=int, default=24)
+    return parser.parse_args()
 
 
-def main():
-    if not os.path.exists(BASE64_FILE):
-        log(f"{BASE64_FILE} 不存在")
-        sys.exit(0)
-    with open(BASE64_FILE, "r", encoding="utf-8") as f:
-        b64 = f.read().strip()
-    try:
-        plain = base64.b64decode(b64).decode("utf-8")
-    except Exception as e:
-        log(f"base64 解码失败: {e}")
-        sys.exit(0)
-    links = [l.strip() for l in plain.splitlines() if l.strip()]
-    total = len(links)
-    if total == 0:
-        log("无节点")
-        sys.exit(0)
-
-    log(f"开始 TCP 粗筛，共 {total} 个节点，并发 {CONCURRENCY}")
-    alive = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=CONCURRENCY) as ex:
-        futures = {ex.submit(test_link, l): l for l in links}
-        done = 0
-        for fut in concurrent.futures.as_completed(futures):
-            link, ok = fut.result()
-            done += 1
-            if ok:
-                alive.append(link)
-            if done % 30 == 0:
-                log(f"进度 {done}/{total}，存活 {len(alive)}")
-
-    log(f"粗筛完成：删除 {total - len(alive)} 个死节点，保留 {len(alive)}/{total}")
-
-    if len(alive) == 0:
-        log("存活为0，保留原文件不覆盖")
-        sys.exit(0)
-
-    with open(BASE64_BACKUP, "w", encoding="utf-8") as f:
-        f.write(b64)
-    new_b64 = base64.b64encode("\n".join(alive).encode("utf-8")).decode("utf-8")
-    with open(BASE64_FILE, "w", encoding="utf-8") as f:
-        f.write(new_b64)
-    log(f"已写回 {len(alive)} 个节点，备份至 base64_full.txt")
+def main() -> None:
+    args = parse_args()
+    config = args.config.resolve()
+    if ROOT not in config.parents:
+        raise PipelineError("配置文件必须位于仓库内")
+    if args.rounds < 2:
+        raise PipelineError("至少需要 2 轮，避免单次抖动误删")
+    validate_config(args.mihomo, config)
+    if args.filter:
+        run_filter(args.mihomo, config, args.rounds, args.timeout_ms, args.workers)
+        validate_config(args.mihomo, config)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        print(f"节点检查失败: {exc}", file=sys.stderr)
+        sys.exit(1)
