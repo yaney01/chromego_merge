@@ -95,7 +95,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰HK_1|4.3MB/s-a11e7d0d
+- name: 香港5|@ripaojiedian-a11e7d0d
   network: tcp
   password: BxceQaOe
   port: 35151
@@ -185,58 +185,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇸🇬SG_2|4.5MB/s-c019513c
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  ws-opts:
-    headers:
-      Host: space.byu.id.yxls.eu.cc
-    path: /in-pdr
 - cipher: aes-256-cfb
-  name: 🇺🇸US_3|2.1MB/s-979cc77b
+  name: 🇺🇸US_4|2.1MB/s-979cc77b
   password: amazonskr05
   port: 443
   server: 54.167.54.100
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇦🇪AE_1|1.9MB/s-826491cc
-  password: CUEYgBIv3UinEYcB/Ha5Jf792AEjyNwnGu0hIKK+o5Q=
-  port: 51570
-  server: e1.cover20.ir
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸US_4|1.6MB/s-d17fd622
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h2
-  - http/1.1
-  name: 🇸🇬SG_4|1.6MB/s-26b73ca1
-  network: ws
-  password: MITIVPN
-  port: 443
-  server: 104.18.39.172
-  skip-cert-verify: true
-  sni: 7u-i--MiTiVPN---MiTiVPN-7.aPp-cLoud.IR
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=uss
 - name: AE_speednode_0001-c9a17490
   network: ws
   password: MITIVPN
@@ -2004,7 +1958,7 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-674e04cf
   - 香港4|@ripaojiedian-46a1d4c8
-  - 🇭🇰HK_1|4.3MB/s-a11e7d0d
+  - 香港5|@ripaojiedian-a11e7d0d
   - 日本|@ripaojiedian-82854072
   - 日本2|@ripaojiedian-5e7c74f1
   - 日本3|@ripaojiedian-b2d6ab31
@@ -2015,11 +1969,7 @@ proxy-groups:
   - 美国2|@ripaojiedian-baeee7b1
   - 美国3|@ripaojiedian-2bae1ad8
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇬SG_2|4.5MB/s-c019513c
-  - 🇺🇸US_3|2.1MB/s-979cc77b
-  - 🇦🇪AE_1|1.9MB/s-826491cc
-  - 🇺🇸US_4|1.6MB/s-d17fd622
-  - 🇸🇬SG_4|1.6MB/s-26b73ca1
+  - 🇺🇸US_4|2.1MB/s-979cc77b
   - AE_speednode_0001-c9a17490
   - GB_speednode_0005-97bb1307
   - NL_speednode_0016-be2dbd97
@@ -2213,7 +2163,7 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-674e04cf
   - 香港4|@ripaojiedian-46a1d4c8
-  - 🇭🇰HK_1|4.3MB/s-a11e7d0d
+  - 香港5|@ripaojiedian-a11e7d0d
   - 日本|@ripaojiedian-82854072
   - 日本2|@ripaojiedian-5e7c74f1
   - 日本3|@ripaojiedian-b2d6ab31
@@ -2224,11 +2174,7 @@ proxy-groups:
   - 美国2|@ripaojiedian-baeee7b1
   - 美国3|@ripaojiedian-2bae1ad8
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇬SG_2|4.5MB/s-c019513c
-  - 🇺🇸US_3|2.1MB/s-979cc77b
-  - 🇦🇪AE_1|1.9MB/s-826491cc
-  - 🇺🇸US_4|1.6MB/s-d17fd622
-  - 🇸🇬SG_4|1.6MB/s-26b73ca1
+  - 🇺🇸US_4|2.1MB/s-979cc77b
   - AE_speednode_0001-c9a17490
   - GB_speednode_0005-97bb1307
   - NL_speednode_0016-be2dbd97
