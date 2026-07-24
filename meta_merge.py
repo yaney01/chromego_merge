@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import json
 import re
 import sys
@@ -21,6 +22,27 @@ from pipeline_common import (
 )
 
 OUTPUT = "sub/merged_proxies_new.yaml"
+COMPLETE_OUTPUT = "sub/merged_proxies_new_2.yaml"
+LEGACY_DROP = "_legacy-drop"
+
+
+def mark_complete(node: dict[str, Any], *keys: str) -> None:
+    if keys:
+        node[LEGACY_DROP] = list(keys)
+
+
+def build_variant(
+    proxies: list[dict[str, Any]], complete: bool
+) -> list[dict[str, Any]]:
+    variant: list[dict[str, Any]] = []
+    for original in proxies:
+        node = copy.deepcopy(original)
+        complete_keys = node.pop(LEGACY_DROP, [])
+        if not complete:
+            for key in complete_keys:
+                node.pop(key, None)
+        variant.append(node)
+    return normalize_proxies(variant)
 
 
 def parse_clash(data: str, source: str) -> list[dict[str, Any]]:
@@ -115,6 +137,18 @@ def _parse_hysteria2(config: dict[str, Any], source: str) -> dict[str, Any]:
         node["obfs"] = obfs
         if config.get("obfs-password"):
             node["obfs-password"] = config["obfs-password"]
+    quic = config.get("quic") if isinstance(config.get("quic"), dict) else {}
+    complete_keys: list[str] = []
+    for source_key, target_key in (
+        ("initStreamReceiveWindow", "initial-stream-receive-window"),
+        ("maxStreamReceiveWindow", "max-stream-receive-window"),
+        ("initConnReceiveWindow", "initial-connection-receive-window"),
+        ("maxConnReceiveWindow", "max-connection-receive-window"),
+    ):
+        if source_key in quic:
+            node[target_key] = quic[source_key]
+            complete_keys.append(target_key)
+    mark_complete(node, *complete_keys)
     return node
 
 
@@ -203,6 +237,47 @@ def _convert_singbox_outbound(outbound: dict[str, Any], source: str) -> dict[str
         }
         _singbox_tls(outbound, node)
         _singbox_transport(outbound, node)
+        complete_keys: list[str] = []
+        if outbound.get("packet_encoding"):
+            node["packet-encoding"] = outbound["packet_encoding"]
+            complete_keys.append("packet-encoding")
+        multiplex = (
+            outbound.get("multiplex")
+            if isinstance(outbound.get("multiplex"), dict)
+            else {}
+        )
+        if multiplex:
+            smux: dict[str, Any] = {
+                "enabled": bool(multiplex.get("enabled", False))
+            }
+            for source_key, target_key in (
+                ("protocol", "protocol"),
+                ("max_connections", "max-connections"),
+                ("min_streams", "min-streams"),
+                ("max_streams", "max-streams"),
+                ("padding", "padding"),
+                ("statistic", "statistic"),
+                ("only_tcp", "only-tcp"),
+            ):
+                if source_key in multiplex:
+                    smux[target_key] = multiplex[source_key]
+            brutal = (
+                multiplex.get("brutal")
+                if isinstance(multiplex.get("brutal"), dict)
+                else {}
+            )
+            if brutal:
+                brutal_opts: dict[str, Any] = {
+                    "enabled": bool(brutal.get("enabled", False))
+                }
+                if "up_mbps" in brutal:
+                    brutal_opts["up"] = brutal["up_mbps"]
+                if "down_mbps" in brutal:
+                    brutal_opts["down"] = brutal["down_mbps"]
+                smux["brutal-opts"] = brutal_opts
+            node["smux"] = smux
+            complete_keys.append("smux")
+        mark_complete(node, *complete_keys)
         return node
     raise PipelineError(f"暂不支持的 sing-box outbound: {proxy_type}")
 
@@ -256,6 +331,10 @@ def parse_xray(data: str, source: str) -> list[dict[str, Any]]:
         }
         if user.get("flow"):
             node["flow"] = user["flow"]
+        complete_keys: list[str] = []
+        if user.get("encryption"):
+            node["encryption"] = user["encryption"]
+            complete_keys.append("encryption")
         if security == "reality":
             node["reality-opts"] = {
                 "public-key": reality.get("publicKey", ""),
@@ -268,6 +347,15 @@ def parse_xray(data: str, source: str) -> list[dict[str, Any]]:
         elif network == "ws":
             ws = stream.get("wsSettings") or {}
             node["ws-opts"] = {"path": ws.get("path", "/"), "headers": ws.get("headers", {})}
+        elif network == "xhttp":
+            xhttp = stream.get("xhttpSettings") or {}
+            node["xhttp-opts"] = {
+                key: xhttp[key]
+                for key in ("path", "host", "mode", "headers")
+                if key in xhttp
+            }
+            complete_keys.append("xhttp-opts")
+        mark_complete(node, *complete_keys)
         result.append(node)
     return result
 
@@ -308,29 +396,36 @@ def update_groups(config: dict[str, Any], proxies: list[dict[str, Any]]) -> None
             group["proxies"] = ["自动选择", "DIRECT", *names]
 
 
-def main() -> None:
-    proxies: list[dict[str, Any]] = []
-    proxies += collect_sources("urls/clash_urls.txt", parse_clash)
-    proxies += collect_sources("urls/quick_urls.txt", parse_clash)
-    proxies += collect_sources("urls/hysteria_urls.txt", parse_hysteria_auto)
-    proxies += collect_sources("urls/hysteria2_urls.txt", parse_hysteria_auto)
-    proxies += collect_sources("urls/sb_urls.txt", parse_singbox)
-    proxies += collect_sources("urls/ss_urls.txt", parse_shadowquic)
-    proxies += collect_sources("urls/xray_urls.txt", parse_xray)
-
-    proxies = normalize_proxies(proxies)
-    old_count = existing_yaml_node_count(OUTPUT)
-    validate_node_count(len(proxies), old_count, "Clash")
-
+def write_config(output: str, proxies: list[dict[str, Any]], label: str) -> None:
+    old_count = existing_yaml_node_count(output)
+    validate_node_count(len(proxies), old_count, label)
     config = load_yaml("templates/clash_template.yaml")
     config["proxies"] = proxies
     update_groups(config, proxies)
     rendered = yaml.safe_dump(config, sort_keys=False, allow_unicode=True)
     parsed = yaml.safe_load(rendered)
     if not isinstance(parsed, dict) or len(parsed.get("proxies", [])) != len(proxies):
-        raise PipelineError("生成后的 Clash YAML 自检失败")
-    atomic_write_text(OUTPUT, rendered)
-    print(f"Clash 聚合完成: {len(proxies)} 个节点（旧 {old_count}）")
+        raise PipelineError(f"生成后的 {label} YAML 自检失败")
+    atomic_write_text(output, rendered)
+    print(f"{label} 聚合完成: {len(proxies)} 个节点（旧 {old_count}）")
+
+
+def main() -> None:
+    raw_proxies: list[dict[str, Any]] = []
+    raw_proxies += collect_sources("urls/clash_urls.txt", parse_clash)
+    raw_proxies += collect_sources("urls/quick_urls.txt", parse_clash)
+    raw_proxies += collect_sources("urls/hysteria_urls.txt", parse_hysteria_auto)
+    raw_proxies += collect_sources("urls/hysteria2_urls.txt", parse_hysteria_auto)
+    raw_proxies += collect_sources("urls/sb_urls.txt", parse_singbox)
+    raw_proxies += collect_sources("urls/ss_urls.txt", parse_shadowquic)
+    raw_proxies += collect_sources("urls/xray_urls.txt", parse_xray)
+
+    write_config(OUTPUT, build_variant(raw_proxies, complete=False), "Clash")
+    write_config(
+        COMPLETE_OUTPUT,
+        build_variant(raw_proxies, complete=True),
+        "Clash 完整参数版",
+    )
 
 
 if __name__ == "__main__":
