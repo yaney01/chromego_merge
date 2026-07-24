@@ -48,16 +48,23 @@ jobs:
         run: |
           python check_nodes.py --mihomo ./mihomo \
             --healthy-output "$RUNNER_TEMP/healthy_nodes.json"
+          python check_nodes.py --mihomo ./mihomo \
+            --config sub/merged_proxies_new_2.yaml \
+            --healthy-output "$RUNNER_TEMP/healthy_nodes_2.json"
 
       - name: Build full and health-checked base64 subscriptions
-        run: python merge.py --healthy-names "$RUNNER_TEMP/healthy_nodes.json"
+        run: |
+          python merge.py \
+            --healthy-names "$RUNNER_TEMP/healthy_nodes.json" \
+            --complete-healthy-names "$RUNNER_TEMP/healthy_nodes_2.json"
 
       - name: Build sing-box subscription
         run: python sing-box.py
 
       - name: Commit generated subscriptions
         run: |
-          git add sub/merged_proxies_new.yaml sub/base64.txt sub/base64_full.txt sub/sing-box.json
+          git add sub/merged_proxies_new.yaml sub/merged_proxies_new_2.yaml \
+            sub/base64.txt sub/base64_2.txt sub/base64_full.txt sub/sing-box.json
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
