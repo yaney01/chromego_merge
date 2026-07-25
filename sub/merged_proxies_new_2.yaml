@@ -185,29 +185,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇸🇬SG_1|4.0MB/s-22e74d6f
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: false
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /in-pdr
-- name: 🇰🇷KR_1|1.6MB/s-bd01173f
-  network: tcp
-  password: JT80563429
-  port: 443
-  server: fair-ram.rooster465.autos
-  skip-cert-verify: false
-  sni: fair-ram.rooster465.autos
-  type: trojan
-  udp: true
 - name: NL_speednode_0015-a7054272
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
@@ -221,6 +198,124 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
+- alpn:
+  - http/1.1
+  name: 🇭🇰HK_1|3.0MB/s-3ab57171
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20092
+  server: krhtybay.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇹🇷TR_1|2.1MB/s-22f8ce61
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20017
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇻🇳VN_1|3.5MB/s-14e18b14
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20029
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇯🇵JP_1|2.6MB/s-0a79ee66
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20061
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇹🇭TH_1|2.8MB/s-58bd9385
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20006
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇬🇧GB_1|1.7MB/s-095fbdab
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20020
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇻🇳VN_2|2.5MB/s-2511b152
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20062
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇹🇼TW_1|3.5MB/s-fb9f02ae
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20109
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: TW.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇸🇬SG_2|3.0MB/s-971e4dde
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20072
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: SG.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇭🇰HK_2|2.4MB/s-63700208
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20098
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇨🇦CA_1|2.1MB/s-e06f6a7b
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20112
+  server: d3.catcat321.com
+  skip-cert-verify: true
+  sni: ca.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇹🇷TR_2|2.8MB/s-75d00ca2
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20017
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇻🇳VN_3|3.6MB/s-322cda82
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20081
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: false
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
 - name: '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   server: lb.download.strawberrymemo.com
   port: 11003
@@ -1978,9 +2073,20 @@ proxy-groups:
   - 美国2|@ripaojiedian-15159f38
   - 美国3|@ripaojiedian-c87a9c32
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇬SG_1|4.0MB/s-22e74d6f
-  - 🇰🇷KR_1|1.6MB/s-bd01173f
   - NL_speednode_0015-a7054272
+  - 🇭🇰HK_1|3.0MB/s-3ab57171
+  - 🇹🇷TR_1|2.1MB/s-22f8ce61
+  - 🇻🇳VN_1|3.5MB/s-14e18b14
+  - 🇯🇵JP_1|2.6MB/s-0a79ee66
+  - 🇹🇭TH_1|2.8MB/s-58bd9385
+  - 🇬🇧GB_1|1.7MB/s-095fbdab
+  - 🇻🇳VN_2|2.5MB/s-2511b152
+  - 🇹🇼TW_1|3.5MB/s-fb9f02ae
+  - 🇸🇬SG_2|3.0MB/s-971e4dde
+  - 🇭🇰HK_2|2.4MB/s-63700208
+  - 🇨🇦CA_1|2.1MB/s-e06f6a7b
+  - 🇹🇷TR_2|2.8MB/s-75d00ca2
+  - 🇻🇳VN_3|3.6MB/s-322cda82
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
@@ -2181,9 +2287,20 @@ proxy-groups:
   - 美国2|@ripaojiedian-15159f38
   - 美国3|@ripaojiedian-c87a9c32
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇬SG_1|4.0MB/s-22e74d6f
-  - 🇰🇷KR_1|1.6MB/s-bd01173f
   - NL_speednode_0015-a7054272
+  - 🇭🇰HK_1|3.0MB/s-3ab57171
+  - 🇹🇷TR_1|2.1MB/s-22f8ce61
+  - 🇻🇳VN_1|3.5MB/s-14e18b14
+  - 🇯🇵JP_1|2.6MB/s-0a79ee66
+  - 🇹🇭TH_1|2.8MB/s-58bd9385
+  - 🇬🇧GB_1|1.7MB/s-095fbdab
+  - 🇻🇳VN_2|2.5MB/s-2511b152
+  - 🇹🇼TW_1|3.5MB/s-fb9f02ae
+  - 🇸🇬SG_2|3.0MB/s-971e4dde
+  - 🇭🇰HK_2|2.4MB/s-63700208
+  - 🇨🇦CA_1|2.1MB/s-e06f6a7b
+  - 🇹🇷TR_2|2.8MB/s-75d00ca2
+  - 🇻🇳VN_3|3.6MB/s-322cda82
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
