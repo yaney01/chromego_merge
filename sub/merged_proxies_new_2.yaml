@@ -185,6 +185,38 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_1|1.7MB/s-506f87b4
+  port: 30808
+  server: v8.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /x
+  name: 🇺🇸US_2|2.0MB/s-9780c6d7
+  network: http
+  port: 52080
+  server: 154.36.128.61
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 5fcc340d-ad35-4e50-a9c8-130f21a4a59d
+- cipher: aes-128-gcm
+  name: 🇺🇸US_7|2.2MB/s-63d00d40
+  password: ba2a429e-dcaa-4d94-a651-99b0a920ee38
+  port: 40031
+  server: permission_level_01.unclemanco.com
+  type: ss
+  udp: true
 - name: NL_speednode_0015-a7054272
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
@@ -198,124 +230,6 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- alpn:
-  - http/1.1
-  name: 🇭🇰HK_1|3.0MB/s-3ab57171
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20092
-  server: krhtybay.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇹🇷TR_1|2.1MB/s-22f8ce61
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20017
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇻🇳VN_1|3.5MB/s-14e18b14
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20029
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇯🇵JP_1|2.6MB/s-0a79ee66
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20061
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇹🇭TH_1|2.8MB/s-58bd9385
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20006
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇬🇧GB_1|1.7MB/s-095fbdab
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20020
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇻🇳VN_2|2.5MB/s-2511b152
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20062
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇹🇼TW_1|3.5MB/s-fb9f02ae
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20109
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: TW.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇸🇬SG_2|3.0MB/s-971e4dde
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20072
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: SG.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇭🇰HK_2|2.4MB/s-63700208
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20098
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇨🇦CA_1|2.1MB/s-e06f6a7b
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20112
-  server: d3.catcat321.com
-  skip-cert-verify: true
-  sni: ca.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇹🇷TR_2|2.8MB/s-75d00ca2
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20017
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇻🇳VN_3|3.6MB/s-322cda82
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20081
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
 - name: '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   server: lb.download.strawberrymemo.com
   port: 11003
@@ -1939,27 +1853,15 @@ proxies:
   recv-window-conn: 57671680
   recv-window: 230686720
   disable_mtu_discovery: true
-- name: https://github.com/Alvin9999-newpac/fanqiang-352d17b6
+- name: https://github.com/Alvin9999-newpac/fanqiang-34890a7a
   type: tuic
-  server: 163.172.118.224
+  server: 195.154.41.99
   port: 33888
   uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
   password: dongtaiwang.com
   congestion-controller: bbr
   udp-relay-mode: native
   sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: https://github.com/Alvin9999-newpac/fanqian-869a510c
-  type: tuic
-  server: 89.144.35.232
-  port: 17306
-  uuid: 3ebac90b-6977-47c0-bef5-b2e37554432c
-  password: 3ebac90b-6977-47c0-bef5-b2e37554432c
-  congestion-controller: bbr
-  udp-relay-mode: native
-  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -2073,20 +1975,10 @@ proxy-groups:
   - 美国2|@ripaojiedian-15159f38
   - 美国3|@ripaojiedian-c87a9c32
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇺🇸US_1|1.7MB/s-506f87b4
+  - 🇺🇸US_2|2.0MB/s-9780c6d7
+  - 🇺🇸US_7|2.2MB/s-63d00d40
   - NL_speednode_0015-a7054272
-  - 🇭🇰HK_1|3.0MB/s-3ab57171
-  - 🇹🇷TR_1|2.1MB/s-22f8ce61
-  - 🇻🇳VN_1|3.5MB/s-14e18b14
-  - 🇯🇵JP_1|2.6MB/s-0a79ee66
-  - 🇹🇭TH_1|2.8MB/s-58bd9385
-  - 🇬🇧GB_1|1.7MB/s-095fbdab
-  - 🇻🇳VN_2|2.5MB/s-2511b152
-  - 🇹🇼TW_1|3.5MB/s-fb9f02ae
-  - 🇸🇬SG_2|3.0MB/s-971e4dde
-  - 🇭🇰HK_2|2.4MB/s-63700208
-  - 🇨🇦CA_1|2.1MB/s-e06f6a7b
-  - 🇹🇷TR_2|2.8MB/s-75d00ca2
-  - 🇻🇳VN_3|3.6MB/s-322cda82
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
@@ -2256,8 +2148,7 @@ proxy-groups:
   - hysteria_urls:3-1ff9d752
   - hysteria2_urls:1-d64ceef6
   - hysteria2_urls:3-4ce81303
-  - https://github.com/Alvin9999-newpac/fanqiang-352d17b6
-  - https://github.com/Alvin9999-newpac/fanqian-869a510c
+  - https://github.com/Alvin9999-newpac/fanqiang-34890a7a
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
@@ -2287,20 +2178,10 @@ proxy-groups:
   - 美国2|@ripaojiedian-15159f38
   - 美国3|@ripaojiedian-c87a9c32
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇺🇸US_1|1.7MB/s-506f87b4
+  - 🇺🇸US_2|2.0MB/s-9780c6d7
+  - 🇺🇸US_7|2.2MB/s-63d00d40
   - NL_speednode_0015-a7054272
-  - 🇭🇰HK_1|3.0MB/s-3ab57171
-  - 🇹🇷TR_1|2.1MB/s-22f8ce61
-  - 🇻🇳VN_1|3.5MB/s-14e18b14
-  - 🇯🇵JP_1|2.6MB/s-0a79ee66
-  - 🇹🇭TH_1|2.8MB/s-58bd9385
-  - 🇬🇧GB_1|1.7MB/s-095fbdab
-  - 🇻🇳VN_2|2.5MB/s-2511b152
-  - 🇹🇼TW_1|3.5MB/s-fb9f02ae
-  - 🇸🇬SG_2|3.0MB/s-971e4dde
-  - 🇭🇰HK_2|2.4MB/s-63700208
-  - 🇨🇦CA_1|2.1MB/s-e06f6a7b
-  - 🇹🇷TR_2|2.8MB/s-75d00ca2
-  - 🇻🇳VN_3|3.6MB/s-322cda82
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
@@ -2470,8 +2351,7 @@ proxy-groups:
   - hysteria_urls:3-1ff9d752
   - hysteria2_urls:1-d64ceef6
   - hysteria2_urls:3-4ce81303
-  - https://github.com/Alvin9999-newpac/fanqiang-352d17b6
-  - https://github.com/Alvin9999-newpac/fanqian-869a510c
+  - https://github.com/Alvin9999-newpac/fanqiang-34890a7a
   - https://github.com/Alvin9999-newpac/fanqiang/wiki-3cc8b11c
   - ss_urls:1-a677ff59
   - ss_urls:2-f2ddb4bd
