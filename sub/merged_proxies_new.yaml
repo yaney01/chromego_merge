@@ -185,27 +185,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL_1|1.6MB/s-9380395b
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 193.29.139.147
-  type: ss
-  udp: true
-- name: 🇸🇬SG_2|4.0MB/s-039c1a06
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: false
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /in-pdr
 - name: NL_speednode_0006-a7054272
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
@@ -1946,8 +1925,6 @@ proxy-groups:
   - 美国2|@ripaojiedian-7f8b0e83
   - 美国3|@ripaojiedian-a83a2d41
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇱NL_1|1.6MB/s-9380395b
-  - 🇸🇬SG_2|4.0MB/s-039c1a06
   - NL_speednode_0006-a7054272
   - US_speednode_0090-d2e16e7a
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
@@ -2149,8 +2126,6 @@ proxy-groups:
   - 美国2|@ripaojiedian-7f8b0e83
   - 美国3|@ripaojiedian-a83a2d41
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇱NL_1|1.6MB/s-9380395b
-  - 🇸🇬SG_2|4.0MB/s-039c1a06
   - NL_speednode_0006-a7054272
   - US_speednode_0090-d2e16e7a
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
