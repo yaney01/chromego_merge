@@ -119,15 +119,14 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇯🇵JP_1|3.4MB/s-5fea3bdb
+- name: 日本3|@ripaojiedian-be3b274c
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 40138
   server: 16.163.57.145
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-  udp: true
 - name: 新加坡|@ripaojiedian-72739586
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
@@ -1725,15 +1724,6 @@ proxies:
   port: 18001
   password: fanvpn.net
   sni: anytls.864106.xyz
-- name: github.com/Alvin9999-newpac/fanqiang-ec54e7be
-  type: hysteria2
-  server: hy2.561891.xyz
-  port: 44356
-  password: dongtaiwang.com
-  up: 11 Mbps
-  down: 55 Mbps
-  skip-cert-verify: false
-  sni: hy2.561891.xyz
 - name: github.com/Alvin9999-newpac/fanqiang-bf78758e
   server: 83.243.86.109
   port: 27947
@@ -1949,7 +1939,7 @@ proxy-groups:
   - 香港5|@ripaojiedian-dea3114b
   - 日本|@ripaojiedian-b76f4c03
   - 日本2|@ripaojiedian-1bea05a1
-  - 🇯🇵JP_1|3.4MB/s-5fea3bdb
+  - 日本3|@ripaojiedian-be3b274c
   - 新加坡|@ripaojiedian-72739586
   - 新加坡2|@ripaojiedian-9437b7de
   - 新加坡3|@ripaojiedian-42ac0394
@@ -2120,7 +2110,6 @@ proxy-groups:
   - '>🇺🇸US|Ns|0712|TG@FProxies| 22-219e879e'
   - '>🇺🇸US|Ns|0712|TG@FProxies| 23-3ee13532'
   - https://github.com/Alvin9999-newpac/fanqiang-1b581a41
-  - github.com/Alvin9999-newpac/fanqiang-ec54e7be
   - github.com/Alvin9999-newpac/fanqiang-bf78758e
   - https://github.com/Alvin9999-newpac/fanqiang-aedbdc49
   - hysteria_urls:1-8ef1b62c
@@ -2150,7 +2139,7 @@ proxy-groups:
   - 香港5|@ripaojiedian-dea3114b
   - 日本|@ripaojiedian-b76f4c03
   - 日本2|@ripaojiedian-1bea05a1
-  - 🇯🇵JP_1|3.4MB/s-5fea3bdb
+  - 日本3|@ripaojiedian-be3b274c
   - 新加坡|@ripaojiedian-72739586
   - 新加坡2|@ripaojiedian-9437b7de
   - 新加坡3|@ripaojiedian-42ac0394
@@ -2321,7 +2310,6 @@ proxy-groups:
   - '>🇺🇸US|Ns|0712|TG@FProxies| 22-219e879e'
   - '>🇺🇸US|Ns|0712|TG@FProxies| 23-3ee13532'
   - https://github.com/Alvin9999-newpac/fanqiang-1b581a41
-  - github.com/Alvin9999-newpac/fanqiang-ec54e7be
   - github.com/Alvin9999-newpac/fanqiang-bf78758e
   - https://github.com/Alvin9999-newpac/fanqiang-aedbdc49
   - hysteria_urls:1-8ef1b62c
