@@ -79,67 +79,68 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港3|@ripaojiedian-ae77e014
+- name: 香港3|@ripaojiedian-ba2bd749
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 13118
-  server: 18.166.29.24
+  port: 47867
+  server: 18.166.67.128
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 香港4|@ripaojiedian-c662e99a
+- name: 香港4|@ripaojiedian-b131665f
   network: tcp
   password: BxceQaOe
-  port: 27161
-  server: 54.46.125.192
+  port: 7674
+  server: 16.162.119.232
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港5|@ripaojiedian-67c73972
+- name: 香港5|@ripaojiedian-dea3114b
   network: tcp
   password: BxceQaOe
-  port: 27161
-  server: 16.163.144.226
+  port: 39412
+  server: 43.198.187.250
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本|@ripaojiedian-13652fca
+- name: 日本|@ripaojiedian-b76f4c03
   network: tcp
   password: BxceQaOe
-  port: 27826
-  server: 43.198.210.48
+  port: 6102
+  server: 18.183.93.4
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 日本2|@ripaojiedian-44a161b8
-  network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 40138
-  server: 13.158.67.26
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 日本3|@ripaojiedian-80133cbd
+- name: 日本2|@ripaojiedian-1bea05a1
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 38937
-  server: 18.163.181.97
+  server: 16.162.91.50
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡|@ripaojiedian-f12ff39a
+- name: 🇯🇵JP_1|3.4MB/s-5fea3bdb
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 48738
-  server: 18.166.29.24
+  port: 40138
+  server: 16.163.57.145
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 新加坡2|@ripaojiedian-41c5fac1
+  udp: true
+- name: 新加坡|@ripaojiedian-72739586
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
-  port: 48738
-  server: 18.163.181.97
+  port: 6357
+  server: 18.166.67.128
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 新加坡2|@ripaojiedian-9437b7de
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 6357
+  server: 16.162.91.50
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -151,27 +152,27 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 美国|@ripaojiedian-763152ea
-  network: tcp
-  password: d1960ba9f0f6353353994fa844cf817b
-  port: 49277
-  server: 18.163.181.97
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: 美国2|@ripaojiedian-7f8b0e83
+- name: 美国|@ripaojiedian-ade72ed1
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
-  server: 18.163.181.97
+  server: 18.163.123.29
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 美国3|@ripaojiedian-a83a2d41
+- name: 美国2|@ripaojiedian-6133e5ef
+  network: tcp
+  password: d1960ba9f0f6353353994fa844cf817b
+  port: 49277
+  server: 18.163.123.29
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian-b5abd59c
   network: tcp
   password: BxceQaOe
-  port: 35966
-  server: 35.77.116.7
+  port: 34638
+  server: 18.183.93.4
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -185,36 +186,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇯🇵JP_1|3.1MB/s-6cd3f4c2
-  password: AQ71834695
-  port: 443
-  server: harmless-akita.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🇯🇵JP_2|2.0MB/s-fd16756c
-  password: AQ71834695
-  port: 443
-  server: better-silkworm.rooster465.autos
-  skip-cert-verify: true
-  sni: better-silkworm.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇯🇵JP_3|2.2MB/s-0679be2d
-  password: AQ71834695
-  port: 443
-  server: tops-marlin.rooster465.autos
-  skip-cert-verify: true
-  sni: tops-marlin.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇯🇵JP_4|2.0MB/s-b8208bc4
-  password: AQ71834695
-  port: 443
-  server: alert-monster.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - name: NL_speednode_0006-a7054272
   network: ws
   password: c206d543-023d-46cc-9d5a-1f0f2fc16323
@@ -228,62 +199,6 @@ proxies:
     headers:
       Host: space.byu.id.yxls.eu.cc
     path: /in-pdr
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_1|3.2MB/s-c319be37
-  network: ws
-  port: 443
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_2|2.3MB/s-0e85f6eb
-  network: ws
-  port: 443
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: 🇹🇼TW_1|2.7MB/s-eab7bd91
-  network: ws
-  port: 2096
-  server: twdx6.baidupi.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 85ad21e1-c2cd-3407-aa90-815f3f3ea636
-  ws-opts:
-    headers:
-      Host: cos.ap-shanghai.myqcloud.com
-    path: /assets/images/
-- name: 🇯🇵JP_5|3.2MB/s-51588a4d
-  network: tcp
-  password: AQ71834695
-  port: 443
-  server: fit-heron.rooster465.autos
-  skip-cert-verify: true
-  sni: fit-heron.rooster465.autos
-  type: trojan
-  udp: true
 - name: US_speednode_0090-d2e16e7a
   network: ws
   password: humanity
@@ -1998,28 +1913,20 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
-  - 香港3|@ripaojiedian-ae77e014
-  - 香港4|@ripaojiedian-c662e99a
-  - 香港5|@ripaojiedian-67c73972
-  - 日本|@ripaojiedian-13652fca
-  - 日本2|@ripaojiedian-44a161b8
-  - 日本3|@ripaojiedian-80133cbd
-  - 新加坡|@ripaojiedian-f12ff39a
-  - 新加坡2|@ripaojiedian-41c5fac1
+  - 香港3|@ripaojiedian-ba2bd749
+  - 香港4|@ripaojiedian-b131665f
+  - 香港5|@ripaojiedian-dea3114b
+  - 日本|@ripaojiedian-b76f4c03
+  - 日本2|@ripaojiedian-1bea05a1
+  - 🇯🇵JP_1|3.4MB/s-5fea3bdb
+  - 新加坡|@ripaojiedian-72739586
+  - 新加坡2|@ripaojiedian-9437b7de
   - 新加坡3|@ripaojiedian-42ac0394
-  - 美国|@ripaojiedian-763152ea
-  - 美国2|@ripaojiedian-7f8b0e83
-  - 美国3|@ripaojiedian-a83a2d41
+  - 美国|@ripaojiedian-ade72ed1
+  - 美国2|@ripaojiedian-6133e5ef
+  - 美国3|@ripaojiedian-b5abd59c
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|3.1MB/s-6cd3f4c2
-  - 🇯🇵JP_2|2.0MB/s-fd16756c
-  - 🇯🇵JP_3|2.2MB/s-0679be2d
-  - 🇯🇵JP_4|2.0MB/s-b8208bc4
   - NL_speednode_0006-a7054272
-  - 🇭🇰HK_1|3.2MB/s-c319be37
-  - 🇭🇰HK_2|2.3MB/s-0e85f6eb
-  - 🇹🇼TW_1|2.7MB/s-eab7bd91
-  - 🇯🇵JP_5|3.2MB/s-51588a4d
   - US_speednode_0090-d2e16e7a
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
@@ -2207,28 +2114,20 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
-  - 香港3|@ripaojiedian-ae77e014
-  - 香港4|@ripaojiedian-c662e99a
-  - 香港5|@ripaojiedian-67c73972
-  - 日本|@ripaojiedian-13652fca
-  - 日本2|@ripaojiedian-44a161b8
-  - 日本3|@ripaojiedian-80133cbd
-  - 新加坡|@ripaojiedian-f12ff39a
-  - 新加坡2|@ripaojiedian-41c5fac1
+  - 香港3|@ripaojiedian-ba2bd749
+  - 香港4|@ripaojiedian-b131665f
+  - 香港5|@ripaojiedian-dea3114b
+  - 日本|@ripaojiedian-b76f4c03
+  - 日本2|@ripaojiedian-1bea05a1
+  - 🇯🇵JP_1|3.4MB/s-5fea3bdb
+  - 新加坡|@ripaojiedian-72739586
+  - 新加坡2|@ripaojiedian-9437b7de
   - 新加坡3|@ripaojiedian-42ac0394
-  - 美国|@ripaojiedian-763152ea
-  - 美国2|@ripaojiedian-7f8b0e83
-  - 美国3|@ripaojiedian-a83a2d41
+  - 美国|@ripaojiedian-ade72ed1
+  - 美国2|@ripaojiedian-6133e5ef
+  - 美国3|@ripaojiedian-b5abd59c
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|3.1MB/s-6cd3f4c2
-  - 🇯🇵JP_2|2.0MB/s-fd16756c
-  - 🇯🇵JP_3|2.2MB/s-0679be2d
-  - 🇯🇵JP_4|2.0MB/s-b8208bc4
   - NL_speednode_0006-a7054272
-  - 🇭🇰HK_1|3.2MB/s-c319be37
-  - 🇭🇰HK_2|2.3MB/s-0e85f6eb
-  - 🇹🇼TW_1|2.7MB/s-eab7bd91
-  - 🇯🇵JP_5|3.2MB/s-51588a4d
   - US_speednode_0090-d2e16e7a
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
