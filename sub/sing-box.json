@@ -106,7 +106,15 @@
         "美国2|@ripaojiedian-7f8b0e83",
         "美国3|@ripaojiedian-a83a2d41",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇯🇵JP_1|3.1MB/s-6cd3f4c2",
+        "🇯🇵JP_2|2.0MB/s-fd16756c",
+        "🇯🇵JP_3|2.2MB/s-0679be2d",
+        "🇯🇵JP_4|2.0MB/s-b8208bc4",
         "NL_speednode_0006-a7054272",
+        "🇭🇰HK_1|3.2MB/s-c319be37",
+        "🇭🇰HK_2|2.3MB/s-0e85f6eb",
+        "🇹🇼TW_1|2.7MB/s-eab7bd91",
+        "🇯🇵JP_5|3.2MB/s-51588a4d",
         "US_speednode_0090-d2e16e7a",
         ">🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209 2",
         ">🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209 2",
@@ -490,6 +498,8 @@
         "香港4|@ripaojiedian-c662e99a",
         "香港5|@ripaojiedian-67c73972",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇭🇰HK_1|3.2MB/s-c319be37",
+        "🇭🇰HK_2|2.3MB/s-0e85f6eb",
         ">🇭🇰HK|Hs|0712|TG@FProxies|-afa289ff",
         ">🇭🇰HK|Hs|0712|TG@FProxies| 2-ce5e9d30",
         ">🇭🇰HK|Hs|0712|TG@FProxies| 3-d2548991",
@@ -513,6 +523,7 @@
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
+        "🇹🇼TW_1|2.7MB/s-eab7bd91",
         ">🇹🇼TW|Ms|0712|TG@FProxies|-a73ff0a9",
         ">🇹🇼TW|Ns|0712|TG@FProxies|-b74dba00",
         ">🇹🇼TW|Ns|0712|TG@FProxies| 2-4891435b",
@@ -552,6 +563,11 @@
         "日本|@ripaojiedian-13652fca",
         "日本2|@ripaojiedian-44a161b8",
         "日本3|@ripaojiedian-80133cbd",
+        "🇯🇵JP_1|3.1MB/s-6cd3f4c2",
+        "🇯🇵JP_2|2.0MB/s-fd16756c",
+        "🇯🇵JP_3|2.2MB/s-0679be2d",
+        "🇯🇵JP_4|2.0MB/s-b8208bc4",
+        "🇯🇵JP_5|3.2MB/s-51588a4d",
         ">🇯🇵JP|Hs|0712|TG@FProxies|-6f3bc63b",
         ">🇯🇵JP|Hs|0712|TG@FProxies| 2-2706352c",
         ">🇯🇵JP|Hs|0712|TG@FProxies| 3-24d623de",
@@ -732,7 +748,15 @@
         "美国2|@ripaojiedian-7f8b0e83",
         "美国3|@ripaojiedian-a83a2d41",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇯🇵JP_1|3.1MB/s-6cd3f4c2",
+        "🇯🇵JP_2|2.0MB/s-fd16756c",
+        "🇯🇵JP_3|2.2MB/s-0679be2d",
+        "🇯🇵JP_4|2.0MB/s-b8208bc4",
         "NL_speednode_0006-a7054272",
+        "🇭🇰HK_1|3.2MB/s-c319be37",
+        "🇭🇰HK_2|2.3MB/s-0e85f6eb",
+        "🇹🇼TW_1|2.7MB/s-eab7bd91",
+        "🇯🇵JP_5|3.2MB/s-51588a4d",
         "US_speednode_0090-d2e16e7a",
         ">🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209 2",
         ">🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209 2",
@@ -1146,6 +1170,52 @@
       }
     },
     {
+      "tag": "🇯🇵JP_1|3.1MB/s-6cd3f4c2",
+      "type": "trojan",
+      "server": "harmless-akita.rooster465.autos",
+      "server_port": 443,
+      "password": "AQ71834695",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
+      "tag": "🇯🇵JP_2|2.0MB/s-fd16756c",
+      "type": "trojan",
+      "server": "better-silkworm.rooster465.autos",
+      "server_port": 443,
+      "password": "AQ71834695",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "better-silkworm.rooster465.autos"
+      }
+    },
+    {
+      "tag": "🇯🇵JP_3|2.2MB/s-0679be2d",
+      "type": "trojan",
+      "server": "tops-marlin.rooster465.autos",
+      "server_port": 443,
+      "password": "AQ71834695",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "tops-marlin.rooster465.autos"
+      }
+    },
+    {
+      "tag": "🇯🇵JP_4|2.0MB/s-b8208bc4",
+      "type": "trojan",
+      "server": "alert-monster.rooster465.autos",
+      "server_port": 443,
+      "password": "AQ71834695",
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      }
+    },
+    {
       "tag": "NL_speednode_0006-a7054272",
       "type": "trojan",
       "server": "188.164.248.122",
@@ -1162,6 +1232,79 @@
         "headers": {
           "Host": "space.byu.id.yxls.eu.cc"
         }
+      }
+    },
+    {
+      "tag": "🇭🇰HK_1|3.2MB/s-c319be37",
+      "type": "vmess",
+      "server": "6jdvarazgu3qqr6q.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "88888888-8888-8888-8888-888888888888",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "tag": "🇭🇰HK_2|2.3MB/s-0e85f6eb",
+      "type": "vmess",
+      "server": "lcv8v9l7oyamxxfz.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "88888888-8888-8888-8888-888888888888",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "lcv8v9l7OyamxxfZ.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "lcv8v9l7OyamxxfZ.v.3dns.vip"
+        },
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "tag": "🇹🇼TW_1|2.7MB/s-eab7bd91",
+      "type": "vmess",
+      "server": "twdx6.baidupi.top",
+      "server_port": 2096,
+      "uuid": "85ad21e1-c2cd-3407-aa90-815f3f3ea636",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cos.ap-shanghai.myqcloud.com"
+        },
+        "path": "/assets/images/"
+      }
+    },
+    {
+      "tag": "🇯🇵JP_5|3.2MB/s-51588a4d",
+      "type": "trojan",
+      "server": "fit-heron.rooster465.autos",
+      "server_port": 443,
+      "password": "AQ71834695",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "fit-heron.rooster465.autos"
       }
     },
     {
