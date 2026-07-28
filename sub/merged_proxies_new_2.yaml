@@ -87,7 +87,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇭🇰HK_1|3.5MB/s-16080f5d
+- name: 香港4|@ripaojiedian-16080f5d
   network: tcp
   password: BxceQaOe
   port: 11035
@@ -95,7 +95,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇭🇰HK_2|2.6MB/s-209398bd
+- name: 香港5|@ripaojiedian-209398bd
   network: tcp
   password: BxceQaOe
   port: 27161
@@ -103,7 +103,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇯🇵JP_1|3.5MB/s-13dda565
+- name: 日本|@ripaojiedian-13dda565
   network: tcp
   password: BxceQaOe
   port: 45691
@@ -151,7 +151,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- name: 🇺🇸US_7|2.7MB/s-a0812a7a
+- name: 美国|@ripaojiedian-a0812a7a
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 17005
@@ -159,7 +159,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸US_8|2.5MB/s-0922decc
+- name: 美国2|@ripaojiedian-0922decc
   network: tcp
   password: d1960ba9f0f6353353994fa844cf817b
   port: 49277
@@ -167,7 +167,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 🇺🇸US_9|2.3MB/s-35e59b2d
+- name: 美国3|@ripaojiedian-35e59b2d
   network: tcp
   password: BxceQaOe
   port: 29085
@@ -185,58 +185,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇭CH_1|3.4MB/s-6401eed4
-  password: xp6qduya33bvl863
-  port: 25026
-  server: best.kovira2.ir
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_2|2.6MB/s-f136b48f
-  password: amazonskr05
-  port: 443
-  server: 18.170.212.188
-  type: ss
-- alpn:
-  - http/1.1
-  name: 🇺🇸US_2|2.0MB/s-8b9bbe5f
-  network: ws
-  password: MiTiVPN
-  port: 2087
-  server: 104.18.6.178
+- name: 🇳🇴NO_1|2.1MB/s-9ab79a00
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20085
+  server: oplosgru-c.catcat321.com
   skip-cert-verify: true
-  sni: g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/nl
-- alpn:
-  - http/1.1
-  name: 🇺🇸US_3|2.6MB/s-049a5aac
-  network: ws
-  password: MITIVPN
-  port: 2053
-  server: 104.17.147.22
-  skip-cert-verify: true
-  sni: ikk---7-MiTiVPN----o.kingnetwork.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/de
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇦UA_1|3.4MB/s-20d3e685
-  password: XF0klw7870vXn3uQIxe19Q
-  port: 1080
-  server: 194.54.80.37
-  type: ss
-  udp: true
-- name: 🇺🇦UA_2|2.6MB/s-401559a0
+- name: 🇺🇦UA_1|2.6MB/s-401559a0
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20066
   server: oplosgru-c.catcat321.com
@@ -244,7 +199,7 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: 🇩🇪DE_6|2.8MB/s-fe09e5d8
+- name: 🇩🇪DE_1|1.9MB/s-fe09e5d8
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: Hkdcrtc-e.catcat321.com
@@ -252,32 +207,7 @@ proxies:
   sni: de.catxstar.com
   type: trojan
   udp: true
-- name: 🇲🇾MY_1|3.8MB/s-20765d9c
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20031
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇫🇷FR_1|2.6MB/s-5332ca9a
-  network: tcp
-  password: JT80563429
-  port: 443
-  server: desired-pony.rooster465.autos
-  skip-cert-verify: false
-  sni: desired-pony.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇮🇩ID_1|3.3MB/s-0c3ca762
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20056
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇳🇴NO_2|2.7MB/s-e4724476
+- name: 🇳🇴NO_2|2.1MB/s-e4724476
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20085
   server: Hkdcrtc-e.catcat321.com
@@ -285,126 +215,15 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- cipher: aes-128-gcm
-  name: 🇸🇨SC_1|2.2MB/s-9548dc74
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 9054
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_1|1.8MB/s-8bfdbbec
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 917
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_2|2.4MB/s-55a0ff1d
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 9035
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_3|2.0MB/s-bb643747
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 9019
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_4|2.0MB/s-ee781db3
-  password: ayucl243113
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 921
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_5|3.3MB/s-32fe38b2
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 810
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇸🇨SC_2|2.6MB/s-5fa8ba0e
-  password: QHPy2u
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 9063
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_6|2.5MB/s-fd934bd1
-  password: ayucew2
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 9001
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇰🇷KR_7|1.7MB/s-5fecb5d7
-  password: ayucloud1
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 920
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 🇸🇨SC_3|2.2MB/s-cea6d515
-  password: ayu1245
-  plugin: obfs
-  plugin-opts:
-    host: 79ca942774.download.windowsupdate.com
-    mode: http
-  port: 824
-  server: 260323.1.0.l3.unclemanco.com
-  type: ss
-  udp: true
-- name: 🇫🇷FR_2|2.5MB/s-b933afcd
-  network: tcp
-  password: JT80563429
-  port: 443
-  server: 15.237.217.186
-  skip-cert-verify: false
-  sni: desired-pony.rooster465.autos
+- name: 🇲🇴MO_1|1.6MB/s-bd94212f
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20068
+  server: oplosgru-c.catcat321.com
+  skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
-- name: 🇺🇦UA_3|2.4MB/s-86644a8f
+- name: 🇺🇦UA_3|2.1MB/s-86644a8f
   network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20066
@@ -412,38 +231,12 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 🇭🇰HK_3|5.7MB/s-030410e5
-  network: tcp
-  password: 246fb793-8e5e-4015-943e-22f41e4ea4a5
-  port: 32029
-  server: 25c5dffa-d858-4b58-bbbb-bfc08e375d23.bnsepserv.com
-  skip-cert-verify: true
-  sni: pull-flv-q1-admin.douyincdn.com
-  type: trojan
-  udp: true
-- name: 🇲🇾MY_2|4.0MB/s-26e66100
+- name: 🇳🇴NO_3|2.3MB/s-a842a75e
   network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20048
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: false
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_9|2.6MB/s-a595befa
-  password: OWVhYWM4OTFlNGFhNTFiNjY5NDNlODI3ZDE5Njc0ZmE=
-  port: 59924
-  server: 130.61.36.133
-  type: ss
-  udp: true
-- name: 🇺🇦UA_4|2.6MB/s-5c07b2d0
-  network: tcp
-  password: 246fb793-8e5e-4015-943e-22f41e4ea4a5
-  port: 32019
-  server: 25c5dffa-d858-4b58-bbbb-bfc08e375d23.bnsepserv.com
+  port: 20085
+  server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
-  sni: pull-flv-q1-admin.douyincdn.com
   type: trojan
   udp: true
 - name: '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
@@ -2178,45 +1971,25 @@ proxy-groups:
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-49f7af03
-  - 🇭🇰HK_1|3.5MB/s-16080f5d
-  - 🇭🇰HK_2|2.6MB/s-209398bd
-  - 🇯🇵JP_1|3.5MB/s-13dda565
+  - 香港4|@ripaojiedian-16080f5d
+  - 香港5|@ripaojiedian-209398bd
+  - 日本|@ripaojiedian-13dda565
   - 日本2|@ripaojiedian-8908855c
   - 日本3|@ripaojiedian-374b226b
   - 新加坡|@ripaojiedian-26f15a90
   - 新加坡2|@ripaojiedian-577cb5fc
   - 新加坡3|@ripaojiedian-f6c34284
-  - 🇺🇸US_7|2.7MB/s-a0812a7a
-  - 🇺🇸US_8|2.5MB/s-0922decc
-  - 🇺🇸US_9|2.3MB/s-35e59b2d
+  - 美国|@ripaojiedian-a0812a7a
+  - 美国2|@ripaojiedian-0922decc
+  - 美国3|@ripaojiedian-35e59b2d
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇨🇭CH_1|3.4MB/s-6401eed4
-  - 🇬🇧GB_2|2.6MB/s-f136b48f
-  - 🇺🇸US_2|2.0MB/s-8b9bbe5f
-  - 🇺🇸US_3|2.6MB/s-049a5aac
-  - 🇺🇦UA_1|3.4MB/s-20d3e685
-  - 🇺🇦UA_2|2.6MB/s-401559a0
-  - 🇩🇪DE_6|2.8MB/s-fe09e5d8
-  - 🇲🇾MY_1|3.8MB/s-20765d9c
-  - 🇫🇷FR_1|2.6MB/s-5332ca9a
-  - 🇮🇩ID_1|3.3MB/s-0c3ca762
-  - 🇳🇴NO_2|2.7MB/s-e4724476
-  - 🇸🇨SC_1|2.2MB/s-9548dc74
-  - 🇰🇷KR_1|1.8MB/s-8bfdbbec
-  - 🇰🇷KR_2|2.4MB/s-55a0ff1d
-  - 🇰🇷KR_3|2.0MB/s-bb643747
-  - 🇰🇷KR_4|2.0MB/s-ee781db3
-  - 🇰🇷KR_5|3.3MB/s-32fe38b2
-  - 🇸🇨SC_2|2.6MB/s-5fa8ba0e
-  - 🇰🇷KR_6|2.5MB/s-fd934bd1
-  - 🇰🇷KR_7|1.7MB/s-5fecb5d7
-  - 🇸🇨SC_3|2.2MB/s-cea6d515
-  - 🇫🇷FR_2|2.5MB/s-b933afcd
-  - 🇺🇦UA_3|2.4MB/s-86644a8f
-  - 🇭🇰HK_3|5.7MB/s-030410e5
-  - 🇲🇾MY_2|4.0MB/s-26e66100
-  - 🇩🇪DE_9|2.6MB/s-a595befa
-  - 🇺🇦UA_4|2.6MB/s-5c07b2d0
+  - 🇳🇴NO_1|2.1MB/s-9ab79a00
+  - 🇺🇦UA_1|2.6MB/s-401559a0
+  - 🇩🇪DE_1|1.9MB/s-fe09e5d8
+  - 🇳🇴NO_2|2.1MB/s-e4724476
+  - 🇲🇴MO_1|1.6MB/s-bd94212f
+  - 🇺🇦UA_3|2.1MB/s-86644a8f
+  - 🇳🇴NO_3|2.3MB/s-a842a75e
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
@@ -2404,45 +2177,25 @@ proxy-groups:
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-49f7af03
-  - 🇭🇰HK_1|3.5MB/s-16080f5d
-  - 🇭🇰HK_2|2.6MB/s-209398bd
-  - 🇯🇵JP_1|3.5MB/s-13dda565
+  - 香港4|@ripaojiedian-16080f5d
+  - 香港5|@ripaojiedian-209398bd
+  - 日本|@ripaojiedian-13dda565
   - 日本2|@ripaojiedian-8908855c
   - 日本3|@ripaojiedian-374b226b
   - 新加坡|@ripaojiedian-26f15a90
   - 新加坡2|@ripaojiedian-577cb5fc
   - 新加坡3|@ripaojiedian-f6c34284
-  - 🇺🇸US_7|2.7MB/s-a0812a7a
-  - 🇺🇸US_8|2.5MB/s-0922decc
-  - 🇺🇸US_9|2.3MB/s-35e59b2d
+  - 美国|@ripaojiedian-a0812a7a
+  - 美国2|@ripaojiedian-0922decc
+  - 美国3|@ripaojiedian-35e59b2d
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇨🇭CH_1|3.4MB/s-6401eed4
-  - 🇬🇧GB_2|2.6MB/s-f136b48f
-  - 🇺🇸US_2|2.0MB/s-8b9bbe5f
-  - 🇺🇸US_3|2.6MB/s-049a5aac
-  - 🇺🇦UA_1|3.4MB/s-20d3e685
-  - 🇺🇦UA_2|2.6MB/s-401559a0
-  - 🇩🇪DE_6|2.8MB/s-fe09e5d8
-  - 🇲🇾MY_1|3.8MB/s-20765d9c
-  - 🇫🇷FR_1|2.6MB/s-5332ca9a
-  - 🇮🇩ID_1|3.3MB/s-0c3ca762
-  - 🇳🇴NO_2|2.7MB/s-e4724476
-  - 🇸🇨SC_1|2.2MB/s-9548dc74
-  - 🇰🇷KR_1|1.8MB/s-8bfdbbec
-  - 🇰🇷KR_2|2.4MB/s-55a0ff1d
-  - 🇰🇷KR_3|2.0MB/s-bb643747
-  - 🇰🇷KR_4|2.0MB/s-ee781db3
-  - 🇰🇷KR_5|3.3MB/s-32fe38b2
-  - 🇸🇨SC_2|2.6MB/s-5fa8ba0e
-  - 🇰🇷KR_6|2.5MB/s-fd934bd1
-  - 🇰🇷KR_7|1.7MB/s-5fecb5d7
-  - 🇸🇨SC_3|2.2MB/s-cea6d515
-  - 🇫🇷FR_2|2.5MB/s-b933afcd
-  - 🇺🇦UA_3|2.4MB/s-86644a8f
-  - 🇭🇰HK_3|5.7MB/s-030410e5
-  - 🇲🇾MY_2|4.0MB/s-26e66100
-  - 🇩🇪DE_9|2.6MB/s-a595befa
-  - 🇺🇦UA_4|2.6MB/s-5c07b2d0
+  - 🇳🇴NO_1|2.1MB/s-9ab79a00
+  - 🇺🇦UA_1|2.6MB/s-401559a0
+  - 🇩🇪DE_1|1.9MB/s-fe09e5d8
+  - 🇳🇴NO_2|2.1MB/s-e4724476
+  - 🇲🇴MO_1|1.6MB/s-bd94212f
+  - 🇺🇦UA_3|2.1MB/s-86644a8f
+  - 🇳🇴NO_3|2.3MB/s-a842a75e
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
