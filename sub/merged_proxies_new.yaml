@@ -185,58 +185,81 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇳🇴NO_1|2.1MB/s-9ab79a00
+- name: 🇳🇴NO_1|2.0MB/s-e4724476
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20085
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  type: trojan
-- name: 🇺🇦UA_1|2.6MB/s-401559a0
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20066
-  server: oplosgru-c.catcat321.com
+  server: Hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- name: 🇩🇪DE_1|1.9MB/s-fe09e5d8
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_1|2.4MB/s-11196d98
+  network: ws
+  port: 443
+  server: 192.204.57.30
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
+  ws-opts:
+    path: /speed
+- alterId: '0'
+  cipher: auto
+  name: 🇩🇪DE_1|2.0MB/s-784997bf
+  network: ws
+  port: 33208
+  server: cu2.ainivp.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  ws-opts:
+    headers:
+      Host: cu2.ainivp.com
+    path: /ray
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇸🇬SG_1|2.0MB/s-33478fc0
+  network: ws
+  port: 33402
+  server: cu4.ainivp.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9227afcd-026e-781f-1abc-c06efabd2338
+  ws-opts:
+    headers:
+      Host: cu4.ainivp.com
+    path: /ray
+  xudp: true
+- name: 🇩🇪DE_2|2.1MB/s-7ff4c94d
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20041
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: de.catxstar.com
+  tls: true
+  type: trojan
+  udp: true
+- name: 🇳🇴NO_2|2.3MB/s-ad3349c6
+  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+  port: 20085
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇩🇪DE_3|2.1MB/s-47240bd6
+  network: tcp
   password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
   port: 20041
   server: Hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: de.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇳🇴NO_2|2.1MB/s-e4724476
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20085
-  server: Hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇲🇴MO_1|1.6MB/s-bd94212f
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20068
-  server: oplosgru-c.catcat321.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇺🇦UA_3|2.1MB/s-86644a8f
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20066
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🇳🇴NO_3|2.3MB/s-a842a75e
-  network: tcp
-  password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-  port: 20085
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
   type: trojan
   udp: true
 - name: '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
@@ -1952,13 +1975,13 @@ proxy-groups:
   - 美国2|@ripaojiedian-0922decc
   - 美国3|@ripaojiedian-35e59b2d
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_1|2.1MB/s-9ab79a00
-  - 🇺🇦UA_1|2.6MB/s-401559a0
-  - 🇩🇪DE_1|1.9MB/s-fe09e5d8
-  - 🇳🇴NO_2|2.1MB/s-e4724476
-  - 🇲🇴MO_1|1.6MB/s-bd94212f
-  - 🇺🇦UA_3|2.1MB/s-86644a8f
-  - 🇳🇴NO_3|2.3MB/s-a842a75e
+  - 🇳🇴NO_1|2.0MB/s-e4724476
+  - 🇺🇸US_1|2.4MB/s-11196d98
+  - 🇩🇪DE_1|2.0MB/s-784997bf
+  - 🇸🇬SG_1|2.0MB/s-33478fc0
+  - 🇩🇪DE_2|2.1MB/s-7ff4c94d
+  - 🇳🇴NO_2|2.3MB/s-ad3349c6
+  - 🇩🇪DE_3|2.1MB/s-47240bd6
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
@@ -2158,13 +2181,13 @@ proxy-groups:
   - 美国2|@ripaojiedian-0922decc
   - 美国3|@ripaojiedian-35e59b2d
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_1|2.1MB/s-9ab79a00
-  - 🇺🇦UA_1|2.6MB/s-401559a0
-  - 🇩🇪DE_1|1.9MB/s-fe09e5d8
-  - 🇳🇴NO_2|2.1MB/s-e4724476
-  - 🇲🇴MO_1|1.6MB/s-bd94212f
-  - 🇺🇦UA_3|2.1MB/s-86644a8f
-  - 🇳🇴NO_3|2.3MB/s-a842a75e
+  - 🇳🇴NO_1|2.0MB/s-e4724476
+  - 🇺🇸US_1|2.4MB/s-11196d98
+  - 🇩🇪DE_1|2.0MB/s-784997bf
+  - 🇸🇬SG_1|2.0MB/s-33478fc0
+  - 🇩🇪DE_2|2.1MB/s-7ff4c94d
+  - 🇳🇴NO_2|2.3MB/s-ad3349c6
+  - 🇩🇪DE_3|2.1MB/s-47240bd6
   - '>🇦🇺AU|Ms|0712|TG@FProxies|-25b5b209'
   - '>🇦🇺AU|Ms|0712|TG@FProxies| 2-91c9273c'
   - '>🇨🇦CA|Ns|0712|TG@FProxies|-1823575c'
