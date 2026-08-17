@@ -236,6 +236,90 @@ def _convert_singbox_outbound(outbound: dict[str, Any], source: str) -> dict[str
         if server_ports not in (None, ""):
             node["ports"] = str(server_ports)
         return node
+    if proxy_type == "hysteria2":
+        if not str(server or "").strip():
+            raise PipelineError("sing-box Hysteria2 server 为空")
+        password = (
+            outbound.get("password")
+            or outbound.get("auth")
+            or outbound.get("auth_str")
+            or outbound.get("auth-str")
+        )
+        if not password:
+            raise PipelineError("sing-box Hysteria2 缺少 password")
+
+        raw_server_ports = outbound.get("server_ports")
+        if isinstance(raw_server_ports, list):
+            port_values = raw_server_ports
+        elif raw_server_ports in (None, ""):
+            port_values = []
+        else:
+            port_values = [raw_server_ports]
+        normalized_ports: list[str] = []
+        first_hop_port: int | None = None
+        for item in port_values:
+            match = re.fullmatch(r"(\d+)(?:(?::|-)(\d+))?", str(item).strip())
+            if not match:
+                raise PipelineError("sing-box Hysteria2 server_ports 无效")
+            start = int(match.group(1))
+            end = int(match.group(2) or start)
+            if not 1 <= start <= end <= 65535:
+                raise PipelineError("sing-box Hysteria2 server_ports 无效")
+            first_hop_port = first_hop_port or start
+            normalized_ports.append(f"{start}-{end}" if start != end else str(start))
+
+        if port in (None, "") and first_hop_port is not None:
+            port = first_hop_port
+        try:
+            port = int(port)
+        except (TypeError, ValueError) as exc:
+            raise PipelineError("sing-box Hysteria2 server_port 无效") from exc
+        if not 1 <= port <= 65535:
+            raise PipelineError("sing-box Hysteria2 server_port 无效")
+
+        tls = outbound.get("tls") if isinstance(outbound.get("tls"), dict) else {}
+        node = {
+            "name": outbound.get("tag") or source,
+            "type": "hysteria2",
+            "server": server,
+            "port": port,
+            "password": str(password),
+            "sni": tls.get("server_name") or outbound.get("server_name", ""),
+            "skip-cert-verify": bool(tls.get("insecure", False)),
+        }
+        if normalized_ports:
+            node["ports"] = ",".join(normalized_ports)
+        alpn = tls.get("alpn")
+        if alpn:
+            node["alpn"] = [alpn] if isinstance(alpn, str) else alpn
+        for source_key, target_key in (("up_mbps", "up"), ("down_mbps", "down")):
+            if outbound.get(source_key) not in (None, "", 0):
+                node[target_key] = outbound[source_key]
+
+        obfs = outbound.get("obfs")
+        obfs_type: Any = None
+        obfs_password: Any = None
+        if isinstance(obfs, dict):
+            obfs_type = obfs.get("type")
+            obfs_password = obfs.get("password")
+            settings = obfs.get(obfs_type) if obfs_type else None
+            if not obfs_password and isinstance(settings, dict):
+                obfs_password = settings.get("password")
+        elif obfs:
+            obfs_type = obfs
+            obfs_password = outbound.get("obfs_password") or outbound.get(
+                "obfs-password"
+            )
+        if obfs_type:
+            if obfs_type != "salamander":
+                raise PipelineError(
+                    f"Mihomo Hysteria2 不支持混淆类型: {obfs_type}"
+                )
+            if not obfs_password:
+                raise PipelineError("sing-box Hysteria2 salamander 缺少 password")
+            node["obfs"] = obfs_type
+            node["obfs-password"] = str(obfs_password)
+        return node
     if proxy_type == "tuic":
         node: dict[str, Any] = {
             "name": outbound.get("tag") or source,
