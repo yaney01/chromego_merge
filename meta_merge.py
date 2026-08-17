@@ -207,6 +207,35 @@ def _convert_singbox_outbound(outbound: dict[str, Any], source: str) -> dict[str
         return None
     server = outbound.get("server")
     port = outbound.get("server_port")
+    if proxy_type == "hysteria":
+        try:
+            port = int(port)
+        except (TypeError, ValueError) as exc:
+            raise PipelineError("sing-box Hysteria server_port 无效") from exc
+        if not 1 <= port <= 65535:
+            raise PipelineError("sing-box Hysteria server_port 无效")
+
+        tls = outbound.get("tls") if isinstance(outbound.get("tls"), dict) else {}
+        config = dict(outbound)
+        config.update(
+            {
+                "server": server,
+                "server_name": tls.get("server_name"),
+                "insecure": tls.get("insecure", False),
+                "alpn": tls.get("alpn"),
+            }
+        )
+        node = _parse_hysteria1(config, outbound.get("tag") or source)
+        node["port"] = port
+
+        server_ports = outbound.get("server_ports")
+        if isinstance(server_ports, list):
+            server_ports = ",".join(
+                str(item) for item in server_ports if item not in (None, "")
+            )
+        if server_ports not in (None, ""):
+            node["ports"] = str(server_ports)
+        return node
     if proxy_type == "tuic":
         node: dict[str, Any] = {
             "name": outbound.get("tag") or source,
