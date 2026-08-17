@@ -185,15 +185,67 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 0
   cipher: auto
-  name: 🇭🇰HK_1|4.2MB/s-861831f8
+  name: 🇭🇰HK_2|1.3MB/s-39c00db7
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: chrome
+  name: 🇯🇵JP_4|5.0MB/s-89f0b337
+  network: raw
+  password: PQ05174892
+  port: 443
+  server: concise-guinea.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: 🇰🇷KR_1|5.5MB/s-7d1652cb
+  password: PQ05174892
+  port: 443
+  server: precious-stag.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 🇸🇬SG_1|4.7MB/s-8006b673
+  password: PQ05174892
+  port: 443
+  server: intense-sole.rooster465.autos
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.3MB/s-c1766489
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.77
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /assignment
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_3|3.7MB/s-12abded7
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
@@ -202,99 +254,8 @@ proxies:
     headers:
       Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
-- name: 🇯🇵JP_1|4.2MB/s-788e8fa1
-  password: PQ05174892
-  port: 443
-  server: concise-guinea.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🇰🇷KR_1|3.8MB/s-abfb42f6
-  password: PQ05174892
-  port: 443
-  server: regular-raptor.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🇰🇷KR_3|5.3MB/s-7d1652cb
-  password: PQ05174892
-  port: 443
-  server: precious-stag.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 🇸🇬SG_2|4.2MB/s-ac86e430
-  password: PQ05174892
-  port: 443
-  server: fleet-pony.rooster465.autos
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_12|4.4MB/s-cda0b184
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: intense-monarch.rooster465.autos
-  skip-cert-verify: false
-  sni: intense-monarch.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_11|4.0MB/s-9df7f587
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 52.220.98.46
-  skip-cert-verify: false
-  sni: pleased-albacore.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_6|1.8MB/s-3648c5bd
-  network: raw
-  password: PQ05174892
-  port: 443
-  server: champion-alien.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_5|4.6MB/s-6239c3c1
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
   xudp: true
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.4MB/s-ce8dbdcb
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /assignment
-- name: 🇰🇷KR_4|4.2MB/s-a514006e
+- name: 🇰🇷KR_2|4.4MB/s-a514006e
   password: PQ05174892
   port: 443
   server: awake-redbird.rooster465.autos
@@ -303,89 +264,46 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 🇯🇵JP_3|5.6MB/s-848054f1
-  password: PQ05174892
-  port: 443
-  server: witty-duckling.rooster465.autos
-  skip-cert-verify: true
-  sni: witty-duckling.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇸🇬SG_6|4.6MB/s-733276cf
-  password: PQ05174892
-  port: 443
-  server: vast-werewolf.rooster465.autos
-  skip-cert-verify: true
-  sni: vast-werewolf.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬SG_13|4.6MB/s-bc0e5899
+  name: 🇸🇬SG_9|3.5MB/s-8e93a2a8
   network: tcp
   password: PQ05174892
   port: 443
-  server: pleased-albacore.rooster465.autos
+  server: composed-sheep.rooster465.autos
   skip-cert-verify: false
-  sni: pleased-albacore.rooster465.autos
+  sni: composed-sheep.rooster465.autos
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_21|4.4MB/s-fe970d29
-  network: tcp
+- name: 🇸🇬SG_4|1.3MB/s-ee246bf8
+  password: PQ05174892
+  port: 443
+  server: stable-python.rooster465.autos
+  skip-cert-verify: true
+  sni: stable-python.rooster465.autos
+  tls: true
+  type: trojan
+  udp: true
+- name: 🇸🇬SG_5|1.5MB/s-7944a4c7
   password: PQ05174892
   port: 443
   server: amusing-grub.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: amusing-grub.rooster465.autos
   tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_25|4.1MB/s-0b458ab7
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: welcome-monitor.rooster465.autos
-  skip-cert-verify: false
-  sni: welcome-monitor.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇯🇵JP_4|4.7MB/s-938de245
-  password: PQ05174892
-  port: 443
-  server: sterling-vervet.rooster465.autos
-  skip-cert-verify: true
-  sni: sterling-vervet.rooster465.autos
-  tls: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_23|5.3MB/s-c5014fe6
-  network: tcp
+- name: 🇸🇬SG_6|3.6MB/s-80c2fb3c
   password: PQ05174892
   port: 443
   server: fleet-pony.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: fleet-pony.rooster465.autos
   tls: true
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬SG_17|1.2MB/s-a2d1199e
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 13.212.174.21
-  skip-cert-verify: false
-  sni: fleet-pony.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_18|1.2MB/s-1ad7f490
+  name: 🇸🇬SG_14|5.1MB/s-1ad7f490
   network: tcp
   password: PQ05174892
   port: 443
@@ -395,17 +313,7 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬SG_19|1.2MB/s-245da04f
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: 47.129.183.20
-  skip-cert-verify: false
-  sni: welcome-monitor.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_20|5.2MB/s-9b046372
+  name: 🇸🇬SG_8|3.1MB/s-9b046372
   network: tcp
   password: PQ05174892
   port: 443
@@ -415,30 +323,32 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 🇸🇬SG_22|2.0MB/s-8bf79471
-  network: tcp
-  password: PQ05174892
-  port: 443
-  server: composed-sheep.rooster465.autos
-  skip-cert-verify: false
-  sni: composed-sheep.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_24|3.6MB/s-6b1762ed
-  password: PQ05174892
-  port: 443
-  server: intense-monarch.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇸🇬SG_26|3.8MB/s-d16edd60
+  name: 🇸🇬SG_15|1.2MB/s-d16edd60
   network: tcp
   password: PQ05174892
   port: 443
   server: stable-python.rooster465.autos
   skip-cert-verify: false
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷KR_3|4.8MB/s-4ee5c582
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 43.203.240.219
+  skip-cert-verify: true
+  sni: precious-stag.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵JP_3|3.6MB/s-df7018fb
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 43.206.241.145
+  skip-cert-verify: false
+  sni: concise-guinea.rooster465.autos
   type: trojan
   udp: true
 - name: HK_speednode_0012-8222bf12
@@ -2250,31 +2160,22 @@ proxy-groups:
   - 美国2|@ripaojiedian-c4428707
   - 美国3|@ripaojiedian-a59acc84
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|4.2MB/s-861831f8
-  - 🇯🇵JP_1|4.2MB/s-788e8fa1
-  - 🇰🇷KR_1|3.8MB/s-abfb42f6
-  - 🇰🇷KR_3|5.3MB/s-7d1652cb
-  - 🇸🇬SG_2|4.2MB/s-ac86e430
-  - 🇸🇬SG_12|4.4MB/s-cda0b184
-  - 🇸🇬SG_11|4.0MB/s-9df7f587
-  - 🇯🇵JP_6|1.8MB/s-3648c5bd
-  - 🇭🇰HK_5|4.6MB/s-6239c3c1
-  - 🇫🇷FR_1|1.4MB/s-ce8dbdcb
-  - 🇰🇷KR_4|4.2MB/s-a514006e
-  - 🇯🇵JP_3|5.6MB/s-848054f1
-  - 🇸🇬SG_6|4.6MB/s-733276cf
-  - 🇸🇬SG_13|4.6MB/s-bc0e5899
-  - 🇸🇬SG_21|4.4MB/s-fe970d29
-  - 🇸🇬SG_25|4.1MB/s-0b458ab7
-  - 🇯🇵JP_4|4.7MB/s-938de245
-  - 🇸🇬SG_23|5.3MB/s-c5014fe6
-  - 🇸🇬SG_17|1.2MB/s-a2d1199e
-  - 🇸🇬SG_18|1.2MB/s-1ad7f490
-  - 🇸🇬SG_19|1.2MB/s-245da04f
-  - 🇸🇬SG_20|5.2MB/s-9b046372
-  - 🇸🇬SG_22|2.0MB/s-8bf79471
-  - 🇸🇬SG_24|3.6MB/s-6b1762ed
-  - 🇸🇬SG_26|3.8MB/s-d16edd60
+  - 🇭🇰HK_2|1.3MB/s-39c00db7
+  - 🇯🇵JP_4|5.0MB/s-89f0b337
+  - 🇰🇷KR_1|5.5MB/s-7d1652cb
+  - 🇸🇬SG_1|4.7MB/s-8006b673
+  - 🇫🇷FR_1|1.3MB/s-c1766489
+  - 🇭🇰HK_3|3.7MB/s-12abded7
+  - 🇰🇷KR_2|4.4MB/s-a514006e
+  - 🇸🇬SG_9|3.5MB/s-8e93a2a8
+  - 🇸🇬SG_4|1.3MB/s-ee246bf8
+  - 🇸🇬SG_5|1.5MB/s-7944a4c7
+  - 🇸🇬SG_6|3.6MB/s-80c2fb3c
+  - 🇸🇬SG_14|5.1MB/s-1ad7f490
+  - 🇸🇬SG_8|3.1MB/s-9b046372
+  - 🇸🇬SG_15|1.2MB/s-d16edd60
+  - 🇰🇷KR_3|4.8MB/s-4ee5c582
+  - 🇯🇵JP_3|3.6MB/s-df7018fb
   - HK_speednode_0012-8222bf12
   - HK_speednode_0013-c2af45a2
   - JP_speednode_0014-d9421987
@@ -2515,31 +2416,22 @@ proxy-groups:
   - 美国2|@ripaojiedian-c4428707
   - 美国3|@ripaojiedian-a59acc84
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|4.2MB/s-861831f8
-  - 🇯🇵JP_1|4.2MB/s-788e8fa1
-  - 🇰🇷KR_1|3.8MB/s-abfb42f6
-  - 🇰🇷KR_3|5.3MB/s-7d1652cb
-  - 🇸🇬SG_2|4.2MB/s-ac86e430
-  - 🇸🇬SG_12|4.4MB/s-cda0b184
-  - 🇸🇬SG_11|4.0MB/s-9df7f587
-  - 🇯🇵JP_6|1.8MB/s-3648c5bd
-  - 🇭🇰HK_5|4.6MB/s-6239c3c1
-  - 🇫🇷FR_1|1.4MB/s-ce8dbdcb
-  - 🇰🇷KR_4|4.2MB/s-a514006e
-  - 🇯🇵JP_3|5.6MB/s-848054f1
-  - 🇸🇬SG_6|4.6MB/s-733276cf
-  - 🇸🇬SG_13|4.6MB/s-bc0e5899
-  - 🇸🇬SG_21|4.4MB/s-fe970d29
-  - 🇸🇬SG_25|4.1MB/s-0b458ab7
-  - 🇯🇵JP_4|4.7MB/s-938de245
-  - 🇸🇬SG_23|5.3MB/s-c5014fe6
-  - 🇸🇬SG_17|1.2MB/s-a2d1199e
-  - 🇸🇬SG_18|1.2MB/s-1ad7f490
-  - 🇸🇬SG_19|1.2MB/s-245da04f
-  - 🇸🇬SG_20|5.2MB/s-9b046372
-  - 🇸🇬SG_22|2.0MB/s-8bf79471
-  - 🇸🇬SG_24|3.6MB/s-6b1762ed
-  - 🇸🇬SG_26|3.8MB/s-d16edd60
+  - 🇭🇰HK_2|1.3MB/s-39c00db7
+  - 🇯🇵JP_4|5.0MB/s-89f0b337
+  - 🇰🇷KR_1|5.5MB/s-7d1652cb
+  - 🇸🇬SG_1|4.7MB/s-8006b673
+  - 🇫🇷FR_1|1.3MB/s-c1766489
+  - 🇭🇰HK_3|3.7MB/s-12abded7
+  - 🇰🇷KR_2|4.4MB/s-a514006e
+  - 🇸🇬SG_9|3.5MB/s-8e93a2a8
+  - 🇸🇬SG_4|1.3MB/s-ee246bf8
+  - 🇸🇬SG_5|1.5MB/s-7944a4c7
+  - 🇸🇬SG_6|3.6MB/s-80c2fb3c
+  - 🇸🇬SG_14|5.1MB/s-1ad7f490
+  - 🇸🇬SG_8|3.1MB/s-9b046372
+  - 🇸🇬SG_15|1.2MB/s-d16edd60
+  - 🇰🇷KR_3|4.8MB/s-4ee5c582
+  - 🇯🇵JP_3|3.6MB/s-df7018fb
   - HK_speednode_0012-8222bf12
   - HK_speednode_0013-c2af45a2
   - JP_speednode_0014-d9421987
