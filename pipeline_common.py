@@ -78,7 +78,11 @@ def collect_sources(
             errors.append(f"{source} ({url}): {exc}")
     if errors:
         joined = "\n".join(f"- {item}" for item in errors)
-        raise PipelineError(f"{url_file} 有来源失败，保留旧产物:\n{joined}")
+        if not nodes:
+            raise PipelineError(
+                f"{url_file} 所有来源均失败，保留旧产物:\n{joined}"
+            )
+        print(f"警告：{url_file} 部分来源失败，将跳过:\n{joined}")
     return nodes
 
 
