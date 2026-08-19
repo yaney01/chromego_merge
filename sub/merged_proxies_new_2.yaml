@@ -177,88 +177,192 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇸🇪SE_1|1.3MB/s-c4cc4ad4
-  password: fg20mtCFHy
-  port: 5612
-  server: 172.234.100.80
-  skip-cert-verify: true
-  sni: yugdv.southbyte.xyz
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_1|4.1MB/s-48c72333
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
-  server: 211.91.158.27
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK_2|5.1MB/s-c431c72d
+  name: 🇭🇰HK_1|3.8MB/s-0bb52869
+  network: ws
+  port: 16622
+  server: t.cnmjcn.cyou
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b655fa09-40b8-4317-a713-87a793dde9d0
+  ws-opts:
+    headers:
+      Host: 883147dc12db58e094e3f13e202fe20c.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: chrome
+  name: 🇸🇬SG_4|4.5MB/s-3299ee32
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: well-goshawk.rooster465.autos
+  skip-cert-verify: false
+  sni: well-goshawk.rooster465.autos
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_2|2.0MB/s-12abded7
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  uuid: 0c657913-e593-4893-9555-f88478c33a4b
   ws-opts:
     headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+      Host: f784fdb75e4fc8a478c10d9acff513d3.mobgslb.tbcache.com
     path: /
   xudp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.3MB/s-93bf702c
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.210
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.1MB/s-1a2342b2
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇰🇷KR_2|3.4MB/s-b54d89fe
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 3.36.124.155
+  skip-cert-verify: false
+  sni: novel-kodiak.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵JP_1|1.8MB/s-0c5f0987
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 57.180.56.235
+  skip-cert-verify: false
+  sni: gentle-perch.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.6MB/s-aca28983
+  network: tcp
+  password: fg20mtCFHy
+  port: 5577
+  server: 172.232.42.44
+  skip-cert-verify: true
+  sni: gtyxz.southbyte.xyz
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇸🇬SG_3|4.6MB/s-7d1c2c95
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 47.129.160.142
+  skip-cert-verify: false
+  sni: well-goshawk.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵JP_2|5.1MB/s-7425ce43
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: gentle-perch.rooster465.autos
+  skip-cert-verify: false
+  sni: gentle-perch.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇰🇷KR_5|2.8MB/s-81f5a4fb
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: novel-kodiak.rooster465.autos
+  skip-cert-verify: false
+  sni: novel-kodiak.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇯🇵JP_3|1.0MB/s-c93fce55
+  network: tcp
+  password: fg20mtCFHy
+  port: 5710
+  server: 172.105.197.232
+  skip-cert-verify: true
+  sni: jpcaw.southbyte.xyz
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_5|1.1MB/s-562e73c0
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.111.1
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.111 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇸🇬SG_5|5.6MB/s-577a2066
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: direct-hawk.rooster465.autos
+  skip-cert-verify: false
+  sni: direct-hawk.rooster465.autos
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇺🇸US_13|3.9MB/s-ba459990
-  network: http
-  port: 52080
-  server: 38.246.226.240
+  name: 🇭🇰HK_4|2.6MB/s-89c73a05
+  network: ws
+  port: 16622
+  server: t.cnmjcn.cyou
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+  uuid: b43b4eb3-3874-474d-a2fb-ddf1d15b1398
+  ws-opts:
+    headers:
+      Host: d86f6b4af87f7763136b32ebe64db573.mobgslb.tbcache.com
+    path: /
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷KR_2|4.7MB/s-d3bede5d
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.235
-  type: ss
-  udp: true
-- name: 🇩🇪DE_3|2.5MB/s-5827142d
-  network: tcp
-  password: fg20mtCFHy
-  port: 5859
-  server: 209.38.240.27
-  skip-cert-verify: true
-  sni: uyped.southbyte.xyz
-  type: trojan
-- client-fingerprint: chrome
-  name: 🇯🇵JP_2|4.3MB/s-9c6ee660
-  network: tcp
-  password: EQ30679154
-  port: 443
-  server: upright-sheepdog.rooster465.autos
-  skip-cert-verify: false
-  sni: upright-sheepdog.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇱🇺LU_1|3.4MB/s-766448a4
-  network: tcp
-  password: EQ30679154
-  port: 443
-  server: pretty-mollusk.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
 - name: HK_speednode_0012-8222bf12
   password: BxceQaOe
   port: 27161
@@ -2067,14 +2171,21 @@ proxy-groups:
   - 美国2|@ripaojiedian-95bba1f5
   - 美国3|@ripaojiedian-cdf1cf25
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇪SE_1|1.3MB/s-c4cc4ad4
-  - 🇰🇷KR_1|4.1MB/s-48c72333
-  - 🇭🇰HK_2|5.1MB/s-c431c72d
-  - 🇺🇸US_13|3.9MB/s-ba459990
-  - 🇰🇷KR_2|4.7MB/s-d3bede5d
-  - 🇩🇪DE_3|2.5MB/s-5827142d
-  - 🇯🇵JP_2|4.3MB/s-9c6ee660
-  - 🇱🇺LU_1|3.4MB/s-766448a4
+  - 🇭🇰HK_1|3.8MB/s-0bb52869
+  - 🇸🇬SG_4|4.5MB/s-3299ee32
+  - 🇭🇰HK_2|2.0MB/s-12abded7
+  - 🇫🇷FR_1|1.3MB/s-93bf702c
+  - 🇫🇷FR_2|1.1MB/s-1a2342b2
+  - 🇰🇷KR_2|3.4MB/s-b54d89fe
+  - 🇯🇵JP_1|1.8MB/s-0c5f0987
+  - 🇫🇷FR_3|1.6MB/s-aca28983
+  - 🇸🇬SG_3|4.6MB/s-7d1c2c95
+  - 🇯🇵JP_2|5.1MB/s-7425ce43
+  - 🇰🇷KR_5|2.8MB/s-81f5a4fb
+  - 🇯🇵JP_3|1.0MB/s-c93fce55
+  - 🇫🇷FR_5|1.1MB/s-562e73c0
+  - 🇸🇬SG_5|5.6MB/s-577a2066
+  - 🇭🇰HK_4|2.6MB/s-89c73a05
   - HK_speednode_0012-8222bf12
   - HK_speednode_0013-c2af45a2
   - JP_speednode_0014-d9421987
@@ -2314,14 +2425,21 @@ proxy-groups:
   - 美国2|@ripaojiedian-95bba1f5
   - 美国3|@ripaojiedian-cdf1cf25
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇪SE_1|1.3MB/s-c4cc4ad4
-  - 🇰🇷KR_1|4.1MB/s-48c72333
-  - 🇭🇰HK_2|5.1MB/s-c431c72d
-  - 🇺🇸US_13|3.9MB/s-ba459990
-  - 🇰🇷KR_2|4.7MB/s-d3bede5d
-  - 🇩🇪DE_3|2.5MB/s-5827142d
-  - 🇯🇵JP_2|4.3MB/s-9c6ee660
-  - 🇱🇺LU_1|3.4MB/s-766448a4
+  - 🇭🇰HK_1|3.8MB/s-0bb52869
+  - 🇸🇬SG_4|4.5MB/s-3299ee32
+  - 🇭🇰HK_2|2.0MB/s-12abded7
+  - 🇫🇷FR_1|1.3MB/s-93bf702c
+  - 🇫🇷FR_2|1.1MB/s-1a2342b2
+  - 🇰🇷KR_2|3.4MB/s-b54d89fe
+  - 🇯🇵JP_1|1.8MB/s-0c5f0987
+  - 🇫🇷FR_3|1.6MB/s-aca28983
+  - 🇸🇬SG_3|4.6MB/s-7d1c2c95
+  - 🇯🇵JP_2|5.1MB/s-7425ce43
+  - 🇰🇷KR_5|2.8MB/s-81f5a4fb
+  - 🇯🇵JP_3|1.0MB/s-c93fce55
+  - 🇫🇷FR_5|1.1MB/s-562e73c0
+  - 🇸🇬SG_5|5.6MB/s-577a2066
+  - 🇭🇰HK_4|2.6MB/s-89c73a05
   - HK_speednode_0012-8222bf12
   - HK_speednode_0013-c2af45a2
   - JP_speednode_0014-d9421987
