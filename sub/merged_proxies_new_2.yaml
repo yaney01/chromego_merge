@@ -185,153 +185,67 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇭🇰HK_1|1.6MB/s-9a9acaad
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 120.232.250.161
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_1|3.0MB/s-f8646944
-  password: amazonskr05
-  port: 443
-  server: 63.178.246.78
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_2|4.5MB/s-a7b743f1
-  password: amazonskr05
-  port: 443
-  server: 18.153.64.41
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇭🇰HK_2|3.9MB/s-8dd2135d
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 120.232.253.96
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵JP_1|3.9MB/s-8e629387
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.136
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|3.5MB/s-3a31a8a3
-  password: amazonskr05
-  port: 443
-  server: 3.145.35.194
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_3|3.1MB/s-c250023e
-  password: BlRtjyYlj18kYcrEL/8wcbSyqNKSPESiwSDDvisu9+o=
-  port: 30874
-  server: e2.cover20.ir
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.8MB/s-76ae276e
-  network: ws
-  password: humanity
+  name: 🇯🇵JP_1|6.0MB/s-587a4c88
+  network: tcp
+  password: PQ05174892
   port: 443
-  server: 104.18.152.225
+  server: ideal-phoenix.rooster465.autos
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: ideal-phoenix.rooster465.autos
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG_2|2.8MB/s-c1bc91a8
+  network: ws
+  port: 443
+  server: node.socks5.kdns.fr
+  servername: resolution-secretary-presence-amazing.trycloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3d69d9bc-eaae-42bd-828f-6894c7d7edbf
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /assignment
-- cipher: aes-256-cfb
-  name: 🇰🇷KR_1|4.2MB/s-d3bede5d
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.235
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇫🇷FR_2|2.2MB/s-f0dd1893
+      Host: resolution-secretary-presence-amazing.trycloudflare.com
+    path: /3d69d9bc-eaae-42bd-828f-6894c7d7edbf-vm
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬SG_3|2.6MB/s-3822f268
   network: ws
-  password: humanity
   port: 443
-  server: 172.67.221.242
+  server: node.socks5.kdns.fr
+  servername: willing-relative-las-legislative.trycloudflare.com
   skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 3e1c7cc6-6324-48bf-9855-05c8afae90b3
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_3|1.3MB/s-366855f5
+      Host: willing-relative-las-legislative.trycloudflare.com
+    path: /3e1c7cc6-6324-48bf-9855-05c8afae90b3-vm
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_5|1.9MB/s-38a3999d
   network: ws
-  password: humanity
   port: 443
-  server: 104.18.152.108
+  server: node.socks5.kdns.fr
+  servername: pas-seo-delays-safe.trycloudflare.com
   skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 20a16a21-6468-4e63-96e1-d9cecf0035ce
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇯🇵JP_2|5.6MB/s-61fd1244
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: whole-perch.rooster465.autos
-  skip-cert-verify: false
-  sni: whole-perch.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_3|5.2MB/s-6072b69f
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 18.183.135.94
-  skip-cert-verify: false
-  sni: central-jawfish.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_4|5.6MB/s-5d7df77d
-  network: tcp
-  password: AE62539071
-  port: 443
-  server: 54.249.33.71
-  skip-cert-verify: false
-  sni: outgoing-ladybird.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_5|4.8MB/s-83496259
-  password: AE62539071
-  port: 443
-  server: real-cardinal.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇯🇵JP_6|2.4MB/s-d881df0a
-  password: AE62539071
-  port: 443
-  server: whole-perch.rooster465.autos
-  skip-cert-verify: false
-  type: trojan
-  udp: true
+      Host: pas-seo-delays-safe.trycloudflare.com
+    path: /20a16a21-6468-4e63-96e1-d9cecf0035ce-vm
+  xudp: true
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2117,22 +2031,10 @@ proxy-groups:
   - 美国2|@ripaojiedian-e9530330
   - 美国3|@ripaojiedian-8dde4459
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|1.6MB/s-9a9acaad
-  - 🇩🇪DE_1|3.0MB/s-f8646944
-  - 🇩🇪DE_2|4.5MB/s-a7b743f1
-  - 🇭🇰HK_2|3.9MB/s-8dd2135d
-  - 🇯🇵JP_1|3.9MB/s-8e629387
-  - 🇺🇸US_2|3.5MB/s-3a31a8a3
-  - 🇩🇪DE_3|3.1MB/s-c250023e
-  - 🇫🇷FR_1|1.8MB/s-76ae276e
-  - 🇰🇷KR_1|4.2MB/s-d3bede5d
-  - 🇫🇷FR_2|2.2MB/s-f0dd1893
-  - 🇫🇷FR_3|1.3MB/s-366855f5
-  - 🇯🇵JP_2|5.6MB/s-61fd1244
-  - 🇯🇵JP_3|5.2MB/s-6072b69f
-  - 🇯🇵JP_4|5.6MB/s-5d7df77d
-  - 🇯🇵JP_5|4.8MB/s-83496259
-  - 🇯🇵JP_6|2.4MB/s-d881df0a
+  - 🇯🇵JP_1|6.0MB/s-587a4c88
+  - 🇸🇬SG_2|2.8MB/s-c1bc91a8
+  - 🇸🇬SG_3|2.6MB/s-3822f268
+  - 🇺🇸US_5|1.9MB/s-38a3999d
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2370,22 +2272,10 @@ proxy-groups:
   - 美国2|@ripaojiedian-e9530330
   - 美国3|@ripaojiedian-8dde4459
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|1.6MB/s-9a9acaad
-  - 🇩🇪DE_1|3.0MB/s-f8646944
-  - 🇩🇪DE_2|4.5MB/s-a7b743f1
-  - 🇭🇰HK_2|3.9MB/s-8dd2135d
-  - 🇯🇵JP_1|3.9MB/s-8e629387
-  - 🇺🇸US_2|3.5MB/s-3a31a8a3
-  - 🇩🇪DE_3|3.1MB/s-c250023e
-  - 🇫🇷FR_1|1.8MB/s-76ae276e
-  - 🇰🇷KR_1|4.2MB/s-d3bede5d
-  - 🇫🇷FR_2|2.2MB/s-f0dd1893
-  - 🇫🇷FR_3|1.3MB/s-366855f5
-  - 🇯🇵JP_2|5.6MB/s-61fd1244
-  - 🇯🇵JP_3|5.2MB/s-6072b69f
-  - 🇯🇵JP_4|5.6MB/s-5d7df77d
-  - 🇯🇵JP_5|4.8MB/s-83496259
-  - 🇯🇵JP_6|2.4MB/s-d881df0a
+  - 🇯🇵JP_1|6.0MB/s-587a4c88
+  - 🇸🇬SG_2|2.8MB/s-c1bc91a8
+  - 🇸🇬SG_3|2.6MB/s-3822f268
+  - 🇺🇸US_5|1.9MB/s-38a3999d
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
