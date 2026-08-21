@@ -64,148 +64,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- alterId: 0
-  cipher: auto
-  name: 'B - 🇭🇰 HK 04 TG: @nodpai-9a5aedc6'
-  port: 6001
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: 'C - 🇭🇰 HK 07 TG: @nodpai-687be9ac'
-  port: 51556
-  server: 103.181.164.145
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 'B - 🇹🇼 TW 02 TG: @nodpai-096c5c9e'
-  network: ws
-  port: 33412
-  server: ct3.ainivp.com
-  tls: true
-  type: vmess
-  uuid: 9204afcd-026e-781f-1abc-c03efabd1344
-  ws-opts:
-    headers:
-      Host: ct3.ainivp.com
-    path: /ray
-- alterId: 0
-  cipher: auto
-  name: 'A - 🇯🇵 JP 04 TG: @nodpai-97a40ade'
-  port: 6003
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 0
-  cipher: auto
-  name: 'A - 🇸🇬 SG 06 TG: @nodpai-4f5dc407'
-  port: 6004
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  type: vmess
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-- alterId: 2
-  cipher: auto
-  name: 'B - 🇸🇬 SG 16 TG: @nodpai-fd4b5bb3'
-  network: tcp
-  port: 30845
-  server: v45.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 'B - 🇺🇸 US 18 TG: @nodpai-4cdfa1aa'
-  port: 180
-  server: 82.198.246.37
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
-  name: 'B - 🇺🇸 US 24 TG: @nodpai-088ab1e8'
-  network: ws
-  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  port: 443
-  server: blackshadow.dpdns.org
-  sni: support.zoom.us.blackshadow.dpdns.org
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: support.zoom.us.blackshadow.dpdns.org
-    path: /195.123.218.174-443
-- name: 'B - 🇺🇸 US 32 TG: @nodpai-6a33567b'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45553
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: ch.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 33 TG: @nodpai-b4ed59ee'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 41943
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: az.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 34 TG: @nodpai-34969849'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 46424
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: de.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 35 TG: @nodpai-a3239130'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 48697
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: gh.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 36 TG: @nodpai-e669c01d'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 47909
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: is.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 37 TG: @nodpai-bb7e0be5'
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  port: 45619
-  server: 90081bb25c.node.tro.cac.cab
-  skip-cert-verify: true
-  sni: fr.01.naiun.bilibili.com
-  tls: true
-  type: trojan
-- name: 'B - 🇺🇸 US 42 TG: @nodpai-f8b40652'
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18000
-  server: 121.154.96.50
-  sni: vpn.rnmcnm.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /trojan
-- alterId: 0
-  cipher: auto
-  name: 'C - 🇺🇸 US 46 TG: @nodpai-47e8449d'
-  network: ws
-  port: 52620
-  server: 38.60.176.80
-  type: vmess
-  uuid: d60c7a89-40d9-4f09-e8f8-591932ce79ef
-  ws-opts:
-    path: /8704a4ad
 - cipher: aes-256-cfb
   name: 'tg频道:@ripaojiedian #1-9903aeea'
   password: amazonskr05
@@ -327,277 +185,159 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.1MB/s-42aa4755
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_2|1009KB/s-42c2918f
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.74.2
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; TRT-LX2 Build/HUAWEITRT-LX2; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/59.0.3071.125 Mobile
-        Safari/537.36
-    path: /assignment
 - cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_1|1.6MB/s-eb5f8838
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21114
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_1|3.5MB/s-258c123e
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21104
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_5|4.2MB/s-5ed9667e
+  name: 🇺🇸US_3|4.3MB/s-5ed9667e
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21105
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_2|4.8MB/s-aed296da
+  name: 🇰🇷KR_1|1.5MB/s-aed296da
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21107
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_2|5.4MB/s-b648ca9f
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21109
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_1|4.4MB/s-39c6aaf9
+  name: 🇮🇹IT_1|2.8MB/s-39c6aaf9
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21113
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_2|1.7MB/s-19275393
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21117
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_2|4.5MB/s-53d75296
+  name: 🇩🇪DE_2|2.9MB/s-53d75296
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21118
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_3|5.9MB/s-266522d4
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21119
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_2|4.2MB/s-a7224c83
+  name: 🇮🇹IT_2|3.5MB/s-a7224c83
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21120
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG_2|3.6MB/s-9e0e9b17
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21121
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN_1|4.8MB/s-744da0e6
+  name: 🇮🇳IN_1|1.2MB/s-744da0e6
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21125
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR_5|4.4MB/s-52811c1a
+  name: 🇫🇷FR_1|3.6MB/s-52811c1a
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21126
   server: 211.91.158.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_3|4.3MB/s-96b6a7bb
+  name: 🇬🇧GB_1|1.5MB/s-96b6a7bb
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21104
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_6|3.5MB/s-e0ce807c
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21105
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_3|2.4MB/s-9663d3c3
+  name: 🇰🇷KR_2|1.2MB/s-9663d3c3
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21107
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_7|4.3MB/s-c518985d
+  name: 🇺🇸US_4|4.2MB/s-c518985d
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21108
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_3|2.6MB/s-b3c72221
+  name: 🇮🇹IT_3|1.0MB/s-b3c72221
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21113
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_4|4.3MB/s-1d2f18ca
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21114
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇱IL_1|1.1MB/s-242a1241
+  name: 🇮🇱IL_1|1.0MB/s-242a1241
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21116
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_4|4.4MB/s-ca86a54c
+  name: 🇬🇧GB_2|1.0MB/s-ca86a54c
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21117
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_3|1.7MB/s-993e9141
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21118
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_4|5.7MB/s-483fd14f
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21119
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR_6|4.3MB/s-2fa1f084
+  name: 🇫🇷FR_2|3.2MB/s-2fa1f084
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
   port: 21122
   server: 211.91.158.44
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_3|2.0MB/s-e899e879
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇭TH_1|4.6MB/s-efeb752c
+  name: 🇯🇵JP_5|1.6MB/s-b648ca9f
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21123
+  port: 21109
+  server: 211.91.158.26
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇰🇷KR_4|1.4MB/s-1d2f18ca
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21114
   server: 211.91.158.44
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN_2|2.6MB/s-0b2fcb23
+  name: 🇮🇳IN_2|1.1MB/s-68cec6d4
   password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21125
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR_7|3.4MB/s-614e3002
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21126
+  port: 21103
   server: 211.91.158.44
   type: ss
   udp: true
 - alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸US_8|1.0MB/s-19c20813
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 45.205.0.6
-  skip-cert-verify: true
-  sni: 333-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/u-s@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- alterId: '0'
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇭🇰HK_5|3.7MB/s-0b37b214
-  network: ws
-  port: 443
-  server: node.socks5.kdns.fr
-  servername: softball-chief-observations-myspace.trycloudflare.com
+  http-opts:
+    headers:
+      Host:
+      - www.apple.com
+    path:
+    - /
+  name: 🇩🇪DE_4|1.2MB/s-93633697
+  network: http
+  port: 80
+  server: 167.233.242.189
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vmess
   udp: true
-  uuid: e53732d9-85c6-44fe-91eb-52fe9349dccc
-  ws-opts:
-    headers:
-      Host: softball-chief-observations-myspace.trycloudflare.com
-    path: /e53732d9-85c6-44fe-91eb-52fe9349dccc-vm
+  uuid: 7209d7ee-cfd0-46c0-a580-d92e2f0c801c
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇯🇵JP_6|1.3MB/s-5d86c35a
-  network: ws
-  port: 443
-  server: node.socks5.kdns.fr
-  servername: former-investments-vip-gem.trycloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇳IN_3|1.4MB/s-90fc925e
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21103
+  server: 211.91.158.26
+  type: ss
   udp: true
-  uuid: 1d24b4c4-95ed-4763-ab31-cfccb10df9a2
-  ws-opts:
-    headers:
-      Host: former-investments-vip-gem.trycloudflare.com
-    path: /1d24b4c4-95ed-4763-ab31-cfccb10df9a2-vm
-  xudp: true
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2368,22 +2108,6 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
-  - 'B - 🇭🇰 HK 04 TG: @nodpai-9a5aedc6'
-  - 'C - 🇭🇰 HK 07 TG: @nodpai-687be9ac'
-  - 'B - 🇹🇼 TW 02 TG: @nodpai-096c5c9e'
-  - 'A - 🇯🇵 JP 04 TG: @nodpai-97a40ade'
-  - 'A - 🇸🇬 SG 06 TG: @nodpai-4f5dc407'
-  - 'B - 🇸🇬 SG 16 TG: @nodpai-fd4b5bb3'
-  - 'B - 🇺🇸 US 18 TG: @nodpai-4cdfa1aa'
-  - 'B - 🇺🇸 US 24 TG: @nodpai-088ab1e8'
-  - 'B - 🇺🇸 US 32 TG: @nodpai-6a33567b'
-  - 'B - 🇺🇸 US 33 TG: @nodpai-b4ed59ee'
-  - 'B - 🇺🇸 US 34 TG: @nodpai-34969849'
-  - 'B - 🇺🇸 US 35 TG: @nodpai-a3239130'
-  - 'B - 🇺🇸 US 36 TG: @nodpai-e669c01d'
-  - 'B - 🇺🇸 US 37 TG: @nodpai-bb7e0be5'
-  - 'B - 🇺🇸 US 42 TG: @nodpai-f8b40652'
-  - 'C - 🇺🇸 US 46 TG: @nodpai-47e8449d'
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-ab1b489c
@@ -2399,38 +2123,26 @@ proxy-groups:
   - 美国2|@ripaojiedian-c6a403b4
   - 美国3|@ripaojiedian-816f5a09
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|1.1MB/s-42aa4755
-  - 🇫🇷FR_2|1009KB/s-42c2918f
-  - 🇰🇷KR_1|1.6MB/s-eb5f8838
-  - 🇬🇧GB_1|3.5MB/s-258c123e
-  - 🇺🇸US_5|4.2MB/s-5ed9667e
-  - 🇰🇷KR_2|4.8MB/s-aed296da
-  - 🇯🇵JP_2|5.4MB/s-b648ca9f
-  - 🇮🇹IT_1|4.4MB/s-39c6aaf9
-  - 🇬🇧GB_2|1.7MB/s-19275393
-  - 🇩🇪DE_2|4.5MB/s-53d75296
-  - 🇯🇵JP_3|5.9MB/s-266522d4
-  - 🇮🇹IT_2|4.2MB/s-a7224c83
-  - 🇸🇬SG_2|3.6MB/s-9e0e9b17
-  - 🇮🇳IN_1|4.8MB/s-744da0e6
-  - 🇫🇷FR_5|4.4MB/s-52811c1a
-  - 🇬🇧GB_3|4.3MB/s-96b6a7bb
-  - 🇺🇸US_6|3.5MB/s-e0ce807c
-  - 🇰🇷KR_3|2.4MB/s-9663d3c3
-  - 🇺🇸US_7|4.3MB/s-c518985d
-  - 🇮🇹IT_3|2.6MB/s-b3c72221
-  - 🇰🇷KR_4|4.3MB/s-1d2f18ca
-  - 🇮🇱IL_1|1.1MB/s-242a1241
-  - 🇬🇧GB_4|4.4MB/s-ca86a54c
-  - 🇩🇪DE_3|1.7MB/s-993e9141
-  - 🇯🇵JP_4|5.7MB/s-483fd14f
-  - 🇫🇷FR_6|4.3MB/s-2fa1f084
-  - 🇹🇭TH_1|4.6MB/s-efeb752c
-  - 🇮🇳IN_2|2.6MB/s-0b2fcb23
-  - 🇫🇷FR_7|3.4MB/s-614e3002
-  - 🇺🇸US_8|1.0MB/s-19c20813
-  - 🇭🇰HK_5|3.7MB/s-0b37b214
-  - 🇯🇵JP_6|1.3MB/s-5d86c35a
+  - 🇺🇸US_3|4.3MB/s-5ed9667e
+  - 🇰🇷KR_1|1.5MB/s-aed296da
+  - 🇮🇹IT_1|2.8MB/s-39c6aaf9
+  - 🇩🇪DE_2|2.9MB/s-53d75296
+  - 🇮🇹IT_2|3.5MB/s-a7224c83
+  - 🇮🇳IN_1|1.2MB/s-744da0e6
+  - 🇫🇷FR_1|3.6MB/s-52811c1a
+  - 🇬🇧GB_1|1.5MB/s-96b6a7bb
+  - 🇰🇷KR_2|1.2MB/s-9663d3c3
+  - 🇺🇸US_4|4.2MB/s-c518985d
+  - 🇮🇹IT_3|1.0MB/s-b3c72221
+  - 🇮🇱IL_1|1.0MB/s-242a1241
+  - 🇬🇧GB_2|1.0MB/s-ca86a54c
+  - 🇫🇷FR_2|3.2MB/s-2fa1f084
+  - 🇰🇷KR_3|2.0MB/s-e899e879
+  - 🇯🇵JP_5|1.6MB/s-b648ca9f
+  - 🇰🇷KR_4|1.4MB/s-1d2f18ca
+  - 🇮🇳IN_2|1.1MB/s-68cec6d4
+  - 🇩🇪DE_4|1.2MB/s-93633697
+  - 🇮🇳IN_3|1.4MB/s-90fc925e
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2653,22 +2365,6 @@ proxy-groups:
   - https://github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
-  - 'B - 🇭🇰 HK 04 TG: @nodpai-9a5aedc6'
-  - 'C - 🇭🇰 HK 07 TG: @nodpai-687be9ac'
-  - 'B - 🇹🇼 TW 02 TG: @nodpai-096c5c9e'
-  - 'A - 🇯🇵 JP 04 TG: @nodpai-97a40ade'
-  - 'A - 🇸🇬 SG 06 TG: @nodpai-4f5dc407'
-  - 'B - 🇸🇬 SG 16 TG: @nodpai-fd4b5bb3'
-  - 'B - 🇺🇸 US 18 TG: @nodpai-4cdfa1aa'
-  - 'B - 🇺🇸 US 24 TG: @nodpai-088ab1e8'
-  - 'B - 🇺🇸 US 32 TG: @nodpai-6a33567b'
-  - 'B - 🇺🇸 US 33 TG: @nodpai-b4ed59ee'
-  - 'B - 🇺🇸 US 34 TG: @nodpai-34969849'
-  - 'B - 🇺🇸 US 35 TG: @nodpai-a3239130'
-  - 'B - 🇺🇸 US 36 TG: @nodpai-e669c01d'
-  - 'B - 🇺🇸 US 37 TG: @nodpai-bb7e0be5'
-  - 'B - 🇺🇸 US 42 TG: @nodpai-f8b40652'
-  - 'C - 🇺🇸 US 46 TG: @nodpai-47e8449d'
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港3|@ripaojiedian-ab1b489c
@@ -2684,38 +2380,26 @@ proxy-groups:
   - 美国2|@ripaojiedian-c6a403b4
   - 美国3|@ripaojiedian-816f5a09
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|1.1MB/s-42aa4755
-  - 🇫🇷FR_2|1009KB/s-42c2918f
-  - 🇰🇷KR_1|1.6MB/s-eb5f8838
-  - 🇬🇧GB_1|3.5MB/s-258c123e
-  - 🇺🇸US_5|4.2MB/s-5ed9667e
-  - 🇰🇷KR_2|4.8MB/s-aed296da
-  - 🇯🇵JP_2|5.4MB/s-b648ca9f
-  - 🇮🇹IT_1|4.4MB/s-39c6aaf9
-  - 🇬🇧GB_2|1.7MB/s-19275393
-  - 🇩🇪DE_2|4.5MB/s-53d75296
-  - 🇯🇵JP_3|5.9MB/s-266522d4
-  - 🇮🇹IT_2|4.2MB/s-a7224c83
-  - 🇸🇬SG_2|3.6MB/s-9e0e9b17
-  - 🇮🇳IN_1|4.8MB/s-744da0e6
-  - 🇫🇷FR_5|4.4MB/s-52811c1a
-  - 🇬🇧GB_3|4.3MB/s-96b6a7bb
-  - 🇺🇸US_6|3.5MB/s-e0ce807c
-  - 🇰🇷KR_3|2.4MB/s-9663d3c3
-  - 🇺🇸US_7|4.3MB/s-c518985d
-  - 🇮🇹IT_3|2.6MB/s-b3c72221
-  - 🇰🇷KR_4|4.3MB/s-1d2f18ca
-  - 🇮🇱IL_1|1.1MB/s-242a1241
-  - 🇬🇧GB_4|4.4MB/s-ca86a54c
-  - 🇩🇪DE_3|1.7MB/s-993e9141
-  - 🇯🇵JP_4|5.7MB/s-483fd14f
-  - 🇫🇷FR_6|4.3MB/s-2fa1f084
-  - 🇹🇭TH_1|4.6MB/s-efeb752c
-  - 🇮🇳IN_2|2.6MB/s-0b2fcb23
-  - 🇫🇷FR_7|3.4MB/s-614e3002
-  - 🇺🇸US_8|1.0MB/s-19c20813
-  - 🇭🇰HK_5|3.7MB/s-0b37b214
-  - 🇯🇵JP_6|1.3MB/s-5d86c35a
+  - 🇺🇸US_3|4.3MB/s-5ed9667e
+  - 🇰🇷KR_1|1.5MB/s-aed296da
+  - 🇮🇹IT_1|2.8MB/s-39c6aaf9
+  - 🇩🇪DE_2|2.9MB/s-53d75296
+  - 🇮🇹IT_2|3.5MB/s-a7224c83
+  - 🇮🇳IN_1|1.2MB/s-744da0e6
+  - 🇫🇷FR_1|3.6MB/s-52811c1a
+  - 🇬🇧GB_1|1.5MB/s-96b6a7bb
+  - 🇰🇷KR_2|1.2MB/s-9663d3c3
+  - 🇺🇸US_4|4.2MB/s-c518985d
+  - 🇮🇹IT_3|1.0MB/s-b3c72221
+  - 🇮🇱IL_1|1.0MB/s-242a1241
+  - 🇬🇧GB_2|1.0MB/s-ca86a54c
+  - 🇫🇷FR_2|3.2MB/s-2fa1f084
+  - 🇰🇷KR_3|2.0MB/s-e899e879
+  - 🇯🇵JP_5|1.6MB/s-b648ca9f
+  - 🇰🇷KR_4|1.4MB/s-1d2f18ca
+  - 🇮🇳IN_2|1.1MB/s-68cec6d4
+  - 🇩🇪DE_4|1.2MB/s-93633697
+  - 🇮🇳IN_3|1.4MB/s-90fc925e
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
