@@ -185,54 +185,17 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|4.6MB/s-f5ce3489
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  type: ss
 - alpn:
-  - http/1.1
-  name: 🇺🇸US_3|2.3MB/s-a9803c10
-  network: ws
-  password: MiTiVPN
-  port: 443
-  server: 188.42.145.180
-  skip-cert-verify: true
-  sni: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-g@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.6MB/s-14050168
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.33
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_2|1.1MB/s-87836508
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.26.14.137
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/39.0.2171.95 Safari/537.36
-    path: /assignment
-- alterId: 0
+  - ''
+  alterId: '0'
   cipher: auto
-  name: 🇭🇰HK_1|4.8MB/s-c431c72d
+  name: 🇭🇰HK_2|2.5MB/s-fc861d24
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
@@ -247,93 +210,48 @@ proxies:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
   xudp: true
-- client-fingerprint: chrome
-  name: 🇫🇷FR_3|1.1MB/s-348c81c0
-  network: ws
-  password: humanity
-  port: 443
-  server: www.speedtest.org
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇰🇷KR_2|5.2MB/s-aed296da
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21107
+  server: 211.91.158.26
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
-        Chrome/12.0.742.100 Safari/534.30
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_4|1.1MB/s-85f6c97d
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.72
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇯🇵JP_1|4.2MB/s-b648ca9f
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21109
+  server: 211.91.158.26
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_5|1.5MB/s-25be4032
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.111.4
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB_1|4.1MB/s-19275393
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21117
+  server: 211.91.158.26
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/55.0.2883.87 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_6|1.0MB/s-f2dbbb90
-  network: ws
-  password: humanity
-  port: 443
-  server: www.ignitelimit.com
-  skip-cert-verify: false
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬SG_1|3.9MB/s-9e0e9b17
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21121
+  server: 211.91.158.26
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_7|1.6MB/s-c9d2ad10
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.208
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_4|3.8MB/s-c518985d
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21108
+  server: 211.91.158.44
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 🇺🇸US_7|2.0MB/s-8d93dff2
-  network: http
-  port: 52080
-  server: 38.246.226.240
-  tls: false
-  type: vmess
-  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB_2|2.3MB/s-ca86a54c
+  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
+  port: 21117
+  server: 211.91.158.44
+  type: ss
+  udp: true
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2096,16 +2014,14 @@ proxy-groups:
   - 美国2|@ripaojiedian-80cd4291
   - 美国3|@ripaojiedian-9ef395e0
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_3|2.3MB/s-a9803c10
-  - 🇫🇷FR_1|1.6MB/s-14050168
-  - 🇫🇷FR_2|1.1MB/s-87836508
-  - 🇭🇰HK_1|4.8MB/s-c431c72d
-  - 🇫🇷FR_3|1.1MB/s-348c81c0
-  - 🇫🇷FR_4|1.1MB/s-85f6c97d
-  - 🇫🇷FR_5|1.5MB/s-25be4032
-  - 🇫🇷FR_6|1.0MB/s-f2dbbb90
-  - 🇫🇷FR_7|1.6MB/s-c9d2ad10
-  - 🇺🇸US_7|2.0MB/s-8d93dff2
+  - 🇰🇷KR_1|4.6MB/s-f5ce3489
+  - 🇭🇰HK_2|2.5MB/s-fc861d24
+  - 🇰🇷KR_2|5.2MB/s-aed296da
+  - 🇯🇵JP_1|4.2MB/s-b648ca9f
+  - 🇬🇧GB_1|4.1MB/s-19275393
+  - 🇸🇬SG_1|3.9MB/s-9e0e9b17
+  - 🇺🇸US_4|3.8MB/s-c518985d
+  - 🇬🇧GB_2|2.3MB/s-ca86a54c
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2343,16 +2259,14 @@ proxy-groups:
   - 美国2|@ripaojiedian-80cd4291
   - 美国3|@ripaojiedian-9ef395e0
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_3|2.3MB/s-a9803c10
-  - 🇫🇷FR_1|1.6MB/s-14050168
-  - 🇫🇷FR_2|1.1MB/s-87836508
-  - 🇭🇰HK_1|4.8MB/s-c431c72d
-  - 🇫🇷FR_3|1.1MB/s-348c81c0
-  - 🇫🇷FR_4|1.1MB/s-85f6c97d
-  - 🇫🇷FR_5|1.5MB/s-25be4032
-  - 🇫🇷FR_6|1.0MB/s-f2dbbb90
-  - 🇫🇷FR_7|1.6MB/s-c9d2ad10
-  - 🇺🇸US_7|2.0MB/s-8d93dff2
+  - 🇰🇷KR_1|4.6MB/s-f5ce3489
+  - 🇭🇰HK_2|2.5MB/s-fc861d24
+  - 🇰🇷KR_2|5.2MB/s-aed296da
+  - 🇯🇵JP_1|4.2MB/s-b648ca9f
+  - 🇬🇧GB_1|4.1MB/s-19275393
+  - 🇸🇬SG_1|3.9MB/s-9e0e9b17
+  - 🇺🇸US_4|3.8MB/s-c518985d
+  - 🇬🇧GB_2|2.3MB/s-ca86a54c
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
