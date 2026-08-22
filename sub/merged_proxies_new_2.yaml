@@ -186,20 +186,26 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇰🇷KR_1|4.6MB/s-f5ce3489
+  name: 🇰🇷KR_1|1.6MB/s-f5ce3489
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
   type: ss
+- cipher: aes-256-cfb
+  name: 🇯🇵JP_1|4.0MB/s-8e629387
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.136
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: '0'
   cipher: auto
-  name: 🇭🇰HK_2|2.5MB/s-fc861d24
+  name: 🇭🇰HK_1|4.3MB/s-e03d63dc
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -210,48 +216,6 @@ proxies:
       Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
     path: /
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_2|5.2MB/s-aed296da
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_1|4.2MB/s-b648ca9f
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21109
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_1|4.1MB/s-19275393
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21117
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇸🇬SG_1|3.9MB/s-9e0e9b17
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21121
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_4|3.8MB/s-c518985d
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21108
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_2|2.3MB/s-ca86a54c
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21117
-  server: 211.91.158.44
-  type: ss
-  udp: true
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2037,14 +2001,9 @@ proxy-groups:
   - 美国2|@ripaojiedian-80cd4291
   - 美国3|@ripaojiedian-9ef395e0
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|4.6MB/s-f5ce3489
-  - 🇭🇰HK_2|2.5MB/s-fc861d24
-  - 🇰🇷KR_2|5.2MB/s-aed296da
-  - 🇯🇵JP_1|4.2MB/s-b648ca9f
-  - 🇬🇧GB_1|4.1MB/s-19275393
-  - 🇸🇬SG_1|3.9MB/s-9e0e9b17
-  - 🇺🇸US_4|3.8MB/s-c518985d
-  - 🇬🇧GB_2|2.3MB/s-ca86a54c
+  - 🇰🇷KR_1|1.6MB/s-f5ce3489
+  - 🇯🇵JP_1|4.0MB/s-8e629387
+  - 🇭🇰HK_1|4.3MB/s-e03d63dc
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2282,14 +2241,9 @@ proxy-groups:
   - 美国2|@ripaojiedian-80cd4291
   - 美国3|@ripaojiedian-9ef395e0
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|4.6MB/s-f5ce3489
-  - 🇭🇰HK_2|2.5MB/s-fc861d24
-  - 🇰🇷KR_2|5.2MB/s-aed296da
-  - 🇯🇵JP_1|4.2MB/s-b648ca9f
-  - 🇬🇧GB_1|4.1MB/s-19275393
-  - 🇸🇬SG_1|3.9MB/s-9e0e9b17
-  - 🇺🇸US_4|3.8MB/s-c518985d
-  - 🇬🇧GB_2|2.3MB/s-ca86a54c
+  - 🇰🇷KR_1|1.6MB/s-f5ce3489
+  - 🇯🇵JP_1|4.0MB/s-8e629387
+  - 🇭🇰HK_1|4.3MB/s-e03d63dc
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
