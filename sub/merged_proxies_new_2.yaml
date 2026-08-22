@@ -185,159 +185,77 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_3|4.3MB/s-5ed9667e
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21105
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_1|1.5MB/s-aed296da
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_1|2.8MB/s-39c6aaf9
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21113
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_2|2.9MB/s-53d75296
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21118
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_2|3.5MB/s-a7224c83
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21120
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN_1|1.2MB/s-744da0e6
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21125
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR_1|3.6MB/s-52811c1a
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21126
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_1|1.5MB/s-96b6a7bb
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21104
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_2|1.2MB/s-9663d3c3
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21107
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_4|4.2MB/s-c518985d
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21108
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇹IT_3|1.0MB/s-b3c72221
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21113
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇱IL_1|1.0MB/s-242a1241
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21116
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧GB_2|1.0MB/s-ca86a54c
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21117
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷FR_2|3.2MB/s-2fa1f084
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21122
-  server: 211.91.158.44
-  type: ss
-  udp: true
 - cipher: aes-256-cfb
-  name: 🇰🇷KR_3|2.0MB/s-e899e879
+  name: 🇯🇵JP_1|2.5MB/s-8e629387
   password: 7eadc6dbe2ae
   port: 65443
-  server: 121.46.230.138
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_5|1.6MB/s-b648ca9f
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21109
-  server: 211.91.158.26
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷KR_4|1.4MB/s-1d2f18ca
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21114
-  server: 211.91.158.44
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN_2|1.1MB/s-68cec6d4
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21103
-  server: 211.91.158.44
+  server: 121.46.230.136
   type: ss
   udp: true
 - alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇳🇱NL_1|4.0MB/s-d3a66a69
+  network: ws
+  password: MiTiVPN
+  port: 443
+  server: 188.114.97.6
+  skip-cert-verify: false
+  sni: 3865895-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle
+  type: trojan
+  udp: true
+  ws-opts:
     headers:
-      Host:
-      - www.apple.com
-    path:
-    - /
-  name: 🇩🇪DE_4|1.2MB/s-93633697
-  network: http
-  port: 80
-  server: 167.233.242.189
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_2|5.8MB/s-c431c72d
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 7209d7ee-cfd0-46c0-a580-d92e2f0c801c
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇳IN_3|1.4MB/s-90fc925e
-  password: 9325a345-c72f-4637-a8f4-34f9effb7ba6
-  port: 21103
-  server: 211.91.158.26
-  type: ss
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.7MB/s-b1dfe893
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.133
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.2MB/s-2b9830a3
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.230
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2123,26 +2041,11 @@ proxy-groups:
   - 美国2|@ripaojiedian-c6a403b4
   - 美国3|@ripaojiedian-816f5a09
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_3|4.3MB/s-5ed9667e
-  - 🇰🇷KR_1|1.5MB/s-aed296da
-  - 🇮🇹IT_1|2.8MB/s-39c6aaf9
-  - 🇩🇪DE_2|2.9MB/s-53d75296
-  - 🇮🇹IT_2|3.5MB/s-a7224c83
-  - 🇮🇳IN_1|1.2MB/s-744da0e6
-  - 🇫🇷FR_1|3.6MB/s-52811c1a
-  - 🇬🇧GB_1|1.5MB/s-96b6a7bb
-  - 🇰🇷KR_2|1.2MB/s-9663d3c3
-  - 🇺🇸US_4|4.2MB/s-c518985d
-  - 🇮🇹IT_3|1.0MB/s-b3c72221
-  - 🇮🇱IL_1|1.0MB/s-242a1241
-  - 🇬🇧GB_2|1.0MB/s-ca86a54c
-  - 🇫🇷FR_2|3.2MB/s-2fa1f084
-  - 🇰🇷KR_3|2.0MB/s-e899e879
-  - 🇯🇵JP_5|1.6MB/s-b648ca9f
-  - 🇰🇷KR_4|1.4MB/s-1d2f18ca
-  - 🇮🇳IN_2|1.1MB/s-68cec6d4
-  - 🇩🇪DE_4|1.2MB/s-93633697
-  - 🇮🇳IN_3|1.4MB/s-90fc925e
+  - 🇯🇵JP_1|2.5MB/s-8e629387
+  - 🇳🇱NL_1|4.0MB/s-d3a66a69
+  - 🇭🇰HK_2|5.8MB/s-c431c72d
+  - 🇫🇷FR_1|1.7MB/s-b1dfe893
+  - 🇫🇷FR_4|1.2MB/s-2b9830a3
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2380,26 +2283,11 @@ proxy-groups:
   - 美国2|@ripaojiedian-c6a403b4
   - 美国3|@ripaojiedian-816f5a09
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_3|4.3MB/s-5ed9667e
-  - 🇰🇷KR_1|1.5MB/s-aed296da
-  - 🇮🇹IT_1|2.8MB/s-39c6aaf9
-  - 🇩🇪DE_2|2.9MB/s-53d75296
-  - 🇮🇹IT_2|3.5MB/s-a7224c83
-  - 🇮🇳IN_1|1.2MB/s-744da0e6
-  - 🇫🇷FR_1|3.6MB/s-52811c1a
-  - 🇬🇧GB_1|1.5MB/s-96b6a7bb
-  - 🇰🇷KR_2|1.2MB/s-9663d3c3
-  - 🇺🇸US_4|4.2MB/s-c518985d
-  - 🇮🇹IT_3|1.0MB/s-b3c72221
-  - 🇮🇱IL_1|1.0MB/s-242a1241
-  - 🇬🇧GB_2|1.0MB/s-ca86a54c
-  - 🇫🇷FR_2|3.2MB/s-2fa1f084
-  - 🇰🇷KR_3|2.0MB/s-e899e879
-  - 🇯🇵JP_5|1.6MB/s-b648ca9f
-  - 🇰🇷KR_4|1.4MB/s-1d2f18ca
-  - 🇮🇳IN_2|1.1MB/s-68cec6d4
-  - 🇩🇪DE_4|1.2MB/s-93633697
-  - 🇮🇳IN_3|1.4MB/s-90fc925e
+  - 🇯🇵JP_1|2.5MB/s-8e629387
+  - 🇳🇱NL_1|4.0MB/s-d3a66a69
+  - 🇭🇰HK_2|5.8MB/s-c431c72d
+  - 🇫🇷FR_1|1.7MB/s-b1dfe893
+  - 🇫🇷FR_4|1.2MB/s-2b9830a3
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
