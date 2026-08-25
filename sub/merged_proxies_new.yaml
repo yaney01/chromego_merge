@@ -91,49 +91,48 @@ proxies:
   port: 10006
   server: 112.28.141.77
   type: ss
-- name: 香港4|@ripaojiedian-810b8c9c
-  network: tcp
-  password: BxceQaOe
-  port: 4117
-  server: 18.183.103.86
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 香港5|@ripaojiedian-01b203a9
+- name: 香港4|@ripaojiedian-a29b5938
   network: tcp
   password: BxceQaOe
   port: 2944
-  server: 18.166.63.119
+  server: 18.181.83.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 日本|@ripaojiedian-57e1ab55
+- name: 香港5|@ripaojiedian-95fbb740
   network: tcp
   password: BxceQaOe
-  port: 3878
-  server: 13.214.209.40
+  port: 1103
+  server: 43.206.117.36
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 日本|@ripaojiedian-f48635a9
+  network: tcp
+  password: BxceQaOe
+  port: 16691
+  server: 95.40.27.43
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: aes-256-gcm
-  name: 🇯🇵JP_3|1.3MB/s-716a89e5
+  name: 🇯🇵JP_1|1.2MB/s-716a89e5
   password: Butterfly123@qwe9527
   port: 40001
   server: 103.236.66.4
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 🇯🇵JP_1|3.2MB/s-92681f7a
+  name: 日本3|@ripaojiedian-5d9737a3
   password: Butterfly123@qwe9527
   port: 40002
   server: 103.236.66.4
   type: ss
-  udp: true
-- name: 新加坡3|@ripaojiedian-e803d067
+- name: 新加坡3|@ripaojiedian-920eb3ea
   network: tcp
   password: BxceQaOe
-  port: 41421
-  server: 18.183.103.86
+  port: 32434
+  server: 95.40.27.43
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
@@ -149,11 +148,11 @@ proxies:
   port: 50001
   server: 103.236.66.4
   type: ss
-- name: 美国3|@ripaojiedian-1119bd7e
+- name: 美国3|@ripaojiedian-869795f0
   network: tcp
   password: BxceQaOe
-  port: 34039
-  server: 54.179.227.94
+  port: 10418
+  server: 18.163.118.157
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -174,48 +173,32 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇰🇷KR_1|3.0MB/s-e899e879
+  name: 🇨🇦CA_1|4.3MB/s-8a2b51ae
+  password: amazonskr05
+  port: 443
+  server: 35.183.121.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_2|1.9MB/s-421f9461
+  password: amazonskr05
+  port: 443
+  server: 3.96.165.186
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_1|4.3MB/s-c511f298
+  password: amazonskr05
+  port: 443
+  server: 35.177.76.120
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|2.8MB/s-f5ce3489
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
   type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_2|2.0MB/s-7eeb3b37
-  password: amazonskr05
-  port: 443
-  server: 13.135.252.176
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_3|4.5MB/s-350690b6
-  password: amazonskr05
-  port: 443
-  server: 35.178.212.194
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸US_3|3.9MB/s-4b8a6fca
-  port: 30829
-  server: v29.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
-  name: 🇺🇦UA_2|2.6MB/s-b6446688
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇳🇴NO_2|3.4MB/s-913402ba
+  name: 🇳🇴NO_2|3.2MB/s-913402ba
   network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
   port: 20085
@@ -224,35 +207,46 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 🇲🇾MY_1|4.2MB/s-b5182de5
-  network: http
-  port: 50269
-  server: 103.179.142.158
-  tls: false
-  type: vmess
-  uuid: 84f238f6-28eb-48df-a7bc-a9bd9cf4abba
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_6|4.2MB/s-4a3a85e6
-  network: none
-  port: 15311
-  server: 107.173.254.27
-  tls: false
-  type: vmess
-  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
-- cipher: aes-256-gcm
-  name: 🇲🇾MY_3|4.0MB/s-91b83f3a
-  password: rjV4WyP9ts5eEGsr
-  port: 33308
-  server: general-live-13877.holphappyeveryday.com
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_3|2.7MB/s-3653506f
+  password: amazonskr05
+  port: 443
+  server: 18.175.227.220
+  skip-cert-verify: true
   type: ss
   udp: true
+- client-fingerprint: chrome
+  name: 🇺🇦UA_2|2.4MB/s-b6446688
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_5|1.2MB/s-22b7544a
+  network: ws
+  port: 443
+  server: us-23.hihu.net
+  servername: us-23.hihu.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e9674560-9d1a-11f1-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: chatbuzzteam.ir
+    path: /ayve3q7z
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_4|3.2MB/s-e517d99a
+  password: amazonskr05
+  port: 443
+  server: 99.79.128.42
+  type: ss
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2004,26 +1998,26 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港2|@ripaojiedian-71d10f2d
   - 香港3|@ripaojiedian-074113c9
-  - 香港4|@ripaojiedian-810b8c9c
-  - 香港5|@ripaojiedian-01b203a9
-  - 日本|@ripaojiedian-57e1ab55
-  - 🇯🇵JP_3|1.3MB/s-716a89e5
-  - 🇯🇵JP_1|3.2MB/s-92681f7a
-  - 新加坡3|@ripaojiedian-e803d067
+  - 香港4|@ripaojiedian-a29b5938
+  - 香港5|@ripaojiedian-95fbb740
+  - 日本|@ripaojiedian-f48635a9
+  - 🇯🇵JP_1|1.2MB/s-716a89e5
+  - 日本3|@ripaojiedian-5d9737a3
+  - 新加坡3|@ripaojiedian-920eb3ea
   - 美国2|@ripaojiedian-e6c1f259
   - 美国|@ripaojiedian-45213206
-  - 美国3|@ripaojiedian-1119bd7e
+  - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|3.0MB/s-e899e879
-  - 🇬🇧GB_2|2.0MB/s-7eeb3b37
-  - 🇬🇧GB_3|4.5MB/s-350690b6
-  - 🇺🇸US_3|3.9MB/s-4b8a6fca
-  - 🇺🇦UA_2|2.6MB/s-b6446688
-  - 🇳🇴NO_2|3.4MB/s-913402ba
-  - 🇲🇾MY_1|4.2MB/s-b5182de5
-  - 🇺🇸US_6|4.2MB/s-4a3a85e6
-  - 🇲🇾MY_3|4.0MB/s-91b83f3a
+  - 🇨🇦CA_1|4.3MB/s-8a2b51ae
+  - 🇨🇦CA_2|1.9MB/s-421f9461
+  - 🇬🇧GB_1|4.3MB/s-c511f298
+  - 🇰🇷KR_1|2.8MB/s-f5ce3489
+  - 🇳🇴NO_2|3.2MB/s-913402ba
+  - 🇬🇧GB_3|2.7MB/s-3653506f
+  - 🇺🇦UA_2|2.4MB/s-b6446688
+  - 🇺🇸US_5|1.2MB/s-22b7544a
+  - 🇨🇦CA_4|3.2MB/s-e517d99a
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2250,26 +2244,26 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港2|@ripaojiedian-71d10f2d
   - 香港3|@ripaojiedian-074113c9
-  - 香港4|@ripaojiedian-810b8c9c
-  - 香港5|@ripaojiedian-01b203a9
-  - 日本|@ripaojiedian-57e1ab55
-  - 🇯🇵JP_3|1.3MB/s-716a89e5
-  - 🇯🇵JP_1|3.2MB/s-92681f7a
-  - 新加坡3|@ripaojiedian-e803d067
+  - 香港4|@ripaojiedian-a29b5938
+  - 香港5|@ripaojiedian-95fbb740
+  - 日本|@ripaojiedian-f48635a9
+  - 🇯🇵JP_1|1.2MB/s-716a89e5
+  - 日本3|@ripaojiedian-5d9737a3
+  - 新加坡3|@ripaojiedian-920eb3ea
   - 美国2|@ripaojiedian-e6c1f259
   - 美国|@ripaojiedian-45213206
-  - 美国3|@ripaojiedian-1119bd7e
+  - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|3.0MB/s-e899e879
-  - 🇬🇧GB_2|2.0MB/s-7eeb3b37
-  - 🇬🇧GB_3|4.5MB/s-350690b6
-  - 🇺🇸US_3|3.9MB/s-4b8a6fca
-  - 🇺🇦UA_2|2.6MB/s-b6446688
-  - 🇳🇴NO_2|3.4MB/s-913402ba
-  - 🇲🇾MY_1|4.2MB/s-b5182de5
-  - 🇺🇸US_6|4.2MB/s-4a3a85e6
-  - 🇲🇾MY_3|4.0MB/s-91b83f3a
+  - 🇨🇦CA_1|4.3MB/s-8a2b51ae
+  - 🇨🇦CA_2|1.9MB/s-421f9461
+  - 🇬🇧GB_1|4.3MB/s-c511f298
+  - 🇰🇷KR_1|2.8MB/s-f5ce3489
+  - 🇳🇴NO_2|3.2MB/s-913402ba
+  - 🇬🇧GB_3|2.7MB/s-3653506f
+  - 🇺🇦UA_2|2.4MB/s-b6446688
+  - 🇺🇸US_5|1.2MB/s-22b7544a
+  - 🇨🇦CA_4|3.2MB/s-e517d99a
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
