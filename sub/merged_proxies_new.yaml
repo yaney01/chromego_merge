@@ -91,16 +91,14 @@ proxies:
   port: 10006
   server: 112.28.141.77
   type: ss
-- name: 🇭🇰HK_1|4.2MB/s-5643d865
+- name: 香港4|@ripaojiedian-a29b5938
   network: tcp
   password: BxceQaOe
   port: 2944
   server: 18.181.83.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
-  tls: true
   type: trojan
-  udp: true
 - name: 香港5|@ripaojiedian-95fbb740
   network: tcp
   password: BxceQaOe
@@ -173,94 +171,62 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: 🇳🇴NO_2|3.2MB/s-913402ba
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇺🇦UA_3|2.1MB/s-58f899c4
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
 - cipher: aes-256-cfb
-  name: 🇰🇷KR_1|5.2MB/s-e899e879
+  name: 🇰🇷KR_1|5.3MB/s-f5ce3489
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.138
   type: ss
-  udp: true
-- name: 🇺🇦UA_2|2.5MB/s-95d0649b
+- name: 🇺🇦UA_4|2.5MB/s-58f899c4
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20066
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 🇺🇦UA_3|2.5MB/s-b6446688
+  network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
   port: 20066
   server: hkdcrtc-e.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
-  tls: true
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: 🇸🇨SC_3|3.2MB/s-6e8d7d3d
-  network: raw
-  password: 5e89314202a8405f
-  port: 101
-  server: kuso30.pacemakere.com
+- alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_2|1.6MB/s-5a5c6cd0
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
   skip-cert-verify: false
-  tls: true
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
-- name: 🇺🇸US_1|1.0MB/s-a79f7404
-  password: c857562678594197
-  port: 20063
-  server: saj2000e.pacemakere.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
+  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
+  ws-opts:
+    headers:
+      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - client-fingerprint: chrome
-  name: 🇯🇵JP_3|1.7MB/s-1a5d435c
-  network: raw
-  password: 6519a715da174466
-  port: 101
-  server: jcnp178.pacemakere.com
-  skip-cert-verify: false
-  tls: true
-  type: trojan
-  udp: true
-- name: 🇸🇨SC_2|4.1MB/s-d5d2d140
-  password: 3b9deff947c74dde
-  port: 101
-  server: kuso153.pacemakere.com
-  skip-cert-verify: true
-  tls: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_1|1.1MB/s-d55550fb
-  password: amazonskr05
-  port: 443
-  server: 13.135.167.23
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_2|1.8MB/s-b2ac81ad
-  password: amazonskr05
-  port: 443
-  server: 18.132.52.104
-  type: ss
-- name: 🇳🇴NO_3|2.7MB/s-0da3d457
+  name: 🇳🇴NO_1|2.7MB/s-913402ba
   network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
   port: 20085
-  server: hkdcrtc-e.catcat321.com
+  server: kkvlvvq-a.catcat321.com
   skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- name: 🇮🇹IT_1|2.6MB/s-273e1595
+  network: tcp
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20065
+  server: kkvlvvq-a.catcat321.com
   sni: hk.catxstar.com
   type: trojan
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
@@ -2014,7 +1980,7 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港2|@ripaojiedian-71d10f2d
   - 香港3|@ripaojiedian-074113c9
-  - 🇭🇰HK_1|4.2MB/s-5643d865
+  - 香港4|@ripaojiedian-a29b5938
   - 香港5|@ripaojiedian-95fbb740
   - 日本|@ripaojiedian-f48635a9
   - 日本2|@ripaojiedian-49ab8e18
@@ -2025,17 +1991,12 @@ proxy-groups:
   - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_2|3.2MB/s-913402ba
-  - 🇺🇦UA_3|2.1MB/s-58f899c4
-  - 🇰🇷KR_1|5.2MB/s-e899e879
-  - 🇺🇦UA_2|2.5MB/s-95d0649b
-  - 🇸🇨SC_3|3.2MB/s-6e8d7d3d
-  - 🇺🇸US_1|1.0MB/s-a79f7404
-  - 🇯🇵JP_3|1.7MB/s-1a5d435c
-  - 🇸🇨SC_2|4.1MB/s-d5d2d140
-  - 🇬🇧GB_1|1.1MB/s-d55550fb
-  - 🇬🇧GB_2|1.8MB/s-b2ac81ad
-  - 🇳🇴NO_3|2.7MB/s-0da3d457
+  - 🇰🇷KR_1|5.3MB/s-f5ce3489
+  - 🇺🇦UA_4|2.5MB/s-58f899c4
+  - 🇺🇦UA_3|2.5MB/s-b6446688
+  - 🇭🇰HK_2|1.6MB/s-5a5c6cd0
+  - 🇳🇴NO_1|2.7MB/s-913402ba
+  - 🇮🇹IT_1|2.6MB/s-273e1595
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2262,7 +2223,7 @@ proxy-groups:
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 香港2|@ripaojiedian-71d10f2d
   - 香港3|@ripaojiedian-074113c9
-  - 🇭🇰HK_1|4.2MB/s-5643d865
+  - 香港4|@ripaojiedian-a29b5938
   - 香港5|@ripaojiedian-95fbb740
   - 日本|@ripaojiedian-f48635a9
   - 日本2|@ripaojiedian-49ab8e18
@@ -2273,17 +2234,12 @@ proxy-groups:
   - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_2|3.2MB/s-913402ba
-  - 🇺🇦UA_3|2.1MB/s-58f899c4
-  - 🇰🇷KR_1|5.2MB/s-e899e879
-  - 🇺🇦UA_2|2.5MB/s-95d0649b
-  - 🇸🇨SC_3|3.2MB/s-6e8d7d3d
-  - 🇺🇸US_1|1.0MB/s-a79f7404
-  - 🇯🇵JP_3|1.7MB/s-1a5d435c
-  - 🇸🇨SC_2|4.1MB/s-d5d2d140
-  - 🇬🇧GB_1|1.1MB/s-d55550fb
-  - 🇬🇧GB_2|1.8MB/s-b2ac81ad
-  - 🇳🇴NO_3|2.7MB/s-0da3d457
+  - 🇰🇷KR_1|5.3MB/s-f5ce3489
+  - 🇺🇦UA_4|2.5MB/s-58f899c4
+  - 🇺🇦UA_3|2.5MB/s-b6446688
+  - 🇭🇰HK_2|1.6MB/s-5a5c6cd0
+  - 🇳🇴NO_1|2.7MB/s-913402ba
+  - 🇮🇹IT_1|2.6MB/s-273e1595
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
