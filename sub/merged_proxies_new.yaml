@@ -171,45 +171,33 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇳🇴NO_1|2.5MB/s-9b1ee034
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: 🇺🇦UA_1|3.4MB/s-29ab75e3
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-- name: 🇺🇦UA_2|3.1MB/s-046816ef
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
-  server: hkdcrtc-e.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: 🇮🇹IT_1|1.4MB/s-0b8ee25b
-  network: raw
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20065
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: false
+  name: 🇺🇦UA_1|2.8MB/s-b6446688
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20066
+  server: hkdcrtc-e.catcat321.com
+  skip-cert-verify: true
   sni: hk.catxstar.com
-  tls: false
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇨🇦CA_1|1.2MB/s-3f6c8d20
+  name: 🇬🇧GB_1|4.2MB/s-738b87f3
   password: amazonskr05
   port: 443
-  server: 16.52.90.245
+  server: 18.171.235.36
   type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇺🇦UA_2|1.7MB/s-85c906af
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20066
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -1972,11 +1960,9 @@ proxy-groups:
   - 美国3|@ripaojiedian-9fd6ae8b
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_1|2.5MB/s-9b1ee034
-  - 🇺🇦UA_1|3.4MB/s-29ab75e3
-  - 🇺🇦UA_2|3.1MB/s-046816ef
-  - 🇮🇹IT_1|1.4MB/s-0b8ee25b
-  - 🇨🇦CA_1|1.2MB/s-3f6c8d20
+  - 🇺🇦UA_1|2.8MB/s-b6446688
+  - 🇬🇧GB_1|4.2MB/s-738b87f3
+  - 🇺🇦UA_2|1.7MB/s-85c906af
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2214,11 +2200,9 @@ proxy-groups:
   - 美国3|@ripaojiedian-9fd6ae8b
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇴NO_1|2.5MB/s-9b1ee034
-  - 🇺🇦UA_1|3.4MB/s-29ab75e3
-  - 🇺🇦UA_2|3.1MB/s-046816ef
-  - 🇮🇹IT_1|1.4MB/s-0b8ee25b
-  - 🇨🇦CA_1|1.2MB/s-3f6c8d20
+  - 🇺🇦UA_1|2.8MB/s-b6446688
+  - 🇬🇧GB_1|4.2MB/s-738b87f3
+  - 🇺🇦UA_2|1.7MB/s-85c906af
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
