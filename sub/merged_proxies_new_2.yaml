@@ -171,22 +171,23 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇰🇷KR_1|5.3MB/s-f5ce3489
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  type: ss
-- name: 🇺🇦UA_4|2.5MB/s-58f899c4
-  network: tcp
+- name: 🇲🇴MO_1|2.4MB/s-f29bc3d6
   password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20066
+  port: 20068
   server: kkvlvvq-a.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|4.0MB/s-d1d7fc8c
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.133
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🇺🇦UA_3|2.5MB/s-b6446688
+  name: 🇺🇦UA_1|3.1MB/s-b6446688
   network: tcp
   password: a126f35c-e832-4115-8593-b723ade3f7be
   port: 20066
@@ -195,40 +196,50 @@ proxies:
   sni: hk.catxstar.com
   type: trojan
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 🇭🇰HK_2|1.6MB/s-5a5c6cd0
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_1|4.2MB/s-3e11bfb4
+  password: amazonskr05
+  port: 443
+  server: 35.182.226.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_2|3.2MB/s-0581ff6b
+  password: amazonskr05
+  port: 443
+  server: 16.52.90.213
+  type: ss
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: 🇩🇪DE_9|1.3MB/s-6418669f
   network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
-  servername: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
+  password: epc3ufz9q4ocqeqh
+  port: 2087
+  server: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  sni: uwu.dianaw.cc.cd
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇸🇬SG_3|1.6MB/s-1bc63cf4
+  network: tcp
+  port: 53386
+  server: x-ui.zxhh.top
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 97c638c6-86d5-4cf6-b70b-114c6809b637
-  ws-opts:
-    headers:
-      Host: 407a2bc6d452ff93e6d7b73078539d9e.mobgslb.tbcache.com
-    path: /
+  uuid: 32e75662-c1ed-4e8d-f78c-3dcc685cc795
   xudp: true
-- client-fingerprint: chrome
-  name: 🇳🇴NO_1|2.7MB/s-913402ba
-  network: tcp
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  port: 20085
-  server: kkvlvvq-a.catcat321.com
-  skip-cert-verify: true
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- name: 🇮🇹IT_1|2.6MB/s-273e1595
-  network: tcp
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  port: 20065
-  server: kkvlvvq-a.catcat321.com
-  sni: hk.catxstar.com
-  type: trojan
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2014,12 +2025,13 @@ proxy-groups:
   - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|5.3MB/s-f5ce3489
-  - 🇺🇦UA_4|2.5MB/s-58f899c4
-  - 🇺🇦UA_3|2.5MB/s-b6446688
-  - 🇭🇰HK_2|1.6MB/s-5a5c6cd0
-  - 🇳🇴NO_1|2.7MB/s-913402ba
-  - 🇮🇹IT_1|2.6MB/s-273e1595
+  - 🇲🇴MO_1|2.4MB/s-f29bc3d6
+  - 🇰🇷KR_1|4.0MB/s-d1d7fc8c
+  - 🇺🇦UA_1|3.1MB/s-b6446688
+  - 🇨🇦CA_1|4.2MB/s-3e11bfb4
+  - 🇨🇦CA_2|3.2MB/s-0581ff6b
+  - 🇩🇪DE_9|1.3MB/s-6418669f
+  - 🇸🇬SG_3|1.6MB/s-1bc63cf4
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2257,12 +2269,13 @@ proxy-groups:
   - 美国3|@ripaojiedian-869795f0
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|5.3MB/s-f5ce3489
-  - 🇺🇦UA_4|2.5MB/s-58f899c4
-  - 🇺🇦UA_3|2.5MB/s-b6446688
-  - 🇭🇰HK_2|1.6MB/s-5a5c6cd0
-  - 🇳🇴NO_1|2.7MB/s-913402ba
-  - 🇮🇹IT_1|2.6MB/s-273e1595
+  - 🇲🇴MO_1|2.4MB/s-f29bc3d6
+  - 🇰🇷KR_1|4.0MB/s-d1d7fc8c
+  - 🇺🇦UA_1|3.1MB/s-b6446688
+  - 🇨🇦CA_1|4.2MB/s-3e11bfb4
+  - 🇨🇦CA_2|3.2MB/s-0581ff6b
+  - 🇩🇪DE_9|1.3MB/s-6418669f
+  - 🇸🇬SG_3|1.6MB/s-1bc63cf4
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
