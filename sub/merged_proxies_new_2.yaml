@@ -185,41 +185,13 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_1|1.9MB/s-4f9eae8a
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.233
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.7MB/s-2ae33335
-  network: ws
-  password: humanity
-  port: 443
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_1|3.1MB/s-f1efe5a1
-  network: ws
-  port: 16632
-  server: t.cnmjcn.cyou
+- name: 🇯🇵JP_3|1.3MB/s-e208c7cc
+  password: HOrViv
+  port: 28102
+  server: 209.248.32.117
   skip-cert-verify: true
-  type: vmess
-  uuid: 62319519-82bc-46ff-99cd-237bd0882cef
-  ws-opts:
-    headers:
-      Host: 1b24b66c02c843942070b76b27406898.mobgslb.tbcache.com
-    path: /
+  sni: ctldl.windowsupdate.com
+  type: trojan
 - name: '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   server: 54.79.125.20
   port: 9091
@@ -2007,9 +1979,7 @@ proxy-groups:
   - 香港|@ripaojiedian-a6c1b20b
   - 香港5|@ripaojiedian-916bb3a6
   - 日本|@ripaojiedian-da2cb7b2
-  - 🇺🇸US_1|1.9MB/s-4f9eae8a
-  - 🇫🇷FR_1|1.7MB/s-2ae33335
-  - 🇭🇰HK_1|3.1MB/s-f1efe5a1
+  - 🇯🇵JP_3|1.3MB/s-e208c7cc
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
@@ -2249,9 +2219,7 @@ proxy-groups:
   - 香港|@ripaojiedian-a6c1b20b
   - 香港5|@ripaojiedian-916bb3a6
   - 日本|@ripaojiedian-da2cb7b2
-  - 🇺🇸US_1|1.9MB/s-4f9eae8a
-  - 🇫🇷FR_1|1.7MB/s-2ae33335
-  - 🇭🇰HK_1|3.1MB/s-f1efe5a1
+  - 🇯🇵JP_3|1.3MB/s-e208c7cc
   - '>🇦🇺AU|Ls|0808|TG@FProxies|-2ce56c30'
   - '>🇦🇺AU|Ms|0808|TG@FProxies|-c35cd631'
   - '>🇧🇷BR|Hs|0808|TG@FProxies|-07ee0efd'
