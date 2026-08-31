@@ -172,60 +172,29 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇨🇦CA_1|3.4MB/s-bf45203e
-  password: amazonskr05
-  port: 443
-  server: 35.182.250.193
+  name: 🇺🇸US_2|2.1MB/s-4f9eae8a
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.233
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇺🇸US_5|2.9MB/s-22c16806
-  password: pKEW8JPByTVTLtM
-  port: 4444
-  server: 15.204.247.244
+- alterId: 2
+  cipher: auto
+  name: 🇸🇬SG_1|6.0MB/s-d17fd622
+  port: 30845
+  server: v45.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|2.1MB/s-9a3ec62f
+  password: qwerREWQ@@
+  port: 2078
+  server: 27.255.82.134
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸US_6|4.6MB/s-3d3ba059
-  password: OhGXJG4nEqTN62cDDcD_8_CddrpTHn0u
-  port: 1080
-  server: de-server-1.zelnora.ir
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 🇫🇷FR_2|2.5MB/s-4fc2756d
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_3|1.5MB/s-3f909496
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.161
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
-    path: /assignment
 - cipher: chacha20-ietf
   name: 🇸🇬SG_2|4.0MB/s-f797f68d
   password: passwd
@@ -238,7 +207,7 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf
-  name: 🇸🇬SG_3|3.8MB/s-316dd1d4
+  name: 🇸🇬SG_3|3.1MB/s-316dd1d4
   password: passwd
   plugin: obfs
   plugin-opts:
@@ -248,6 +217,84 @@ proxies:
   server: cn07.somethingstranges.com
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_1|3.2MB/s-9dc6d0dd
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d7e9f3c3-57c6-457e-b10f-df27907ef081
+  ws-opts:
+    headers:
+      Host: 18a598fcab3909734096beb9fe7bc5b4.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_8|2.2MB/s-c53c620e
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (TG @WangCai2)c47ab06:133288
+    mode: tls
+  port: 2377
+  server: 3ce8ee8.hb.gladns.com
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_4|2.9MB/s-a501cc28
+  network: ws
+  port: 16632
+  server: m.cnmjin.net
+  type: vmess
+  uuid: 2498a366-dd3c-4f0b-832c-f2df12f7ee27
+  ws-opts:
+    headers:
+      Host: 791f9b5b1318471268a2dc21098376cc.mobgslb.tbcache.com
+    path: /
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_1|4.2MB/s-2ce98299
+  password: amazonskr05
+  port: 443
+  server: 35.182.226.121
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB_8|4.6MB/s-c0d8c7d4
+  network: ws
+  port: 34228
+  server: jp.6807251.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP_2|3.6MB/s-52e4848a
+  network: ws
+  port: 16617
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ca68cf56-7c3c-4127-816e-7442de9176b7
+  ws-opts:
+    headers:
+      Host: 7ddc7ef7c7f198c5e7dbed9634157ca7.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - name: '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   server: 54.253.183.151
   port: 227
@@ -2042,13 +2089,17 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇨🇦CA_1|3.4MB/s-bf45203e
-  - 🇺🇸US_5|2.9MB/s-22c16806
-  - 🇺🇸US_6|4.6MB/s-3d3ba059
-  - 🇫🇷FR_2|2.5MB/s-4fc2756d
-  - 🇫🇷FR_3|1.5MB/s-3f909496
+  - 🇺🇸US_2|2.1MB/s-4f9eae8a
+  - 🇸🇬SG_1|6.0MB/s-d17fd622
+  - 🇰🇷KR_1|2.1MB/s-9a3ec62f
   - 🇸🇬SG_2|4.0MB/s-f797f68d
-  - 🇸🇬SG_3|3.8MB/s-316dd1d4
+  - 🇸🇬SG_3|3.1MB/s-316dd1d4
+  - 🇭🇰HK_1|3.2MB/s-9dc6d0dd
+  - 🇺🇸US_8|2.2MB/s-c53c620e
+  - 🇭🇰HK_4|2.9MB/s-a501cc28
+  - 🇨🇦CA_1|4.2MB/s-2ce98299
+  - 🇬🇧GB_8|4.6MB/s-c0d8c7d4
+  - 🇯🇵JP_2|3.6MB/s-52e4848a
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
@@ -2286,13 +2337,17 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇨🇦CA_1|3.4MB/s-bf45203e
-  - 🇺🇸US_5|2.9MB/s-22c16806
-  - 🇺🇸US_6|4.6MB/s-3d3ba059
-  - 🇫🇷FR_2|2.5MB/s-4fc2756d
-  - 🇫🇷FR_3|1.5MB/s-3f909496
+  - 🇺🇸US_2|2.1MB/s-4f9eae8a
+  - 🇸🇬SG_1|6.0MB/s-d17fd622
+  - 🇰🇷KR_1|2.1MB/s-9a3ec62f
   - 🇸🇬SG_2|4.0MB/s-f797f68d
-  - 🇸🇬SG_3|3.8MB/s-316dd1d4
+  - 🇸🇬SG_3|3.1MB/s-316dd1d4
+  - 🇭🇰HK_1|3.2MB/s-9dc6d0dd
+  - 🇺🇸US_8|2.2MB/s-c53c620e
+  - 🇭🇰HK_4|2.9MB/s-a501cc28
+  - 🇨🇦CA_1|4.2MB/s-2ce98299
+  - 🇬🇧GB_8|4.6MB/s-c0d8c7d4
+  - 🇯🇵JP_2|3.6MB/s-52e4848a
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
