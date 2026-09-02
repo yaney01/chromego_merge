@@ -171,9 +171,74 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_2|4.7MB/s-e899e879
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_2|3.6MB/s-4f9eae8a
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.233
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_3|3.9MB/s-36abb127
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - alterId: 0
   cipher: auto
-  name: 🇭🇰HK_1|3.4MB/s-b43e9bb7
+  name: 🇮🇳IN_1|4.7MB/s-2a0a81bd
+  network: ws
+  port: 16626
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 62e0878c-ff8c-4a67-b18f-89886e24750c
+  ws-opts:
+    headers:
+      Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 🇭🇰HK_3|5.1MB/s-99f491ec
+  network: ws
+  port: 16632
+  server: planb.mojcn.com.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_4|4.0MB/s-282c411a
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_4|4.0MB/s-02177106
   network: ws
   port: 16632
   server: t.cnmjcn.cyou
@@ -181,33 +246,64 @@ proxies:
   tls: false
   type: vmess
   udp: true
-  uuid: 522bf832-cb94-4588-bb4e-a578d1f72603
+  uuid: 62e0878c-ff8c-4a67-b18f-89886e24750c
   ws-opts:
     headers:
-      Host: bc35dd8f9bb478fdf27856815a6d1dc8.mobgslb.tbcache.com
+      Host: 706a0a2fb2f7729acf9a103060a7abc3.mobgslb.tbcache.com
     path: /
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|1.9MB/s-4f9eae8a
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.233
-  type: ss
+- client-fingerprint: chrome
+  name: 🇺🇸US_26|4.2MB/s-68a04ec0
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: 14492
+  server: adakv1-u03.sonofthewinds.com
+  skip-cert-verify: false
+  sni: un5.sonofthewinds.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_3|1.3MB/s-282c411a
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
-  type: ss
+- client-fingerprint: chrome
+  name: 🇸🇬SG_3|5.8MB/s-c6d9c631
+  network: tcp
+  password: 5b5b69cd-c9f6-3117-8f4f-0e9bff3811b7
+  port: 14460
+  server: adakv1-s01.sonofthewinds.com
+  skip-cert-verify: false
+  sni: vs1.sonofthewinds.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_2|1.2MB/s-09516ff5
-  password: amazonskr05
-  port: 443
-  server: 13.40.94.70
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_7|3.1MB/s-3e069d3b
+  network: ws
+  port: 16632
+  server: t.cnmjcn.cyou
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
+  ws-opts:
+    headers:
+      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 🇺🇸US_28|3.9MB/s-31582c73
+  network: http
+  port: 52080
+  server: 38.246.226.240
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+  xudp: true
 - name: '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   server: 54.253.183.151
   port: 227
@@ -2002,10 +2098,17 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|3.4MB/s-b43e9bb7
-  - 🇺🇸US_2|1.9MB/s-4f9eae8a
-  - 🇺🇸US_3|1.3MB/s-282c411a
-  - 🇬🇧GB_2|1.2MB/s-09516ff5
+  - 🇰🇷KR_2|4.7MB/s-e899e879
+  - 🇺🇸US_2|3.6MB/s-4f9eae8a
+  - 🇺🇸US_3|3.9MB/s-36abb127
+  - 🇮🇳IN_1|4.7MB/s-2a0a81bd
+  - 🇭🇰HK_3|5.1MB/s-99f491ec
+  - 🇺🇸US_4|4.0MB/s-282c411a
+  - 🇭🇰HK_4|4.0MB/s-02177106
+  - 🇺🇸US_26|4.2MB/s-68a04ec0
+  - 🇸🇬SG_3|5.8MB/s-c6d9c631
+  - 🇭🇰HK_7|3.1MB/s-3e069d3b
+  - 🇺🇸US_28|3.9MB/s-31582c73
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
@@ -2243,10 +2346,17 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_1|3.4MB/s-b43e9bb7
-  - 🇺🇸US_2|1.9MB/s-4f9eae8a
-  - 🇺🇸US_3|1.3MB/s-282c411a
-  - 🇬🇧GB_2|1.2MB/s-09516ff5
+  - 🇰🇷KR_2|4.7MB/s-e899e879
+  - 🇺🇸US_2|3.6MB/s-4f9eae8a
+  - 🇺🇸US_3|3.9MB/s-36abb127
+  - 🇮🇳IN_1|4.7MB/s-2a0a81bd
+  - 🇭🇰HK_3|5.1MB/s-99f491ec
+  - 🇺🇸US_4|4.0MB/s-282c411a
+  - 🇭🇰HK_4|4.0MB/s-02177106
+  - 🇺🇸US_26|4.2MB/s-68a04ec0
+  - 🇸🇬SG_3|5.8MB/s-c6d9c631
+  - 🇭🇰HK_7|3.1MB/s-3e069d3b
+  - 🇺🇸US_28|3.9MB/s-31582c73
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
