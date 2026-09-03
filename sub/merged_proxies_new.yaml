@@ -171,25 +171,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
+- alterId: 2
   cipher: auto
-  name: 🇮🇳IN_1|2.3MB/s-fdc982fd
-  network: ws
-  port: 16626
-  server: planb.mojcn.com.linuxlh.xin
+  name: 🇸🇬SG_1|6.2MB/s-77e460f3
+  network: tcp
+  port: 30845
+  server: v45.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 45c4a7a4-a1d4-4657-a92a-ab45558afac0
-  ws-opts:
-    headers:
-      Host: 6418046cd66ae322ebd1b8f4d82fd12c.mobgslb.tbcache.com
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇭🇰HK_3|1.9MB/s-287a477e
+  name: 🇭🇰HK_3|4.6MB/s-62c165ec
   network: ws
   port: 16632
   server: planb.mojcn.com.linuxlh.xin
@@ -203,42 +199,34 @@ proxies:
       Host: d052c66d50dcf7c3cfab75ed7f8e8322.mobgslb.tbcache.com
     path: /
   xudp: true
-- cipher: aes-256-cfb
-  name: 🇰🇷KR_1|1.7MB/s-e899e879
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇯🇵JP_1|6.2MB/s-396c28da
-  network: ws
-  port: 8555
-  server: 54.168.242.25
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
-  ws-opts:
-    headers:
-      Host: a.189.cn
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_9|1.8MB/s-f76eeef3
-  network: ws
-  port: 16632
-  server: planb.mojcn.com.linuxlh.xin
+  name: 🇺🇸US_26|4.0MB/s-bd92ca8d
+  port: 30829
+  server: v29.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: bc8a58c9-a544-4f85-87cf-274f6eb4d8cb
-  ws-opts:
-    headers:
-      Host: 9531724e3efc3135bdf7f4339b2e04d7.mobgslb.tbcache.com
-    path: /
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇬🇧GB_2|3.3MB/s-9e05f9f1
+  password: tripitropa444
+  port: 2174
+  server: xn--1ugy405pdua.gayvibe.dpdns.org
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇮🇪IE_1|4.4MB/s-ca55dde1
+  password: amazonskr05
+  port: 443
+  server: 3.252.205.48
+  type: ss
+  udp: true
 - name: '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   server: 54.253.183.151
   port: 227
@@ -2010,11 +1998,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇮🇳IN_1|2.3MB/s-fdc982fd
-  - 🇭🇰HK_3|1.9MB/s-287a477e
-  - 🇰🇷KR_1|1.7MB/s-e899e879
-  - 🇯🇵JP_1|6.2MB/s-396c28da
-  - 🇭🇰HK_9|1.8MB/s-f76eeef3
+  - 🇸🇬SG_1|6.2MB/s-77e460f3
+  - 🇭🇰HK_3|4.6MB/s-62c165ec
+  - 🇺🇸US_26|4.0MB/s-bd92ca8d
+  - 🇬🇧GB_2|3.3MB/s-9e05f9f1
+  - 🇮🇪IE_1|4.4MB/s-ca55dde1
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
@@ -2252,11 +2240,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇮🇳IN_1|2.3MB/s-fdc982fd
-  - 🇭🇰HK_3|1.9MB/s-287a477e
-  - 🇰🇷KR_1|1.7MB/s-e899e879
-  - 🇯🇵JP_1|6.2MB/s-396c28da
-  - 🇭🇰HK_9|1.8MB/s-f76eeef3
+  - 🇸🇬SG_1|6.2MB/s-77e460f3
+  - 🇭🇰HK_3|4.6MB/s-62c165ec
+  - 🇺🇸US_26|4.0MB/s-bd92ca8d
+  - 🇬🇧GB_2|3.3MB/s-9e05f9f1
+  - 🇮🇪IE_1|4.4MB/s-ca55dde1
   - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
   - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
   - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
