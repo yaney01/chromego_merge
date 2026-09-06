@@ -171,48 +171,49 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱NL_1|1.2MB/s-e3dcab35
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-  udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇺🇸US_1|3.1MB/s-cb25a731
+  name: 🇭🇰HK_2|1.2MB/s-fe60f2f5
   network: ws
-  port: 16648
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: false
+  port: 16632
+  server: m.cnmjin.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: b5f7ad86-9e40-4684-98f9-83f8136a1054
+  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
   ws-opts:
     headers:
-      Host: eeee7339c9f412913069ff64b12fb71f.mobgslb.tbcache.com
+      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
     path: /
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_1|1.3MB/s-e9103363
-  password: amazonskr05
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_1|2.0MB/s-05b9645d
+  network: ws
+  port: 16648
+  server: planb.mojcn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
+  ws-opts:
+    headers:
+      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
+    path: /
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1013KB/s-1875f5aa
+  network: ws
+  password: humanity
   port: 443
-  server: 13.40.17.62
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇪IE_1|2.9MB/s-391d6303
-  password: amazonskr05
-  port: 443
-  server: 3.250.40.89
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_2|1.4MB/s-93e569b8
-  password: amazonskr05
-  port: 443
-  server: 35.178.200.252
-  type: ss
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1740,11 +1741,9 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇱NL_1|1.2MB/s-e3dcab35
-  - 🇺🇸US_1|3.1MB/s-cb25a731
-  - 🇬🇧GB_1|1.3MB/s-e9103363
-  - 🇮🇪IE_1|2.9MB/s-391d6303
-  - 🇬🇧GB_2|1.4MB/s-93e569b8
+  - 🇭🇰HK_2|1.2MB/s-fe60f2f5
+  - 🇺🇸US_1|2.0MB/s-05b9645d
+  - 🇫🇷FR_1|1013KB/s-1875f5aa
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1942,11 +1941,9 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇳🇱NL_1|1.2MB/s-e3dcab35
-  - 🇺🇸US_1|3.1MB/s-cb25a731
-  - 🇬🇧GB_1|1.3MB/s-e9103363
-  - 🇮🇪IE_1|2.9MB/s-391d6303
-  - 🇬🇧GB_2|1.4MB/s-93e569b8
+  - 🇭🇰HK_2|1.2MB/s-fe60f2f5
+  - 🇺🇸US_1|2.0MB/s-05b9645d
+  - 🇫🇷FR_1|1013KB/s-1875f5aa
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
