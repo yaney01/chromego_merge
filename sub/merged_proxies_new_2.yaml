@@ -172,403 +172,356 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇺🇸US_2|1.4MB/s-4f9eae8a
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.233
+  name: 🇨🇦CA_1|4.4MB/s-4a975590
+  password: amazonskr05
+  port: 443
+  server: 3.99.178.14
   type: ss
   udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇫🇷FR_2|1.2MB/s-5bd519d8
+- cipher: aes-256-cfb
+  name: 🇮🇪IE_1|4.3MB/s-391d6303
+  password: amazonskr05
+  port: 443
+  server: 3.250.40.89
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|2.4MB/s-e899e879
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|2.8MB/s-8af37ea9
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: render.com
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|2.1MB/s-8eeca6b7
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.12
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
 - cipher: aes-256-cfb
-  name: 🇮🇪IE_1|2.9MB/s-38e4b24c
-  password: amazonskr05
-  port: 443
-  server: 54.229.177.209
+  name: 🇯🇵JP_1|2.0MB/s-873f1b21
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.137
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_1|3.7MB/s-bdd0365d
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.5MB/s-098083b5
+  network: ws
+  password: humanity
   port: 443
-  server: 35.179.119.76
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_8|4.1MB/s-93e569b8
-  password: amazonskr05
+  server: 104.16.174.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.6MB/s-4e6f0451
+  network: ws
+  password: humanity
   port: 443
-  server: 35.178.200.252
-  type: ss
+  server: 8.6.112.0
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇮🇪IE_2|4.6MB/s-f894c908
-  password: amazonskr05
-  port: 443
-  server: 52.210.185.41
-  type: ss
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /assignment
+- name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
+  server: sgaws.fffo.cc
+  port: 34506
+  type: anytls
+  password: 353866fc-9143-4666-a7fd-625210d70477
   udp: true
-- name: '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
-  server: 54.253.183.151
-  port: 227
+  sni: xini.fifafa.vip
+  skip-cert-verify: true
+- name: '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
+  server: 138.204.95.193
+  port: 8989
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
-  server: 177.177.59.253
-  port: 8080
+- name: '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
+  server: 45.232.76.98
+  port: 9292
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
-  server: 200.201.134.184
-  port: 8787
+- name: '>🇧🇷BR|Ls|0906|TG@FProxies|-3f66468f'
+  server: 128.201.29.12
+  port: 8666
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇧🇷BR|Ms|0822|TG@FProxies|-de406e10'
-  server: 186.216.51.176
-  port: 8080
+- name: '>🇧🇷BR|Ls|0906|TG@FProxies| 2-6045c53b'
+  server: 45.228.89.114
+  port: 8666
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇧🇷BR|Ms|0822|TG@FProxies| 2-bf765403'
-  server: 201.140.209.33
-  port: 3128
+- name: '>🇧🇷BR|Ls|0906|TG@FProxies| 3-eabd5fa0'
+  server: 189.84.157.245
+  port: 3126
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Hs|0822|TG@FProxies|-28c6b435'
-  server: de87.mechvpn.online
-  port: 443
+- name: '>🇧🇷BR|Ms|0906|TG@FProxies|-7b365b4a'
+  server: 187.88.23.32
+  port: 9010
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇨🇦CA|Ls|0906|TG@FProxies|-07b800ff'
+  server: 211.20.156.191
+  port: 28152
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇨🇦CA|Ns|0906|TG@FProxies|-cb79df1d'
+  server: 198.44.157.19
+  port: 9443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇩🇪DE|Hs|0906|TG@FProxies|-8e373168'
+  server: 103.237.102.191
+  port: 11111
+  type: http
+  password: None
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇩🇪DE|Ls|0906|TG@FProxies|-24e895e8'
+  server: dg2.mangshe.xyz
+  port: 2056
   type: hysteria2
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: de87.mechvpn.online
+  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  auth: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  sni: dg2.mangshe.xyz
   skip-cert-verify: true
-  alpn:
-  - h3
   udp: true
-- name: '>🇩🇪DE|Hs|0822|TG@FProxies| 2-c962fb34'
+- name: '>🇩🇪DE|Ls|0906|TG@FProxies| 2-aa6a4785'
+  server: 116.202.172.187
+  port: 11000
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇩🇪DE|Ms|0906|TG@FProxies|-8d19e46e'
+  server: fan.973511.xyz
+  port: 443
+  type: http
+  password: None
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇩🇪DE|Ms|0906|TG@FProxies| 2-c962fb34'
   server: 176.94.74.21
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ls|0822|TG@FProxies|-31fe287e'
-  server: v33.hdacd.com
-  port: 30833
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: none
+- name: '>🇩🇪DE|Ms|0906|TG@FProxies| 3-01d43918'
+  server: fan.973511.xyz
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇩🇪DE|Ns|0906|TG@FProxies|-084b397f'
+  server: 95.85.252.47
+  port: 9443
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  auth: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇫🇷FR|Hs|0906|TG@FProxies|-80abebcd'
+  server: 31.59.103.214
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇫🇷FR|Ls|0906|TG@FProxies|-b408f99e'
+  server: 37.59.125.131
+  port: 8888
+  type: http
+  username: None
+  password: None
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ls|0822|TG@FProxies| 2-c92bb328'
-  server: 31.7.70.106
-  port: 1022
-  type: trojan
-  password: xcAu1xPEiLHzfr3YZVlTmJ1OWcYC4Ng1
+- name: '>🇫🇷FR|Ls|0906|TG@FProxies| 2-ce9acc56'
+  server: 213.199.47.140
+  port: 1080
+  type: socks5
+  password: None
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ls|0822|TG@FProxies| 3-fd71dc79'
-  server: replay.wwwinternetvideo.click
+- name: '>🇫🇷FR|Ls|0906|TG@FProxies| 3-4153ee35'
+  server: v35.hdacd.com
+  port: 30835
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇫🇷FR|Ms|0906|TG@FProxies|-103d5e1a'
+  server: n.acp.us.ci
   port: 443
   type: hysteria2
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  auth: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  sni: replay.wwwinternetvideo.click
+  password: vlxjqoiauby22dvb
+  auth: vlxjqoiauby22dvb
+  sni: n.acp.us.ci
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: '@arshiacomplus'
+  udp: true
+- name: '>🇫🇷FR|Ms|0906|TG@FProxies| 2-25263d67'
+  server: 62.210.70.194
+  port: 443
+  type: http
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ls|0822|TG@FProxies| 4-21f7efb7'
-  server: 193.222.99.32
-  port: 1080
+- name: '>🇫🇷FR|Ms|0906|TG@FProxies| 3-5bac5abf'
+  server: 37.59.125.131
+  port: 8888
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ms|0822|TG@FProxies|-29a1f689'
-  server: 87.251.77.29
+- name: '>🇫🇷FR|Ms|0906|TG@FProxies| 4-779a3809'
+  server: 109.123.251.109
+  port: 1080
+  type: socks5
+  skip-cert-verify: true
+  udp: true
+- name: '>🇬🇧GB|Ls|0906|TG@FProxies|-d13d27e0'
+  server: 45.95.184.90
+  port: 2087
+  type: vless
+  uuid: 4a269a45-a9e3-4272-b04a-1d42d581150f
+  tls: false
+  tfo: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4de527ea5ed9
+  udp: true
+- name: '>🇬🇧GB|Ms|0906|TG@FProxies|-ad638110'
+  server: 209.248.32.116
+  port: 28154
+  type: trojan
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇬🇧GB|Ms|0906|TG@FProxies| 2-c3aff928'
+  server: 95.179.235.43
+  port: 8443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Hs|0906|TG@FProxies|-41670e6d'
+  server: 154.3.39.111
+  port: 9700
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Hs|0906|TG@FProxies| 2-fe5f875d'
+  server: 62.234.58.47
+  port: 70
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies|-aa1bae12'
+  server: 47.57.69.227
   port: 3128
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇩🇪DE|Ms|0822|TG@FProxies| 2-f1f6f1bb'
-  server: netixu.mashhad1market.ir
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TU4NUJuMe4XlZ3NCQ_1KiQ
-  udp: true
-- name: '>🇩🇪DE|Ms|0822|TG@FProxies| 3-a6e31285'
-  server: 104.25.67.3
-  port: 2053
-  type: vless
-  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
-  tls: true
-  alpn:
-  - h3
-  tfo: false
-  packet-encoding: xudp
-  skip-cert-verify: true
-  servername: yf2.yifangg.de5.net
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /proxyip=kr.william.us.ci
-    headers:
-      Host: yf2.yifangg.de5.net
-  udp: true
-- name: '>🇩🇪DE|Ms|0822|TG@FProxies| 4-acba1aa7'
-  server: 150.230.157.58
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: T4U8Yut/MwgzDc5v2QDgEQ8kNm7ne2Q7V4MUN86I2u0=
-  udp: true
-- name: '>🇫🇷FR|Hs|0822|TG@FProxies|-265cb8b9'
-  server: 173.212.201.85
-  port: 443
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  auth: gf1:gfhysteria2024
-  sni: www.docker.com
-  skip-cert-verify: true
-  udp: true
-- name: '>🇫🇷FR|Ls|0822|TG@FProxies|-00452767'
-  server: 217.182.195.221
-  port: 30008
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇫🇷FR|Ls|0822|TG@FProxies| 2-64b95ddc'
-  server: 193.251.72.202
-  port: 8090
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇫🇷FR|Ms|0822|TG@FProxies|-ea1316f4'
-  server: 144.91.121.61
-  port: 1088
-  type: socks5
-  password: None
-  skip-cert-verify: true
-  udp: true
-- name: '>🇬🇧GB|Hs|0822|TG@FProxies|-0e3985e3'
-  server: 94.156.250.67
-  port: 55000
-  type: hysteria2
-  password: 0bacdaea-099b-462b-b625-d7d44c89aace
-  auth: 0bacdaea-099b-462b-b625-d7d44c89aace
-  sni: www.bing.com
-  skip-cert-verify: true
-  udp: true
-- name: '>🇬🇧GB|Ls|0822|TG@FProxies|-930fe358'
-  server: uk1.test3.net
-  port: 443
-  type: trojan
-  password: 497f2520-9538-11f1-8291-1239d0255272
-  sni: chatbuzzteam.ir
-  skip-cert-verify: true
-  udp: true
-- name: '>🇬🇧GB|Ms|0822|TG@FProxies|-96c9ca07'
-  server: uk1.test3.net
-  port: 443
-  type: trojan
-  password: dec2d020-9537-11f1-8cf7-1239d0255272
-  sni: chatbuzzteam.ir
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Hs|0822|TG@FProxies|-0e4ceaf8'
-  server: 47.83.127.139
-  port: 5555
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Hs|0822|TG@FProxies| 2-a1653767'
-  server: 47.239.74.242
-  port: 30001
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Hs|0822|TG@FProxies| 3-6089c45d'
-  server: 47.83.121.251
-  port: 5555
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Hs|0822|TG@FProxies| 4-1272ba20'
-  server: yzany01.downapptwo.cc
-  port: 51952
-  type: anytls
-  password: 3b32eb1c-150e-4eb4-8323-370844489508
-  udp: true
-  sni: hk05.jdddyy01.cc
-  skip-cert-verify: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies|-c522719a'
-  server: 8.218.225.75
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies| 2-d4b00ed0'
+  server: 47.239.98.42
   port: 1080
   type: socks5
-  username: 1111
-  password: 1111
+  username: abc123
+  password: abc123
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 2-7d695319'
-  server: 207.174.133.205
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 3-3f3614e4'
-  server: 47.239.71.70
-  port: 11601
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 4-1e0c6572'
-  server: 47.76.186.28
-  port: 11408
-  type: socks5
-  username: 111
-  password: 111
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 5-6396d4fe'
-  server: 95.40.120.162
-  port: 8319
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ljqdalu13..
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 6-72459cd0'
-  server: v10.zgtfqs.click
-  port: 30807
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: none
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 7-d4d1a494'
-  server: 165.154.20.187
-  port: 10808
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 8-1990c801'
-  server: 8.217.213.161
-  port: 3060
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 9-c1cd470b'
-  server: 182.16.61.5
-  port: 45647
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 10-a89f40f5'
-  server: 8.217.182.75
-  port: 3060
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 11-a1b860a9'
-  server: 8.218.153.191
-  port: 3060
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 12-30464c52'
-  server: 83.229.127.126
-  port: 7890
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 13-bbce562e'
-  server: 47.76.229.132
-  port: 11310
-  type: socks5
-  username: 111
-  password: 111
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 14-95aee847'
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies| 3-95aee847'
   server: 8.210.41.200
   port: 10088
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 15-eaeca710'
-  server: 207.174.133.211
-  port: 10000
-  type: vless
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 16-81a6bb18'
-  server: wn16889.pujingyuce.com
-  port: 7890
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies| 4-a5f371e3'
+  server: hk40.240104.xyz
+  port: 443
   type: http
-  tls: false
+  username: None
+  password: None
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 17-dec24cc5'
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies| 5-777ff1ab'
+  server: hk40.240104.xyz
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Ls|0906|TG@FProxies| 6-dec24cc5'
   server: 47.239.116.165
   port: 1080
   type: socks5
@@ -576,981 +529,869 @@ proxies:
   password: admin
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 18-828dadae'
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies|-3e6abe09'
+  server: 8.210.36.147
+  port: 5555
+  type: socks5
+  username: socks5
+  password: socks5
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies| 2-d73a45cf'
   server: fan.240104.xyz
+  port: 443
+  type: http
+  username: bnVsbDpudWxs
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies| 3-0fde8ea0'
+  server: 202.85.53.25
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 19-d2548991'
-  server: 47.239.194.38
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies| 4-fa3b4354'
+  server: 47.83.123.81
   port: 5555
   type: socks5
   username: 123
   password: 123
   skip-cert-verify: true
   udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 20-f32570b7'
-  server: 123.58.219.171
-  port: 10808
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ls|0822|TG@FProxies| 21-60d2a195'
-  server: 47.243.173.50
-  port: 11211
-  type: socks5
-  username: 111
-  password: 111
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ms|0822|TG@FProxies|-af5db69b'
-  server: www.zl34hx.asia
-  port: 8090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ms|0822|TG@FProxies| 2-3e77480a'
-  server: 8.210.31.250
-  port: 1080
-  type: socks5
-  username: 8888
-  password: 8888
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ms|0822|TG@FProxies| 3-69e2c36d'
-  server: 8.218.189.99
-  port: 3060
-  type: socks5
-  username: 123
-  password: 123
-  skip-cert-verify: true
-  udp: true
-- name: '>🇭🇰HK|Ms|0822|TG@FProxies| 4-b2d62676'
-  server: 151.242.183.28
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies| 5-be05f709'
+  server: 38.55.125.67
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Hs|0822|TG@FProxies|-aa78637f'
-  server: 103.120.76.45
-  port: 8080
+- name: '>🇭🇰HK|Ms|0906|TG@FProxies| 6-828dadae'
+  server: fan.240104.xyz
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇮🇩ID|Hs|0906|TG@FProxies|-2fddadfc'
+  server: 178.248.73.58
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇮🇩ID|Hs|0906|TG@FProxies| 2-e78d86dc'
+  server: 120.89.95.117
+  port: 9500
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Hs|0822|TG@FProxies| 2-a0b9c054'
-  server: 202.93.244.230
-  port: 64321
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Hs|0822|TG@FProxies| 3-2d7aac31'
-  server: 103.187.86.34
-  port: 8182
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Hs|0822|TG@FProxies| 4-8e446099'
-  server: 103.39.51.156
-  port: 1080
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies|-75df056d'
-  server: 146.196.108.67
-  port: 2323
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 2-6abc02fd'
-  server: 157.15.44.82
-  port: 8085
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 3-1c443e46'
-  server: 116.12.47.82
-  port: 9595
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 4-908d0394'
+- name: '>🇮🇩ID|Ls|0906|TG@FProxies|-908d0394'
   server: 8.215.25.3
   port: 2080
   type: socks5
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 5-fa203ba7'
-  server: 103.255.132.88
-  port: 1111
+- name: '>🇮🇩ID|Ls|0906|TG@FProxies| 2-7b8d07e3'
+  server: tzoa.fun
+  port: 443
   type: http
-  tls: false
+  username: Ok5vbmU=
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 6-fb441120'
-  server: 103.155.169.62
-  port: 8299
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 7-74122867'
-  server: 163.61.55.117
-  port: 8081
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 8-350b30b4'
+- name: '>🇮🇩ID|Ls|0906|TG@FProxies| 3-9cba4d9f'
   server: 8.215.25.3
-  port: 2080
+  port: 2081
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 9-1095ccfb'
-  server: 103.130.61.61
-  port: 8081
+- name: '>🇮🇩ID|Ms|0906|TG@FProxies|-59e16e50'
+  server: 103.153.135.118
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇮🇩ID|Ms|0906|TG@FProxies| 2-74911868'
+  server: 103.247.20.75
+  port: 8546
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 10-c3e42b8b'
-  server: 103.231.236.91
-  port: 8182
+- name: '>🇮🇩ID|Ms|0906|TG@FProxies| 3-142a7a87'
+  server: 36.37.127.146
+  port: 3888
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 11-f016b980'
-  server: 103.142.255.33
-  port: 69
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ls|0822|TG@FProxies| 12-84167709'
-  server: 103.171.240.134
-  port: 9595
+- name: '>🇮🇩ID|Ns|0906|TG@FProxies|-8d5cf15d'
+  server: 121.101.129.97
+  port: 8181
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ms|0822|TG@FProxies|-86544ad5'
-  server: 103.106.112.166
-  port: 1234
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇩ID|Ms|0822|TG@FProxies| 2-bdbbf302'
-  server: 103.179.218.90
+- name: '>🇮🇩ID|Ns|0906|TG@FProxies| 2-b1cdc7d0'
+  server: 38.111.103.17
   port: 8080
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇩ID|Ms|0822|TG@FProxies| 3-681ef92d'
-  server: 103.189.197.43
-  port: 7778
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇳IN|Hs|0822|TG@FProxies|-fcbb8656'
-  server: 40.192.121.249
-  port: 15767
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇳IN|Hs|0822|TG@FProxies| 2-918dc384'
-  server: 144.24.109.215
+- name: '>🇮🇳IN|Hs|0906|TG@FProxies|-5a8567a1'
+  server: 141.148.222.181
   port: 51000
   type: hysteria2
-  password: 91283e34-8674-4961-b202-c3491b72eeb9
-  auth: 91283e34-8674-4961-b202-c3491b72eeb9
+  password: 6390e4f6-fdc8-46eb-b474-805cf3d80439
+  auth: 6390e4f6-fdc8-46eb-b474-805cf3d80439
   sni: cn.cremedelamer.com
   skip-cert-verify: true
   udp: true
-- name: '>🇮🇳IN|Ls|0822|TG@FProxies|-e810708c'
-  server: 3.110.68.130
-  port: 38394
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇳IN|Ls|0822|TG@FProxies| 2-8ac739c6'
-  server: 65.2.5.16
-  port: 18352
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇳IN|Ls|0822|TG@FProxies| 3-19cd2483'
-  server: 18.61.3.91
-  port: 43379
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇳IN|Ms|0822|TG@FProxies|-1f032f5a'
-  server: 49.213.39.90
-  port: 1111
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇹IT|Hs|0822|TG@FProxies|-5fcddc61'
-  server: 109.116.41.154
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇹IT|Ls|0822|TG@FProxies|-81d5e401'
-  server: 15.161.59.54
-  port: 24108
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇮🇹IT|Ms|0822|TG@FProxies|-6d4a5162'
-  server: 93.71.245.84
+- name: '>🇮🇹IT|Ms|0906|TG@FProxies|-dcad5587'
+  server: 185.187.43.38
   port: 8090
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Hs|0822|TG@FProxies|-1e42ce8e'
-  server: 37.120.210.66
-  port: 9443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies|-b9eb114c'
-  server: 112.28.149.152
-  port: 8443
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 2-5501d3b7'
-  server: 101.36.104.46
-  port: 10808
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 3-2ae38d5f'
-  server: 45.192.206.2
-  port: 8080
-  type: vmess
-  uuid: 9ebecf5e-b160-43bd-806e-54cd994fc4c3
-  alterId: 0
-  cipher: none
-  tls: false
-  skip-cert-verify: true
-  servername: images-na.ssl-images-amazon.com
-  network: ws
-  ws-opts:
-    path: /image
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 4-d0f4c22c'
-  server: 45.192.206.6
-  port: 8080
-  type: vmess
-  uuid: 9ebecf5e-b160-43bd-806e-54cd994fc4c3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /image
-    headers:
-      Host: images-na.ssl-images-amazon.com
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 5-5e5528c7'
-  server: 156.231.116.156
-  port: 8080
-  type: vmess
-  uuid: 9ebecf5e-b160-43bd-806e-54cd994fc4c3
-  alterId: 0
-  cipher: none
-  tls: false
-  skip-cert-verify: true
-  servername: images-na.ssl-images-amazon.com
-  network: ws
-  ws-opts:
-    path: /image
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 6-eb8625f1'
-  server: 8.216.57.38
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 7-4f24de3a'
-  server: 101.36.104.239
-  port: 10808
-  type: socks5
-  password: None
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 8-36b72eed'
-  server: 8.211.129.128
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 9-5217933b'
+- name: '>🇯🇵JP|Hs|0906|TG@FProxies|-5217933b'
   server: 8.211.170.103
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 10-529ff3c1'
-  server: 56.155.73.159
-  port: 8254
+- name: '>🇯🇵JP|Hs|0906|TG@FProxies| 2-2a87939f'
+  server: 133.18.200.207
+  port: 343
   type: http
-  tls: false
+  tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 11-3f470cf1'
-  server: 8.209.236.192
-  port: 1080
-  type: socks5
-  username: 123456
-  password: 123456
+- name: '>🇯🇵JP|Ls|0906|TG@FProxies|-9aac192e'
+  server: 38.175.203.11
+  port: 443
+  type: vless
+  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
+  tls: true
+  tfo: false
   skip-cert-verify: true
+  servername: oulucloud.706666.xyz
+  network: tcp
   udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 12-7ae7ae6d'
-  server: 156.231.116.156
-  port: 8080
+- name: '>🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4'
+  server: 38.47.121.14
+  port: 49432
   type: vmess
-  uuid: 9ebecf5e-b160-43bd-806e-54cd994fc4c3
+  uuid: ce94f204-ffa6-4fa8-a1dc-ecfccfd463cb
   alterId: 0
-  cipher: auto
+  cipher: none
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /image
-    headers:
-      Host: images-na.ssl-images-amazon.com
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
   udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 13-9ebb16be'
-  server: 101.36.104.239
-  port: 10808
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 14-a23292e6'
-  server: 47.245.60.99
+- name: '>🇯🇵JP|Ls|0906|TG@FProxies| 3-eb8625f1'
+  server: 8.216.57.38
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 15-4025edf3'
-  server: jp01.duotg.top
-  port: 47427
+- name: '>🇯🇵JP|Ls|0906|TG@FProxies| 4-9580d4cd'
+  server: sgaws.fffo.cc
+  port: 34504
   type: anytls
-  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  password: 4394fc21-8ff9-4f75-bf5a-c7af7eeae16f
   udp: true
-  sni: jp01.duotg.top
+  sni: waseda.jp
   skip-cert-verify: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 16-2a24cbbf'
-  server: 14.137.238.30
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 17-b001e94c'
-  server: 112.28.149.152
-  port: 8443
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ls|0822|TG@FProxies| 18-409edd40'
-  server: v6.hdacd.com
-  port: 30806
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: none
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ms|0822|TG@FProxies|-98301581'
-  server: 13.208.238.59
-  port: 7934
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ms|0822|TG@FProxies| 2-1be8b93e'
-  server: 8.155.162.148
+- name: '>🇯🇵JP|Ms|0906|TG@FProxies|-692eab66'
+  server: 60.205.227.108
   port: 7890
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Ms|0822|TG@FProxies| 3-f7965dfd'
-  server: 114.94.148.37
-  port: 18080
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇯🇵JP|Ms|0822|TG@FProxies| 4-4ef5edfe'
+- name: '>🇯🇵JP|Ms|0906|TG@FProxies| 2-6e6d9f8d'
   server: fan.571589.xyz
   port: 443
   type: http
-  password: None
+  username: bnVsbDpudWxs
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇯🇵JP|Ms|0822|TG@FProxies| 5-42f53cbf'
-  server: 8.209.216.13
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇰🇷KR|Hs|0822|TG@FProxies|-6ac6dd3b'
-  server: 203.82.1.229
-  port: 8123
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇰🇷KR|Ls|0822|TG@FProxies|-6162db9e'
-  server: 210.216.173.110
-  port: 36001
-  type: hysteria2
-  password: rqbS1v3EWNtK3OCe
-  auth: rqbS1v3EWNtK3OCe
-  sni: kor-akile-a3.nebulacloud.win
-  skip-cert-verify: true
-  udp: true
-- name: '>🇰🇷KR|Ls|0822|TG@FProxies| 2-5664402c'
-  server: 43.164.136.189
+- name: '>🇯🇵JP|Ms|0906|TG@FProxies| 3-31d4e279'
+  server: 103.75.118.84
   port: 1080
   type: socks5
   skip-cert-verify: true
   udp: true
-- name: '>🇳🇱NL|Hs|0822|TG@FProxies|-15ff2f28'
-  server: 185.53.129.141
-  port: 9090
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇴RO|Hs|0822|TG@FProxies|-0f4fe633'
-  server: 193.176.84.39
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇴RO|Hs|0822|TG@FProxies| 2-04622405'
-  server: 193.176.84.18
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇴RO|Hs|0822|TG@FProxies| 3-97e9fc92'
-  server: 193.176.84.32
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇴RO|Hs|0822|TG@FProxies| 4-4df18a20'
-  server: 84.239.49.196
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇴RO|Hs|0822|TG@FProxies| 5-35480be7'
-  server: 84.239.49.208
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇺RU|Ls|0822|TG@FProxies|-b574695c'
-  server: 141.8.199.212
-  port: 4100
-  type: vless
-  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  servername: live.ok.ru
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: '>🇷🇺RU|Ls|0822|TG@FProxies| 2-14f7bb67'
-  server: 109.73.206.166
-  port: 2200
-  type: vless
-  uuid: fc72e947-b8dd-4de0-9ec7-2b0050c9f83a
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  servername: rzd.ru
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
-- name: '>🇷🇺RU|Ls|0822|TG@FProxies| 3-fa608b01'
-  server: 201.24.49.69
-  port: 4100
-  type: vless
-  uuid: 2cd5f052-6455-4153-b7d3-0545184dc64c
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-  udp: true
-- name: '>🇷🇺RU|Ls|0822|TG@FProxies| 4-91d85b9a'
-  server: 194.26.229.157
-  port: 4100
-  type: vless
-  uuid: c05888f0-4029-45c8-bea7-ea5eff564462
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  servername: live.ok.ru
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-  udp: true
-- name: '>🇷🇺RU|Ls|0822|TG@FProxies| 5-0a058187'
-  server: 194.26.229.122
-  port: 2200
-  type: vless
-  uuid: 84d0ff7b-9760-415f-a974-b3e1fe92264f
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  servername: rzd.ru
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-  udp: true
-- name: '>🇷🇺RU|Ms|0822|TG@FProxies|-497153cf'
-  server: 85.143.254.38
-  port: 1080
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇷🇺RU|Ms|0822|TG@FProxies| 2-d58488b7'
-  server: 194.186.179.62
+- name: '>🇯🇵JP|Ms|0906|TG@FProxies| 4-47de2156'
+  server: fan.571589.xyz
   port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Hs|0822|TG@FProxies|-67c5ec18'
-  server: 152.42.167.241
-  port: 3128
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies|-03c2cfe1'
-  server: saas.sin.fan
-  port: 443
-  type: vless
-  uuid: ef456d2c-b206-4b8b-b465-7c1df8b2bb00
-  tls: true
-  tfo: false
-  skip-cert-verify: true
-  servername: sap.xiaomayi.nyc.mn
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vless-argo
-    headers:
-      Host: sap.xiaomayi.nyc.mn
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 2-327d5e04'
-  server: 146.190.80.158
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 3-5961d770'
-  server: 43.160.242.118
-  port: 3128
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 4-f4a2f8cf'
-  server: asg2.jueduibupao.top
-  port: 7000
-  type: anytls
-  password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
-  udp: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 5-b4b8a877'
-  server: 128.199.113.85
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 6-36914110'
-  server: 128.199.121.61
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 7-5ff420c7'
-  server: 45.43.63.37
-  port: 10808
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ls|0822|TG@FProxies| 8-9034e4ac'
-  server: 167.172.76.176
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies|-e4456060'
-  server: 128.199.254.13
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies| 2-d57ffdbd'
-  server: 104.248.151.93
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies| 3-0dd74f11'
-  server: 154.26.139.27
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies| 4-6c8a9a01'
-  server: 128.199.116.219
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies| 5-491ae0e6'
-  server: 159.223.41.216
-  port: 9090
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇸🇬SG|Ms|0822|TG@FProxies| 6-474a5617'
-  server: 146.70.29.45
-  port: 443
-  type: http
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇹🇼TW|Ms|0822|TG@FProxies|-87c1e0c8'
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  port: 1443
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-  password: exaxgqkKkd0TAMrCxeonWg==
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇹🇼TW|Ms|0822|TG@FProxies| 2-98f2a12e'
-  server: dafeizhu.xxxyun.top
-  port: 55005
-  type: anytls
-  password: 26e8b893-7739-40cd-bbbb-a3260ab95e3a
-  udp: true
-  sni: tw2.jueduibupao.top
-  skip-cert-verify: true
-- name: '>🇹🇼TW|Ms|0822|TG@FProxies| 3-1625b464'
-  server: m99cygua.4ya21vwd0lw6ngzk.awstrack.vip
-  port: 16481
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: MWM4MmJmYzdiNTZjNTUzMA==:MjA3ZmY5MWEtOWE3MC00Mg==
-  udp: true
-- name: '>🇹🇼TW|Ms|0822|TG@FProxies| 4-fc3faee6'
-  server: dafeizhu.xxxyun.top
-  port: 55006
-  type: anytls
-  password: b88495b9-7ba9-4165-8d8c-b37568f3ab3b
-  udp: true
-  sni: tw3.jueduibupao.top
-  skip-cert-verify: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies|-792331bc'
-  server: 50.192.157.108
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 2-813414a8'
-  server: 107.91.88.70
-  port: 8443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 3-780892b1'
-  server: 50.184.176.222
-  port: 8090
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 4-57cad061'
-  server: 54.215.41.74
-  port: 22904
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 5-dec556d8'
-  server: 104.36.250.115
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 6-f23e47a3'
-  server: 34.220.80.147
-  port: 28471
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 7-4fd5e334'
-  server: 54.67.110.244
-  port: 31388
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 8-1c6d9ca8'
-  server: dl1-us.freeconnect.link
-  port: 9251
-  type: http
-  username: freeuser1
-  password: freeuser1
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 9-6c7d88cb'
-  server: 156.229.163.112
-  port: 55000
-  type: hysteria2
-  password: f9e76796-72ba-4af1-9435-a556bd81c140
-  auth: f9e76796-72ba-4af1-9435-a556bd81c140
-  sni: www.bing.com
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 10-fb872359'
-  server: 66.94.121.46
-  port: 443
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  auth: gf1:gfhysteria2024
-  sni: 66.94.121.46
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 11-e3446234'
-  server: yzany01.downapptwo.cc
-  port: 10860
-  type: anytls
-  password: 3b32eb1c-150e-4eb4-8323-370844489508
-  udp: true
-  sni: us10.pulsarcore.site
-  skip-cert-verify: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 12-7fdd2a1e'
-  server: 3.19.213.118
-  port: 57971
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 13-712c3d63'
-  server: 193.25.215.182
-  port: 22222
-  type: socks5
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Hs|0822|TG@FProxies| 14-97690a74'
-  server: 72.28.165.185
-  port: 8090
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies|-24776b6f'
-  server: 44.195.167.30
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 2-136ef27c'
-  server: 18.188.168.99
-  port: 37657
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 3-ec9b4e1b'
-  server: 38.55.192.122
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 4-3eba9e99'
-  server: 74.80.181.131
-  port: 9443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 5-8d6bb5eb'
-  server: 156.146.59.19
-  port: 9002
-  type: http
-  password: None
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 6-cedc84c1'
-  server: v4.hdacd.com
-  port: 30804
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 7-357eedf7'
-  server: 43.153.82.179
-  port: 8888
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 8-c08739ca'
-  server: 180.178.60.254
-  port: 10000
-  type: vless
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 9-bd0d4625'
-  server: 156.146.59.31
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 10-a92a1381'
-  server: 45.66.249.187
-  port: 8181
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 11-5308d22e'
-  server: 18.191.250.90
-  port: 9988
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 12-14f974eb'
-  server: 74.48.45.94
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 13-86e3c9cb'
-  server: 193.9.44.247
-  port: 8080
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 14-a4c609da'
-  server: 156.146.59.21
-  port: 9002
   type: http
   username: 'null'
   password: 'null'
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 15-70d010fe'
-  server: 156.146.59.49
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies|-5fcaff3d'
+  server: 8tn3yacv.zf-mix-1.9999231.xyz
+  port: 2027
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: dk-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 2-db4b5681'
+  server: 3dxgfwxk.zf-mix-2.9999231.xyz
+  port: 2015
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: id-house.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 3-86d5c093'
+  server: 6v2tii2i.zf-mix-1.9999231.xyz
+  port: 2035
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: az-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 4-ea88433b'
+  server: bt5iibdl.zf-mix-2.9999231.xyz
+  port: 2035
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: az-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 5-ec88d98c'
+  server: 7db5z0h-g04.jp04-1d-vm0.entry.fr0528.art
+  port: 447
+  type: vmess
+  uuid: c2c30cdc-e150-36b4-b611-020e6b2f2cb2
+  alterId: 1
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 6-49193fd2'
+  server: 9mj63bko.zf-mix-3.9999231.xyz
+  port: 2027
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: dk-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 7-89e804b2'
+  server: c3fxz0cp.zf-mix-3.9999231.xyz
+  port: 2010
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: tr-house.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 8-e13d7372'
+  server: zpedg9sq.zf-mix-2.9999231.xyz
+  port: 1024
+  type: anytls
+  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  sni: ch-wy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 9-a025b176'
+  server: 5tfdh2kc.zf-mix-5.9999231.xyz
+  port: 1013
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: ua-house.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 10-2c736525'
+  server: 1nn6ze9c.zf-mix-3.9999231.xyz
+  port: 1013
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: ua-house.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 11-f31ba3cd'
+  server: 4mwuepu3.zf-mix-3.9999231.xyz
+  port: 1010
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: tr-house.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 12-f9b6391e'
+  server: 759qv198.zf-mix-2.9999231.xyz
+  port: 2004
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: jpfast.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 13-38722c32'
+  server: vmt2k5g7.zf-mix-2.9999231.xyz
+  port: 2039
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: ro-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 14-88b27024'
+  server: cozlb6ti.zf-mix-5.9999231.xyz
+  port: 2034
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: at-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 15-5ba0ccf6'
+  server: br8l8lyl.zf-mix-4.9999231.xyz
+  port: 2038
+  type: hysteria2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  auth: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: ng-wy.9999231.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  udp: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 16-bcd20db1'
+  server: pohb4eyt.zf-mix-4.9999231.xyz
+  port: 1018
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: th-house.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 17-2a8859ea'
+  server: uf6tt5qz.zf-mix-3.9999231.xyz
+  port: 1033
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: it-wy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 18-cfe02e0b'
+  server: vgdt93xu.zf-mix-5.9999231.xyz
+  port: 1021
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: usp-sjy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 19-d3023dfa'
+  server: v5rbdxfr.zf-mix-5.9999231.xyz
+  port: 1010
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: tr-house.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 20-d824e0f3'
+  server: 5gtbbjpi.zf-mix-5.9999231.xyz
+  port: 1029
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: in-wy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 21-30ac3c64'
+  server: 3rsqp1rq.zf-mix-4.9999231.xyz
+  port: 1025
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: de-wy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 22-6c33e1c8'
+  server: ny94ectl.zf-mix-3.9999231.xyz
+  port: 1009
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: co-8ce91c.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 23-a61a118f'
+  server: i45jbb96.zf-mix-1.9999231.xyz
+  port: 1038
+  type: anytls
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: ng-wy.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇯🇵JP|Ns|0906|TG@FProxies| 24-0bf18a29'
+  server: wzl2mo1h.zf-mix-1.9999231.xyz
+  port: 1007
+  type: anytls
+  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  sni: vnfast.9999231.xyz
+  skip-cert-verify: true
+- name: '>🇰🇷KR|Ms|0906|TG@FProxies|-5ee4e76e'
+  server: 139.129.19.184
+  port: 7890
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇳🇱NL|Ms|0906|TG@FProxies|-2f2f83b7'
+  server: 161.35.90.93
+  port: 1082
+  type: socks5
+  skip-cert-verify: true
+  udp: true
+- name: '>🇳🇱NL|Ms|0906|TG@FProxies| 2-955980bf'
+  server: 5.255.125.188
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇳🇱NL|Ms|0906|TG@FProxies| 3-1d852037'
+  server: 173.212.240.48
+  port: 8888
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇳🇱NL|Ms|0906|TG@FProxies| 4-05c73cdb'
+  server: sgaws.fffo.cc
+  port: 34503
+  type: anytls
+  password: 4394fc21-8ff9-4f75-bf5a-c7af7eeae16f
+  udp: true
+  sni: tudelft.nl
+  skip-cert-verify: true
+- name: '>🇷🇴RO|Hs|0906|TG@FProxies|-93748020'
+  server: 193.176.84.35
   port: 9002
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 16-fa8fd663'
+- name: '>🇷🇴RO|Hs|0906|TG@FProxies| 2-99c3404e'
+  server: 193.176.84.33
+  port: 9002
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇷🇴RO|Hs|0906|TG@FProxies| 3-e529c427'
+  server: 193.176.84.16
+  port: 9002
+  type: http
+  password: None
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇷🇺RU|Hs|0906|TG@FProxies|-9108bb88'
+  server: 193.19.190.59
+  port: 8095
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇷🇺RU|Hs|0906|TG@FProxies| 2-3fa72528'
+  server: 194.61.232.13
+  port: 8095
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇷🇺RU|Ms|0906|TG@FProxies|-d3663234'
+  server: 185.21.156.73
+  port: 4080
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Hs|0906|TG@FProxies|-0dd74f11'
+  server: 154.26.139.27
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Hs|0906|TG@FProxies| 2-d39a80f0'
+  server: sg01-hy.poke-mon.xyz
+  port: 26751
+  type: hysteria2
+  password: 69a027c7-c1f9-48ce-a0bb-4e5c93228ef3
+  auth: 69a027c7-c1f9-48ce-a0bb-4e5c93228ef3
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Hs|0906|TG@FProxies| 3-328fb0be'
+  server: 929a4b9a-t9zts0-tnnrly-g43g.sg.oshuawei.com
+  port: 443
+  type: http
+  username: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Hs|0906|TG@FProxies| 4-37baae28'
+  server: 47.129.206.123
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Hs|0906|TG@FProxies| 5-6a196d15'
+  server: sgaws.fffo.cc
+  port: 34519
+  type: anytls
+  password: 4394fc21-8ff9-4f75-bf5a-c7af7eeae16f
+  udp: true
+  sni: hu-berlin.de
+  skip-cert-verify: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies|-a707ae51'
+  server: 152.69.211.50
+  port: 40001
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies| 2-a84f96dd'
+  server: 143.198.205.96
+  port: 1080
+  type: socks5
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies| 3-4e4f5b68'
+  server: sg2-r.link-t7.com
+  port: 10037
+  type: vless
+  uuid: DFDBA849-E8F0-4C1B-9BD6-C4C87679B0A3
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  udp: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies| 4-5961d770'
+  server: 43.160.242.118
+  port: 3128
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies| 5-f5773bf6'
+  server: 82.102.25.50
+  port: 9443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ls|0906|TG@FProxies| 6-bb528781'
+  server: 82.102.25.210
+  port: 9443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ms|0906|TG@FProxies|-57fedb76'
+  server: sgaws.fffo.cc
+  port: 34505
+  type: anytls
+  password: b0b3a9ec-f3c8-41ca-8b5b-172ddbfc98f1
+  udp: true
+  sni: jianpuzhai.pooo.cc
+  skip-cert-verify: true
+- name: '>🇸🇬SG|Ms|0906|TG@FProxies| 2-e98bcb69'
+  server: sgaws.fffo.cc
+  port: 34524
+  type: anytls
+  password: 4394fc21-8ff9-4f75-bf5a-c7af7eeae16f
+  udp: true
+  sni: hkust.edu.hk
+  skip-cert-verify: true
+- name: '>🇸🇬SG|Ms|0906|TG@FProxies| 3-0d1f5360'
+  server: cc34d62c-t9zts0-tairte-1m0fq.sg.oshuawei.com
+  port: 443
+  type: http
+  username: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ms|0906|TG@FProxies| 4-f5b1d2d8'
+  server: 47.84.230.119
+  port: 6443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇸🇬SG|Ns|0906|TG@FProxies|-c26fabf2'
+  server: 128.199.254.13
+  port: 9090
+  type: http
+  username: None
+  password: None
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97'
+  server: 211.20.156.191
+  port: 28154
+  type: trojan
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇹🇼TW|Ls|0906|TG@FProxies| 2-6e72b775'
+  server: 164.52.11.194
+  port: 18080
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9'
+  server: 211.20.156.191
+  port: 28153
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇹🇼TW|Ms|0906|TG@FProxies| 2-bb2d2e39'
+  server: 211.20.156.191
+  port: 28161
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇹🇼TW|Ms|0906|TG@FProxies| 3-3a360a44'
+  server: 211.20.156.191
+  port: 28159
+  type: trojan
+  password: i99Cef
+  sni: download.windowsupdate.com
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies|-efad9c53'
+  server: 207.5.30.9
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 2-abcc3f4b'
+  server: 173.205.202.241
+  port: 8181
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 3-813414a8'
+  server: 107.91.88.70
+  port: 8443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 4-6b3bfd1d'
+  server: 207.5.46.74
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d'
+  server: 172.67.204.201
+  port: 443
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: 7-m16.CHiaN-MAi-8.KDNs.FR
+  network: ws
+  ws-opts:
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: 7-m16.CHiaN-MAi-8.KDNS.Fr
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 6-dfab479a'
+  server: 104.36.250.72
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 7-8b8e17ff'
+  server: 35.95.54.42
+  port: 8443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 8-68ef70c9'
+  server: 173.42.49.102
+  port: 8090
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Hs|0906|TG@FProxies| 9-ed8566a9'
+  server: 66.153.187.90
+  port: 8090
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies|-827831d0'
+  server: 36.137.204.11
+  port: 1081
+  type: socks5
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 2-83f55f09'
+  server: 172.245.9.114
+  port: 7860
+  type: http
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 3-dc22e494'
+  server: 464f4f51-tcxds0-tphxte-1h5u7.sjc.oshuawei.com
+  port: 443
+  type: http
+  username: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  password: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 4-deb342b7'
+  server: us22.sofast.live
+  port: 58011
+  type: vless
+  uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+  tls: false
+  tfo: false
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 5-deb093d4'
+  server: jp.sofast.live
+  port: 52683
+  type: vless
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  tls: false
+  tfo: false
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 6-80c6215f'
+  server: 172.67.220.153
+  port: 443
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: 2-M16.chianG-MaI2031.kDNS.fr
+  network: ws
+  ws-opts:
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: 2-M16.ChIAnG-MAi2031.kdns.Fr
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 7-c1b45add'
+  server: 172.67.132.100
+  port: 443
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: M16-6.CHIang-Mai2034.KDns.fr
+  network: ws
+  ws-opts:
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: m16-6.chiAng-MAI2034.kDNS.Fr
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 8-0450364e'
+  server: 52.15.98.63
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 9-31b40e6a'
+  server: 148.100.84.192
+  port: 5252
+  type: http
+  password: None
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 10-a2af30d7'
+  server: 172.67.149.248
+  port: 443
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: IMg-edGE-M16-3.HUAngsHANg.pP.UA
+  network: ws
+  ws-opts:
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: IMG-edGe-m16-3.hUAnGSHANg.PP.uA
+  udp: true
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 11-fa8fd663'
   server: v4.hdacd.com
   port: 30804
   type: vmess
@@ -1560,135 +1401,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 17-df311391'
-  server: 212.58.132.5
-  port: 8888
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 18-e9809faf'
-  server: 103.255.200.87
-  port: 7890
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 19-53df1e65'
-  server: 18.188.53.175
-  port: 298
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ls|0822|TG@FProxies| 20-dbe12b77'
-  server: 45.66.249.187
-  port: 3128
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies|-f3d215c6'
-  server: 156.146.59.20
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 2-8fff18ef'
-  server: 180.178.60.254
-  port: 10000
-  type: vless
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: tcp
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 3-7b3ae0f8'
-  server: purposebydesig.club
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 4-9ba6ba82'
-  server: 34.220.80.147
-  port: 22834
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 5-f48177c3'
-  server: 38.28.193.39
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 6-9e3f152c'
-  server: fan.596189.xyz
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 7-bb5b51c4'
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.best
-  auth: https://xship.best
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 8-c32dd095'
-  server: 154.26.192.123
-  port: 10988
-  type: http
-  username: fQ67Dpe5dU
-  password: gs4BXwT6SW
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 9-1b39aa26'
-  server: 107.151.238.27
-  port: 443
-  type: http
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 10-bb90c921'
-  server: 40.160.69.214
-  port: 8080
-  type: vless
-  uuid: 11af1c47-865a-47c6-92ff-118013655d78
-  tls: false
-  tfo: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 11-ab1f2ce3'
-  server: 137.175.22.29
-  port: 443
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 12-18a8d4dd'
-  server: 162.243.146.243
-  port: 443
-  type: http
-  username: testuser1
-  password: e4b72b531a2d10900519
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 13-4ac1cd9c'
+- name: '>🇺🇸US|Ls|0906|TG@FProxies| 12-4ac1cd9c'
   server: jp.sofast.live
   port: 52683
   type: vless
@@ -1698,50 +1411,28 @@ proxies:
   skip-cert-verify: true
   network: tcp
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 14-713f587f'
-  server: 34.207.102.197
-  port: 44210
-  type: http
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 15-1498a808'
-  server: 156.146.59.9
-  port: 9002
-  type: http
-  password: None
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 16-7085202f'
-  server: 96.5.129.85
+- name: '>🇺🇸US|Ms|0906|TG@FProxies|-9e3f152c'
+  server: fan.596189.xyz
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 17-36bdd8c2'
-  server: 137.175.22.88
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 2-5c601783'
+  server: 38.28.185.247
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 18-df105dec'
-  server: 156.146.59.44
-  port: 9002
-  type: http
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 19-5a0c3756'
-  server: 137.175.22.56
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 3-e3a0c660'
+  server: 38.28.193.71
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 20-31889acd'
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 4-31889acd'
   server: starlink-ft.251313.xyz
   port: 443
   type: hysteria2
@@ -1750,64 +1441,140 @@ proxies:
   sni: xship.top
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 21-c9f37524'
-  server: 137.175.22.89
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 5-85405344'
+  server: 38.28.185.134
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 22-91b06311'
-  server: 156.146.59.7
-  port: 9002
-  type: http
-  username: None
-  password: None
-  tls: true
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 23-c7c34713'
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.top
-  auth: https://xship.top
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 24-849feffe'
-  server: 216.107.139.82
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 6-4e5cf421'
+  server: 38.28.193.178
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 25-be8b54a1'
-  server: 38.28.185.178
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 7-967341f3'
+  server: fan.596189.xyz
+  port: 443
+  type: http
+  username: 'null'
+  password: 'null'
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 8-45028a4b'
+  server: 38.28.193.129
   port: 443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇺🇸US|Ms|0822|TG@FProxies| 26-58866982'
-  server: 35.80.6.131
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 9-170dccde'
+  server: 137.175.22.74
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 10-8512037b'
+  server: 172.67.169.99
+  port: 443
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: 5-M16.PHukeT2035.Kdns.FR
+  network: ws
+  ws-opts:
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: 5-m16.PHukeT2035.KDnS.FR
+  udp: true
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 11-df2d4b84'
+  server: 107.91.88.6
   port: 8443
   type: http
   tls: true
   skip-cert-verify: true
   udp: true
-- name: '>🇻🇳VN|Ls|0822|TG@FProxies|-6b0c4c90'
-  server: 163.181.207.230
-  port: 9999
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 12-12c93065'
+  server: 38.28.185.224
+  port: 443
+  type: http
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ms|0906|TG@FProxies| 13-9776dbd5'
+  server: 39.104.201.230
+  port: 9876
   type: http
   tls: false
   skip-cert-verify: true
   udp: true
-- name: '>🇻🇳VN|Ls|0822|TG@FProxies| 2-e9f388e4'
-  server: 157.66.81.25
-  port: 8443
+- name: '>🇺🇸US|Ns|0906|TG@FProxies|-c8648934'
+  server: jewelscollecti.icu
+  port: 443
+  type: http
+  username: Ok5vbmU=
+  tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ns|0906|TG@FProxies| 2-9e55205b'
+  server: us01zl.poke-mon.xyz
+  port: 33145
+  type: hysteria2
+  password: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  auth: 79b79a6b-f815-42de-b27e-01c2c0eb4b55
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ns|0906|TG@FProxies| 3-944c6add'
+  server: us.asn.tn
+  port: 40841
+  type: hysteria2
+  password: 2c170759-042b-4e27-a798-fc5b9b0849a7
+  auth: 2c170759-042b-4e27-a798-fc5b9b0849a7
+  sni: us.asn.tn
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ns|0906|TG@FProxies| 4-248931b1'
+  server: us01zl.poke-mon.xyz
+  port: 48665
+  type: hysteria2
+  password: 0871d987-8f52-4292-a138-b2dd7ce4140f
+  auth: 0871d987-8f52-4292-a138-b2dd7ce4140f
+  skip-cert-verify: true
+  udp: true
+- name: '>🇺🇸US|Ns|0906|TG@FProxies| 5-04110cbf'
+  server: 172.66.0.236
+  port: 2083
+  type: vless
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  tls: true
+  tfo: false
+  skip-cert-verify: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
+  udp: true
+- name: '>🇺🇸US|Ns|0906|TG@FProxies| 6-4ce9511a'
+  server: 23.161.192.113
+  port: 443
   type: http
   tls: true
+  skip-cert-verify: true
+  udp: true
+- name: '>🇻🇳VN|Ns|0906|TG@FProxies|-7611065e'
+  server: 14.241.231.13
+  port: 8080
+  type: http
+  tls: false
   skip-cert-verify: true
   udp: true
 - name: https://github.com/Alvin9999-newpac/fanqiang-5fa16594
@@ -2018,212 +1785,174 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_2|1.4MB/s-4f9eae8a
-  - 🇫🇷FR_2|1.2MB/s-5bd519d8
-  - 🇮🇪IE_1|2.9MB/s-38e4b24c
-  - 🇬🇧GB_1|3.7MB/s-bdd0365d
-  - 🇬🇧GB_8|4.1MB/s-93e569b8
-  - 🇮🇪IE_2|4.6MB/s-f894c908
-  - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
-  - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
-  - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
-  - '>🇧🇷BR|Ms|0822|TG@FProxies|-de406e10'
-  - '>🇧🇷BR|Ms|0822|TG@FProxies| 2-bf765403'
-  - '>🇩🇪DE|Hs|0822|TG@FProxies|-28c6b435'
-  - '>🇩🇪DE|Hs|0822|TG@FProxies| 2-c962fb34'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies|-31fe287e'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 2-c92bb328'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 3-fd71dc79'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 4-21f7efb7'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies|-29a1f689'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 2-f1f6f1bb'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 3-a6e31285'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 4-acba1aa7'
-  - '>🇫🇷FR|Hs|0822|TG@FProxies|-265cb8b9'
-  - '>🇫🇷FR|Ls|0822|TG@FProxies|-00452767'
-  - '>🇫🇷FR|Ls|0822|TG@FProxies| 2-64b95ddc'
-  - '>🇫🇷FR|Ms|0822|TG@FProxies|-ea1316f4'
-  - '>🇬🇧GB|Hs|0822|TG@FProxies|-0e3985e3'
-  - '>🇬🇧GB|Ls|0822|TG@FProxies|-930fe358'
-  - '>🇬🇧GB|Ms|0822|TG@FProxies|-96c9ca07'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies|-0e4ceaf8'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 2-a1653767'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 3-6089c45d'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 4-1272ba20'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies|-c522719a'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 2-7d695319'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 3-3f3614e4'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 4-1e0c6572'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 5-6396d4fe'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 6-72459cd0'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 7-d4d1a494'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 8-1990c801'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 9-c1cd470b'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 10-a89f40f5'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 11-a1b860a9'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 12-30464c52'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 13-bbce562e'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 14-95aee847'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 15-eaeca710'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 16-81a6bb18'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 17-dec24cc5'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 18-828dadae'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 19-d2548991'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 20-f32570b7'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 21-60d2a195'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies|-af5db69b'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 2-3e77480a'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 3-69e2c36d'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 4-b2d62676'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies|-aa78637f'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 2-a0b9c054'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 3-2d7aac31'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 4-8e446099'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies|-75df056d'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 2-6abc02fd'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 3-1c443e46'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 4-908d0394'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 5-fa203ba7'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 6-fb441120'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 7-74122867'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 8-350b30b4'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 9-1095ccfb'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 10-c3e42b8b'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 11-f016b980'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 12-84167709'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies|-86544ad5'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies| 2-bdbbf302'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies| 3-681ef92d'
-  - '>🇮🇳IN|Hs|0822|TG@FProxies|-fcbb8656'
-  - '>🇮🇳IN|Hs|0822|TG@FProxies| 2-918dc384'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies|-e810708c'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies| 2-8ac739c6'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies| 3-19cd2483'
-  - '>🇮🇳IN|Ms|0822|TG@FProxies|-1f032f5a'
-  - '>🇮🇹IT|Hs|0822|TG@FProxies|-5fcddc61'
-  - '>🇮🇹IT|Ls|0822|TG@FProxies|-81d5e401'
-  - '>🇮🇹IT|Ms|0822|TG@FProxies|-6d4a5162'
-  - '>🇯🇵JP|Hs|0822|TG@FProxies|-1e42ce8e'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies|-b9eb114c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 2-5501d3b7'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 3-2ae38d5f'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 4-d0f4c22c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 5-5e5528c7'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 6-eb8625f1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 7-4f24de3a'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 8-36b72eed'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 9-5217933b'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 10-529ff3c1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 11-3f470cf1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 12-7ae7ae6d'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 13-9ebb16be'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 14-a23292e6'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 15-4025edf3'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 16-2a24cbbf'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 17-b001e94c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 18-409edd40'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies|-98301581'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 2-1be8b93e'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 3-f7965dfd'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 4-4ef5edfe'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 5-42f53cbf'
-  - '>🇰🇷KR|Hs|0822|TG@FProxies|-6ac6dd3b'
-  - '>🇰🇷KR|Ls|0822|TG@FProxies|-6162db9e'
-  - '>🇰🇷KR|Ls|0822|TG@FProxies| 2-5664402c'
-  - '>🇳🇱NL|Hs|0822|TG@FProxies|-15ff2f28'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies|-0f4fe633'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 2-04622405'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 3-97e9fc92'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 4-4df18a20'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 5-35480be7'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies|-b574695c'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 2-14f7bb67'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 3-fa608b01'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 4-91d85b9a'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 5-0a058187'
-  - '>🇷🇺RU|Ms|0822|TG@FProxies|-497153cf'
-  - '>🇷🇺RU|Ms|0822|TG@FProxies| 2-d58488b7'
-  - '>🇸🇬SG|Hs|0822|TG@FProxies|-67c5ec18'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies|-03c2cfe1'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 2-327d5e04'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 3-5961d770'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 4-f4a2f8cf'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 5-b4b8a877'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 6-36914110'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 7-5ff420c7'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 8-9034e4ac'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies|-e4456060'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 2-d57ffdbd'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 3-0dd74f11'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 4-6c8a9a01'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 5-491ae0e6'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 6-474a5617'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies|-87c1e0c8'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 2-98f2a12e'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 3-1625b464'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 4-fc3faee6'
-  - '>🇺🇸US|Hs|0822|TG@FProxies|-792331bc'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 2-813414a8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 3-780892b1'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 4-57cad061'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 5-dec556d8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 6-f23e47a3'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 7-4fd5e334'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 8-1c6d9ca8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 9-6c7d88cb'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 10-fb872359'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 11-e3446234'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 12-7fdd2a1e'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 13-712c3d63'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 14-97690a74'
-  - '>🇺🇸US|Ls|0822|TG@FProxies|-24776b6f'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 2-136ef27c'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 3-ec9b4e1b'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 4-3eba9e99'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 5-8d6bb5eb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 6-cedc84c1'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 7-357eedf7'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 8-c08739ca'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 9-bd0d4625'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 10-a92a1381'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 11-5308d22e'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 12-14f974eb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 13-86e3c9cb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 14-a4c609da'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 15-70d010fe'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 16-fa8fd663'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 17-df311391'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 18-e9809faf'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 19-53df1e65'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 20-dbe12b77'
-  - '>🇺🇸US|Ms|0822|TG@FProxies|-f3d215c6'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 2-8fff18ef'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 3-7b3ae0f8'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 4-9ba6ba82'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 5-f48177c3'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 6-9e3f152c'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 7-bb5b51c4'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 8-c32dd095'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 9-1b39aa26'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 10-bb90c921'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 11-ab1f2ce3'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 12-18a8d4dd'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 13-4ac1cd9c'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 14-713f587f'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 15-1498a808'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 16-7085202f'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 17-36bdd8c2'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 18-df105dec'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 19-5a0c3756'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 20-31889acd'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 21-c9f37524'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 22-91b06311'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 23-c7c34713'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 24-849feffe'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 25-be8b54a1'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 26-58866982'
-  - '>🇻🇳VN|Ls|0822|TG@FProxies|-6b0c4c90'
-  - '>🇻🇳VN|Ls|0822|TG@FProxies| 2-e9f388e4'
+  - 🇨🇦CA_1|4.4MB/s-4a975590
+  - 🇮🇪IE_1|4.3MB/s-391d6303
+  - 🇰🇷KR_1|2.4MB/s-e899e879
+  - 🇫🇷FR_1|2.8MB/s-8af37ea9
+  - 🇫🇷FR_2|2.1MB/s-8eeca6b7
+  - 🇯🇵JP_1|2.0MB/s-873f1b21
+  - 🇫🇷FR_3|1.5MB/s-098083b5
+  - 🇫🇷FR_4|1.6MB/s-4e6f0451
+  - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
+  - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
+  - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies|-3f66468f'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies| 2-6045c53b'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies| 3-eabd5fa0'
+  - '>🇧🇷BR|Ms|0906|TG@FProxies|-7b365b4a'
+  - '>🇨🇦CA|Ls|0906|TG@FProxies|-07b800ff'
+  - '>🇨🇦CA|Ns|0906|TG@FProxies|-cb79df1d'
+  - '>🇩🇪DE|Hs|0906|TG@FProxies|-8e373168'
+  - '>🇩🇪DE|Ls|0906|TG@FProxies|-24e895e8'
+  - '>🇩🇪DE|Ls|0906|TG@FProxies| 2-aa6a4785'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies|-8d19e46e'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies| 2-c962fb34'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies| 3-01d43918'
+  - '>🇩🇪DE|Ns|0906|TG@FProxies|-084b397f'
+  - '>🇫🇷FR|Hs|0906|TG@FProxies|-80abebcd'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies|-b408f99e'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies| 2-ce9acc56'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies| 3-4153ee35'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies|-103d5e1a'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 2-25263d67'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 3-5bac5abf'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 4-779a3809'
+  - '>🇬🇧GB|Ls|0906|TG@FProxies|-d13d27e0'
+  - '>🇬🇧GB|Ms|0906|TG@FProxies|-ad638110'
+  - '>🇬🇧GB|Ms|0906|TG@FProxies| 2-c3aff928'
+  - '>🇭🇰HK|Hs|0906|TG@FProxies|-41670e6d'
+  - '>🇭🇰HK|Hs|0906|TG@FProxies| 2-fe5f875d'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies|-aa1bae12'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 2-d4b00ed0'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 3-95aee847'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 4-a5f371e3'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 5-777ff1ab'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 6-dec24cc5'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies|-3e6abe09'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 2-d73a45cf'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 3-0fde8ea0'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 4-fa3b4354'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 5-be05f709'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 6-828dadae'
+  - '>🇮🇩ID|Hs|0906|TG@FProxies|-2fddadfc'
+  - '>🇮🇩ID|Hs|0906|TG@FProxies| 2-e78d86dc'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies|-908d0394'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies| 2-7b8d07e3'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies| 3-9cba4d9f'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies|-59e16e50'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies| 2-74911868'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies| 3-142a7a87'
+  - '>🇮🇩ID|Ns|0906|TG@FProxies|-8d5cf15d'
+  - '>🇮🇩ID|Ns|0906|TG@FProxies| 2-b1cdc7d0'
+  - '>🇮🇳IN|Hs|0906|TG@FProxies|-5a8567a1'
+  - '>🇮🇹IT|Ms|0906|TG@FProxies|-dcad5587'
+  - '>🇯🇵JP|Hs|0906|TG@FProxies|-5217933b'
+  - '>🇯🇵JP|Hs|0906|TG@FProxies| 2-2a87939f'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies|-9aac192e'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 3-eb8625f1'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 4-9580d4cd'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies|-692eab66'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 2-6e6d9f8d'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 3-31d4e279'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 4-47de2156'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies|-5fcaff3d'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 2-db4b5681'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 3-86d5c093'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 4-ea88433b'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 5-ec88d98c'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 6-49193fd2'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 7-89e804b2'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 8-e13d7372'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 9-a025b176'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 10-2c736525'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 11-f31ba3cd'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 12-f9b6391e'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 13-38722c32'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 14-88b27024'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 15-5ba0ccf6'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 16-bcd20db1'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 17-2a8859ea'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 18-cfe02e0b'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 19-d3023dfa'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 20-d824e0f3'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 21-30ac3c64'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 22-6c33e1c8'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 23-a61a118f'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 24-0bf18a29'
+  - '>🇰🇷KR|Ms|0906|TG@FProxies|-5ee4e76e'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies|-2f2f83b7'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 2-955980bf'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 3-1d852037'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 4-05c73cdb'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies|-93748020'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies| 2-99c3404e'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies| 3-e529c427'
+  - '>🇷🇺RU|Hs|0906|TG@FProxies|-9108bb88'
+  - '>🇷🇺RU|Hs|0906|TG@FProxies| 2-3fa72528'
+  - '>🇷🇺RU|Ms|0906|TG@FProxies|-d3663234'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies|-0dd74f11'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 2-d39a80f0'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 3-328fb0be'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 4-37baae28'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 5-6a196d15'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies|-a707ae51'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 2-a84f96dd'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 3-4e4f5b68'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 4-5961d770'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 5-f5773bf6'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 6-bb528781'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies|-57fedb76'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 2-e98bcb69'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 3-0d1f5360'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 4-f5b1d2d8'
+  - '>🇸🇬SG|Ns|0906|TG@FProxies|-c26fabf2'
+  - '>🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97'
+  - '>🇹🇼TW|Ls|0906|TG@FProxies| 2-6e72b775'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies| 2-bb2d2e39'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies| 3-3a360a44'
+  - '>🇺🇸US|Hs|0906|TG@FProxies|-efad9c53'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 2-abcc3f4b'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 3-813414a8'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 4-6b3bfd1d'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 6-dfab479a'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 7-8b8e17ff'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 8-68ef70c9'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 9-ed8566a9'
+  - '>🇺🇸US|Ls|0906|TG@FProxies|-827831d0'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 2-83f55f09'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 3-dc22e494'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 4-deb342b7'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 5-deb093d4'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 6-80c6215f'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 7-c1b45add'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 8-0450364e'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 9-31b40e6a'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 10-a2af30d7'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 11-fa8fd663'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 12-4ac1cd9c'
+  - '>🇺🇸US|Ms|0906|TG@FProxies|-9e3f152c'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 2-5c601783'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 3-e3a0c660'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 4-31889acd'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 5-85405344'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 6-4e5cf421'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 7-967341f3'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 8-45028a4b'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 9-170dccde'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 10-8512037b'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 11-df2d4b84'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 12-12c93065'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 13-9776dbd5'
+  - '>🇺🇸US|Ns|0906|TG@FProxies|-c8648934'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 2-9e55205b'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 3-944c6add'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 4-248931b1'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 5-04110cbf'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 6-4ce9511a'
+  - '>🇻🇳VN|Ns|0906|TG@FProxies|-7611065e'
   - https://github.com/Alvin9999-newpac/fanqiang-5fa16594
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
@@ -2261,212 +1990,174 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_2|1.4MB/s-4f9eae8a
-  - 🇫🇷FR_2|1.2MB/s-5bd519d8
-  - 🇮🇪IE_1|2.9MB/s-38e4b24c
-  - 🇬🇧GB_1|3.7MB/s-bdd0365d
-  - 🇬🇧GB_8|4.1MB/s-93e569b8
-  - 🇮🇪IE_2|4.6MB/s-f894c908
-  - '>🇦🇺AU|Hs|0822|TG@FProxies|-87e889e6'
-  - '>🇧🇷BR|Hs|0822|TG@FProxies|-56c7a881'
-  - '>🇧🇷BR|Ls|0822|TG@FProxies|-b3aad6b1'
-  - '>🇧🇷BR|Ms|0822|TG@FProxies|-de406e10'
-  - '>🇧🇷BR|Ms|0822|TG@FProxies| 2-bf765403'
-  - '>🇩🇪DE|Hs|0822|TG@FProxies|-28c6b435'
-  - '>🇩🇪DE|Hs|0822|TG@FProxies| 2-c962fb34'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies|-31fe287e'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 2-c92bb328'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 3-fd71dc79'
-  - '>🇩🇪DE|Ls|0822|TG@FProxies| 4-21f7efb7'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies|-29a1f689'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 2-f1f6f1bb'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 3-a6e31285'
-  - '>🇩🇪DE|Ms|0822|TG@FProxies| 4-acba1aa7'
-  - '>🇫🇷FR|Hs|0822|TG@FProxies|-265cb8b9'
-  - '>🇫🇷FR|Ls|0822|TG@FProxies|-00452767'
-  - '>🇫🇷FR|Ls|0822|TG@FProxies| 2-64b95ddc'
-  - '>🇫🇷FR|Ms|0822|TG@FProxies|-ea1316f4'
-  - '>🇬🇧GB|Hs|0822|TG@FProxies|-0e3985e3'
-  - '>🇬🇧GB|Ls|0822|TG@FProxies|-930fe358'
-  - '>🇬🇧GB|Ms|0822|TG@FProxies|-96c9ca07'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies|-0e4ceaf8'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 2-a1653767'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 3-6089c45d'
-  - '>🇭🇰HK|Hs|0822|TG@FProxies| 4-1272ba20'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies|-c522719a'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 2-7d695319'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 3-3f3614e4'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 4-1e0c6572'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 5-6396d4fe'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 6-72459cd0'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 7-d4d1a494'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 8-1990c801'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 9-c1cd470b'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 10-a89f40f5'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 11-a1b860a9'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 12-30464c52'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 13-bbce562e'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 14-95aee847'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 15-eaeca710'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 16-81a6bb18'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 17-dec24cc5'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 18-828dadae'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 19-d2548991'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 20-f32570b7'
-  - '>🇭🇰HK|Ls|0822|TG@FProxies| 21-60d2a195'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies|-af5db69b'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 2-3e77480a'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 3-69e2c36d'
-  - '>🇭🇰HK|Ms|0822|TG@FProxies| 4-b2d62676'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies|-aa78637f'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 2-a0b9c054'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 3-2d7aac31'
-  - '>🇮🇩ID|Hs|0822|TG@FProxies| 4-8e446099'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies|-75df056d'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 2-6abc02fd'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 3-1c443e46'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 4-908d0394'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 5-fa203ba7'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 6-fb441120'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 7-74122867'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 8-350b30b4'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 9-1095ccfb'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 10-c3e42b8b'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 11-f016b980'
-  - '>🇮🇩ID|Ls|0822|TG@FProxies| 12-84167709'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies|-86544ad5'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies| 2-bdbbf302'
-  - '>🇮🇩ID|Ms|0822|TG@FProxies| 3-681ef92d'
-  - '>🇮🇳IN|Hs|0822|TG@FProxies|-fcbb8656'
-  - '>🇮🇳IN|Hs|0822|TG@FProxies| 2-918dc384'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies|-e810708c'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies| 2-8ac739c6'
-  - '>🇮🇳IN|Ls|0822|TG@FProxies| 3-19cd2483'
-  - '>🇮🇳IN|Ms|0822|TG@FProxies|-1f032f5a'
-  - '>🇮🇹IT|Hs|0822|TG@FProxies|-5fcddc61'
-  - '>🇮🇹IT|Ls|0822|TG@FProxies|-81d5e401'
-  - '>🇮🇹IT|Ms|0822|TG@FProxies|-6d4a5162'
-  - '>🇯🇵JP|Hs|0822|TG@FProxies|-1e42ce8e'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies|-b9eb114c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 2-5501d3b7'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 3-2ae38d5f'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 4-d0f4c22c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 5-5e5528c7'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 6-eb8625f1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 7-4f24de3a'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 8-36b72eed'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 9-5217933b'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 10-529ff3c1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 11-3f470cf1'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 12-7ae7ae6d'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 13-9ebb16be'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 14-a23292e6'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 15-4025edf3'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 16-2a24cbbf'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 17-b001e94c'
-  - '>🇯🇵JP|Ls|0822|TG@FProxies| 18-409edd40'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies|-98301581'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 2-1be8b93e'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 3-f7965dfd'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 4-4ef5edfe'
-  - '>🇯🇵JP|Ms|0822|TG@FProxies| 5-42f53cbf'
-  - '>🇰🇷KR|Hs|0822|TG@FProxies|-6ac6dd3b'
-  - '>🇰🇷KR|Ls|0822|TG@FProxies|-6162db9e'
-  - '>🇰🇷KR|Ls|0822|TG@FProxies| 2-5664402c'
-  - '>🇳🇱NL|Hs|0822|TG@FProxies|-15ff2f28'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies|-0f4fe633'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 2-04622405'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 3-97e9fc92'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 4-4df18a20'
-  - '>🇷🇴RO|Hs|0822|TG@FProxies| 5-35480be7'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies|-b574695c'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 2-14f7bb67'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 3-fa608b01'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 4-91d85b9a'
-  - '>🇷🇺RU|Ls|0822|TG@FProxies| 5-0a058187'
-  - '>🇷🇺RU|Ms|0822|TG@FProxies|-497153cf'
-  - '>🇷🇺RU|Ms|0822|TG@FProxies| 2-d58488b7'
-  - '>🇸🇬SG|Hs|0822|TG@FProxies|-67c5ec18'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies|-03c2cfe1'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 2-327d5e04'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 3-5961d770'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 4-f4a2f8cf'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 5-b4b8a877'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 6-36914110'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 7-5ff420c7'
-  - '>🇸🇬SG|Ls|0822|TG@FProxies| 8-9034e4ac'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies|-e4456060'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 2-d57ffdbd'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 3-0dd74f11'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 4-6c8a9a01'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 5-491ae0e6'
-  - '>🇸🇬SG|Ms|0822|TG@FProxies| 6-474a5617'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies|-87c1e0c8'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 2-98f2a12e'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 3-1625b464'
-  - '>🇹🇼TW|Ms|0822|TG@FProxies| 4-fc3faee6'
-  - '>🇺🇸US|Hs|0822|TG@FProxies|-792331bc'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 2-813414a8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 3-780892b1'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 4-57cad061'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 5-dec556d8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 6-f23e47a3'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 7-4fd5e334'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 8-1c6d9ca8'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 9-6c7d88cb'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 10-fb872359'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 11-e3446234'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 12-7fdd2a1e'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 13-712c3d63'
-  - '>🇺🇸US|Hs|0822|TG@FProxies| 14-97690a74'
-  - '>🇺🇸US|Ls|0822|TG@FProxies|-24776b6f'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 2-136ef27c'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 3-ec9b4e1b'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 4-3eba9e99'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 5-8d6bb5eb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 6-cedc84c1'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 7-357eedf7'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 8-c08739ca'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 9-bd0d4625'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 10-a92a1381'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 11-5308d22e'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 12-14f974eb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 13-86e3c9cb'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 14-a4c609da'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 15-70d010fe'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 16-fa8fd663'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 17-df311391'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 18-e9809faf'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 19-53df1e65'
-  - '>🇺🇸US|Ls|0822|TG@FProxies| 20-dbe12b77'
-  - '>🇺🇸US|Ms|0822|TG@FProxies|-f3d215c6'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 2-8fff18ef'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 3-7b3ae0f8'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 4-9ba6ba82'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 5-f48177c3'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 6-9e3f152c'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 7-bb5b51c4'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 8-c32dd095'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 9-1b39aa26'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 10-bb90c921'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 11-ab1f2ce3'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 12-18a8d4dd'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 13-4ac1cd9c'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 14-713f587f'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 15-1498a808'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 16-7085202f'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 17-36bdd8c2'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 18-df105dec'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 19-5a0c3756'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 20-31889acd'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 21-c9f37524'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 22-91b06311'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 23-c7c34713'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 24-849feffe'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 25-be8b54a1'
-  - '>🇺🇸US|Ms|0822|TG@FProxies| 26-58866982'
-  - '>🇻🇳VN|Ls|0822|TG@FProxies|-6b0c4c90'
-  - '>🇻🇳VN|Ls|0822|TG@FProxies| 2-e9f388e4'
+  - 🇨🇦CA_1|4.4MB/s-4a975590
+  - 🇮🇪IE_1|4.3MB/s-391d6303
+  - 🇰🇷KR_1|2.4MB/s-e899e879
+  - 🇫🇷FR_1|2.8MB/s-8af37ea9
+  - 🇫🇷FR_2|2.1MB/s-8eeca6b7
+  - 🇯🇵JP_1|2.0MB/s-873f1b21
+  - 🇫🇷FR_3|1.5MB/s-098083b5
+  - 🇫🇷FR_4|1.6MB/s-4e6f0451
+  - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
+  - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
+  - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies|-3f66468f'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies| 2-6045c53b'
+  - '>🇧🇷BR|Ls|0906|TG@FProxies| 3-eabd5fa0'
+  - '>🇧🇷BR|Ms|0906|TG@FProxies|-7b365b4a'
+  - '>🇨🇦CA|Ls|0906|TG@FProxies|-07b800ff'
+  - '>🇨🇦CA|Ns|0906|TG@FProxies|-cb79df1d'
+  - '>🇩🇪DE|Hs|0906|TG@FProxies|-8e373168'
+  - '>🇩🇪DE|Ls|0906|TG@FProxies|-24e895e8'
+  - '>🇩🇪DE|Ls|0906|TG@FProxies| 2-aa6a4785'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies|-8d19e46e'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies| 2-c962fb34'
+  - '>🇩🇪DE|Ms|0906|TG@FProxies| 3-01d43918'
+  - '>🇩🇪DE|Ns|0906|TG@FProxies|-084b397f'
+  - '>🇫🇷FR|Hs|0906|TG@FProxies|-80abebcd'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies|-b408f99e'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies| 2-ce9acc56'
+  - '>🇫🇷FR|Ls|0906|TG@FProxies| 3-4153ee35'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies|-103d5e1a'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 2-25263d67'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 3-5bac5abf'
+  - '>🇫🇷FR|Ms|0906|TG@FProxies| 4-779a3809'
+  - '>🇬🇧GB|Ls|0906|TG@FProxies|-d13d27e0'
+  - '>🇬🇧GB|Ms|0906|TG@FProxies|-ad638110'
+  - '>🇬🇧GB|Ms|0906|TG@FProxies| 2-c3aff928'
+  - '>🇭🇰HK|Hs|0906|TG@FProxies|-41670e6d'
+  - '>🇭🇰HK|Hs|0906|TG@FProxies| 2-fe5f875d'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies|-aa1bae12'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 2-d4b00ed0'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 3-95aee847'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 4-a5f371e3'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 5-777ff1ab'
+  - '>🇭🇰HK|Ls|0906|TG@FProxies| 6-dec24cc5'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies|-3e6abe09'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 2-d73a45cf'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 3-0fde8ea0'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 4-fa3b4354'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 5-be05f709'
+  - '>🇭🇰HK|Ms|0906|TG@FProxies| 6-828dadae'
+  - '>🇮🇩ID|Hs|0906|TG@FProxies|-2fddadfc'
+  - '>🇮🇩ID|Hs|0906|TG@FProxies| 2-e78d86dc'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies|-908d0394'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies| 2-7b8d07e3'
+  - '>🇮🇩ID|Ls|0906|TG@FProxies| 3-9cba4d9f'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies|-59e16e50'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies| 2-74911868'
+  - '>🇮🇩ID|Ms|0906|TG@FProxies| 3-142a7a87'
+  - '>🇮🇩ID|Ns|0906|TG@FProxies|-8d5cf15d'
+  - '>🇮🇩ID|Ns|0906|TG@FProxies| 2-b1cdc7d0'
+  - '>🇮🇳IN|Hs|0906|TG@FProxies|-5a8567a1'
+  - '>🇮🇹IT|Ms|0906|TG@FProxies|-dcad5587'
+  - '>🇯🇵JP|Hs|0906|TG@FProxies|-5217933b'
+  - '>🇯🇵JP|Hs|0906|TG@FProxies| 2-2a87939f'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies|-9aac192e'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 3-eb8625f1'
+  - '>🇯🇵JP|Ls|0906|TG@FProxies| 4-9580d4cd'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies|-692eab66'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 2-6e6d9f8d'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 3-31d4e279'
+  - '>🇯🇵JP|Ms|0906|TG@FProxies| 4-47de2156'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies|-5fcaff3d'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 2-db4b5681'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 3-86d5c093'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 4-ea88433b'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 5-ec88d98c'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 6-49193fd2'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 7-89e804b2'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 8-e13d7372'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 9-a025b176'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 10-2c736525'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 11-f31ba3cd'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 12-f9b6391e'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 13-38722c32'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 14-88b27024'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 15-5ba0ccf6'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 16-bcd20db1'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 17-2a8859ea'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 18-cfe02e0b'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 19-d3023dfa'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 20-d824e0f3'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 21-30ac3c64'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 22-6c33e1c8'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 23-a61a118f'
+  - '>🇯🇵JP|Ns|0906|TG@FProxies| 24-0bf18a29'
+  - '>🇰🇷KR|Ms|0906|TG@FProxies|-5ee4e76e'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies|-2f2f83b7'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 2-955980bf'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 3-1d852037'
+  - '>🇳🇱NL|Ms|0906|TG@FProxies| 4-05c73cdb'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies|-93748020'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies| 2-99c3404e'
+  - '>🇷🇴RO|Hs|0906|TG@FProxies| 3-e529c427'
+  - '>🇷🇺RU|Hs|0906|TG@FProxies|-9108bb88'
+  - '>🇷🇺RU|Hs|0906|TG@FProxies| 2-3fa72528'
+  - '>🇷🇺RU|Ms|0906|TG@FProxies|-d3663234'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies|-0dd74f11'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 2-d39a80f0'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 3-328fb0be'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 4-37baae28'
+  - '>🇸🇬SG|Hs|0906|TG@FProxies| 5-6a196d15'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies|-a707ae51'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 2-a84f96dd'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 3-4e4f5b68'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 4-5961d770'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 5-f5773bf6'
+  - '>🇸🇬SG|Ls|0906|TG@FProxies| 6-bb528781'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies|-57fedb76'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 2-e98bcb69'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 3-0d1f5360'
+  - '>🇸🇬SG|Ms|0906|TG@FProxies| 4-f5b1d2d8'
+  - '>🇸🇬SG|Ns|0906|TG@FProxies|-c26fabf2'
+  - '>🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97'
+  - '>🇹🇼TW|Ls|0906|TG@FProxies| 2-6e72b775'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies| 2-bb2d2e39'
+  - '>🇹🇼TW|Ms|0906|TG@FProxies| 3-3a360a44'
+  - '>🇺🇸US|Hs|0906|TG@FProxies|-efad9c53'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 2-abcc3f4b'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 3-813414a8'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 4-6b3bfd1d'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 6-dfab479a'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 7-8b8e17ff'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 8-68ef70c9'
+  - '>🇺🇸US|Hs|0906|TG@FProxies| 9-ed8566a9'
+  - '>🇺🇸US|Ls|0906|TG@FProxies|-827831d0'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 2-83f55f09'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 3-dc22e494'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 4-deb342b7'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 5-deb093d4'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 6-80c6215f'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 7-c1b45add'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 8-0450364e'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 9-31b40e6a'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 10-a2af30d7'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 11-fa8fd663'
+  - '>🇺🇸US|Ls|0906|TG@FProxies| 12-4ac1cd9c'
+  - '>🇺🇸US|Ms|0906|TG@FProxies|-9e3f152c'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 2-5c601783'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 3-e3a0c660'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 4-31889acd'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 5-85405344'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 6-4e5cf421'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 7-967341f3'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 8-45028a4b'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 9-170dccde'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 10-8512037b'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 11-df2d4b84'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 12-12c93065'
+  - '>🇺🇸US|Ms|0906|TG@FProxies| 13-9776dbd5'
+  - '>🇺🇸US|Ns|0906|TG@FProxies|-c8648934'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 2-9e55205b'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 3-944c6add'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 4-248931b1'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 5-04110cbf'
+  - '>🇺🇸US|Ns|0906|TG@FProxies| 6-4ce9511a'
+  - '>🇻🇳VN|Ns|0906|TG@FProxies|-7611065e'
   - https://github.com/Alvin9999-newpac/fanqiang-5fa16594
   - github.com/Alvin9999-newpac/fanqiang-d66ff5e8
   - github.com/Alvin9999-newpac/fanqiang-08554c31
