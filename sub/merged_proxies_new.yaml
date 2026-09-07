@@ -171,49 +171,56 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_2|1.2MB/s-fe60f2f5
-  network: ws
-  port: 16632
-  server: m.cnmjin.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
-  ws-opts:
-    headers:
-      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_1|2.0MB/s-05b9645d
-  network: ws
-  port: 16648
-  server: planb.mojcn.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 21af4a11-cf99-4370-bdd7-8a50cd0c6c49
-  ws-opts:
-    headers:
-      Host: e176d51869ea80390a96391ec8361f3f.mobgslb.tbcache.com
-    path: /
+- cipher: aes-256-cfb
+  name: 🇺🇸US_1|1.0MB/s-6027a62d
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 121.46.230.232
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB_2|3.2MB/s-c269d98e
+  password: T6IcUpcVx0Y85DxSTgXe4A
+  port: 97
+  server: 86.38.182.226
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|1013KB/s-1875f5aa
+  name: 🇫🇷FR_1|1.9MB/s-048e14a4
   network: ws
   password: humanity
   port: 443
-  server: 165.215.250.14
-  skip-cert-verify: true
+  server: 104.16.174.101
+  skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|2.3MB/s-12029866
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.179
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_9|1.7MB/s-241bb836
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.69
+  type: ss
+  udp: true
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1718,9 +1725,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_2|1.2MB/s-fe60f2f5
-  - 🇺🇸US_1|2.0MB/s-05b9645d
-  - 🇫🇷FR_1|1013KB/s-1875f5aa
+  - 🇺🇸US_1|1.0MB/s-6027a62d
+  - 🇬🇧GB_2|3.2MB/s-c269d98e
+  - 🇫🇷FR_1|1.9MB/s-048e14a4
+  - 🇫🇷FR_2|2.3MB/s-12029866
+  - 🇳🇱NL_9|1.7MB/s-241bb836
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1918,9 +1927,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-19a395c2
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇭🇰HK_2|1.2MB/s-fe60f2f5
-  - 🇺🇸US_1|2.0MB/s-05b9645d
-  - 🇫🇷FR_1|1013KB/s-1875f5aa
+  - 🇺🇸US_1|1.0MB/s-6027a62d
+  - 🇬🇧GB_2|3.2MB/s-c269d98e
+  - 🇫🇷FR_1|1.9MB/s-048e14a4
+  - 🇫🇷FR_2|2.3MB/s-12029866
+  - 🇳🇱NL_9|1.7MB/s-241bb836
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
