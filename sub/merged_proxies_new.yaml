@@ -171,25 +171,19 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇯🇵JP_1|2.5MB/s-873f1b21
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.137
-  type: ss
+- name: 🇸🇩SD_1|3.6MB/s-841a876a
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: 🇺🇸US_1|1.3MB/s-4f9eae8a
+  name: 🇺🇸US_1|1010KB/s-4f9eae8a
   password: 7eadc6dbe2ae
   port: 65443
   server: 121.46.230.233
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|1.4MB/s-282c411a
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.232
   type: ss
   udp: true
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
@@ -1696,9 +1690,8 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|2.5MB/s-873f1b21
-  - 🇺🇸US_1|1.3MB/s-4f9eae8a
-  - 🇺🇸US_2|1.4MB/s-282c411a
+  - 🇸🇩SD_1|3.6MB/s-841a876a
+  - 🇺🇸US_1|1010KB/s-4f9eae8a
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1896,9 +1889,8 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|2.5MB/s-873f1b21
-  - 🇺🇸US_1|1.3MB/s-4f9eae8a
-  - 🇺🇸US_2|1.4MB/s-282c411a
+  - 🇸🇩SD_1|3.6MB/s-841a876a
+  - 🇺🇸US_1|1010KB/s-4f9eae8a
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
