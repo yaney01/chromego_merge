@@ -171,42 +171,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇰🇷KR_1|2.0MB/s-e899e879
-  password: 7eadc6dbe2ae
-  port: 65443
-  server: 121.46.230.138
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 🇨🇦CA_1|1.3MB/s-2c50a8ab
-  password: amazonskr05
-  port: 443
-  server: 16.52.168.26
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🇫🇷FR_1|1001KB/s-00ca204a
-  network: ws
-  password: humanity
-  port: 443
-  server: 45.130.125.158
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /assignment
-- cipher: aes-256-cfb
-  name: 🇨🇦CA_2|1.5MB/s-52e87e1e
-  password: amazonskr05
-  port: 443
-  server: 16.52.165.74
-  type: ss
-  udp: true
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1734,10 +1698,6 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|2.0MB/s-e899e879
-  - 🇨🇦CA_1|1.3MB/s-2c50a8ab
-  - 🇫🇷FR_1|1001KB/s-00ca204a
-  - 🇨🇦CA_2|1.5MB/s-52e87e1e
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1935,10 +1895,6 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇰🇷KR_1|2.0MB/s-e899e879
-  - 🇨🇦CA_1|1.3MB/s-2c50a8ab
-  - 🇫🇷FR_1|1001KB/s-00ca204a
-  - 🇨🇦CA_2|1.5MB/s-52e87e1e
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
