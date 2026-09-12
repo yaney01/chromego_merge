@@ -106,7 +106,13 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇬🇧GB_1|1012KB/s-273820e6",
+        "🇬🇧GB_1|3.1MB/s-2e91bcfc",
+        "🇨🇦CA_1|3.9MB/s-ffd0de49",
+        "🇨🇦CA_2|3.0MB/s-52e87e1e",
+        "🇶🇦QA_1|4.7MB/s-074d12fe",
+        "🇨🇦CA_3|4.5MB/s-b95f9a91",
+        "🇮🇪IE_1|2.3MB/s-3a5f14a3",
+        "🇹🇼TW_1|1.6MB/s-37acfa9d",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -506,6 +512,7 @@
       "type": "selector",
       "outbounds": [
         "台湾|@ripaojiedian-e9d88877",
+        "🇹🇼TW_1|1.6MB/s-37acfa9d",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9",
@@ -635,7 +642,12 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
-        "🇬🇧GB_1|1012KB/s-273820e6",
+        "🇬🇧GB_1|3.1MB/s-2e91bcfc",
+        "🇨🇦CA_1|3.9MB/s-ffd0de49",
+        "🇨🇦CA_2|3.0MB/s-52e87e1e",
+        "🇶🇦QA_1|4.7MB/s-074d12fe",
+        "🇨🇦CA_3|4.5MB/s-b95f9a91",
+        "🇮🇪IE_1|2.3MB/s-3a5f14a3",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -722,7 +734,13 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇬🇧GB_1|1012KB/s-273820e6",
+        "🇬🇧GB_1|3.1MB/s-2e91bcfc",
+        "🇨🇦CA_1|3.9MB/s-ffd0de49",
+        "🇨🇦CA_2|3.0MB/s-52e87e1e",
+        "🇶🇦QA_1|4.7MB/s-074d12fe",
+        "🇨🇦CA_3|4.5MB/s-b95f9a91",
+        "🇮🇪IE_1|2.3MB/s-3a5f14a3",
+        "🇹🇼TW_1|1.6MB/s-37acfa9d",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1103,12 +1121,64 @@
       }
     },
     {
-      "tag": "🇬🇧GB_1|1012KB/s-273820e6",
+      "tag": "🇬🇧GB_1|3.1MB/s-2e91bcfc",
       "type": "shadowsocks",
-      "server": "52.56.143.197",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "tag": "🇨🇦CA_1|3.9MB/s-ffd0de49",
+      "type": "shadowsocks",
+      "server": "35.182.182.58",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
+    },
+    {
+      "tag": "🇨🇦CA_2|3.0MB/s-52e87e1e",
+      "type": "shadowsocks",
+      "server": "16.52.165.74",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇶🇦QA_1|4.7MB/s-074d12fe",
+      "type": "trojan",
+      "server": "z-jp2.1card.cc",
+      "server_port": 10008,
+      "password": "ultra%40kWZdAzt_IH593eGLRjdxnBZ0",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "z-jp2.1card.cc"
+      }
+    },
+    {
+      "tag": "🇨🇦CA_3|4.5MB/s-b95f9a91",
+      "type": "shadowsocks",
+      "server": "15.223.195.102",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇮🇪IE_1|2.3MB/s-3a5f14a3",
+      "type": "shadowsocks",
+      "server": "52.211.103.59",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇹🇼TW_1|1.6MB/s-37acfa9d",
+      "type": "shadowsocks",
+      "server": "61.216.165.233",
+      "server_port": 2377,
+      "method": "chacha20-ietf-poly1305",
+      "password": "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     },
     {
       "tag": ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
