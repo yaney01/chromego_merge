@@ -172,15 +172,46 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - client-fingerprint: chrome
-  name: 🇾🇪YE_1|3.9MB/s-db6ab47e
+  name: 🇶🇦QA_1|2.9MB/s-074d12fe
   network: tcp
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  port: 10010
-  server: z-jp1.1card.cc
+  port: 10008
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: z-jp2.1card.cc
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇦🇫AF_1|2.4MB/s-eaaca792
+  network: tcp
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10009
+  server: z-jp2.1card.cc
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧GB_4|1.4MB/s-3b4f9ff8
+  password: c58d16e593d44f42
+  port: 11001
+  server: 158.173.221.214
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 🇳🇱NL_2|2.7MB/s-e68f399c
+  network: tcp
+  port: 30830
+  server: v30.hdacd.com
+  servername: mfyousheng.nl.eu.org
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1685,7 +1716,10 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇾🇪YE_1|3.9MB/s-db6ab47e
+  - 🇶🇦QA_1|2.9MB/s-074d12fe
+  - 🇦🇫AF_1|2.4MB/s-eaaca792
+  - 🇬🇧GB_4|1.4MB/s-3b4f9ff8
+  - 🇳🇱NL_2|2.7MB/s-e68f399c
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1883,7 +1917,10 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇾🇪YE_1|3.9MB/s-db6ab47e
+  - 🇶🇦QA_1|2.9MB/s-074d12fe
+  - 🇦🇫AF_1|2.4MB/s-eaaca792
+  - 🇬🇧GB_4|1.4MB/s-3b4f9ff8
+  - 🇳🇱NL_2|2.7MB/s-e68f399c
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'

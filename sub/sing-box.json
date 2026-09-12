@@ -106,7 +106,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇾🇪YE_1|3.9MB/s-db6ab47e",
+        "🇶🇦QA_1|2.9MB/s-074d12fe",
+        "🇦🇫AF_1|2.4MB/s-eaaca792",
+        "🇬🇧GB_4|1.4MB/s-3b4f9ff8",
+        "🇳🇱NL_2|2.7MB/s-e68f399c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -635,7 +638,10 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
-        "🇾🇪YE_1|3.9MB/s-db6ab47e",
+        "🇶🇦QA_1|2.9MB/s-074d12fe",
+        "🇦🇫AF_1|2.4MB/s-eaaca792",
+        "🇬🇧GB_4|1.4MB/s-3b4f9ff8",
+        "🇳🇱NL_2|2.7MB/s-e68f399c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -722,7 +728,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇾🇪YE_1|3.9MB/s-db6ab47e",
+        "🇶🇦QA_1|2.9MB/s-074d12fe",
+        "🇦🇫AF_1|2.4MB/s-eaaca792",
+        "🇬🇧GB_4|1.4MB/s-3b4f9ff8",
+        "🇳🇱NL_2|2.7MB/s-e68f399c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1103,15 +1112,48 @@
       }
     },
     {
-      "tag": "🇾🇪YE_1|3.9MB/s-db6ab47e",
+      "tag": "🇶🇦QA_1|2.9MB/s-074d12fe",
       "type": "trojan",
-      "server": "z-jp1.1card.cc",
-      "server_port": 10010,
+      "server": "z-jp2.1card.cc",
+      "server_port": 10008,
+      "password": "ultra%40kWZdAzt_IH593eGLRjdxnBZ0",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "z-jp2.1card.cc"
+      }
+    },
+    {
+      "tag": "🇦🇫AF_1|2.4MB/s-eaaca792",
+      "type": "trojan",
+      "server": "z-jp2.1card.cc",
+      "server_port": 10009,
       "password": "ultra%40kWZdAzt_IH593eGLRjdxnBZ0",
       "tls": {
         "enabled": true,
         "insecure": true,
         "server_name": "www.cloudflare.com"
+      }
+    },
+    {
+      "tag": "🇬🇧GB_4|1.4MB/s-3b4f9ff8",
+      "type": "shadowsocks",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
+      "tag": "🇳🇱NL_2|2.7MB/s-e68f399c",
+      "type": "vmess",
+      "server": "v30.hdacd.com",
+      "server_port": 30830,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http"
       }
     },
     {
