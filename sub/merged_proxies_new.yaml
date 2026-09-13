@@ -171,40 +171,66 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 🇸🇩SD_1|2.5MB/s-841a876a
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10012
+  server: z-jp2.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|2.4MB/s-eeb23158
+  name: 🇺🇸US_3|3.8MB/s-35527805
+  password: 06da30be2ce5ece28204119359fe4eb3
+  port: 443
+  server: clash2.deep-links.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.7MB/s-17304db4
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.8
+  server: 104.16.7.70
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
     path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: ios
-  name: 🇫🇷FR_2|2.1MB/s-f97da310
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|2.1MB/s-2bffa2c6
   network: ws
   password: humanity
   port: 443
-  server: 45.130.125.158
+  server: 172.67.221.242
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
-        wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
-        Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.5MB/s-090324bd
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.14
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
@@ -1710,8 +1736,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|2.4MB/s-eeb23158
-  - 🇫🇷FR_2|2.1MB/s-f97da310
+  - 🇸🇩SD_1|2.5MB/s-841a876a
+  - 🇺🇸US_3|3.8MB/s-35527805
+  - 🇫🇷FR_1|1.7MB/s-17304db4
+  - 🇫🇷FR_2|2.1MB/s-2bffa2c6
+  - 🇫🇷FR_3|1.5MB/s-090324bd
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1909,8 +1938,11 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|2.4MB/s-eeb23158
-  - 🇫🇷FR_2|2.1MB/s-f97da310
+  - 🇸🇩SD_1|2.5MB/s-841a876a
+  - 🇺🇸US_3|3.8MB/s-35527805
+  - 🇫🇷FR_1|1.7MB/s-17304db4
+  - 🇫🇷FR_2|2.1MB/s-2bffa2c6
+  - 🇫🇷FR_3|1.5MB/s-090324bd
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
