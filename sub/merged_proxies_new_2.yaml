@@ -171,6 +171,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: 🇯🇵JP_1|4.1MB/s-e527d2fe
+  network: ws
+  password: d83a390c-33c3-4577-9258-e062f8ebdc16
+  port: 443
+  server: 172.64.41.251
+  skip-cert-verify: false
+  sni: oa1.hyas.space
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /x7f9k2m4p8
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1698,6 +1713,7 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇯🇵JP_1|4.1MB/s-e527d2fe
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1895,6 +1911,7 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇯🇵JP_1|4.1MB/s-e527d2fe
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
