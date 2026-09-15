@@ -171,6 +171,20 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_2|1.8MB/s-26ccbc3e
+  password: 1234!@#$
+  port: 1774
+  server: 49.254.204.134
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_32|4.1MB/s-1fb56cba
+  password: amazonskr05
+  port: 443
+  server: 18.191.124.183
+  type: ss
+  udp: true
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1698,6 +1712,8 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇰🇷KR_2|1.8MB/s-26ccbc3e
+  - 🇺🇸US_32|4.1MB/s-1fb56cba
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1895,6 +1911,8 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇰🇷KR_2|1.8MB/s-26ccbc3e
+  - 🇺🇸US_32|4.1MB/s-1fb56cba
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
