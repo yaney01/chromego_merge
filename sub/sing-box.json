@@ -106,7 +106,9 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_4|1.4MB/s-8bf9b207",
+        "🇹🇼TW_2|1.5MB/s-a3c6e4d4",
+        "🇺🇸US_3|1.4MB/s-28a6b8a8",
+        "🇫🇷FR_1|1.6MB/s-fb82f00c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -506,6 +508,7 @@
       "type": "selector",
       "outbounds": [
         "台湾|@ripaojiedian-e9d88877",
+        "🇹🇼TW_2|1.5MB/s-a3c6e4d4",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9",
@@ -588,7 +591,7 @@
         "美国|@ripaojiedian-45213206",
         "美国2|@ripaojiedian-e6c1f259",
         "美国3|@ripaojiedian-5649a706",
-        "🇺🇸US_4|1.4MB/s-8bf9b207",
+        "🇺🇸US_3|1.4MB/s-28a6b8a8",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -636,6 +639,7 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
+        "🇫🇷FR_1|1.6MB/s-fb82f00c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -722,7 +726,9 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_4|1.4MB/s-8bf9b207",
+        "🇹🇼TW_2|1.5MB/s-a3c6e4d4",
+        "🇺🇸US_3|1.4MB/s-28a6b8a8",
+        "🇫🇷FR_1|1.6MB/s-fb82f00c",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1103,9 +1109,39 @@
       }
     },
     {
-      "tag": "🇺🇸US_4|1.4MB/s-8bf9b207",
+      "tag": "🇹🇼TW_2|1.5MB/s-a3c6e4d4",
+      "type": "vmess",
+      "server": "82259754d625.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "82259754d625.oylfmxz.cn"
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "82259754d625.oylfmxz.cn"
+        },
+        "path": "/"
+      }
+    },
+    {
+      "tag": "🇺🇸US_3|1.4MB/s-28a6b8a8",
       "type": "shadowsocks",
-      "server": "3.149.6.228",
+      "server": "3.16.81.205",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇫🇷FR_1|1.6MB/s-fb82f00c",
+      "type": "shadowsocks",
+      "server": "13.39.233.161",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
