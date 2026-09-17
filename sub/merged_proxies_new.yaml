@@ -171,20 +171,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇺🇸US_1|3.9MB/s-28a6b8a8
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|3.3MB/s-ffb8c096
+  network: ws
+  password: humanity
   port: 443
-  server: 3.16.81.205
-  type: ss
+  server: 162.159.36.20
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_1|3.1MB/s-8623dd65
-  password: amazonskr05
-  port: 443
-  server: 3.75.89.244
-  type: ss
-  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.94 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1689,8 +1690,7 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_1|3.9MB/s-28a6b8a8
-  - 🇩🇪DE_1|3.1MB/s-8623dd65
+  - 🇫🇷FR_1|3.3MB/s-ffb8c096
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1888,8 +1888,7 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_1|3.9MB/s-28a6b8a8
-  - 🇩🇪DE_1|3.1MB/s-8623dd65
+  - 🇫🇷FR_1|3.3MB/s-ffb8c096
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
