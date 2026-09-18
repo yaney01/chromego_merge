@@ -106,9 +106,12 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇹🇼TW_2|4.8MB/s-431657df",
-        "🇫🇷FR_2|1006KB/s-20edab50",
-        "🇺🇸US_15|4.3MB/s-76c9f116",
+        "🇫🇷FR_1|2.9MB/s-7d3d1aa4",
+        "🇹🇼TW_1|2.4MB/s-38732015",
+        "🇫🇷FR_2|1.0MB/s-14390883",
+        "🇫🇷FR_3|1.8MB/s-42127354",
+        "🇩🇪DE_3|4.3MB/s-66bcb3ba",
+        "🇳🇱NL_10|2.4MB/s-09e0b045",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -508,7 +511,7 @@
       "type": "selector",
       "outbounds": [
         "台湾|@ripaojiedian-e9d88877",
-        "🇹🇼TW_2|4.8MB/s-431657df",
+        "🇹🇼TW_1|2.4MB/s-38732015",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ls|0906|TG@FProxies|-a465fa97 2",
         ">🇹🇼TW|Ms|0906|TG@FProxies|-8b3a8ff9",
@@ -591,7 +594,6 @@
         "美国|@ripaojiedian-45213206",
         "美国2|@ripaojiedian-e6c1f259",
         "美国3|@ripaojiedian-5649a706",
-        "🇺🇸US_15|4.3MB/s-76c9f116",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -639,7 +641,11 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
-        "🇫🇷FR_2|1006KB/s-20edab50",
+        "🇫🇷FR_1|2.9MB/s-7d3d1aa4",
+        "🇫🇷FR_2|1.0MB/s-14390883",
+        "🇫🇷FR_3|1.8MB/s-42127354",
+        "🇩🇪DE_3|4.3MB/s-66bcb3ba",
+        "🇳🇱NL_10|2.4MB/s-09e0b045",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -726,9 +732,12 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇹🇼TW_2|4.8MB/s-431657df",
-        "🇫🇷FR_2|1006KB/s-20edab50",
-        "🇺🇸US_15|4.3MB/s-76c9f116",
+        "🇫🇷FR_1|2.9MB/s-7d3d1aa4",
+        "🇹🇼TW_1|2.4MB/s-38732015",
+        "🇫🇷FR_2|1.0MB/s-14390883",
+        "🇫🇷FR_3|1.8MB/s-42127354",
+        "🇩🇪DE_3|4.3MB/s-66bcb3ba",
+        "🇳🇱NL_10|2.4MB/s-09e0b045",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1109,7 +1118,19 @@
       }
     },
     {
-      "tag": "🇹🇼TW_2|4.8MB/s-431657df",
+      "tag": "🇫🇷FR_1|2.9MB/s-7d3d1aa4",
+      "type": "trojan",
+      "server": "104.21.8.107",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
+      }
+    },
+    {
+      "tag": "🇹🇼TW_1|2.4MB/s-38732015",
       "type": "vmess",
       "server": "7dba81fc3a0b.oylfmxz.cn",
       "server_port": 443,
@@ -1120,17 +1141,20 @@
       "tls": {
         "enabled": true,
         "insecure": true,
-        "server_name": ""
+        "server_name": "7dba81fc3a0b.oylfmxz.cn"
       },
       "transport": {
         "type": "ws",
+        "headers": {
+          "Host": "7dba81fc3a0b.oylfmxz.cn"
+        },
         "path": "/"
       }
     },
     {
-      "tag": "🇫🇷FR_2|1006KB/s-20edab50",
+      "tag": "🇫🇷FR_2|1.0MB/s-14390883",
       "type": "trojan",
-      "server": "104.18.152.149",
+      "server": "join-telegram-channel-tirexnet.trex.kdns.fr",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -1140,12 +1164,36 @@
       }
     },
     {
-      "tag": "🇺🇸US_15|4.3MB/s-76c9f116",
-      "type": "shadowsocks",
-      "server": "3.148.253.102",
+      "tag": "🇫🇷FR_3|1.8MB/s-42127354",
+      "type": "trojan",
+      "server": "join-telegram-channel.tirexnet.kdns.fr",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
+      }
+    },
+    {
+      "tag": "🇩🇪DE_3|4.3MB/s-66bcb3ba",
+      "type": "shadowsocks",
+      "server": "config-germany.zelnora.ir",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "VuR-wK82ssFWKyLbZAVtv6vAPY3Uh1Zt"
+    },
+    {
+      "tag": "🇳🇱NL_10|2.4MB/s-09e0b045",
+      "type": "trojan",
+      "server": "solipor-production-7697.up.railway.app",
+      "server_port": 443,
+      "password": "047c5913-4618-010c-6a52-bb584d71d8b6",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "solipor-production-7697.up.railway.app"
+      }
     },
     {
       "tag": ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
