@@ -106,6 +106,8 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
+        "🇩🇪DE_7|1.8MB/s-578586b5",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -634,6 +636,8 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
+        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
+        "🇩🇪DE_7|1.8MB/s-578586b5",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -720,6 +724,8 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
+        "🇩🇪DE_7|1.8MB/s-578586b5",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1094,6 +1100,37 @@
       "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
       "security": "auto",
       "alter_id": 2,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "tag": "🇫🇷FR_3|3.9MB/s-8daeb1eb",
+      "type": "vmess",
+      "server": "80.93.217.193",
+      "server_port": 2083,
+      "uuid": "b4904296-5df5-430c-9849-22bef703174c",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "insecure": true,
+        "server_name": "qbvlpz4b8508.dop100.com"
+      },
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "tag": "🇩🇪DE_7|1.8MB/s-578586b5",
+      "type": "vmess",
+      "server": "irc.jahanrocket.sbs",
+      "server_port": 443,
+      "uuid": "777c24bb-13ec-4c81-bb58-31344653e28c",
+      "security": "auto",
+      "alter_id": 0,
       "packet_encoding": "xudp",
       "transport": {
         "type": "http"
