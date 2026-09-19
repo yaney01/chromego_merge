@@ -106,8 +106,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
-        "🇩🇪DE_7|1.8MB/s-578586b5",
+        "🇺🇸US_16|2.5MB/s-2ca1a885",
+        "🇵🇱PL_3|2.9MB/s-b5cc75da",
+        "🇺🇸US_18|4.8MB/s-e80aa133",
+        "🇫🇷FR_5|4.0MB/s-2a93183b",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -589,6 +591,8 @@
         "美国|@ripaojiedian-45213206",
         "美国2|@ripaojiedian-e6c1f259",
         "美国3|@ripaojiedian-5649a706",
+        "🇺🇸US_16|2.5MB/s-2ca1a885",
+        "🇺🇸US_18|4.8MB/s-e80aa133",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -636,8 +640,8 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
-        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
-        "🇩🇪DE_7|1.8MB/s-578586b5",
+        "🇵🇱PL_3|2.9MB/s-b5cc75da",
+        "🇫🇷FR_5|4.0MB/s-2a93183b",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -724,8 +728,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇫🇷FR_3|3.9MB/s-8daeb1eb",
-        "🇩🇪DE_7|1.8MB/s-578586b5",
+        "🇺🇸US_16|2.5MB/s-2ca1a885",
+        "🇵🇱PL_3|2.9MB/s-b5cc75da",
+        "🇺🇸US_18|4.8MB/s-e80aa133",
+        "🇫🇷FR_5|4.0MB/s-2a93183b",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1106,35 +1112,45 @@
       }
     },
     {
-      "tag": "🇫🇷FR_3|3.9MB/s-8daeb1eb",
+      "tag": "🇺🇸US_16|2.5MB/s-2ca1a885",
+      "type": "shadowsocks",
+      "server": "121.46.230.139",
+      "server_port": 65443,
+      "method": "aes-256-cfb",
+      "password": "7eadc6dbe2ae"
+    },
+    {
+      "tag": "🇵🇱PL_3|2.9MB/s-b5cc75da",
       "type": "vmess",
-      "server": "80.93.217.193",
-      "server_port": 2083,
-      "uuid": "b4904296-5df5-430c-9849-22bef703174c",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
       "security": "auto",
       "alter_id": 0,
       "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "insecure": true,
-        "server_name": "qbvlpz4b8508.dop100.com"
-      },
       "transport": {
-        "type": "http"
+        "type": "ws",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        },
+        "path": "/"
       }
     },
     {
-      "tag": "🇩🇪DE_7|1.8MB/s-578586b5",
-      "type": "vmess",
-      "server": "irc.jahanrocket.sbs",
+      "tag": "🇺🇸US_18|4.8MB/s-e80aa133",
+      "type": "shadowsocks",
+      "server": "107.174.88.128",
       "server_port": 443,
-      "uuid": "777c24bb-13ec-4c81-bb58-31344653e28c",
-      "security": "auto",
-      "alter_id": 0,
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "http"
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "063aee2ed1124285b5d8a8b049e24cba"
+    },
+    {
+      "tag": "🇫🇷FR_5|4.0MB/s-2a93183b",
+      "type": "shadowsocks",
+      "server": "15.237.252.23",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "tag": ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
