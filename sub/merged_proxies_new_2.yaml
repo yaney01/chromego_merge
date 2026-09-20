@@ -171,15 +171,104 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪DE_1|1.9MB/s-b32ba14e
-  password: a1-hsiyxkoJ_4Zsszu66wA
-  port: 2060
-  server: p1tun2.greewebservices.ir
+- cipher: aes-256-cfb
+  name: 🇺🇸US_1|2.7MB/s-ea3df19b
+  password: amazonskr05
+  port: 443
+  server: 3.148.195.154
   type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.4MB/s-711d1ccb
+  name: 🇫🇷FR_1|2.2MB/s-6c409a4c
+  network: ws
+  password: humanity
+  port: 443
+  server: 130.250.137.171
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|3.0MB/s-4a050315
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.6MB/s-823576cf
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_5|2.5MB/s-6bbebec7
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.34
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_6|2.2MB/s-6e0b37b2
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.37
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_7|1.4MB/s-81cf364d
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.14.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_8|1.8MB/s-cf88b315
   network: ws
   password: humanity
   port: 443
@@ -190,37 +279,69 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_9|3.2MB/s-afadc53e
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.148.22
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/54.0.2840.99 Safari/537.36
     path: /assignment
-- cipher: aes-256-cfb
-  name: 🇫🇷FR_2|2.7MB/s-f9743437
-  password: amazonskr05
+- client-fingerprint: chrome
+  name: 🇫🇷FR_10|1.3MB/s-3c889694
+  network: ws
+  password: humanity
   port: 443
-  server: 13.36.169.164
-  type: ss
+  server: 104.17.177.143
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_5|4.2MB/s-01e861e6
-  password: amazonskr05
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_11|1.5MB/s-46c5f4ad
+  network: ws
+  password: humanity
   port: 443
-  server: 63.181.79.8
-  type: ss
+  server: join-telegram-channel-tirexnet.trex.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇫🇷FR_5|4.1MB/s-e619a15b
-  password: amazonskr05
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_12|3.0MB/s-f95d82c6
+  network: ws
+  password: humanity
   port: 443
-  server: 15.237.180.114
-  type: ss
+  server: 198.41.223.96
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_27|4.2MB/s-a85cf803
-  password: amazonskr05
-  port: 443
-  server: 3.145.36.155
-  type: ss
-  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1748,12 +1869,18 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇩🇪DE_1|1.9MB/s-b32ba14e
-  - 🇫🇷FR_1|1.4MB/s-711d1ccb
-  - 🇫🇷FR_2|2.7MB/s-f9743437
-  - 🇩🇪DE_5|4.2MB/s-01e861e6
-  - 🇫🇷FR_5|4.1MB/s-e619a15b
-  - 🇺🇸US_27|4.2MB/s-a85cf803
+  - 🇺🇸US_1|2.7MB/s-ea3df19b
+  - 🇫🇷FR_1|2.2MB/s-6c409a4c
+  - 🇫🇷FR_3|3.0MB/s-4a050315
+  - 🇫🇷FR_4|1.6MB/s-823576cf
+  - 🇫🇷FR_5|2.5MB/s-6bbebec7
+  - 🇫🇷FR_6|2.2MB/s-6e0b37b2
+  - 🇫🇷FR_7|1.4MB/s-81cf364d
+  - 🇫🇷FR_8|1.8MB/s-cf88b315
+  - 🇫🇷FR_9|3.2MB/s-afadc53e
+  - 🇫🇷FR_10|1.3MB/s-3c889694
+  - 🇫🇷FR_11|1.5MB/s-46c5f4ad
+  - 🇫🇷FR_12|3.0MB/s-f95d82c6
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1951,12 +2078,18 @@ proxy-groups:
   - 美国3|@ripaojiedian-5649a706
   - 台湾|@ripaojiedian-e9d88877
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇩🇪DE_1|1.9MB/s-b32ba14e
-  - 🇫🇷FR_1|1.4MB/s-711d1ccb
-  - 🇫🇷FR_2|2.7MB/s-f9743437
-  - 🇩🇪DE_5|4.2MB/s-01e861e6
-  - 🇫🇷FR_5|4.1MB/s-e619a15b
-  - 🇺🇸US_27|4.2MB/s-a85cf803
+  - 🇺🇸US_1|2.7MB/s-ea3df19b
+  - 🇫🇷FR_1|2.2MB/s-6c409a4c
+  - 🇫🇷FR_3|3.0MB/s-4a050315
+  - 🇫🇷FR_4|1.6MB/s-823576cf
+  - 🇫🇷FR_5|2.5MB/s-6bbebec7
+  - 🇫🇷FR_6|2.2MB/s-6e0b37b2
+  - 🇫🇷FR_7|1.4MB/s-81cf364d
+  - 🇫🇷FR_8|1.8MB/s-cf88b315
+  - 🇫🇷FR_9|3.2MB/s-afadc53e
+  - 🇫🇷FR_10|1.3MB/s-3c889694
+  - 🇫🇷FR_11|1.5MB/s-46c5f4ad
+  - 🇫🇷FR_12|3.0MB/s-f95d82c6
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
