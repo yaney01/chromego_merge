@@ -106,6 +106,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇫🇮FI_2|3.0MB/s-2e60144a",
+        "🇫🇷FR_1|1.8MB/s-20fb34ee",
+        "🇷🇺RU_1|2.0MB/s-138fdea3",
+        "🇺🇸US_25|4.2MB/s-b08308ae",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -587,6 +591,7 @@
         "美国|@ripaojiedian-45213206",
         "美国2|@ripaojiedian-e6c1f259",
         "美国3|@ripaojiedian-5649a706",
+        "🇺🇸US_25|4.2MB/s-b08308ae",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -634,6 +639,9 @@
         "github.com/Alvin9999-newpac/fanqiang-e0705058",
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
+        "🇫🇮FI_2|3.0MB/s-2e60144a",
+        "🇫🇷FR_1|1.8MB/s-20fb34ee",
+        "🇷🇺RU_1|2.0MB/s-138fdea3",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -720,6 +728,10 @@
         "美国3|@ripaojiedian-5649a706",
         "台湾|@ripaojiedian-e9d88877",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇫🇮FI_2|3.0MB/s-2e60144a",
+        "🇫🇷FR_1|1.8MB/s-20fb34ee",
+        "🇷🇺RU_1|2.0MB/s-138fdea3",
+        "🇺🇸US_25|4.2MB/s-b08308ae",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1098,6 +1110,42 @@
       "transport": {
         "type": "http"
       }
+    },
+    {
+      "tag": "🇫🇮FI_2|3.0MB/s-2e60144a",
+      "type": "shadowsocks",
+      "server": "p1tun4.greewebservices.ir",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LMnotcv4RdaEOBXT-LdtfA"
+    },
+    {
+      "tag": "🇫🇷FR_1|1.8MB/s-20fb34ee",
+      "type": "trojan",
+      "server": "104.18.152.140",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
+      }
+    },
+    {
+      "tag": "🇷🇺RU_1|2.0MB/s-138fdea3",
+      "type": "shadowsocks",
+      "server": "195.133.23.200",
+      "server_port": 10081,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
+    },
+    {
+      "tag": "🇺🇸US_25|4.2MB/s-b08308ae",
+      "type": "shadowsocks",
+      "server": "54.204.185.38",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "tag": ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
