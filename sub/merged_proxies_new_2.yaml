@@ -183,21 +183,60 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇺🇸US_5|4.2MB/s-04ac1c4c
+  name: 🇸🇪SE_1|2.5MB/s-c9e4cbba
   password: amazonskr05
   port: 443
-  server: 54.227.186.25
+  server: 13.49.64.122
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: 🇯🇵JP_2|3.5MB/s-59c0f3d3
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.0MB/s-9798550c
   network: ws
-  port: 81
-  server: 147.78.242.19
-  type: vmess
-  uuid: 357b37cc-d0d2-47ef-aa1a-0a668447999e
+  password: humanity
+  port: 443
+  server: render.com
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
   ws-opts:
-    path: /
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
+        (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.2MB/s-c5ac0901
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.5MB/s-0c594ac0
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.74.2
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1722,8 +1761,10 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_5|4.2MB/s-04ac1c4c
-  - 🇯🇵JP_2|3.5MB/s-59c0f3d3
+  - 🇸🇪SE_1|2.5MB/s-c9e4cbba
+  - 🇫🇷FR_1|1.0MB/s-9798550c
+  - 🇫🇷FR_3|1.2MB/s-c5ac0901
+  - 🇫🇷FR_4|1.5MB/s-0c594ac0
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1918,8 +1959,10 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_5|4.2MB/s-04ac1c4c
-  - 🇯🇵JP_2|3.5MB/s-59c0f3d3
+  - 🇸🇪SE_1|2.5MB/s-c9e4cbba
+  - 🇫🇷FR_1|1.0MB/s-9798550c
+  - 🇫🇷FR_3|1.2MB/s-c5ac0901
+  - 🇫🇷FR_4|1.5MB/s-0c594ac0
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'

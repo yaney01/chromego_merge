@@ -103,8 +103,10 @@
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_5|4.2MB/s-04ac1c4c",
-        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
+        "🇸🇪SE_1|2.5MB/s-c9e4cbba",
+        "🇫🇷FR_1|1.0MB/s-9798550c",
+        "🇫🇷FR_3|1.2MB/s-c5ac0901",
+        "🇫🇷FR_4|1.5MB/s-0c594ac0",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -540,7 +542,6 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本|@ripaojiedian-97bc4cf3",
-        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
         ">🇯🇵JP|Ls|0906|TG@FProxies|-9aac192e",
         ">🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4 2",
         ">🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4 2",
@@ -583,7 +584,6 @@
         "美国3|@ripaojiedian-5649a706",
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
-        "🇺🇸US_5|4.2MB/s-04ac1c4c",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -632,6 +632,10 @@
         "github.com/Alvin9999-newpac/fanqiang-c6bb77d3",
         "tg频道:@ripaojiedian #1-9903aeea",
         "印尼-35161e0f",
+        "🇸🇪SE_1|2.5MB/s-c9e4cbba",
+        "🇫🇷FR_1|1.0MB/s-9798550c",
+        "🇫🇷FR_3|1.2MB/s-c5ac0901",
+        "🇫🇷FR_4|1.5MB/s-0c594ac0",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -715,8 +719,10 @@
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
         "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_5|4.2MB/s-04ac1c4c",
-        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
+        "🇸🇪SE_1|2.5MB/s-c9e4cbba",
+        "🇫🇷FR_1|1.0MB/s-9798550c",
+        "🇫🇷FR_3|1.2MB/s-c5ac0901",
+        "🇫🇷FR_4|1.5MB/s-0c594ac0",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1071,25 +1077,47 @@
       }
     },
     {
-      "tag": "🇺🇸US_5|4.2MB/s-04ac1c4c",
+      "tag": "🇸🇪SE_1|2.5MB/s-c9e4cbba",
       "type": "shadowsocks",
-      "server": "54.227.186.25",
+      "server": "13.49.64.122",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
-      "tag": "🇯🇵JP_2|3.5MB/s-59c0f3d3",
-      "type": "vmess",
-      "server": "147.78.242.19",
-      "server_port": 81,
-      "uuid": "357b37cc-d0d2-47ef-aa1a-0a668447999e",
-      "security": "auto",
-      "alter_id": 0,
-      "packet_encoding": "xudp",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "tag": "🇫🇷FR_1|1.0MB/s-9798550c",
+      "type": "trojan",
+      "server": "render.com",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
+      }
+    },
+    {
+      "tag": "🇫🇷FR_3|1.2MB/s-c5ac0901",
+      "type": "trojan",
+      "server": "join-telegram-channel.tirexnet.kdns.fr",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
+      }
+    },
+    {
+      "tag": "🇫🇷FR_4|1.5MB/s-0c594ac0",
+      "type": "trojan",
+      "server": "172.67.74.2",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "insecure": false,
+        "server_name": "www.ignitelimit.com"
       }
     },
     {
