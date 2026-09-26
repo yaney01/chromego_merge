@@ -182,6 +182,22 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇺🇸US_5|4.2MB/s-04ac1c4c
+  password: amazonskr05
+  port: 443
+  server: 54.227.186.25
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 🇯🇵JP_2|3.5MB/s-59c0f3d3
+  network: ws
+  port: 81
+  server: 147.78.242.19
+  type: vmess
+  uuid: 357b37cc-d0d2-47ef-aa1a-0a668447999e
+  ws-opts:
+    path: /
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1683,6 +1699,8 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇺🇸US_5|4.2MB/s-04ac1c4c
+  - 🇯🇵JP_2|3.5MB/s-59c0f3d3
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1877,6 +1895,8 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇺🇸US_5|4.2MB/s-04ac1c4c
+  - 🇯🇵JP_2|3.5MB/s-59c0f3d3
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'

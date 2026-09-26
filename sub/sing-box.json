@@ -103,6 +103,8 @@
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇺🇸US_5|4.2MB/s-04ac1c4c",
+        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -538,6 +540,7 @@
       "type": "selector",
       "outbounds": [
         "🇯🇵 日本|@ripaojiedian-97bc4cf3",
+        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
         ">🇯🇵JP|Ls|0906|TG@FProxies|-9aac192e",
         ">🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4 2",
         ">🇯🇵JP|Ls|0906|TG@FProxies| 2-6ba67bd4 2",
@@ -580,6 +583,7 @@
         "美国3|@ripaojiedian-5649a706",
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
+        "🇺🇸US_5|4.2MB/s-04ac1c4c",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
         ">🇺🇸US|Hs|0906|TG@FProxies| 5-fc3f9f1d 2 2 2 2",
@@ -711,6 +715,8 @@
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
         "香港|@ripaojiedian-a6c1b20b",
+        "🇺🇸US_5|4.2MB/s-04ac1c4c",
+        "🇯🇵JP_2|3.5MB/s-59c0f3d3",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
         ">🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b 2 2 2 2 2 2",
@@ -1062,6 +1068,28 @@
       "packet_encoding": "xudp",
       "transport": {
         "type": "http"
+      }
+    },
+    {
+      "tag": "🇺🇸US_5|4.2MB/s-04ac1c4c",
+      "type": "shadowsocks",
+      "server": "54.227.186.25",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "tag": "🇯🇵JP_2|3.5MB/s-59c0f3d3",
+      "type": "vmess",
+      "server": "147.78.242.19",
+      "server_port": 81,
+      "uuid": "357b37cc-d0d2-47ef-aa1a-0a668447999e",
+      "security": "auto",
+      "alter_id": 0,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
