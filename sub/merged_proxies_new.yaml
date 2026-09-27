@@ -182,6 +182,21 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.1MB/s-a2e6397b
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   server: sgaws.fffo.cc
   port: 34506
@@ -1683,6 +1698,7 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇫🇷FR_2|1.1MB/s-a2e6397b
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
@@ -1877,6 +1893,7 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇫🇷FR_2|1.1MB/s-a2e6397b
   - '>🇦🇺AU|Ls|0906|TG@FProxies|-a6504d5b'
   - '>🇧🇷BR|Hs|0906|TG@FProxies|-384aecea'
   - '>🇧🇷BR|Hs|0906|TG@FProxies| 2-af1bbe22'
