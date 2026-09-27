@@ -182,28 +182,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|1.2MB/s-d85fc822
-  password: amazonskr05
-  port: 443
-  server: 3.85.21.125
-  type: ss
-  udp: true
-- client-fingerprint: safari
-  name: 🇹🇼TW_1|1.3MB/s-846555a1
-  network: ws
-  password: f15900b5-f86b-432d-a67c-45325dc66a2d
-  port: 443
-  server: zhilegelian1.bpca2026.top
-  skip-cert-verify: false
-  sni: zhilegelian1.bpca2026.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.77 Safari/537.36
-    path: /images
 - name: '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   server: 51.161.152.170
   port: 443
@@ -1686,8 +1664,6 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_2|1.2MB/s-d85fc822
-  - 🇹🇼TW_1|1.3MB/s-846555a1
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
@@ -1882,8 +1858,6 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇺🇸US_2|1.2MB/s-d85fc822
-  - 🇹🇼TW_1|1.3MB/s-846555a1
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'

@@ -102,10 +102,8 @@
         "🇯🇵 日本|@ripaojiedian-97bc4cf3",
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
-        "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_2|1.2MB/s-d85fc822",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2",
+        "香港|@ripaojiedian-a6c1b20b 2",
+        "香港|@ripaojiedian-a6c1b20b 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
@@ -477,7 +475,8 @@
         "🇭🇰 香港|@ripaojiedian-73867592",
         "🇭🇰 香港2|@ripaojiedian-7ced5897",
         "🇭🇰 香港3|@ripaojiedian-8d51d112",
-        "香港|@ripaojiedian-a6c1b20b",
+        "香港|@ripaojiedian-a6c1b20b 2",
+        "香港|@ripaojiedian-a6c1b20b 2",
         ">🇭🇰HK|Ls|0925|TG@FProxies|-dec24cc5",
         ">🇭🇰HK|Ls|0925|TG@FProxies| 2-3f3614e4",
         ">🇭🇰HK|Ls|0925|TG@FProxies| 3-e536fb81",
@@ -504,9 +503,7 @@
       "tag": "TaiWan",
       "type": "selector",
       "outbounds": [
-        "🇨🇳 台湾|@ripaojiedian-d8f72ccb",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2"
+        "🇨🇳 台湾|@ripaojiedian-d8f72ccb"
       ]
     },
     {
@@ -563,7 +560,6 @@
         "美国3|@ripaojiedian-5649a706",
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
-        "🇺🇸US_2|1.2MB/s-d85fc822",
         ">🇺🇸US|Hs|0925|TG@FProxies| 2-2b8ba059 2",
         ">🇺🇸US|Hs|0925|TG@FProxies| 2-2b8ba059 2",
         ">🇺🇸US|Hs|0925|TG@FProxies| 4-703a69fb 2 2 2 2",
@@ -706,10 +702,8 @@
         "🇯🇵 日本|@ripaojiedian-97bc4cf3",
         "🇺🇸 美国2-IEPL-GPT-a16ad3ba",
         "🇺🇸 美国|@ripaojiedian-1e492150",
-        "香港|@ripaojiedian-a6c1b20b",
-        "🇺🇸US_2|1.2MB/s-d85fc822",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2",
-        "🇹🇼TW_1|1.3MB/s-846555a1 2",
+        "香港|@ripaojiedian-a6c1b20b 2",
+        "香港|@ripaojiedian-a6c1b20b 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
         ">🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327 2 2 2 2 2 2 2 2 2",
@@ -1046,7 +1040,7 @@
       "password": "17b70f72-fc4f-41a7-a32f-e0bbad7d1400"
     },
     {
-      "tag": "香港|@ripaojiedian-a6c1b20b",
+      "tag": "香港|@ripaojiedian-a6c1b20b 2",
       "type": "vmess",
       "server": "v10.hdacd.com",
       "server_port": 30807,
@@ -1059,35 +1053,16 @@
       }
     },
     {
-      "tag": "🇺🇸US_2|1.2MB/s-d85fc822",
-      "type": "shadowsocks",
-      "server": "3.85.21.125",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "tag": "🇹🇼TW_1|1.3MB/s-846555a1 2",
-      "type": "trojan",
-      "server": "zhilegelian1.bpca2026.top",
-      "server_port": 443,
-      "password": "f15900b5-f86b-432d-a67c-45325dc66a2d",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "zhilegelian1.bpca2026.top"
-      }
-    },
-    {
-      "tag": "🇹🇼TW_1|1.3MB/s-846555a1 2",
-      "type": "trojan",
-      "server": "zhilegelian1.bpca2026.top",
-      "server_port": 443,
-      "password": "f15900b5-f86b-432d-a67c-45325dc66a2d",
-      "tls": {
-        "enabled": true,
-        "insecure": false,
-        "server_name": "zhilegelian1.bpca2026.top"
+      "tag": "香港|@ripaojiedian-a6c1b20b 2",
+      "type": "vmess",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2,
+      "packet_encoding": "xudp",
+      "transport": {
+        "type": "http"
       }
     },
     {
