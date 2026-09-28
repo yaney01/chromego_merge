@@ -182,6 +182,49 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: aes-256-cfb
+  name: 🇯🇵JP_1|1.6MB/s-f9cab848
+  password: amazonskr05
+  port: 443
+  server: 18.179.37.17
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇱🇻LV_1|1.6MB/s-dfddf895
+  password: ce45b16adec66e4a199d92b9689eae9f
+  port: 11469
+  server: 109.248.148.139
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.8MB/s-841c8057
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.12.149
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|2.0MB/s-8de605be
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.155
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /assignment
 - name: '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   server: 51.161.152.170
   port: 443
@@ -1664,6 +1707,10 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇯🇵JP_1|1.6MB/s-f9cab848
+  - 🇱🇻LV_1|1.6MB/s-dfddf895
+  - 🇫🇷FR_2|1.8MB/s-841c8057
+  - 🇫🇷FR_3|2.0MB/s-8de605be
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
@@ -1858,6 +1905,10 @@ proxy-groups:
   - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
   - 🇺🇸 美国|@ripaojiedian-1e492150
   - 香港|@ripaojiedian-a6c1b20b
+  - 🇯🇵JP_1|1.6MB/s-f9cab848
+  - 🇱🇻LV_1|1.6MB/s-dfddf895
+  - 🇫🇷FR_2|1.8MB/s-841c8057
+  - 🇫🇷FR_3|2.0MB/s-8de605be
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
