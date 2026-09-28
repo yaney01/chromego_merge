@@ -79,99 +79,186 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 美国3|@ripaojiedian-5649a706
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 100.42.228.109
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 印尼-35161e0f
+  name: 香港3|@ripaojiedian-fc8a6811
   network: ws
   port: 443
-  server: 24864168545164.oylfmxz.cn
-  servername: 24864168545164.oylfmxz.cn
+  server: ADncdOvLHR4M1P36.v.3dns.vip
+  servername: ADncdOvLHR4M1P36.v.3dns.vip
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: 24864168545164.oylfmxz.cn
-    path: /
-- cipher: aes-128-gcm
-  name: 🇭🇰 香港2|@ripaojiedian-7ced5897
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36602
-  server: gd.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇭🇰 香港3|@ripaojiedian-8d51d112
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36602
-  server: gd2.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇨🇳 台湾|@ripaojiedian-d8f72ccb
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36603
-  server: gd.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇸🇬 新加坡|@ripaojiedian-95f8998f
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36604
-  server: gd.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵 日本|@ripaojiedian-97bc4cf3
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36609
-  server: gd.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸 美国2-IEPL-GPT-a16ad3ba
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36608
-  server: gd2.bjnet2.com
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸 美国|@ripaojiedian-1e492150
-  password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
-  plugin: obfs
-  plugin-opts:
-    host: 3c183f1f4eae079d708e817ae656417a.baidu.com
-    mode: http
-  port: 36608
-  server: gd.bjnet2.com
-  type: ss
+      Host: ADncdOvLHR4M1P36.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 香港2|@ripaojiedian-e7d3efa8
+  network: ws
+  port: 443
+  server: kBONDXW9liFCi4h4.v.3dns.vip
+  servername: kBONDXW9liFCi4h4.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kBONDXW9liFCi4h4.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 香港4|@ripaojiedian-a37acc55
+  network: ws
+  port: 443
+  server: aZW0eunYVdvRe73k.v.3dns.vip
+  servername: aZW0eunYVdvRe73k.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: aZW0eunYVdvRe73k.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 香港5|@ripaojiedian-5b8169f9
+  network: ws
+  port: 443
+  server: syJ2gGUgMwBwQwQx.v.3dns.vip
+  servername: syJ2gGUgMwBwQwQx.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: syJ2gGUgMwBwQwQx.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 日本|@ripaojiedian-2969e8b7
+  network: ws
+  port: 443
+  server: Z9FfBx3zs2q5O0BG.v.3dns.vip
+  servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Z9FfBx3zs2q5O0BG.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 日本2|@ripaojiedian-5c05a651
+  network: ws
+  port: 443
+  server: kQov7UKaDknXb8a3.v.3dns.vip
+  servername: kQov7UKaDknXb8a3.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kQov7UKaDknXb8a3.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 日本3|@ripaojiedian-91ad0916
+  network: ws
+  port: 443
+  server: kneNaKHeSXnZH259.v.3dns.vip
+  servername: kneNaKHeSXnZH259.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: kneNaKHeSXnZH259.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 新加坡|@ripaojiedian-23d7bdf0
+  network: ws
+  port: 443
+  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 新加坡2|@ripaojiedian-55ccea7b
+  network: ws
+  port: 443
+  server: 6JiziO8PxQAXBAtZ.v.3dns.vip
+  servername: 6JiziO8PxQAXBAtZ.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷KR_2|3.7MB/s-9301125e
+  network: ws
+  port: 443
+  server: 8nTzyR5KNivfabaT.v.3dns.vip
+  servername: 8nTzyR5KNivfabaT.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: 8nTzyR5KNivfabaT.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 美国|@ripaojiedian-4350a030
+  network: ws
+  port: 443
+  server: 53vXOVarmgcreAsv.v.3dns.vip
+  servername: 53vXOVarmgcreAsv.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: 53vXOVarmgcreAsv.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: 美国2|@ripaojiedian-0fc5b467
+  network: ws
+  port: 443
+  server: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+  servername: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: bJ1Aa2ZyJxYamYuK.v.3dns.vip
+    path: /ws-vmess
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian-a6c1b20b
@@ -182,40 +269,12 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
-  name: 🇯🇵JP_1|1.6MB/s-f9cab848
-  password: amazonskr05
-  port: 443
-  server: 18.179.37.17
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇱🇻LV_1|1.6MB/s-dfddf895
-  password: ce45b16adec66e4a199d92b9689eae9f
-  port: 11469
-  server: 109.248.148.139
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 🇫🇷FR_2|1.8MB/s-841c8057
+  name: 🇫🇷FR_1|3.2MB/s-a2720bef
   network: ws
   password: humanity
   port: 443
-  server: 104.18.12.149
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_3|2.0MB/s-8de605be
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.155
+  server: 172.67.149.60
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -223,8 +282,111 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.112 Safari/537.36
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|2.0MB/s-7e780f73
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.46.3
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J120M Build/LMY47X) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- cipher: aes-256-cfb
+  name: 🇸🇪SE_1|4.3MB/s-bf206c75
+  password: amazonskr05
+  port: 443
+  server: 51.20.72.15
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.9MB/s-6f28cbbe
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.21.8.107
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
+        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_4|1.5MB/s-936f94ac
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.15.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_5|1.1MB/s-6e56c3a5
+  network: ws
+  password: humanity
+  port: 443
+  server: join-telegram-channel.tirexnet.kdns.fr
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_6|2.8MB/s-43b85307
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /assignment
+- cipher: aes-256-cfb
+  name: 🇯🇵JP_2|5.0MB/s-f9cab848
+  password: amazonskr05
+  port: 443
+  server: 18.179.37.17
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪SE_2|1.9MB/s-ea364120
+  password: amazonskr05
+  port: 443
+  server: 51.20.143.248
+  type: ss
+  udp: true
 - name: '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   server: 51.161.152.170
   port: 443
@@ -1697,20 +1859,28 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
-  - 美国3|@ripaojiedian-5649a706
-  - 印尼-35161e0f
-  - 🇭🇰 香港2|@ripaojiedian-7ced5897
-  - 🇭🇰 香港3|@ripaojiedian-8d51d112
-  - 🇨🇳 台湾|@ripaojiedian-d8f72ccb
-  - 🇸🇬 新加坡|@ripaojiedian-95f8998f
-  - 🇯🇵 日本|@ripaojiedian-97bc4cf3
-  - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
-  - 🇺🇸 美国|@ripaojiedian-1e492150
+  - 香港3|@ripaojiedian-fc8a6811
+  - 香港2|@ripaojiedian-e7d3efa8
+  - 香港4|@ripaojiedian-a37acc55
+  - 香港5|@ripaojiedian-5b8169f9
+  - 日本|@ripaojiedian-2969e8b7
+  - 日本2|@ripaojiedian-5c05a651
+  - 日本3|@ripaojiedian-91ad0916
+  - 新加坡|@ripaojiedian-23d7bdf0
+  - 新加坡2|@ripaojiedian-55ccea7b
+  - 🇰🇷KR_2|3.7MB/s-9301125e
+  - 美国|@ripaojiedian-4350a030
+  - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|1.6MB/s-f9cab848
-  - 🇱🇻LV_1|1.6MB/s-dfddf895
-  - 🇫🇷FR_2|1.8MB/s-841c8057
-  - 🇫🇷FR_3|2.0MB/s-8de605be
+  - 🇫🇷FR_1|3.2MB/s-a2720bef
+  - 🇫🇷FR_2|2.0MB/s-7e780f73
+  - 🇸🇪SE_1|4.3MB/s-bf206c75
+  - 🇫🇷FR_3|1.9MB/s-6f28cbbe
+  - 🇫🇷FR_4|1.5MB/s-936f94ac
+  - 🇫🇷FR_5|1.1MB/s-6e56c3a5
+  - 🇫🇷FR_6|2.8MB/s-43b85307
+  - 🇯🇵JP_2|5.0MB/s-f9cab848
+  - 🇸🇪SE_2|1.9MB/s-ea364120
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
@@ -1895,20 +2065,28 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
-  - 美国3|@ripaojiedian-5649a706
-  - 印尼-35161e0f
-  - 🇭🇰 香港2|@ripaojiedian-7ced5897
-  - 🇭🇰 香港3|@ripaojiedian-8d51d112
-  - 🇨🇳 台湾|@ripaojiedian-d8f72ccb
-  - 🇸🇬 新加坡|@ripaojiedian-95f8998f
-  - 🇯🇵 日本|@ripaojiedian-97bc4cf3
-  - 🇺🇸 美国2-IEPL-GPT-a16ad3ba
-  - 🇺🇸 美国|@ripaojiedian-1e492150
+  - 香港3|@ripaojiedian-fc8a6811
+  - 香港2|@ripaojiedian-e7d3efa8
+  - 香港4|@ripaojiedian-a37acc55
+  - 香港5|@ripaojiedian-5b8169f9
+  - 日本|@ripaojiedian-2969e8b7
+  - 日本2|@ripaojiedian-5c05a651
+  - 日本3|@ripaojiedian-91ad0916
+  - 新加坡|@ripaojiedian-23d7bdf0
+  - 新加坡2|@ripaojiedian-55ccea7b
+  - 🇰🇷KR_2|3.7MB/s-9301125e
+  - 美国|@ripaojiedian-4350a030
+  - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇯🇵JP_1|1.6MB/s-f9cab848
-  - 🇱🇻LV_1|1.6MB/s-dfddf895
-  - 🇫🇷FR_2|1.8MB/s-841c8057
-  - 🇫🇷FR_3|2.0MB/s-8de605be
+  - 🇫🇷FR_1|3.2MB/s-a2720bef
+  - 🇫🇷FR_2|2.0MB/s-7e780f73
+  - 🇸🇪SE_1|4.3MB/s-bf206c75
+  - 🇫🇷FR_3|1.9MB/s-6f28cbbe
+  - 🇫🇷FR_4|1.5MB/s-936f94ac
+  - 🇫🇷FR_5|1.1MB/s-6e56c3a5
+  - 🇫🇷FR_6|2.8MB/s-43b85307
+  - 🇯🇵JP_2|5.0MB/s-f9cab848
+  - 🇸🇪SE_2|1.9MB/s-ea364120
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
