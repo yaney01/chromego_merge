@@ -270,10 +270,18 @@ proxies:
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: aes-256-cfb
-  name: 🇸🇪SE_1|1.2MB/s-a2b946a2
+  name: 🇺🇸US_3|1.4MB/s-9f808fa1
   password: amazonskr05
   port: 443
-  server: 51.20.86.152
+  server: 54.90.169.61
+  skip-cert-verify: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇸🇪SE_1|1.6MB/s-7e1e6fe0
+  password: amazonskr05
+  port: 443
+  server: 13.48.104.64
   type: ss
   udp: true
 - name: '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
@@ -1738,7 +1746,8 @@ proxy-groups:
   - 美国|@ripaojiedian-4350a030
   - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇪SE_1|1.2MB/s-a2b946a2
+  - 🇺🇸US_3|1.4MB/s-9f808fa1
+  - 🇸🇪SE_1|1.6MB/s-7e1e6fe0
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
@@ -1936,7 +1945,8 @@ proxy-groups:
   - 美国|@ripaojiedian-4350a030
   - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇸🇪SE_1|1.2MB/s-a2b946a2
+  - 🇺🇸US_3|1.4MB/s-9f808fa1
+  - 🇸🇪SE_1|1.6MB/s-7e1e6fe0
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
