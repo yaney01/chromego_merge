@@ -269,40 +269,13 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- client-fingerprint: chrome
-  name: 🇫🇷FR_1|1.1MB/s-2f6b3049
-  network: ws
-  password: humanity
+- cipher: aes-256-cfb
+  name: 🇸🇪SE_1|1.2MB/s-a2b946a2
+  password: amazonskr05
   port: 443
-  server: 162.159.136.234
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  server: 51.20.86.152
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /assignment
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 🇫🇷FR_2|3.9MB/s-ba3714d8
-  network: ws
-  password: humanity
-  port: 443
-  server: 198.41.223.96
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /assignment
 - name: '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   server: 51.161.152.170
   port: 443
@@ -1788,8 +1761,7 @@ proxy-groups:
   - 美国|@ripaojiedian-4350a030
   - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|1.1MB/s-2f6b3049
-  - 🇫🇷FR_2|3.9MB/s-ba3714d8
+  - 🇸🇪SE_1|1.2MB/s-a2b946a2
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
@@ -1987,8 +1959,7 @@ proxy-groups:
   - 美国|@ripaojiedian-4350a030
   - 美国2|@ripaojiedian-0fc5b467
   - 香港|@ripaojiedian-a6c1b20b
-  - 🇫🇷FR_1|1.1MB/s-2f6b3049
-  - 🇫🇷FR_2|3.9MB/s-ba3714d8
+  - 🇸🇪SE_1|1.2MB/s-a2b946a2
   - '>🇦🇺AU|Ns|0925|TG@FProxies|-b400876f'
   - '>🇦🇺AU|Ns|0925|TG@FProxies| 2-567b2327'
   - '>🇧🇷BR|Hs|0925|TG@FProxies|-574b53ce'
