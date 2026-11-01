@@ -83,8 +83,8 @@ proxies:
   server: alb.rvpn.app
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇦🇱[www.v2nodes.com] ss-AL-1490...-c6bb1572
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
+  name: 🇦🇱[www.v2nodes.com] ss-AL-1490...-3f2375ff
+  password: lsu1v/3iNERwDDVwxCu5033KCUqQOoElYQul63kmqJ8=
   port: 43558
   server: 130.49.189.158
   type: ss
@@ -185,18 +185,11 @@ proxies:
   server: 94.156.250.148
   type: ss
 - cipher: aes-256-gcm
-  name: 🇮🇳[www.v2nodes.com] ss-IN-1561...-afcda25c
-  password: GEdoeeqLZtkJRgSa
-  port: 8388
-  server: 139.84.166.47
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #1-91037d35'
+  name: 🇮🇹[www.v2nodes.com] ss-IT-1602...-183d6b03
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.63
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #1-4df1a1c1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -222,7 +215,7 @@ proxies:
   server: 202.50.253.99
   type: ss
 - cipher: aes-256-gcm
-  name: 🇮🇹IT_1|2.3MB/s-4313ce27
+  name: '🇮🇹 意大利 | ITA #2-4313ce27'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.45
@@ -235,36 +228,29 @@ proxies:
   server: 202.50.253.36
   type: ss
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #6-c9d115a5'
+  name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #7-30abaa59'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.81
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #8-463d6dab'
+  name: '🇮🇹 意大利 | ITA #1-d6f9f1e5'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.90
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #3-ac0af0ae'
+  name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #9-ee056caf'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.27
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.164.175.81
-  type: ss
-- cipher: aes-256-gcm
-  name: 🏳[www.v2nodes.com] ss--8d19a7dc
-  password: qMvJmCbMduKUoeHq
-  port: 8388
-  server: 66.245.207.70
   type: ss
 - cipher: aes-256-gcm
   name: 🇮🇹[www.v2nodes.com] ss-IT-1549...-d0bae6ec
@@ -291,16 +277,22 @@ proxies:
   server: 149.22.87.204
   type: ss
 - cipher: aes-256-gcm
-  name: 🇰🇷[www.v2nodes.com] ss-KR-1185...-59d0d1cc
-  password: Y6R9pAtvxxzmGC
-  port: 8888
+  name: 🇰🇷[www.v2nodes.com] ss-KR-1185...-3fe07c61
+  password: RexnBgU7EV5ADxG
+  port: 7001
   server: 141.164.45.187
   type: ss
+- cipher: aes-256-gcm
+  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
+  password: BWyPPTusFKhGgzKh
+  port: 8388
+  server: 64.177.90.30
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱[www.v2nodes.com] ss-NL-1604...-c3ea25a0
+  name: 🇳🇱[www.v2nodes.com] ss-NL-1604...-eec01b36
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
   port: 43385
-  server: 104.239.12.81
+  server: sql.popmintxo.cc
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇴[www.v2nodes.com] ss-NO-1220...-51bf808b
@@ -333,10 +325,10 @@ proxies:
   server: pl140.vpnbook.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-b9e16ac4'
+  name: '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-e8201956'
   password: 6heexyz
   port: 443
-  server: pl134.vpnbook.com
+  server: 54.36.174.134
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇴[www.v2nodes.com] ss-RO-1595...-355f0158
@@ -349,12 +341,6 @@ proxies:
   password: QFWzCw2uX9B9i6qAYeFBIE
   port: 443
   server: 154.46.31.106
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇷🇺[www.v2nodes.com] ss-RU-1609...-cac5d272
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  port: 18443
-  server: 185.22.155.121
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1163...-62ce49d3
@@ -373,24 +359,6 @@ proxies:
   password: AxIYWtskJWIIaefW
   port: 8388
   server: 70.34.212.124
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...-6fd020c3
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇦[www.v2nodes.com] ss-UA-1603...-84d3d8ed
-  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
-  port: 49917
-  server: staging.lastilhame.monster
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇿🇦[www.v2nodes.com] ss-ZA-1534...-0d8826cd
-  password: tfAcRikawhNoZAhu
-  port: 8388
-  server: 139.84.247.164
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇿🇦[www.v2nodes.com] ss-ZA-1336...-5cb336dd
@@ -415,12 +383,37 @@ proxies:
   port: 443
   server: 216.238.104.154
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #1-70d6f1c9'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6-32fa2af5'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.48
+  sni: courses.connectingpeoplewithgreatjobs.com
+  type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #4-70d6f1c9'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.89
   type: trojan
-- name: 🇨🇭[www.v2nodes.com] trojan-CH-...-de37a488
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #5-a8b5dd3c'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.89
+  sni: www.connectingpeoplewithgreatjobs.com
+  type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3-e9ce822d'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.152
+  sni: learn.connectingpeoplewithgreatjobs.com
+  type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #7-f478c4e4'
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 46977
+  server: ca001.zestapp778.com
+  sni: ca001.zestapp778.com
+  type: trojan
+- name: '🇨🇭[www.v2nodes.com] trojan-CH-... #1-de37a488'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 208.69.78.19
@@ -430,24 +423,41 @@ proxies:
   port: 443
   server: 64.176.7.205
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3-e1c35dc1'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4-eb3dd0b9'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.15
-  type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5-8ce58f61'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.15
-  skip-cert-verify: true
   sni: courses.iloverussia2026.com
   type: trojan
-- name: 🇪🇸[www.v2nodes.com] trojan-ES-...-c7cc3228
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1-8a0dc9ca'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.96
+  sni: learn.iloverussia2026.com
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2-e1c35dc1'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3-60385565'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.29
+  sni: blog.iloverussia2026.com
+  type: trojan
+- name: 🇪🇸[www.v2nodes.com] trojan-ES-...-b62e322e
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.118.62
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  type: trojan
+- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #6-c7cc3228'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 66.163.118.62
   type: trojan
-- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #1-d10f0ec9'
+- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #3-d10f0ec9'
   network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -455,31 +465,17 @@ proxies:
   skip-cert-verify: false
   sni: resources.discovergreatjobsandadvanceyourcareer.com
   type: trojan
-- name: 🏳[www.v2nodes.com] trojan--5a3eea89
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.118.131
-  sni: www.discovergreatjobsandadvanceyourcareer.com
-  type: trojan
-- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #2-9c75ed77'
+- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #4-7ac7b41a'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 66.163.118.166
-  skip-cert-verify: false
   sni: learn.discovergreatjobsandadvanceyourcareer.com
   type: trojan
-- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #3-9c16740c'
+- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #5-29b8171f'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 66.163.118.251
-  type: trojan
-- name: '🇪🇸[www.v2nodes.com] trojan-ES-... #4-f1f0cd90'
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.118.62
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  server: 66.163.118.244
+  sni: api.discovergreatjobsandadvanceyourcareer.com
   type: trojan
 - name: 🇫🇷[www.v2nodes.com] trojan-FR-...-8bddcf35
   network: ws
@@ -493,7 +489,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1-1be15c9d'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1-3ff9b2d9'
   network: ws
   password: humanity
   port: 443
@@ -504,7 +500,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: '%2Fassignment'
+    path: /assignment
 - alpn:
   - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
   name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2-96c242c4'
@@ -566,7 +562,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7-3ff9b2d9'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7-1be15c9d'
   network: ws
   password: humanity
   port: 443
@@ -577,7 +573,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: /assignment
+    path: '%2Fassignment'
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8-a3dd5a06'
   password: humanity
   port: 443
@@ -611,19 +607,24 @@ proxies:
   skip-cert-verify: true
   sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   type: trojan
-- name: 🇮🇳[www.v2nodes.com] trojan-IN-...-ac59cb07
+- name: 🇮🇳[www.v2nodes.com] trojan-IN-...-f3f15a7c
   password: 5t6i121em5lkmsmk
   port: 42733
   server: in002.zestapp778.com
-  skip-cert-verify: true
   sni: in002.zestapp778.com
   type: trojan
-- name: 🇯🇵[www.v2nodes.com] trojan-JP-...-312ecdbb
+- name: 🇯🇵[www.v2nodes.com] trojan-JP-...-d1662730
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  sni: 43.167.186.78
+  type: trojan
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1-312ecdbb'
   password: d050aca3-9df2-4461-90ec-92373c1d7636
   port: 44184
   server: v2jp.k1.ssnss.live
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1-5a0aac7d'
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #2-5a0aac7d'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -637,106 +638,88 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: 🇳🇱[www.v2nodes.com] trojan-NL-...-3b2daadf
+  name: 🇳🇱[www.v2nodes.com] trojan-NL-...-9f16ef90
   network: ws
   password: humanity
   port: 443
   server: 172.66.40.99
+  skip-cert-verify: false
   sni: www.trusteeforward.com
   type: trojan
   ws-opts:
     headers:
       Host: www.trusteeforward.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #1-78c1ae84'
-  network: ws
-  password: humanity
+- name: 🇵🇱[www.v2nodes.com] trojan-PL-...-18fb6d3f
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 161.35.192.122
-  skip-cert-verify: false
-  sni: www.pleadcourt.org
+  server: 70.34.252.255
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: www.pleadcourt.org
-    path: /assignment
-- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #2-51ef0590'
-  password: humanity
+- name: 🇸🇬[www.v2nodes.com] trojan-SG-...-685422af
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 95.85.32.57
+  server: 149.28.130.108
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #3-7d393166'
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.226.181.61
-  skip-cert-verify: false
-  sni: www.pleadcourt.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.pleadcourt.org
-    path: /assignment
-- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #4-0306dc0a'
-  password: humanity
-  port: 443
-  server: 219.76.13.177
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: 🇸🇬[www.v2nodes.com] trojan-SG-...-77bb5ce7
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #1-2833edcc'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
-  sni: 139.180.146.200
   type: trojan
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...-3a7bbeb7
+- name: 🇺🇸[www.v2nodes.com] trojan-US-...-70e01827
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.53
+  sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #9-5503e206'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.67
+  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2-fa3eb02e'
+  network: tcp
+  password: 5t6i121em5lkmsmk
+  port: 57277
+  server: us001.zestapp778.com
+  skip-cert-verify: true
+  sni: us001.zestapp778.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3-4c3458f0'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.131
+  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #4-1476980d'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.112
+  sni: resources.explorecreativejobsandenhanceyourcareerportfolio.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #8-3a7bbeb7'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 167.88.61.193
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1-81a273c8'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6-aef8510b'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 170.101.101.53
+  server: 170.101.101.211
+  sni: api.explorecreativejobsandenhanceyourcareerportfolio.com
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2-7a4a29df'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #7-f13e2262'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 170.101.101.19
+  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #10-7a4a29df'
   password: MiTiVPN
   port: 443
   server: 167.82.64.120
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3-0af72504'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 169.197.140.218
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6-2a73ce1c'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 169.197.140.169
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5-761bcb03'
-  network: tcp
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 169.197.140.169
-  sni: api.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #7-9c1e27bc'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 66.163.112.142
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #8-ddc10c48'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 169.197.140.214
   type: trojan
 - cipher: aes-256-cfb
   name: 'tg频道:@ripaojiedian #1-9903aeea'
@@ -1023,140 +1006,28 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇳🇱 荷兰 | NLD 32-5e5e6e84
-  network: ws
-  password: humanity
-  port: 443
-  server: 208.68.180.204
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_1|1.3MB/s-9545dc25
-  network: ws
-  port: 53617
-  server: az-1.linkaa.xyz
-  servername: az-1.linkaa.xyz
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6E571484-4166-4699-8F58-B34A1823691F
-  ws-opts:
-    headers:
-      Host: az-1.linkaa.xyz
-    path: /game/resources
-  xudp: true
-- name: 🇳🇱NL_7|1.2MB/s-969107c5
-  network: ws
-  password: humanity
-  port: 443
-  server: 103.224.84.7
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱NL_8|1.7MB/s-d0cfb584
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.82.218.224
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱NL_9|1.3MB/s-9e25f602
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.245.194
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱NL_10|1.4MB/s-b3b80cc8
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.66.0.172
-  servername: www.cordweave.com
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  tls: true
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- alterId: '0'
-  cipher: auto
-  name: 🇩🇪DE_7|2.6MB/s-9914d95b
-  network: ws
-  port: 443
-  server: dBcaeS0WKJRoAhsQ.v.3dns.vip
-  servername: dBcaeS0WKJRoAhsQ.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: dBcaeS0WKJRoAhsQ.v.3dns.vip
-    path: /ws-vmess
-  xudp: true
 - client-fingerprint: chrome
-  name: 🇳🇱NL_19|1.3MB/s-5a6c42e1
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.229.7
-  skip-cert-verify: false
-  sni: www.cordweave.com
+  name: 🇩🇪DE_8|1.4MB/s-0b9b76a6
+  password: happybirthdaydaniel
+  port: 25267
+  server: de-bots4.h1cloud.net
+  skip-cert-verify: true
+  sni: t.me/fuckthewall
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇳🇱NL_20|1.3MB/s-90e7a93e
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.17.167.134
-  skip-cert-verify: false
-  sni: www.cordweave.com
+- name: '🇩🇪 德国 | DEU #6-0d013084'
+  password: happybirthdaydaniel
+  port: 25267
+  server: de-bots4.h1cloud.net
+  skip-cert-verify: true
+  sni: t.me/FuckTheWall
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: '%2Fassignment'
-- name: 🇧🇪 比利时 | BEL-451748aa
+- name: 🇩🇪 德国 | DEU 8-99926588
   network: ws
   password: humanity
   port: 443
-  server: 141.98.233.6
+  server: 165.22.89.207
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -1165,61 +1036,12 @@ proxies:
     headers:
       Host: www.cordweave.com
     path: /assignment
-- name: 🇪🇸 西班牙 | ESP-b01b0cc4
-  network: ws
-  password: humanity
-  port: 8443
-  server: 185.114.72.31
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - openai.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '🇭🇰 香港 | HKG #1-36e6cce1'
-  network: http
-  port: 52080
-  server: 47.242.81.94
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #2-95f57719'
+  name: '🇭🇰 香港 | HKG #1-5bead33e'
   network: ws
   port: 443
-  server: 8.217.186.60
-  servername: euu1yalfmcqvljex.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  ws-opts:
-    headers:
-      Host: euu1yalfmcqvljex.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3-c3360816'
-  network: ws
-  port: 443
-  server: 47.243.194.125
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1227,195 +1049,13 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
     path: /ws-vmess
-- name: 🇳🇱 荷兰 | NLD-47dc45b1
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.99.31
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 2-e0036b2d
-  network: ws
-  password: humanity
-  port: 443
-  server: 78.40.209.33
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 3-c25d1964
-  network: ws
-  password: humanity
-  port: 443
-  server: 188.255.156.209
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 4-c5e04a5a
-  network: ws
-  password: humanity
-  port: 443
-  server: 213.165.55.4
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 5-58d05dd2
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.126.253
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 6-8b3c506b
-  network: ws
-  password: humanity
-  port: 443
-  server: 52.194.44.56
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 7-0a30975f
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.253.241.115
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 9-42eb9173
-  network: ws
-  password: humanity
-  port: 443
-  server: 212.2.227.187
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 10-a8544fe3
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.67.74.177
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 11-cd1d3c01
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.111.93
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 12-6d48a92e
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.104.81.253
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 13-afd290ce
-  network: ws
-  password: humanity
-  port: 443
-  server: 93.86.12.49
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 14-3331fdbe
-  network: ws
-  password: humanity
-  port: 443
-  server: 173.242.51.189
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 15-a9bb9aff
-  network: ws
-  password: humanity
-  port: 443
-  server: 153.56.171.216
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 16-8edbcdbe
+- name: 🇭🇰 香港 | HKG 2-0e86f5f1
   network: ws
   password: humanity
   port: 8443
-  server: 206.223.244.33
+  server: 207.57.132.189
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -1424,11 +1064,26 @@ proxies:
     headers:
       Host: www.cordweave.com
     path: /assignment
-- name: 🇳🇱 荷兰 | NLD 17-7dc7c2fa
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #3-193841a0'
+  network: ws
+  port: 443
+  server: 8.218.195.61
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+    path: /ws-vmess
+- name: 🇰🇷 韩国 | KOR-df9cacfe
   network: ws
   password: humanity
   port: 443
-  server: 82.26.198.25
+  server: 64.110.82.71
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -1437,596 +1092,54 @@ proxies:
     headers:
       Host: www.cordweave.com
     path: /assignment
-- name: 🇳🇱 荷兰 | NLD 18-96c195ce
+- cipher: chacha20-ietf-poly1305
+  name: '🇳🇱 荷兰 | NLD #3-e5616472'
+  password: hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V
+  port: 8044
+  server: dns22.m3hrzd.ir
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #1-dd18625c'
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  port: 18443
+  server: 46.17.46.27
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #19-1f4459ab'
   network: ws
+  port: 443
+  server: cf.0sm.com
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  ws-opts:
+    headers:
+      Host: vmess.lbw666.dpdns.org
+    path: /ws
+- name: '🇩🇪 德国 | DEU #7-bc35cb00'
   password: humanity
   port: 443
-  server: 198.41.216.1
+  server: 165.22.89.207
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 19-af677db6
-  network: ws
-  password: humanity
-  port: 2053
-  server: 178.104.197.49
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 20-7341cc86
-  network: ws
-  password: humanity
-  port: 443
-  server: 35.241.172.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 21-687ffd68
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.127.92
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 22-2fcd9172
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.153.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 23-995f95ad
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.102.54
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 24-fe9e5bb0
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.115.22
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 25-94022760
-  network: ws
-  password: humanity
-  port: 443
-  server: 89.36.137.173
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 26-829ebb97
-  network: ws
-  password: humanity
-  port: 443
-  server: 202.50.55.76
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 27-b296945d
-  network: ws
-  password: humanity
-  port: 2053
-  server: 194.135.119.82
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 28-cbf03674
-  network: ws
+- name: '🇭🇰 香港 | HKG #2-34655477'
   password: humanity
   port: 8443
-  server: 202.61.226.121
+  server: 207.57.132.189
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 29-fd52b530
-  network: ws
+- name: '🇰🇷 韩国 | KOR #1-a2b08a43'
   password: humanity
   port: 443
-  server: 130.12.46.156
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 30-c55148d8
-  network: ws
-  password: humanity
-  port: 443
-  server: 91.196.32.217
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 31-f834821b
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.132.69
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 33-6e266152
-  network: ws
-  password: humanity
-  port: 443
-  server: 23.246.154.144
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 34-9299b594
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.240.177
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 35-06b0702c
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.82.218.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 36-12506db8
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.127.209
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 37-02cee492
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.151.20
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇳🇱 荷兰 | NLD 38-0afd3fb5
-  network: ws
-  password: humanity
-  port: 443
-  server: 93.85.236.9
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇸🇪 瑞典 | SWE-ff95ab2c
-  network: ws
-  password: humanity
-  port: 443
-  server: 77.221.139.114
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇸🇬 新加坡 | SGP 2-4fa58f9f
-  network: ws
-  password: humanity
-  port: 443
-  server: 194.114.138.162
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: 🇺🇸 美国 | USA 5-633e25ac
-  network: ws
-  password: humanity
-  port: 443
-  server: 179.255.136.143
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.cordweave.com
-    path: /assignment
-- name: '🇧🇪 比利时 | BEL #1-0b4151a0'
-  password: humanity
-  port: 443
-  server: 141.98.233.6
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇪🇸 西班牙 | ESP #1-878f6708'
-  password: humanity
-  port: 8443
-  server: 185.114.72.31
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #1-f54f4a61'
-  password: humanity
-  port: 443
-  server: 179.255.99.31
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #2-4d1dca3a'
-  password: humanity
-  port: 443
-  server: 78.40.209.33
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #3-93ff05aa'
-  password: humanity
-  port: 443
-  server: 188.255.156.209
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #4-34777efe'
-  password: humanity
-  port: 443
-  server: 213.165.55.4
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #5-c5c6b13b'
-  password: humanity
-  port: 443
-  server: 179.255.126.253
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #6-27b269e3'
-  password: humanity
-  port: 443
-  server: 52.194.44.56
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #7-9cda40fb'
-  password: humanity
-  port: 443
-  server: 179.253.241.115
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #9-89a533b6'
-  password: humanity
-  port: 443
-  server: 212.2.227.187
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #10-f9493e8c'
-  password: humanity
-  port: 443
-  server: 172.67.74.177
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #11-f84334d8'
-  password: humanity
-  port: 443
-  server: 179.255.111.93
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #12-db37d67a'
-  password: humanity
-  port: 443
-  server: 172.104.81.253
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #13-f7702591'
-  password: humanity
-  port: 443
-  server: 93.86.12.49
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #14-4fbead54'
-  password: humanity
-  port: 443
-  server: 173.242.51.189
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #15-99ffda7a'
-  password: humanity
-  port: 443
-  server: 153.56.171.216
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #16-a04b3ca9'
-  password: humanity
-  port: 8443
-  server: 206.223.244.33
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #17-b569abfd'
-  password: humanity
-  port: 443
-  server: 82.26.198.25
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #18-fc7708b2'
-  password: humanity
-  port: 443
-  server: 198.41.216.1
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #19-c3d82edb'
-  password: humanity
-  port: 2053
-  server: 178.104.197.49
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #20-1b5d1345'
-  password: humanity
-  port: 443
-  server: 35.241.172.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #21-f47a0ae4'
-  password: humanity
-  port: 443
-  server: 179.255.127.92
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #22-fa3b7093'
-  password: humanity
-  port: 443
-  server: 172.64.153.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #23-73cd923f'
-  password: humanity
-  port: 443
-  server: 179.255.102.54
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #24-7cec3204'
-  password: humanity
-  port: 443
-  server: 179.255.115.22
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #25-2d2e72f9'
-  password: humanity
-  port: 443
-  server: 89.36.137.173
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #26-bb5f75e8'
-  password: humanity
-  port: 443
-  server: 202.50.55.76
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #27-cbc863e7'
-  password: humanity
-  port: 2053
-  server: 194.135.119.82
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #28-e4f230d0'
-  password: humanity
-  port: 8443
-  server: 202.61.226.121
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #29-618a0a30'
-  password: humanity
-  port: 443
-  server: 130.12.46.156
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #30-5630829c'
-  password: humanity
-  port: 443
-  server: 91.196.32.217
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #31-d66a6cee'
-  password: humanity
-  port: 443
-  server: 179.255.132.69
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #32-2ef83290'
-  password: humanity
-  port: 443
-  server: 208.68.180.204
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #33-57da6e7f'
-  password: humanity
-  port: 443
-  server: 23.246.154.144
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #34-15987c91'
-  password: humanity
-  port: 443
-  server: 104.16.240.177
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #35-bbccc234'
-  password: humanity
-  port: 443
-  server: 185.82.218.224
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #36-32929549'
-  password: humanity
-  port: 443
-  server: 179.255.127.209
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #37-9f2c1943'
-  password: humanity
-  port: 443
-  server: 172.64.151.20
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇳🇱 荷兰 | NLD #38-56f95932'
-  password: humanity
-  port: 443
-  server: 93.85.236.9
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇸🇪 瑞典 | SWE #1-77da437e'
-  password: humanity
-  port: 443
-  server: 77.221.139.114
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇸🇬 新加坡 | SGP #2-6c140f06'
-  password: humanity
-  port: 443
-  server: 194.114.138.162
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  type: trojan
-- name: '🇺🇸 美国 | USA #5-06cf5c1d'
-  password: humanity
-  port: 443
-  server: 179.255.136.143
+  server: 64.110.82.71
   skip-cert-verify: true
   sni: www.cordweave.com
   type: trojan
@@ -3359,7 +2472,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 🇦🇱[www.v2nodes.com] ss-AL-1608...-c2c523e1
-  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-c6bb1572
+  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-3f2375ff
   - 🇦🇹[www.v2nodes.com] ss-AT-1595...-d94f446f
   - 🇨🇦[www.v2nodes.com] ss-CA-1559...-dca7bc22
   - '🇨🇦[www.v2nodes.com] ss-CA-1559... #1-159a0287'
@@ -3376,85 +2489,85 @@ proxy-groups:
   - 🇬🇧[www.v2nodes.com] ss-GB-1602...-d081b234
   - 🇬🇧[www.v2nodes.com] ss-GB-1451...-0503737a
   - 🇬🇧[www.v2nodes.com] ss-GB-1247...-c3fef3f2
-  - 🇮🇳[www.v2nodes.com] ss-IN-1561...-afcda25c
-  - '🇺🇸 美国 | USA #1-91037d35'
+  - 🇮🇹[www.v2nodes.com] ss-IT-1602...-183d6b03
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #1-4df1a1c1'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #2-7366371f'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3-8ed7cbd3'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #4-3865b886'
-  - 🇮🇹IT_1|2.3MB/s-4313ce27
+  - '🇮🇹 意大利 | ITA #2-4313ce27'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #6-0e47c92a'
-  - '🇺🇸 美国 | USA #6-c9d115a5'
-  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #8-463d6dab'
-  - '🇺🇸 美国 | USA #3-ac0af0ae'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #7-30abaa59'
+  - '🇮🇹 意大利 | ITA #1-d6f9f1e5'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #9-ee056caf'
   - 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
-  - 🏳[www.v2nodes.com] ss--8d19a7dc
   - 🇮🇹[www.v2nodes.com] ss-IT-1549...-d0bae6ec
   - 🇯🇵[www.v2nodes.com] ss-JP-1599...-81188322
   - 🇯🇵[www.v2nodes.com] ss-JP-1544...-b027c7cb
   - 🇯🇵[www.v2nodes.com] ss-JP-5141...-b2938d68
-  - 🇰🇷[www.v2nodes.com] ss-KR-1185...-59d0d1cc
-  - 🇳🇱[www.v2nodes.com] ss-NL-1604...-c3ea25a0
+  - 🇰🇷[www.v2nodes.com] ss-KR-1185...-3fe07c61
+  - 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
+  - 🇳🇱[www.v2nodes.com] ss-NL-1604...-eec01b36
   - 🇳🇴[www.v2nodes.com] ss-NO-1220...-51bf808b
   - 🇵🇭[www.v2nodes.com] ss-PH-1540...-25612792
   - 🇵🇱[www.v2nodes.com] ss-PL-1608...-d52b3049
   - 🇵🇱[www.v2nodes.com] ss-PL-1548...-e549ffc8
   - 🇵🇱[www.v2nodes.com] ss-PL-1273...-c4bf192b
-  - '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-b9e16ac4'
+  - '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-e8201956'
   - 🇷🇴[www.v2nodes.com] ss-RO-1595...-355f0158
   - 🇷🇴[www.v2nodes.com] ss-RO-1298...-ba8816e5
-  - 🇷🇺[www.v2nodes.com] ss-RU-1609...-cac5d272
   - 🇷🇺[www.v2nodes.com] ss-RU-1163...-62ce49d3
   - 🇸🇪[www.v2nodes.com] ss-SE-1608...-322ad9d2
   - 🇸🇪[www.v2nodes.com] ss-SE-1560...-380e202d
-  - 🇸🇬[www.v2nodes.com] ss-SG-1559...-6fd020c3
-  - 🇺🇦[www.v2nodes.com] ss-UA-1603...-84d3d8ed
-  - 🇿🇦[www.v2nodes.com] ss-ZA-1534...-0d8826cd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1336...-5cb336dd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1333...-5aaf3c99
   - 🇦🇺[www.v2nodes.com] trojan-AU-...-a6047e99
   - 🇧🇷[www.v2nodes.com] trojan-BR-...-13d666e9
-  - '🇨🇦[www.v2nodes.com] trojan-CA-... #1-70d6f1c9'
-  - 🇨🇭[www.v2nodes.com] trojan-CH-...-de37a488
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #6-32fa2af5'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #4-70d6f1c9'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #5-a8b5dd3c'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #3-e9ce822d'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #7-f478c4e4'
+  - '🇨🇭[www.v2nodes.com] trojan-CH-... #1-de37a488'
   - 🇨🇱[www.v2nodes.com] trojan-CL-...-6a457b33
-  - '🇩🇪[www.v2nodes.com] trojan-DE-... #3-e1c35dc1'
-  - '🇩🇪[www.v2nodes.com] trojan-DE-... #5-8ce58f61'
-  - 🇪🇸[www.v2nodes.com] trojan-ES-...-c7cc3228
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #1-d10f0ec9'
-  - 🏳[www.v2nodes.com] trojan--5a3eea89
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #2-9c75ed77'
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #3-9c16740c'
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #4-f1f0cd90'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #4-eb3dd0b9'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #1-8a0dc9ca'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #2-e1c35dc1'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #3-60385565'
+  - 🇪🇸[www.v2nodes.com] trojan-ES-...-b62e322e
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #6-c7cc3228'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #3-d10f0ec9'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #4-7ac7b41a'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #5-29b8171f'
   - 🇫🇷[www.v2nodes.com] trojan-FR-...-8bddcf35
-  - '🇫🇷[www.v2nodes.com] trojan-FR-... #1-1be15c9d'
+  - '🇫🇷[www.v2nodes.com] trojan-FR-... #1-3ff9b2d9'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #2-96c242c4'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #3-85d5650a'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #4-3e57bb3b'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #5-6fe792c6'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #6-5d432afb'
-  - '🇫🇷[www.v2nodes.com] trojan-FR-... #7-3ff9b2d9'
+  - '🇫🇷[www.v2nodes.com] trojan-FR-... #7-1be15c9d'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #8-a3dd5a06'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #9-b252cdbd'
   - 🇬🇧[www.v2nodes.com] trojan-GB-...-5c9fb3fc
   - 🇮🇱[www.v2nodes.com] trojan-IL-...-72993110
-  - 🇮🇳[www.v2nodes.com] trojan-IN-...-ac59cb07
-  - 🇯🇵[www.v2nodes.com] trojan-JP-...-312ecdbb
-  - '🇯🇵[www.v2nodes.com] trojan-JP-... #1-5a0aac7d'
+  - 🇮🇳[www.v2nodes.com] trojan-IN-...-f3f15a7c
+  - 🇯🇵[www.v2nodes.com] trojan-JP-...-d1662730
+  - '🇯🇵[www.v2nodes.com] trojan-JP-... #1-312ecdbb'
+  - '🇯🇵[www.v2nodes.com] trojan-JP-... #2-5a0aac7d'
   - 🇲🇾[www.v2nodes.com] trojan-MY-...-0bb4e54d
-  - 🇳🇱[www.v2nodes.com] trojan-NL-...-3b2daadf
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #1-78c1ae84'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #2-51ef0590'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #3-7d393166'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #4-0306dc0a'
-  - 🇸🇬[www.v2nodes.com] trojan-SG-...-77bb5ce7
-  - 🇺🇸[www.v2nodes.com] trojan-US-...-3a7bbeb7
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #1-81a273c8'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #2-7a4a29df'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #3-0af72504'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #6-2a73ce1c'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #5-761bcb03'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #7-9c1e27bc'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #8-ddc10c48'
+  - 🇳🇱[www.v2nodes.com] trojan-NL-...-9f16ef90
+  - 🇵🇱[www.v2nodes.com] trojan-PL-...-18fb6d3f
+  - 🇸🇬[www.v2nodes.com] trojan-SG-...-685422af
+  - '🇸🇬[www.v2nodes.com] trojan-SG-... #1-2833edcc'
+  - 🇺🇸[www.v2nodes.com] trojan-US-...-70e01827
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #9-5503e206'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #2-fa3eb02e'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #3-4c3458f0'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #4-1476980d'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #8-3a7bbeb7'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #6-aef8510b'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #7-f13e2262'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #10-7a4a29df'
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 🇭🇰 香港3|@ripaojiedian-fc8a6811
@@ -3480,101 +2593,19 @@ proxy-groups:
   - 美国2|@ripaojiedian-959e6aa0
   - 台湾|@ripaojiedian-7a4a8287
   - 韩国|@ripaojiedian-eaa4d378
-  - 🇳🇱 荷兰 | NLD 32-5e5e6e84
-  - 🇭🇰HK_1|1.3MB/s-9545dc25
-  - 🇳🇱NL_7|1.2MB/s-969107c5
-  - 🇳🇱NL_8|1.7MB/s-d0cfb584
-  - 🇳🇱NL_9|1.3MB/s-9e25f602
-  - 🇳🇱NL_10|1.4MB/s-b3b80cc8
-  - 🇩🇪DE_7|2.6MB/s-9914d95b
-  - 🇳🇱NL_19|1.3MB/s-5a6c42e1
-  - 🇳🇱NL_20|1.3MB/s-90e7a93e
-  - 🇧🇪 比利时 | BEL-451748aa
-  - 🇪🇸 西班牙 | ESP-b01b0cc4
-  - '🇭🇰 香港 | HKG #1-36e6cce1'
-  - '🇭🇰 香港 | HKG #2-95f57719'
-  - '🇭🇰 香港 | HKG #3-c3360816'
-  - 🇳🇱 荷兰 | NLD-47dc45b1
-  - 🇳🇱 荷兰 | NLD 2-e0036b2d
-  - 🇳🇱 荷兰 | NLD 3-c25d1964
-  - 🇳🇱 荷兰 | NLD 4-c5e04a5a
-  - 🇳🇱 荷兰 | NLD 5-58d05dd2
-  - 🇳🇱 荷兰 | NLD 6-8b3c506b
-  - 🇳🇱 荷兰 | NLD 7-0a30975f
-  - 🇳🇱 荷兰 | NLD 9-42eb9173
-  - 🇳🇱 荷兰 | NLD 10-a8544fe3
-  - 🇳🇱 荷兰 | NLD 11-cd1d3c01
-  - 🇳🇱 荷兰 | NLD 12-6d48a92e
-  - 🇳🇱 荷兰 | NLD 13-afd290ce
-  - 🇳🇱 荷兰 | NLD 14-3331fdbe
-  - 🇳🇱 荷兰 | NLD 15-a9bb9aff
-  - 🇳🇱 荷兰 | NLD 16-8edbcdbe
-  - 🇳🇱 荷兰 | NLD 17-7dc7c2fa
-  - 🇳🇱 荷兰 | NLD 18-96c195ce
-  - 🇳🇱 荷兰 | NLD 19-af677db6
-  - 🇳🇱 荷兰 | NLD 20-7341cc86
-  - 🇳🇱 荷兰 | NLD 21-687ffd68
-  - 🇳🇱 荷兰 | NLD 22-2fcd9172
-  - 🇳🇱 荷兰 | NLD 23-995f95ad
-  - 🇳🇱 荷兰 | NLD 24-fe9e5bb0
-  - 🇳🇱 荷兰 | NLD 25-94022760
-  - 🇳🇱 荷兰 | NLD 26-829ebb97
-  - 🇳🇱 荷兰 | NLD 27-b296945d
-  - 🇳🇱 荷兰 | NLD 28-cbf03674
-  - 🇳🇱 荷兰 | NLD 29-fd52b530
-  - 🇳🇱 荷兰 | NLD 30-c55148d8
-  - 🇳🇱 荷兰 | NLD 31-f834821b
-  - 🇳🇱 荷兰 | NLD 33-6e266152
-  - 🇳🇱 荷兰 | NLD 34-9299b594
-  - 🇳🇱 荷兰 | NLD 35-06b0702c
-  - 🇳🇱 荷兰 | NLD 36-12506db8
-  - 🇳🇱 荷兰 | NLD 37-02cee492
-  - 🇳🇱 荷兰 | NLD 38-0afd3fb5
-  - 🇸🇪 瑞典 | SWE-ff95ab2c
-  - 🇸🇬 新加坡 | SGP 2-4fa58f9f
-  - 🇺🇸 美国 | USA 5-633e25ac
-  - '🇧🇪 比利时 | BEL #1-0b4151a0'
-  - '🇪🇸 西班牙 | ESP #1-878f6708'
-  - '🇳🇱 荷兰 | NLD #1-f54f4a61'
-  - '🇳🇱 荷兰 | NLD #2-4d1dca3a'
-  - '🇳🇱 荷兰 | NLD #3-93ff05aa'
-  - '🇳🇱 荷兰 | NLD #4-34777efe'
-  - '🇳🇱 荷兰 | NLD #5-c5c6b13b'
-  - '🇳🇱 荷兰 | NLD #6-27b269e3'
-  - '🇳🇱 荷兰 | NLD #7-9cda40fb'
-  - '🇳🇱 荷兰 | NLD #9-89a533b6'
-  - '🇳🇱 荷兰 | NLD #10-f9493e8c'
-  - '🇳🇱 荷兰 | NLD #11-f84334d8'
-  - '🇳🇱 荷兰 | NLD #12-db37d67a'
-  - '🇳🇱 荷兰 | NLD #13-f7702591'
-  - '🇳🇱 荷兰 | NLD #14-4fbead54'
-  - '🇳🇱 荷兰 | NLD #15-99ffda7a'
-  - '🇳🇱 荷兰 | NLD #16-a04b3ca9'
-  - '🇳🇱 荷兰 | NLD #17-b569abfd'
-  - '🇳🇱 荷兰 | NLD #18-fc7708b2'
-  - '🇳🇱 荷兰 | NLD #19-c3d82edb'
-  - '🇳🇱 荷兰 | NLD #20-1b5d1345'
-  - '🇳🇱 荷兰 | NLD #21-f47a0ae4'
-  - '🇳🇱 荷兰 | NLD #22-fa3b7093'
-  - '🇳🇱 荷兰 | NLD #23-73cd923f'
-  - '🇳🇱 荷兰 | NLD #24-7cec3204'
-  - '🇳🇱 荷兰 | NLD #25-2d2e72f9'
-  - '🇳🇱 荷兰 | NLD #26-bb5f75e8'
-  - '🇳🇱 荷兰 | NLD #27-cbc863e7'
-  - '🇳🇱 荷兰 | NLD #28-e4f230d0'
-  - '🇳🇱 荷兰 | NLD #29-618a0a30'
-  - '🇳🇱 荷兰 | NLD #30-5630829c'
-  - '🇳🇱 荷兰 | NLD #31-d66a6cee'
-  - '🇳🇱 荷兰 | NLD #32-2ef83290'
-  - '🇳🇱 荷兰 | NLD #33-57da6e7f'
-  - '🇳🇱 荷兰 | NLD #34-15987c91'
-  - '🇳🇱 荷兰 | NLD #35-bbccc234'
-  - '🇳🇱 荷兰 | NLD #36-32929549'
-  - '🇳🇱 荷兰 | NLD #37-9f2c1943'
-  - '🇳🇱 荷兰 | NLD #38-56f95932'
-  - '🇸🇪 瑞典 | SWE #1-77da437e'
-  - '🇸🇬 新加坡 | SGP #2-6c140f06'
-  - '🇺🇸 美国 | USA #5-06cf5c1d'
+  - 🇩🇪DE_8|1.4MB/s-0b9b76a6
+  - '🇩🇪 德国 | DEU #6-0d013084'
+  - 🇩🇪 德国 | DEU 8-99926588
+  - '🇭🇰 香港 | HKG #1-5bead33e'
+  - 🇭🇰 香港 | HKG 2-0e86f5f1
+  - '🇭🇰 香港 | HKG #3-193841a0'
+  - 🇰🇷 韩国 | KOR-df9cacfe
+  - '🇳🇱 荷兰 | NLD #3-e5616472'
+  - '🇷🇺 俄罗斯 | RUS #1-dd18625c'
+  - '🇺🇸 美国 | USA #19-1f4459ab'
+  - '🇩🇪 德国 | DEU #7-bc35cb00'
+  - '🇭🇰 香港 | HKG #2-34655477'
+  - '🇰🇷 韩国 | KOR #1-a2b08a43'
   - '>🇦🇺AU|Hs|1024|TG@FProxies|-571cc4aa'
   - '>🇦🇺AU|Hs|1024|TG@FProxies| 2-a9448f35'
   - '>🇦🇺AU|Ls|1024|TG@FProxies|-506a8e58'
@@ -3747,7 +2778,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
   - 🇦🇱[www.v2nodes.com] ss-AL-1608...-c2c523e1
-  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-c6bb1572
+  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-3f2375ff
   - 🇦🇹[www.v2nodes.com] ss-AT-1595...-d94f446f
   - 🇨🇦[www.v2nodes.com] ss-CA-1559...-dca7bc22
   - '🇨🇦[www.v2nodes.com] ss-CA-1559... #1-159a0287'
@@ -3764,85 +2795,85 @@ proxy-groups:
   - 🇬🇧[www.v2nodes.com] ss-GB-1602...-d081b234
   - 🇬🇧[www.v2nodes.com] ss-GB-1451...-0503737a
   - 🇬🇧[www.v2nodes.com] ss-GB-1247...-c3fef3f2
-  - 🇮🇳[www.v2nodes.com] ss-IN-1561...-afcda25c
-  - '🇺🇸 美国 | USA #1-91037d35'
+  - 🇮🇹[www.v2nodes.com] ss-IT-1602...-183d6b03
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #1-4df1a1c1'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #2-7366371f'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3-8ed7cbd3'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #4-3865b886'
-  - 🇮🇹IT_1|2.3MB/s-4313ce27
+  - '🇮🇹 意大利 | ITA #2-4313ce27'
   - '🇮🇹[www.v2nodes.com] ss-IT-1602... #6-0e47c92a'
-  - '🇺🇸 美国 | USA #6-c9d115a5'
-  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #8-463d6dab'
-  - '🇺🇸 美国 | USA #3-ac0af0ae'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #7-30abaa59'
+  - '🇮🇹 意大利 | ITA #1-d6f9f1e5'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #9-ee056caf'
   - 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
-  - 🏳[www.v2nodes.com] ss--8d19a7dc
   - 🇮🇹[www.v2nodes.com] ss-IT-1549...-d0bae6ec
   - 🇯🇵[www.v2nodes.com] ss-JP-1599...-81188322
   - 🇯🇵[www.v2nodes.com] ss-JP-1544...-b027c7cb
   - 🇯🇵[www.v2nodes.com] ss-JP-5141...-b2938d68
-  - 🇰🇷[www.v2nodes.com] ss-KR-1185...-59d0d1cc
-  - 🇳🇱[www.v2nodes.com] ss-NL-1604...-c3ea25a0
+  - 🇰🇷[www.v2nodes.com] ss-KR-1185...-3fe07c61
+  - 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
+  - 🇳🇱[www.v2nodes.com] ss-NL-1604...-eec01b36
   - 🇳🇴[www.v2nodes.com] ss-NO-1220...-51bf808b
   - 🇵🇭[www.v2nodes.com] ss-PH-1540...-25612792
   - 🇵🇱[www.v2nodes.com] ss-PL-1608...-d52b3049
   - 🇵🇱[www.v2nodes.com] ss-PL-1548...-e549ffc8
   - 🇵🇱[www.v2nodes.com] ss-PL-1273...-c4bf192b
-  - '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-b9e16ac4'
+  - '🇵🇱[www.v2nodes.com] ss-PL-1273... #1-e8201956'
   - 🇷🇴[www.v2nodes.com] ss-RO-1595...-355f0158
   - 🇷🇴[www.v2nodes.com] ss-RO-1298...-ba8816e5
-  - 🇷🇺[www.v2nodes.com] ss-RU-1609...-cac5d272
   - 🇷🇺[www.v2nodes.com] ss-RU-1163...-62ce49d3
   - 🇸🇪[www.v2nodes.com] ss-SE-1608...-322ad9d2
   - 🇸🇪[www.v2nodes.com] ss-SE-1560...-380e202d
-  - 🇸🇬[www.v2nodes.com] ss-SG-1559...-6fd020c3
-  - 🇺🇦[www.v2nodes.com] ss-UA-1603...-84d3d8ed
-  - 🇿🇦[www.v2nodes.com] ss-ZA-1534...-0d8826cd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1336...-5cb336dd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1333...-5aaf3c99
   - 🇦🇺[www.v2nodes.com] trojan-AU-...-a6047e99
   - 🇧🇷[www.v2nodes.com] trojan-BR-...-13d666e9
-  - '🇨🇦[www.v2nodes.com] trojan-CA-... #1-70d6f1c9'
-  - 🇨🇭[www.v2nodes.com] trojan-CH-...-de37a488
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #6-32fa2af5'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #4-70d6f1c9'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #5-a8b5dd3c'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #3-e9ce822d'
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #7-f478c4e4'
+  - '🇨🇭[www.v2nodes.com] trojan-CH-... #1-de37a488'
   - 🇨🇱[www.v2nodes.com] trojan-CL-...-6a457b33
-  - '🇩🇪[www.v2nodes.com] trojan-DE-... #3-e1c35dc1'
-  - '🇩🇪[www.v2nodes.com] trojan-DE-... #5-8ce58f61'
-  - 🇪🇸[www.v2nodes.com] trojan-ES-...-c7cc3228
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #1-d10f0ec9'
-  - 🏳[www.v2nodes.com] trojan--5a3eea89
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #2-9c75ed77'
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #3-9c16740c'
-  - '🇪🇸[www.v2nodes.com] trojan-ES-... #4-f1f0cd90'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #4-eb3dd0b9'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #1-8a0dc9ca'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #2-e1c35dc1'
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #3-60385565'
+  - 🇪🇸[www.v2nodes.com] trojan-ES-...-b62e322e
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #6-c7cc3228'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #3-d10f0ec9'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #4-7ac7b41a'
+  - '🇪🇸[www.v2nodes.com] trojan-ES-... #5-29b8171f'
   - 🇫🇷[www.v2nodes.com] trojan-FR-...-8bddcf35
-  - '🇫🇷[www.v2nodes.com] trojan-FR-... #1-1be15c9d'
+  - '🇫🇷[www.v2nodes.com] trojan-FR-... #1-3ff9b2d9'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #2-96c242c4'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #3-85d5650a'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #4-3e57bb3b'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #5-6fe792c6'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #6-5d432afb'
-  - '🇫🇷[www.v2nodes.com] trojan-FR-... #7-3ff9b2d9'
+  - '🇫🇷[www.v2nodes.com] trojan-FR-... #7-1be15c9d'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #8-a3dd5a06'
   - '🇫🇷[www.v2nodes.com] trojan-FR-... #9-b252cdbd'
   - 🇬🇧[www.v2nodes.com] trojan-GB-...-5c9fb3fc
   - 🇮🇱[www.v2nodes.com] trojan-IL-...-72993110
-  - 🇮🇳[www.v2nodes.com] trojan-IN-...-ac59cb07
-  - 🇯🇵[www.v2nodes.com] trojan-JP-...-312ecdbb
-  - '🇯🇵[www.v2nodes.com] trojan-JP-... #1-5a0aac7d'
+  - 🇮🇳[www.v2nodes.com] trojan-IN-...-f3f15a7c
+  - 🇯🇵[www.v2nodes.com] trojan-JP-...-d1662730
+  - '🇯🇵[www.v2nodes.com] trojan-JP-... #1-312ecdbb'
+  - '🇯🇵[www.v2nodes.com] trojan-JP-... #2-5a0aac7d'
   - 🇲🇾[www.v2nodes.com] trojan-MY-...-0bb4e54d
-  - 🇳🇱[www.v2nodes.com] trojan-NL-...-3b2daadf
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #1-78c1ae84'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #2-51ef0590'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #3-7d393166'
-  - '🇳🇱[www.v2nodes.com] trojan-NL-... #4-0306dc0a'
-  - 🇸🇬[www.v2nodes.com] trojan-SG-...-77bb5ce7
-  - 🇺🇸[www.v2nodes.com] trojan-US-...-3a7bbeb7
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #1-81a273c8'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #2-7a4a29df'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #3-0af72504'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #6-2a73ce1c'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #5-761bcb03'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #7-9c1e27bc'
-  - '🇺🇸[www.v2nodes.com] trojan-US-... #8-ddc10c48'
+  - 🇳🇱[www.v2nodes.com] trojan-NL-...-9f16ef90
+  - 🇵🇱[www.v2nodes.com] trojan-PL-...-18fb6d3f
+  - 🇸🇬[www.v2nodes.com] trojan-SG-...-685422af
+  - '🇸🇬[www.v2nodes.com] trojan-SG-... #1-2833edcc'
+  - 🇺🇸[www.v2nodes.com] trojan-US-...-70e01827
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #9-5503e206'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #2-fa3eb02e'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #3-4c3458f0'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #4-1476980d'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #8-3a7bbeb7'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #6-aef8510b'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #7-f13e2262'
+  - '🇺🇸[www.v2nodes.com] trojan-US-... #10-7a4a29df'
   - 'tg频道:@ripaojiedian #1-9903aeea'
   - 🇭🇰 香港|@ripaojiedian-73867592
   - 🇭🇰 香港3|@ripaojiedian-fc8a6811
@@ -3868,101 +2899,19 @@ proxy-groups:
   - 美国2|@ripaojiedian-959e6aa0
   - 台湾|@ripaojiedian-7a4a8287
   - 韩国|@ripaojiedian-eaa4d378
-  - 🇳🇱 荷兰 | NLD 32-5e5e6e84
-  - 🇭🇰HK_1|1.3MB/s-9545dc25
-  - 🇳🇱NL_7|1.2MB/s-969107c5
-  - 🇳🇱NL_8|1.7MB/s-d0cfb584
-  - 🇳🇱NL_9|1.3MB/s-9e25f602
-  - 🇳🇱NL_10|1.4MB/s-b3b80cc8
-  - 🇩🇪DE_7|2.6MB/s-9914d95b
-  - 🇳🇱NL_19|1.3MB/s-5a6c42e1
-  - 🇳🇱NL_20|1.3MB/s-90e7a93e
-  - 🇧🇪 比利时 | BEL-451748aa
-  - 🇪🇸 西班牙 | ESP-b01b0cc4
-  - '🇭🇰 香港 | HKG #1-36e6cce1'
-  - '🇭🇰 香港 | HKG #2-95f57719'
-  - '🇭🇰 香港 | HKG #3-c3360816'
-  - 🇳🇱 荷兰 | NLD-47dc45b1
-  - 🇳🇱 荷兰 | NLD 2-e0036b2d
-  - 🇳🇱 荷兰 | NLD 3-c25d1964
-  - 🇳🇱 荷兰 | NLD 4-c5e04a5a
-  - 🇳🇱 荷兰 | NLD 5-58d05dd2
-  - 🇳🇱 荷兰 | NLD 6-8b3c506b
-  - 🇳🇱 荷兰 | NLD 7-0a30975f
-  - 🇳🇱 荷兰 | NLD 9-42eb9173
-  - 🇳🇱 荷兰 | NLD 10-a8544fe3
-  - 🇳🇱 荷兰 | NLD 11-cd1d3c01
-  - 🇳🇱 荷兰 | NLD 12-6d48a92e
-  - 🇳🇱 荷兰 | NLD 13-afd290ce
-  - 🇳🇱 荷兰 | NLD 14-3331fdbe
-  - 🇳🇱 荷兰 | NLD 15-a9bb9aff
-  - 🇳🇱 荷兰 | NLD 16-8edbcdbe
-  - 🇳🇱 荷兰 | NLD 17-7dc7c2fa
-  - 🇳🇱 荷兰 | NLD 18-96c195ce
-  - 🇳🇱 荷兰 | NLD 19-af677db6
-  - 🇳🇱 荷兰 | NLD 20-7341cc86
-  - 🇳🇱 荷兰 | NLD 21-687ffd68
-  - 🇳🇱 荷兰 | NLD 22-2fcd9172
-  - 🇳🇱 荷兰 | NLD 23-995f95ad
-  - 🇳🇱 荷兰 | NLD 24-fe9e5bb0
-  - 🇳🇱 荷兰 | NLD 25-94022760
-  - 🇳🇱 荷兰 | NLD 26-829ebb97
-  - 🇳🇱 荷兰 | NLD 27-b296945d
-  - 🇳🇱 荷兰 | NLD 28-cbf03674
-  - 🇳🇱 荷兰 | NLD 29-fd52b530
-  - 🇳🇱 荷兰 | NLD 30-c55148d8
-  - 🇳🇱 荷兰 | NLD 31-f834821b
-  - 🇳🇱 荷兰 | NLD 33-6e266152
-  - 🇳🇱 荷兰 | NLD 34-9299b594
-  - 🇳🇱 荷兰 | NLD 35-06b0702c
-  - 🇳🇱 荷兰 | NLD 36-12506db8
-  - 🇳🇱 荷兰 | NLD 37-02cee492
-  - 🇳🇱 荷兰 | NLD 38-0afd3fb5
-  - 🇸🇪 瑞典 | SWE-ff95ab2c
-  - 🇸🇬 新加坡 | SGP 2-4fa58f9f
-  - 🇺🇸 美国 | USA 5-633e25ac
-  - '🇧🇪 比利时 | BEL #1-0b4151a0'
-  - '🇪🇸 西班牙 | ESP #1-878f6708'
-  - '🇳🇱 荷兰 | NLD #1-f54f4a61'
-  - '🇳🇱 荷兰 | NLD #2-4d1dca3a'
-  - '🇳🇱 荷兰 | NLD #3-93ff05aa'
-  - '🇳🇱 荷兰 | NLD #4-34777efe'
-  - '🇳🇱 荷兰 | NLD #5-c5c6b13b'
-  - '🇳🇱 荷兰 | NLD #6-27b269e3'
-  - '🇳🇱 荷兰 | NLD #7-9cda40fb'
-  - '🇳🇱 荷兰 | NLD #9-89a533b6'
-  - '🇳🇱 荷兰 | NLD #10-f9493e8c'
-  - '🇳🇱 荷兰 | NLD #11-f84334d8'
-  - '🇳🇱 荷兰 | NLD #12-db37d67a'
-  - '🇳🇱 荷兰 | NLD #13-f7702591'
-  - '🇳🇱 荷兰 | NLD #14-4fbead54'
-  - '🇳🇱 荷兰 | NLD #15-99ffda7a'
-  - '🇳🇱 荷兰 | NLD #16-a04b3ca9'
-  - '🇳🇱 荷兰 | NLD #17-b569abfd'
-  - '🇳🇱 荷兰 | NLD #18-fc7708b2'
-  - '🇳🇱 荷兰 | NLD #19-c3d82edb'
-  - '🇳🇱 荷兰 | NLD #20-1b5d1345'
-  - '🇳🇱 荷兰 | NLD #21-f47a0ae4'
-  - '🇳🇱 荷兰 | NLD #22-fa3b7093'
-  - '🇳🇱 荷兰 | NLD #23-73cd923f'
-  - '🇳🇱 荷兰 | NLD #24-7cec3204'
-  - '🇳🇱 荷兰 | NLD #25-2d2e72f9'
-  - '🇳🇱 荷兰 | NLD #26-bb5f75e8'
-  - '🇳🇱 荷兰 | NLD #27-cbc863e7'
-  - '🇳🇱 荷兰 | NLD #28-e4f230d0'
-  - '🇳🇱 荷兰 | NLD #29-618a0a30'
-  - '🇳🇱 荷兰 | NLD #30-5630829c'
-  - '🇳🇱 荷兰 | NLD #31-d66a6cee'
-  - '🇳🇱 荷兰 | NLD #32-2ef83290'
-  - '🇳🇱 荷兰 | NLD #33-57da6e7f'
-  - '🇳🇱 荷兰 | NLD #34-15987c91'
-  - '🇳🇱 荷兰 | NLD #35-bbccc234'
-  - '🇳🇱 荷兰 | NLD #36-32929549'
-  - '🇳🇱 荷兰 | NLD #37-9f2c1943'
-  - '🇳🇱 荷兰 | NLD #38-56f95932'
-  - '🇸🇪 瑞典 | SWE #1-77da437e'
-  - '🇸🇬 新加坡 | SGP #2-6c140f06'
-  - '🇺🇸 美国 | USA #5-06cf5c1d'
+  - 🇩🇪DE_8|1.4MB/s-0b9b76a6
+  - '🇩🇪 德国 | DEU #6-0d013084'
+  - 🇩🇪 德国 | DEU 8-99926588
+  - '🇭🇰 香港 | HKG #1-5bead33e'
+  - 🇭🇰 香港 | HKG 2-0e86f5f1
+  - '🇭🇰 香港 | HKG #3-193841a0'
+  - 🇰🇷 韩国 | KOR-df9cacfe
+  - '🇳🇱 荷兰 | NLD #3-e5616472'
+  - '🇷🇺 俄罗斯 | RUS #1-dd18625c'
+  - '🇺🇸 美国 | USA #19-1f4459ab'
+  - '🇩🇪 德国 | DEU #7-bc35cb00'
+  - '🇭🇰 香港 | HKG #2-34655477'
+  - '🇰🇷 韩国 | KOR #1-a2b08a43'
   - '>🇦🇺AU|Hs|1024|TG@FProxies|-571cc4aa'
   - '>🇦🇺AU|Hs|1024|TG@FProxies| 2-a9448f35'
   - '>🇦🇺AU|Ls|1024|TG@FProxies|-506a8e58'
