@@ -77,8 +77,8 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - cipher: chacha20-ietf-poly1305
-  name: 🇦🇱[www.v2nodes.com] ss-AL-1490...-05274a58
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  name: 🇦🇱[www.v2nodes.com] ss-AL-1490...-89857ff3
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   port: 43558
   server: 130.49.189.158
   type: ss
@@ -209,31 +209,31 @@ proxies:
   server: 23.162.152.22
   type: ss
 - cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #1-a6ada549'
+  name: 🇫🇷[www.v2nodes.com] ss-FR-1615...-a6ada549
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 38.109.228.110
   type: ss
 - cipher: aes-256-gcm
-  name: 🇫🇷[www.v2nodes.com] ss-FR-1615...-1d9d058d
+  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-1d9d058d'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 167.17.64.27
   type: ss
 - cipher: aes-256-gcm
-  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-097ceecb'
+  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-097ceecb'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 172.99.189.142
   type: ss
 - cipher: aes-256-gcm
-  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-6553f85a'
+  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-6553f85a'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 167.17.64.175
   type: ss
 - cipher: aes-256-gcm
-  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-3b70c1fa'
+  name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #4-3b70c1fa'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 167.17.64.22
@@ -243,6 +243,12 @@ proxies:
   password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
   port: 1353
   server: 185.194.191.35
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1621...-7aabf16b
+  password: 8nrpt2il04ptci2j
+  port: 8080
+  server: 54.37.240.40
   type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1616...-f1205f76
@@ -269,7 +275,7 @@ proxies:
   server: 38.114.120.221
   type: ss
 - cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1602...-d081b234
+  name: '🏳[www.v2nodes.com] ss- #1-d081b234'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.176.206.9
@@ -287,13 +293,7 @@ proxies:
   server: 94.156.250.148
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-9184...-f066fbca
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-8004...-f892b217
+  name: '🏳[www.v2nodes.com] ss- #2-f892b217'
   password: shadowsocks
   port: 443
   server: 141.98.101.178
@@ -335,60 +335,59 @@ proxies:
   server: 202.50.253.72
   type: ss
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #1-8a2bf87b'
+  name: 🇮🇹IT_1|2.9MB/s-8a2bf87b
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.36
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #5-c9d115a5'
+  name: '🇮🇹 意大利 | ITA #1-c9d115a5'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.81
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 意大利|@ripaojiedian-91037d35
+  name: '🇮🇹 意大利 | ITA #2-91037d35'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.63
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #3-c0fa6583'
+  name: '🇮🇹 意大利 | ITA #4-c0fa6583'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.99
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-463d6dab'
+  name: 🇮🇹IT_4|3.2MB/s-d6f9f1e5
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.90
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #2-4313ce27'
+  name: '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-7fe42383'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.45
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #6-ac0af0ae'
+  name: '🇮🇹 意大利 | ITA #3-ac0af0ae'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.27
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #4-0a86a281'
+  name: '🇮🇹[www.v2nodes.com] ss-IT-1619... #7-4df1a1c1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.54
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -420,13 +419,13 @@ proxies:
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: '🏳[www.v2nodes.com] ss- #2-24fe6d00'
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1291...-24fe6d00
   password: shadowsocks
   port: 443
   server: 149.22.87.240
   type: ss
 - cipher: aes-128-gcm
-  name: '🏳[www.v2nodes.com] ss- #3-55af92b2'
+  name: 🇯🇵[www.v2nodes.com] ss-JP-9223...-55af92b2
   password: shadowsocks
   port: 443
   server: 149.22.87.241
@@ -437,17 +436,17 @@ proxies:
   port: 10099
   server: 115.161.136.145
   type: ss
-- cipher: aes-256-gcm
-  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
-  password: BWyPPTusFKhGgzKh
-  port: 8388
-  server: 64.177.90.30
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱[www.v2nodes.com] ss-NL-1622...-62589996
   password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
   port: 46190
   server: 194.87.233.93
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🏳[www.v2nodes.com] ss- #4-dd7220a9'
+  password: DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP
+  port: 47195
+  server: 104.222.183.180
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱[www.v2nodes.com] ss-NL-1618...-30f2a652
@@ -468,7 +467,7 @@ proxies:
   server: 185.213.23.63
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🏳[www.v2nodes.com] ss- #4-8e8b9d98'
+  name: '🏳[www.v2nodes.com] ss- #5-8e8b9d98'
   password: eetk7pw
   port: 443
   server: 54.36.174.140
@@ -498,7 +497,7 @@ proxies:
   server: 38.60.223.125
   type: ss
 - cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #5-cb8634ec'
+  name: '🏳[www.v2nodes.com] ss- #6-cb8634ec'
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.47.58
@@ -546,25 +545,25 @@ proxies:
   server: 15.235.164.133
   type: ss
 - cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #6-8dc3f2f1'
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-8dc3f2f1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 149.88.106.74
   type: ss
 - cipher: aes-256-gcm
-  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-c49d5b38'
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-c49d5b38'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 149.88.107.74
   type: ss
 - cipher: aes-256-gcm
-  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-44283b2b'
+  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #3-44283b2b'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 149.88.107.47
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🏳[www.v2nodes.com] ss- #7-c2c86385'
+  name: 🇺🇸[www.v2nodes.com] ss-US-1620...-c2c86385
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
   port: 42878
   server: 23.230.52.119
@@ -597,7 +596,7 @@ proxies:
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: '🏳[www.v2nodes.com] trojan- #1-a6047e99'
+- name: 🇦🇺[www.v2nodes.com] trojan-AU-...-a6047e99
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 45.63.30.142
@@ -674,19 +673,19 @@ proxies:
   port: 443
   server: 66.163.118.40
   type: trojan
-- name: '🏳[www.v2nodes.com] trojan- #3-95a1c038'
+- name: '🏳[www.v2nodes.com] trojan- #2-95a1c038'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 66.163.118.244
   type: trojan
-- name: '🏳[www.v2nodes.com] trojan- #4-e2878364'
+- name: 🇰🇷[www.v2nodes.com] trojan-KR-...-e2878364
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 158.247.253.243
   skip-cert-verify: true
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   type: trojan
-- name: '🏳[www.v2nodes.com] trojan- #5-7932b74d'
+- name: 🇲🇾[www.v2nodes.com] trojan-MY-...-7932b74d
   password: 5931134d1cde66bf83a54acdfebe7ab2
   port: 443
   server: 47.250.84.25
@@ -698,7 +697,7 @@ proxies:
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: '🇨🇳 CN_69 #1-61d8bc2d'
+- name: '🇳🇬 尼日利亚 | NGA #2-61d8bc2d'
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20103
   server: sclass-01.catcat321.com
@@ -710,18 +709,6 @@ proxies:
   port: 443
   server: 95.143.196.97
   type: trojan
-- name: '🇸🇪[www.v2nodes.com] trojan-SE-... #1-0e37a15d'
-  network: ws
-  password: f426d3c9-fb43-43c0-868b-898dfa451a74
-  port: 443
-  server: 121.127.33.130
-  skip-cert-verify: false
-  sni: likejennie.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: likejennie.pages.dev
-    path: '%2F'
 - name: 🇸🇬[www.v2nodes.com] trojan-SG-...-e6138450
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -735,30 +722,32 @@ proxies:
   server: 149.28.130.108
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
-- name: 🇹🇷[www.v2nodes.com] trojan-TR-...-97d4da3e
+- client-fingerprint: chrome
+  name: '🇹🇷 土耳其 | TUR #3-3ba26242'
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20027
   server: sclass-b1.catcat321.com
+  skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan
-- name: '🇹🇷[www.v2nodes.com] trojan-TR-... #1-7544cc36'
+  udp: true
+- client-fingerprint: chrome
+  name: 🇹🇷TR_1|2.0MB/s-8ba49d1b
+  network: tcp
   password: d7563108-615c-4338-a7bd-77f359869a4a
   port: 20028
   server: sclass-b1.catcat321.com
+  skip-cert-verify: false
   sni: hk.catxstar.com
   type: trojan
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇩🇪 德国 | DEU 3-c69abced
-  port: 26032
-  server: 123466.ru
-  skip-cert-verify: true
-  tls: false
-  type: vmess
   udp: true
-  uuid: 804334e2-04ca-434c-8311-3ccee8218175
+- cipher: aes-256-gcm
+  name: 🇮🇹IT_3|3.4MB/s-a7b77d56
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.18
+  type: ss
+  udp: true
 - alpn:
   - ''
   alterId: 0
@@ -766,42 +755,122 @@ proxies:
   http-opts:
     headers:
       Host:
-      - openai.com
+      - https://www.cloudflare.com
     method: GET
     path:
-    - /QQqun-737805443
-  name: '🇭🇰 香港 | HKG #1-36e6cce1'
+    - /
+  name: '🇩🇪 德国 | DEU #13-db162b03'
   network: http
-  port: 52080
-  server: 47.242.81.94
+  port: 58804
+  server: 91.98.221.107
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-- cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #7-a7b77d56'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.18
-  type: ss
+  uuid: aa3e4b64-c119-44be-b0f3-f88293705e37
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_1|3.7MB/s-f0c05b5b
+  network: tcp
+  port: 16113
+  server: zfd-hkv1.kunlun01dns.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  xudp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - www.tno.nl
+    method: GET
+    path:
+    - /
+  name: '🇩🇪 德国 | DEU #2-2e9c3367'
+  network: http
+  port: 8880
+  server: free3.familysharing.ir
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 04cacf0a-46d5-81b3-874d-460d7a36c036
+  xudp: true
+- name: 🇸🇬SG_2|2.4MB/s-445e9b37
+  password: Z5lvhmLqSc
+  port: 48994
+  server: matrix.phonicsindia.mobi
+  skip-cert-verify: true
+  sni: m.microsoft.com
+  type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #3-13d73b90'
+  name: 🇸🇬SG_4|3.9MB/s-32186f77
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: ffbf920:68447
+    mode: tls
+  port: 2377
+  server: 18.141.181.229
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇩🇪 德国 | DEU #1-5743b243'
+  network: http
+  port: 52080
+  server: 23.165.200.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
+- name: '🇳🇬 尼日利亚 | NGA #1-14a4bceb'
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20051
+  server: sclass-b1.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #2-38cc6094'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  server: 47.129.144.40
+  server: 54.254.3.195
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: '🇩🇪 德国 | DEU #3-2b28c952'
-  network: tcp
-  port: 26032
-  server: 123466.ru
-  tls: false
+  name: '🇺🇸 美国 | USA #3-c26cd387'
+  network: ws
+  port: 443
+  server: US032013.ssgreen.org
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: 804334e2-04ca-434c-8311-3ccee8218175
+  udp: true
+  uuid: 4b6411e3-914d-4d6c-b486-58b1b88f5c5f
+  ws-opts:
+    headers:
+      Host: US032013.ssgreen.org
+    path: /wes
 - name: '>🇧🇷BR|Hs|1103|TG@FProxies|-a453994a'
   server: 179.96.182.182
   port: 443
@@ -2162,7 +2231,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
-  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-05274a58
+  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-89857ff3
   - 🇦🇹[www.v2nodes.com] ss-AT-1614...-7a5d182a
   - 🇦🇹[www.v2nodes.com] ss-AT-1595...-d94f446f
   - 🇨🇦[www.v2nodes.com] ss-CA-1559...-dca7bc22
@@ -2184,54 +2253,54 @@ proxy-groups:
   - 🇫🇷[www.v2nodes.com] ss-FR-1621...-7714165c
   - '🇫🇷[www.v2nodes.com] ss-FR-1621... #5-07c150e6'
   - 🇫🇷[www.v2nodes.com] ss-FR-1616...-5de9da15
-  - '🏳[www.v2nodes.com] ss- #1-a6ada549'
-  - 🇫🇷[www.v2nodes.com] ss-FR-1615...-1d9d058d
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-097ceecb'
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-6553f85a'
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-3b70c1fa'
+  - 🇫🇷[www.v2nodes.com] ss-FR-1615...-a6ada549
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-1d9d058d'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-097ceecb'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-6553f85a'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #4-3b70c1fa'
   - 🇬🇧[www.v2nodes.com] ss-GB-1622...-acafcaae
+  - 🇬🇧[www.v2nodes.com] ss-GB-1621...-7aabf16b
   - 🇬🇧[www.v2nodes.com] ss-GB-1616...-f1205f76
   - '🇬🇧[www.v2nodes.com] ss-GB-1616... #1-bbbf5101'
   - 🇬🇧[www.v2nodes.com] ss-GB-1615...-f7a26622
   - '🇬🇧[www.v2nodes.com] ss-GB-1615... #1-4686e80d'
-  - 🇬🇧[www.v2nodes.com] ss-GB-1602...-d081b234
+  - '🏳[www.v2nodes.com] ss- #1-d081b234'
   - 🇬🇧[www.v2nodes.com] ss-GB-1451...-0503737a
   - 🇬🇧[www.v2nodes.com] ss-GB-1247...-c3fef3f2
-  - 🇬🇧[www.v2nodes.com] ss-GB-9184...-f066fbca
-  - 🇬🇧[www.v2nodes.com] ss-GB-8004...-f892b217
+  - '🏳[www.v2nodes.com] ss- #2-f892b217'
   - 🇭🇰[www.v2nodes.com] ss-HK-1621...-7f15ec4b
   - '🇭🇰[www.v2nodes.com] ss-HK-1621... #1-fcd7d9bb'
   - 🇭🇰[www.v2nodes.com] ss-HK-1599...-fcd1d5ba
   - 🇮🇳[www.v2nodes.com] ss-IN-1621...-8924dcb9
   - '🇮🇹[www.v2nodes.com] ss-IT-1621... #3-5d15c85e'
   - 🇮🇹[www.v2nodes.com] ss-IT-1619...-7366371f
-  - '🇮🇹 意大利 | ITA #1-8a2bf87b'
-  - '🇮🇹 意大利 | ITA #5-c9d115a5'
-  - 意大利|@ripaojiedian-91037d35
-  - '🇮🇹 意大利 | ITA #3-c0fa6583'
-  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-463d6dab'
-  - '🇮🇹 意大利 | ITA #2-4313ce27'
-  - '🇮🇹 意大利 | ITA #6-ac0af0ae'
-  - '🇮🇹 意大利 | ITA #4-0a86a281'
+  - 🇮🇹IT_1|2.9MB/s-8a2bf87b
+  - '🇮🇹 意大利 | ITA #1-c9d115a5'
+  - '🇮🇹 意大利 | ITA #2-91037d35'
+  - '🇮🇹 意大利 | ITA #4-c0fa6583'
+  - 🇮🇹IT_4|3.2MB/s-d6f9f1e5
+  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-7fe42383'
+  - '🇮🇹 意大利 | ITA #3-ac0af0ae'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #7-4df1a1c1'
   - 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
   - 🇮🇹[www.v2nodes.com] ss-IT-1554...-d3069dbe
   - 🇯🇵[www.v2nodes.com] ss-JP-1599...-81188322
   - 🇯🇵[www.v2nodes.com] ss-JP-1544...-aa03e7d7
   - 🇯🇵[www.v2nodes.com] ss-JP-5141...-b2938d68
-  - '🏳[www.v2nodes.com] ss- #2-24fe6d00'
-  - '🏳[www.v2nodes.com] ss- #3-55af92b2'
+  - 🇯🇵[www.v2nodes.com] ss-JP-1291...-24fe6d00
+  - 🇯🇵[www.v2nodes.com] ss-JP-9223...-55af92b2
   - 🇰🇷[www.v2nodes.com] ss-KR-1126...-02912628
-  - 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
   - 🇳🇱[www.v2nodes.com] ss-NL-1622...-62589996
+  - '🏳[www.v2nodes.com] ss- #4-dd7220a9'
   - 🇳🇱[www.v2nodes.com] ss-NL-1618...-30f2a652
   - 🇳🇱[www.v2nodes.com] ss-NL-1617...-2ddddfd2
   - 🇳🇴[www.v2nodes.com] ss-NO-1220...-51bf808b
-  - '🏳[www.v2nodes.com] ss- #4-8e8b9d98'
+  - '🏳[www.v2nodes.com] ss- #5-8e8b9d98'
   - 🇷🇴[www.v2nodes.com] ss-RO-1595...-355f0158
   - 🇷🇴[www.v2nodes.com] ss-RO-1298...-12d10667
   - 🇷🇺[www.v2nodes.com] ss-RU-1620...-5944666a
   - 🇷🇺[www.v2nodes.com] ss-RU-1617...-08545358
-  - '🏳[www.v2nodes.com] ss- #5-cb8634ec'
+  - '🏳[www.v2nodes.com] ss- #6-cb8634ec'
   - 🇷🇺[www.v2nodes.com] ss-RU-1163...-62ce49d3
   - 🇸🇪[www.v2nodes.com] ss-SE-1620...-60fb8d01
   - 🇸🇪[www.v2nodes.com] ss-SE-1615...-c53795f8
@@ -2239,15 +2308,15 @@ proxy-groups:
   - 🇸🇬[www.v2nodes.com] ss-SG-1616...-427efd22
   - '🇸🇬[www.v2nodes.com] ss-SG-1616... #1-7e0717f8'
   - 🇸🇬[www.v2nodes.com] ss-SG-1615...-fb30e24e
-  - '🏳[www.v2nodes.com] ss- #6-8dc3f2f1'
-  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-c49d5b38'
-  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-44283b2b'
-  - '🏳[www.v2nodes.com] ss- #7-c2c86385'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-8dc3f2f1'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-c49d5b38'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #3-44283b2b'
+  - 🇺🇸[www.v2nodes.com] ss-US-1620...-c2c86385
   - 🇿🇦[www.v2nodes.com] ss-ZA-1336...-5cb336dd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1333...-5aaf3c99
   - '🇦🇪[www.v2nodes.com] trojan-AE-... #3-eb153959'
   - '🇦🇪[www.v2nodes.com] trojan-AE-... #4-c5805ac4'
-  - '🏳[www.v2nodes.com] trojan- #1-a6047e99'
+  - 🇦🇺[www.v2nodes.com] trojan-AU-...-a6047e99
   - 🇧🇷[www.v2nodes.com] trojan-BR-...-13d666e9
   - 🇨🇦[www.v2nodes.com] trojan-CA-...-97fcb4cb
   - '🇨🇦[www.v2nodes.com] trojan-CA-... #1-7c20dd96'
@@ -2261,22 +2330,26 @@ proxy-groups:
   - 🇪🇸[www.v2nodes.com] trojan-ES-...-1f0465b1
   - '🇪🇸[www.v2nodes.com] trojan-ES-... #1-c7cc3228'
   - '🇪🇸[www.v2nodes.com] trojan-ES-... #2-08c9b413'
-  - '🏳[www.v2nodes.com] trojan- #3-95a1c038'
-  - '🏳[www.v2nodes.com] trojan- #4-e2878364'
-  - '🏳[www.v2nodes.com] trojan- #5-7932b74d'
+  - '🏳[www.v2nodes.com] trojan- #2-95a1c038'
+  - 🇰🇷[www.v2nodes.com] trojan-KR-...-e2878364
+  - 🇲🇾[www.v2nodes.com] trojan-MY-...-7932b74d
   - 🇳🇬[www.v2nodes.com] trojan-NG-...-d6b99c83
-  - '🇨🇳 CN_69 #1-61d8bc2d'
+  - '🇳🇬 尼日利亚 | NGA #2-61d8bc2d'
   - 🇸🇪[www.v2nodes.com] trojan-SE-...-44376491
-  - '🇸🇪[www.v2nodes.com] trojan-SE-... #1-0e37a15d'
   - 🇸🇬[www.v2nodes.com] trojan-SG-...-e6138450
   - '🇸🇬[www.v2nodes.com] trojan-SG-... #1-685422af'
-  - 🇹🇷[www.v2nodes.com] trojan-TR-...-97d4da3e
-  - '🇹🇷[www.v2nodes.com] trojan-TR-... #1-7544cc36'
-  - 🇩🇪 德国 | DEU 3-c69abced
-  - '🇭🇰 香港 | HKG #1-36e6cce1'
-  - '🇮🇹 意大利 | ITA #7-a7b77d56'
-  - '🇸🇬 新加坡 | SGP #3-13d73b90'
-  - '🇩🇪 德国 | DEU #3-2b28c952'
+  - '🇹🇷 土耳其 | TUR #3-3ba26242'
+  - 🇹🇷TR_1|2.0MB/s-8ba49d1b
+  - 🇮🇹IT_3|3.4MB/s-a7b77d56
+  - '🇩🇪 德国 | DEU #13-db162b03'
+  - 🇭🇰HK_1|3.7MB/s-f0c05b5b
+  - '🇩🇪 德国 | DEU #2-2e9c3367'
+  - 🇸🇬SG_2|2.4MB/s-445e9b37
+  - 🇸🇬SG_4|3.9MB/s-32186f77
+  - '🇩🇪 德国 | DEU #1-5743b243'
+  - '🇳🇬 尼日利亚 | NGA #1-14a4bceb'
+  - '🇸🇬 新加坡 | SGP #2-38cc6094'
+  - '🇺🇸 美国 | USA #3-c26cd387'
   - '>🇧🇷BR|Hs|1103|TG@FProxies|-a453994a'
   - '>🇩🇪DE|Hs|1103|TG@FProxies|-bb4841cd'
   - '>🇩🇪DE|Ls|1103|TG@FProxies|-6d6cedcf'
@@ -2448,7 +2521,7 @@ proxy-groups:
   - github.com/Alvin9999-newpac/fanqiang-e0705058
   - github.com/Alvin9999-newpac/fanqiang-86efa44f
   - github.com/Alvin9999-newpac/fanqiang-c6bb77d3
-  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-05274a58
+  - 🇦🇱[www.v2nodes.com] ss-AL-1490...-89857ff3
   - 🇦🇹[www.v2nodes.com] ss-AT-1614...-7a5d182a
   - 🇦🇹[www.v2nodes.com] ss-AT-1595...-d94f446f
   - 🇨🇦[www.v2nodes.com] ss-CA-1559...-dca7bc22
@@ -2470,54 +2543,54 @@ proxy-groups:
   - 🇫🇷[www.v2nodes.com] ss-FR-1621...-7714165c
   - '🇫🇷[www.v2nodes.com] ss-FR-1621... #5-07c150e6'
   - 🇫🇷[www.v2nodes.com] ss-FR-1616...-5de9da15
-  - '🏳[www.v2nodes.com] ss- #1-a6ada549'
-  - 🇫🇷[www.v2nodes.com] ss-FR-1615...-1d9d058d
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-097ceecb'
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-6553f85a'
-  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-3b70c1fa'
+  - 🇫🇷[www.v2nodes.com] ss-FR-1615...-a6ada549
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #1-1d9d058d'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #2-097ceecb'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #3-6553f85a'
+  - '🇫🇷[www.v2nodes.com] ss-FR-1615... #4-3b70c1fa'
   - 🇬🇧[www.v2nodes.com] ss-GB-1622...-acafcaae
+  - 🇬🇧[www.v2nodes.com] ss-GB-1621...-7aabf16b
   - 🇬🇧[www.v2nodes.com] ss-GB-1616...-f1205f76
   - '🇬🇧[www.v2nodes.com] ss-GB-1616... #1-bbbf5101'
   - 🇬🇧[www.v2nodes.com] ss-GB-1615...-f7a26622
   - '🇬🇧[www.v2nodes.com] ss-GB-1615... #1-4686e80d'
-  - 🇬🇧[www.v2nodes.com] ss-GB-1602...-d081b234
+  - '🏳[www.v2nodes.com] ss- #1-d081b234'
   - 🇬🇧[www.v2nodes.com] ss-GB-1451...-0503737a
   - 🇬🇧[www.v2nodes.com] ss-GB-1247...-c3fef3f2
-  - 🇬🇧[www.v2nodes.com] ss-GB-9184...-f066fbca
-  - 🇬🇧[www.v2nodes.com] ss-GB-8004...-f892b217
+  - '🏳[www.v2nodes.com] ss- #2-f892b217'
   - 🇭🇰[www.v2nodes.com] ss-HK-1621...-7f15ec4b
   - '🇭🇰[www.v2nodes.com] ss-HK-1621... #1-fcd7d9bb'
   - 🇭🇰[www.v2nodes.com] ss-HK-1599...-fcd1d5ba
   - 🇮🇳[www.v2nodes.com] ss-IN-1621...-8924dcb9
   - '🇮🇹[www.v2nodes.com] ss-IT-1621... #3-5d15c85e'
   - 🇮🇹[www.v2nodes.com] ss-IT-1619...-7366371f
-  - '🇮🇹 意大利 | ITA #1-8a2bf87b'
-  - '🇮🇹 意大利 | ITA #5-c9d115a5'
-  - 意大利|@ripaojiedian-91037d35
-  - '🇮🇹 意大利 | ITA #3-c0fa6583'
-  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-463d6dab'
-  - '🇮🇹 意大利 | ITA #2-4313ce27'
-  - '🇮🇹 意大利 | ITA #6-ac0af0ae'
-  - '🇮🇹 意大利 | ITA #4-0a86a281'
+  - 🇮🇹IT_1|2.9MB/s-8a2bf87b
+  - '🇮🇹 意大利 | ITA #1-c9d115a5'
+  - '🇮🇹 意大利 | ITA #2-91037d35'
+  - '🇮🇹 意大利 | ITA #4-c0fa6583'
+  - 🇮🇹IT_4|3.2MB/s-d6f9f1e5
+  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #5-7fe42383'
+  - '🇮🇹 意大利 | ITA #3-ac0af0ae'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1619... #7-4df1a1c1'
   - 🇮🇹[www.v2nodes.com] ss-IT-1597...-5833b77e
   - 🇮🇹[www.v2nodes.com] ss-IT-1554...-d3069dbe
   - 🇯🇵[www.v2nodes.com] ss-JP-1599...-81188322
   - 🇯🇵[www.v2nodes.com] ss-JP-1544...-aa03e7d7
   - 🇯🇵[www.v2nodes.com] ss-JP-5141...-b2938d68
-  - '🏳[www.v2nodes.com] ss- #2-24fe6d00'
-  - '🏳[www.v2nodes.com] ss- #3-55af92b2'
+  - 🇯🇵[www.v2nodes.com] ss-JP-1291...-24fe6d00
+  - 🇯🇵[www.v2nodes.com] ss-JP-9223...-55af92b2
   - 🇰🇷[www.v2nodes.com] ss-KR-1126...-02912628
-  - 🇲🇽[www.v2nodes.com] ss-MX-1564...-e48efb42
   - 🇳🇱[www.v2nodes.com] ss-NL-1622...-62589996
+  - '🏳[www.v2nodes.com] ss- #4-dd7220a9'
   - 🇳🇱[www.v2nodes.com] ss-NL-1618...-30f2a652
   - 🇳🇱[www.v2nodes.com] ss-NL-1617...-2ddddfd2
   - 🇳🇴[www.v2nodes.com] ss-NO-1220...-51bf808b
-  - '🏳[www.v2nodes.com] ss- #4-8e8b9d98'
+  - '🏳[www.v2nodes.com] ss- #5-8e8b9d98'
   - 🇷🇴[www.v2nodes.com] ss-RO-1595...-355f0158
   - 🇷🇴[www.v2nodes.com] ss-RO-1298...-12d10667
   - 🇷🇺[www.v2nodes.com] ss-RU-1620...-5944666a
   - 🇷🇺[www.v2nodes.com] ss-RU-1617...-08545358
-  - '🏳[www.v2nodes.com] ss- #5-cb8634ec'
+  - '🏳[www.v2nodes.com] ss- #6-cb8634ec'
   - 🇷🇺[www.v2nodes.com] ss-RU-1163...-62ce49d3
   - 🇸🇪[www.v2nodes.com] ss-SE-1620...-60fb8d01
   - 🇸🇪[www.v2nodes.com] ss-SE-1615...-c53795f8
@@ -2525,15 +2598,15 @@ proxy-groups:
   - 🇸🇬[www.v2nodes.com] ss-SG-1616...-427efd22
   - '🇸🇬[www.v2nodes.com] ss-SG-1616... #1-7e0717f8'
   - 🇸🇬[www.v2nodes.com] ss-SG-1615...-fb30e24e
-  - '🏳[www.v2nodes.com] ss- #6-8dc3f2f1'
-  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-c49d5b38'
-  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-44283b2b'
-  - '🏳[www.v2nodes.com] ss- #7-c2c86385'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #1-8dc3f2f1'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #2-c49d5b38'
+  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #3-44283b2b'
+  - 🇺🇸[www.v2nodes.com] ss-US-1620...-c2c86385
   - 🇿🇦[www.v2nodes.com] ss-ZA-1336...-5cb336dd
   - 🇿🇦[www.v2nodes.com] ss-ZA-1333...-5aaf3c99
   - '🇦🇪[www.v2nodes.com] trojan-AE-... #3-eb153959'
   - '🇦🇪[www.v2nodes.com] trojan-AE-... #4-c5805ac4'
-  - '🏳[www.v2nodes.com] trojan- #1-a6047e99'
+  - 🇦🇺[www.v2nodes.com] trojan-AU-...-a6047e99
   - 🇧🇷[www.v2nodes.com] trojan-BR-...-13d666e9
   - 🇨🇦[www.v2nodes.com] trojan-CA-...-97fcb4cb
   - '🇨🇦[www.v2nodes.com] trojan-CA-... #1-7c20dd96'
@@ -2547,22 +2620,26 @@ proxy-groups:
   - 🇪🇸[www.v2nodes.com] trojan-ES-...-1f0465b1
   - '🇪🇸[www.v2nodes.com] trojan-ES-... #1-c7cc3228'
   - '🇪🇸[www.v2nodes.com] trojan-ES-... #2-08c9b413'
-  - '🏳[www.v2nodes.com] trojan- #3-95a1c038'
-  - '🏳[www.v2nodes.com] trojan- #4-e2878364'
-  - '🏳[www.v2nodes.com] trojan- #5-7932b74d'
+  - '🏳[www.v2nodes.com] trojan- #2-95a1c038'
+  - 🇰🇷[www.v2nodes.com] trojan-KR-...-e2878364
+  - 🇲🇾[www.v2nodes.com] trojan-MY-...-7932b74d
   - 🇳🇬[www.v2nodes.com] trojan-NG-...-d6b99c83
-  - '🇨🇳 CN_69 #1-61d8bc2d'
+  - '🇳🇬 尼日利亚 | NGA #2-61d8bc2d'
   - 🇸🇪[www.v2nodes.com] trojan-SE-...-44376491
-  - '🇸🇪[www.v2nodes.com] trojan-SE-... #1-0e37a15d'
   - 🇸🇬[www.v2nodes.com] trojan-SG-...-e6138450
   - '🇸🇬[www.v2nodes.com] trojan-SG-... #1-685422af'
-  - 🇹🇷[www.v2nodes.com] trojan-TR-...-97d4da3e
-  - '🇹🇷[www.v2nodes.com] trojan-TR-... #1-7544cc36'
-  - 🇩🇪 德国 | DEU 3-c69abced
-  - '🇭🇰 香港 | HKG #1-36e6cce1'
-  - '🇮🇹 意大利 | ITA #7-a7b77d56'
-  - '🇸🇬 新加坡 | SGP #3-13d73b90'
-  - '🇩🇪 德国 | DEU #3-2b28c952'
+  - '🇹🇷 土耳其 | TUR #3-3ba26242'
+  - 🇹🇷TR_1|2.0MB/s-8ba49d1b
+  - 🇮🇹IT_3|3.4MB/s-a7b77d56
+  - '🇩🇪 德国 | DEU #13-db162b03'
+  - 🇭🇰HK_1|3.7MB/s-f0c05b5b
+  - '🇩🇪 德国 | DEU #2-2e9c3367'
+  - 🇸🇬SG_2|2.4MB/s-445e9b37
+  - 🇸🇬SG_4|3.9MB/s-32186f77
+  - '🇩🇪 德国 | DEU #1-5743b243'
+  - '🇳🇬 尼日利亚 | NGA #1-14a4bceb'
+  - '🇸🇬 新加坡 | SGP #2-38cc6094'
+  - '🇺🇸 美国 | USA #3-c26cd387'
   - '>🇧🇷BR|Hs|1103|TG@FProxies|-a453994a'
   - '>🇩🇪DE|Hs|1103|TG@FProxies|-bb4841cd'
   - '>🇩🇪DE|Ls|1103|TG@FProxies|-6d6cedcf'
